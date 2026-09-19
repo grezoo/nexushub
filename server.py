@@ -11,7 +11,7 @@ import socketserver
 import subprocess
 import sys
 
-PORT = 8765
+PORT = int(os.environ.get("PORT", 8765))
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 WEB_DIR = os.path.join(BASE_DIR, "web")
 DATA_DIR = os.path.join(BASE_DIR, "data")

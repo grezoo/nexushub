@@ -36,6 +36,8 @@ const I18N = {
     openGithub: "Open GitHub ↗",
     demoBadge: "▶ 15s DEMO",
     gemBadge: "💎 GEM",
+    originalBadge: "⭐ NEXUSHUB ORIGINAL",
+    tryLiveBtn: "🚀 Try Live",
     noProjectsFoundTitle: "No projects match your current filters",
     noProjectsFoundSubtitle: "Try clearing your search, removing video filter, or submit a new gem!",
     hiddenGemsShelfTitle: "💎 Fresh Discoveries & Hidden Gems (0-100 ⭐)",
