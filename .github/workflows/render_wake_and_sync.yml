@@ -37,17 +37,3 @@ jobs:
           echo "Sending keep-alive heartbeat ping to: $RENDER_URL"
           curl -s -m 15 -A "NexusHub-KeepAlive-Bot/1.0" "$RENDER_URL" > /dev/null || true
           echo "Keep-alive ping sent successfully!"
-
-      - name: Run AI Curator & Bookshop Picks Sync
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          echo "Running AI Curator for author's picks..."
-          python crawler/ai_curator.py
-
-      - name: Commit and Push Updated Curated Picks
-        run: |
-          git config --global user.name "NexusHub Curator Bot"
-          git config --global user.email "bot@nexushub.local"
-          git add data/curated_picks.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(curator): auto-sync author's curated picks [skip ci]" && git push)
