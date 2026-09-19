@@ -64,7 +64,11 @@ const I18N = {
     standardTitle: "Are you an Open Source Creator? Upload a preview.mp4 or preview.gif!",
     standardDesc: "Place a 15-30s demo named <strong>preview.mp4</strong> or <strong>preview.gif</strong> in your repo root. NexusHub automatically detects it, plays it directly on your card, highlights your project on the homepage, and grants the <strong>▶ Verified Short Demo</strong> badge!",
     standardBtn: "Copy README Badge",
-    standardCopied: "✅ Badge Copied!"
+    standardCopied: "✅ Badge Copied!",
+    sliderBadge: "WEEKLY TOP PICKS",
+    sliderTitle: "Top Visual Discoveries of the Week",
+    sliderWatchDemo: "Watch Live Demo ▶",
+    sliderOpenRepo: "Open GitHub ↗"
   },
   hu: {
     searchPlaceholder: "Keresés projektek, funkciók, tagek között... (pl. flux, esp32, whisper)",
@@ -122,7 +126,11 @@ const I18N = {
     standardTitle: "Nyílt forráskódú alkotó vagy? Tölts fel egy preview.mp4 vagy preview.gif fájlt!",
     standardDesc: "Helyezz el egy 15-30 másodperces demót <strong>preview.mp4</strong> vagy <strong>preview.gif</strong> néven a repód gyökerében. A NexusHub automatikusan felismeri, közvetlenül a kártyádon játssza le, előresorolja a kezdőlapon, és megkapod a <strong>▶ Ellenőrzött Short Demó</strong> jelvényt!",
     standardBtn: "README Jelvény Másolása",
-    standardCopied: "✅ Jelvény Másolva!"
+    standardCopied: "✅ Jelvény Másolva!",
+    sliderBadge: "HETI TOP VÁLOGATÁS",
+    sliderTitle: "A hét legizgalmasabb vizuális projektjei",
+    sliderWatchDemo: "Demó Megtekintése ▶",
+    sliderOpenRepo: "GitHub Megnyitása ↗"
   }
 };
 
@@ -303,7 +311,15 @@ function applyLanguage() {
   const donationSubtext = document.querySelector(".donation-subtext");
   if (donationSubtext) donationSubtext.textContent = t.footerDonationSubtext;
 
-  // Re-render categories and items in current language
+  // Weekly slider headers
+  const sliderBadgeText = document.getElementById("sliderBadgeText");
+  if (sliderBadgeText) sliderBadgeText.textContent = t.sliderBadge;
+
+  const sliderTitleText = document.getElementById("sliderTitleText");
+  if (sliderTitleText) sliderTitleText.textContent = t.sliderTitle;
+
+  // Re-render slider, categories and items in current language
+  renderWeeklySlider();
   renderMainCategories();
   renderSubCategories();
   renderItems();
@@ -963,7 +979,206 @@ function setupEventListeners() {
     closeModal();
     alert(t.submitSuccessAlert);
   });
+
+  // Initialize weekly top slider events
+  setupWeeklySliderEvents();
 }
+
+// ==========================================
+// WEEKLY TOP SLIDER LOGIC
+// ==========================================
+let currentSlideIndex = 0;
+let sliderAutoplayTimer = null;
+
+function getWeeklyTopItems() {
+  const topPicks = [
+    {
+      ...PINNED_SHOWCASE_ITEM,
+      rank_label_hu: "🏆 #1 HETI ZÁSZLÓSHAJÓ",
+      rank_label_en: "🏆 #1 WEEKLY FLAGSHIP"
+    }
+  ];
+
+  // Pick high quality gems & visual projects from catalogue
+  if (catalogueData && catalogueData.items) {
+    const drone = catalogueData.items.find(i => i.repo_name && i.repo_name.includes("esp32-wifi-drone"));
+    if (drone) {
+      topPicks.push({
+        ...drone,
+        rank_label_hu: "💎 #2 HETI REJTETT KINCS",
+        rank_label_en: "💎 #2 WEEKLY HIDDEN GEM"
+      });
+    }
+
+    const aiVideo = catalogueData.items.find(i => i.tags && i.tags.includes("sadtalker") || (i.repo_name && i.repo_name.includes("SadTalker")));
+    if (aiVideo) {
+      topPicks.push({
+        ...aiVideo,
+        rank_label_hu: "✨ #3 HETI AI VÁLOGATÁS",
+        rank_label_en: "✨ #3 WEEKLY AI PICK"
+      });
+    }
+
+    const demucs = catalogueData.items.find(i => i.repo_name && i.repo_name.includes("demucs"));
+    if (demucs) {
+      topPicks.push({
+        ...demucs,
+        rank_label_hu: "🎵 #4 HETI AUDIO STÚDIÓ",
+        rank_label_en: "🎵 #4 WEEKLY AUDIO STUDIO"
+      });
+    }
+
+    const wled = catalogueData.items.find(i => i.repo_name && i.repo_name.includes("WLED"));
+    if (wled) {
+      topPicks.push({
+        ...wled,
+        rank_label_hu: "💡 #5 HETI MAKER PROJEKT",
+        rank_label_en: "💡 #5 WEEKLY MAKER PICK"
+      });
+    }
+  }
+
+  return topPicks;
+}
+
+function renderWeeklySlider() {
+  const track = document.getElementById("sliderTrack");
+  const indicators = document.getElementById("sliderIndicators");
+  if (!track || !indicators) return;
+
+  const items = getWeeklyTopItems();
+  const t = TRANSLATIONS[currentLang];
+
+  track.innerHTML = items.map((item, idx) => {
+    const title = getItemFunctionTitle(item);
+    const desc = getItemDescription(item);
+    const catName = getCategoryName(item.main_category);
+    const rankLabel = currentLang === "en" ? (item.rank_label_en || `#${idx + 1} TOP PICK`) : (item.rank_label_hu || `#${idx + 1} KIEMELT`);
+    const mediaSrc = item.thumbnail_url || `https://opengraph.githubassets.com/1/${item.repo_name}`;
+
+    return `
+      <div class="slider-slide" data-slide-index="${idx}">
+        <div class="slide-media-wrapper" onclick="openDetailModalById('${item.id || item.repo_name}')">
+          <img src="${mediaSrc}" alt="${escapeHtml(title)}" class="slide-media" loading="lazy" />
+          <div class="slide-play-overlay">
+            <div class="slide-play-btn">▶</div>
+          </div>
+        </div>
+        <div class="slide-content">
+          <div class="slide-meta-row">
+            <span class="slide-rank-badge">${rankLabel}</span>
+            <span class="slide-category-badge">${escapeHtml(catName)}</span>
+            ${item.has_video ? `<span class="slide-gem-badge">${t.demoBadge}</span>` : ""}
+            ${item.stars <= 100 ? `<span class="slide-gem-badge">${t.gemBadge}</span>` : ""}
+          </div>
+          <h3 class="slide-title">${escapeHtml(title)}</h3>
+          <div class="slide-repo-author">
+            📦 <strong>${escapeHtml(item.repo_name)}</strong> • ${t.modalAuthor} ${escapeHtml(item.creator || "grezoo")}
+          </div>
+          <p class="slide-description">${escapeHtml(desc)}</p>
+          <div class="slide-actions">
+            <button class="btn btn-primary" onclick="openDetailModalById('${item.id || item.repo_name}')">
+              ${t.sliderWatchDemo}
+            </button>
+            <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              ${t.sliderOpenRepo}
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  indicators.innerHTML = items.map((_, idx) => `
+    <button class="slider-dot ${idx === currentSlideIndex ? 'active' : ''}" data-index="${idx}" aria-label="Slide ${idx + 1}"></button>
+  `).join("");
+
+  goToSlide(currentSlideIndex, false);
+}
+
+function goToSlide(index, animate = true) {
+  const track = document.getElementById("sliderTrack");
+  const dots = document.querySelectorAll(".slider-dot");
+  const items = getWeeklyTopItems();
+  if (!track || items.length === 0) return;
+
+  if (index < 0) {
+    currentSlideIndex = items.length - 1;
+  } else if (index >= items.length) {
+    currentSlideIndex = 0;
+  } else {
+    currentSlideIndex = index;
+  }
+
+  track.style.transition = animate ? "transform 0.45s cubic-bezier(0.25, 1, 0.5, 1)" : "none";
+  track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+
+  dots.forEach((dot, idx) => {
+    dot.classList.toggle("active", idx === currentSlideIndex);
+  });
+}
+
+function setupWeeklySliderEvents() {
+  const prevBtn = document.getElementById("sliderPrevBtn");
+  const nextBtn = document.getElementById("sliderNextBtn");
+  const trackContainer = document.getElementById("sliderTrackContainer");
+  const indicators = document.getElementById("sliderIndicators");
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      goToSlide(currentSlideIndex - 1);
+      restartAutoplay();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      goToSlide(currentSlideIndex + 1);
+      restartAutoplay();
+    });
+  }
+
+  if (indicators) {
+    indicators.addEventListener("click", (e) => {
+      if (e.target.classList.contains("slider-dot")) {
+        const idx = parseInt(e.target.dataset.index, 10);
+        goToSlide(idx);
+        restartAutoplay();
+      }
+    });
+  }
+
+  // Pause on hover
+  if (trackContainer) {
+    trackContainer.addEventListener("mouseenter", () => clearInterval(sliderAutoplayTimer));
+    trackContainer.addEventListener("mouseleave", () => startAutoplay());
+  }
+
+  startAutoplay();
+}
+
+function startAutoplay() {
+  clearInterval(sliderAutoplayTimer);
+  sliderAutoplayTimer = setInterval(() => {
+    goToSlide(currentSlideIndex + 1);
+  }, 7000);
+}
+
+function restartAutoplay() {
+  startAutoplay();
+}
+
+// Helper to open modal from slider item
+window.openDetailModalById = function(idOrRepo) {
+  const items = getWeeklyTopItems();
+  let found = items.find(i => i.id === idOrRepo || i.repo_name === idOrRepo);
+  if (!found && catalogueData && catalogueData.items) {
+    found = catalogueData.items.find(i => i.id === idOrRepo || i.repo_name === idOrRepo);
+  }
+  if (found) {
+    openDetailModal(found);
+  }
+};
 
 // Launch
 init();
