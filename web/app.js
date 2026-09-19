@@ -321,7 +321,11 @@ function applyLanguage() {
   if (sliderTitleText) sliderTitleText.textContent = t.sliderTitle;
 
   // Re-render slider, categories and items in current language
-  renderWeeklySlider();
+  try {
+    renderWeeklySlider();
+  } catch (err) {
+    console.error("Error rendering weekly slider:", err);
+  }
   renderMainCategories();
   renderSubCategories();
   renderItems();
@@ -344,11 +348,32 @@ function getCategoryName(rawName) {
 
 // Get translated function title for card
 function getItemFunctionTitle(item) {
-  const huTitle = item.function_title || item.title;
+  if (!item) return "";
+  const huTitle = item.function_title || item.title || "";
   if (currentLang === "en") {
     return FUNCTION_TRANSLATIONS_EN[huTitle] || item.title_en || huTitle;
   }
   return huTitle;
+}
+
+// Get translated description for item
+function getItemDescription(item) {
+  if (!item) return "";
+  if (currentLang === "en") {
+    return item.description_en || item.desc_en || item.description || "";
+  }
+  return item.description || "";
+}
+
+// Escape HTML utility to prevent script injection or broken markup
+function escapeHtml(str) {
+  if (!str) return "";
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 // Initialize application
