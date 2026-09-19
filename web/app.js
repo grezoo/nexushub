@@ -65,9 +65,9 @@ const I18N = {
     standardDesc: "Place a 15-30s demo named <strong>preview.mp4</strong> or <strong>preview.gif</strong> in your repo root. NexusHub automatically detects it, plays it directly on your card, highlights your project on the homepage, and grants the <strong>▶ Verified Short Demo</strong> badge!",
     standardBtn: "Copy README Badge",
     standardCopied: "✅ Badge Copied!",
-    sliderBadge: "✍️ AUTHOR'S PICKS (GREZOO)",
-    sliderTitle: "The Bookshop Showcase — Hand-Curated Open Source Gems",
-    sliderCuratorLead: "Curated by grezoo:",
+    sliderBadge: "✍️ NEXUSHUB CURATED PICKS",
+    sliderTitle: "NexusHub Official Bookshop Showcase — Hand-Curated Open Source Gems",
+    sliderCuratorLead: "✨ NexusHub Editorial Review:",
     sliderWatchDemo: "Watch Live Demo ▶",
     sliderOpenRepo: "Open GitHub ↗"
   },
@@ -128,9 +128,9 @@ const I18N = {
     standardDesc: "Helyezz el egy 15-30 másodperces demót <strong>preview.mp4</strong> vagy <strong>preview.gif</strong> néven a repód gyökerében. A NexusHub automatikusan felismeri, közvetlenül a kártyádon játssza le, előresorolja a kezdőlapon, és megkapod a <strong>▶ Ellenőrzött Short Demó</strong> jelvényt!",
     standardBtn: "README Jelvény Másolása",
     standardCopied: "✅ Jelvény Másolva!",
-    sliderBadge: "✍️ A SZERZŐ AJÁNLÁSA (GREZOO)",
-    sliderTitle: "Könyvesbolti Kurátori Válogatás — Működő demók és rejtett kincsek",
-    sliderCuratorLead: "✍️ grezoo kurátori ajánlása:",
+    sliderBadge: "✍️ A NEXUSHUB AJÁNLÁSA",
+    sliderTitle: "NexusHub Könyvesbolti Kurátori Válogatás — Működő demók és rejtett kincsek",
+    sliderCuratorLead: "✨ NexusHub Kurátori Indoklás:",
     sliderWatchDemo: "Demó Megtekintése ▶",
     sliderOpenRepo: "GitHub Megnyitása ↗"
   }

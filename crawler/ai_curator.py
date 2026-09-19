@@ -26,8 +26,8 @@ CURATOR_ARCHETYPES = [
         "match_keys": ["nexushub", "grezoo/nexushub"],
         "curator_note_hu": "A vizuális nyílt forráskód forradalma: a GitHub régi kódközpontú keresője helyett mozgó, élményalapú funkciókatalógus. A 15-30 mp-es demó videók és a 0 csillagos rejtett kincsek felfedezésének alapköve.",
         "curator_note_en": "The visual revolution of open source: replacing code-centric browsing with dynamic, motion-first discovery. The cornerstone for 15-30s preview demos and 0-star hidden gems.",
-        "badge_hu": "👑 #1 A SZERZŐ KÖNYVESBOLTI AJÁNLÁSA",
-        "badge_en": "👑 #1 AUTHOR'S FLAGSHIP PICK (GREZOO)",
+        "badge_hu": "👑 #1 A NEXUSHUB FŐ AJÁNLÁSA",
+        "badge_en": "👑 #1 NEXUSHUB FLAGSHIP PICK",
         "merit_boost": 1000
     },
     {
@@ -35,8 +35,8 @@ CURATOR_ARCHETYPES = [
         "match_keys": ["esp32-wifi-drone", "drone"],
         "curator_note_hu": "Tökéletes példája annak, amikor egy apró mikrovezérlő komoly hardveres repülési fizikát kezel. Nincs szükség több százezres eszközre: böngészőből vezérelhető, azonnal építhető mérnöki gyöngyszem.",
         "curator_note_en": "A textbook example of raw engineering merit on a budget microchip. Full quadcopter flight physics controllable from any phone browser.",
-        "badge_hu": "✍️ SZERZŐI AJÁNLÁS: HARDVER KINCS",
-        "badge_en": "✍️ AUTHOR'S PICK: HARDWARE GEM",
+        "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: HARDVER KINCS",
+        "badge_en": "✍️ NEXUSHUB PICK: HARDWARE GEM",
         "merit_boost": 850
     },
     {
@@ -44,8 +44,8 @@ CURATOR_ARCHETYPES = [
         "match_keys": ["sadtalker", "liveportrait", "animate", "video"],
         "curator_note_hu": "Az AI nem csupán szöveg: ezzel az eszközzel egyetlen fotóból és hangfájlból élő, lélegző beszélő karaktert animálhatunk. Rendkívül gyors és önállóan futtatható.",
         "curator_note_en": "AI beyond text: transforms a single still portrait and audio track into a photorealistic speaking animation in seconds.",
-        "badge_hu": "✍️ SZERZŐI AJÁNLÁS: GENERATÍV AI",
-        "badge_en": "✍️ AUTHOR'S PICK: CREATIVE AI",
+        "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: GENERATÍV AI",
+        "badge_en": "✍️ NEXUSHUB PICK: CREATIVE AI",
         "merit_boost": 800
     },
     {
@@ -53,8 +53,8 @@ CURATOR_ARCHETYPES = [
         "match_keys": ["demucs", "audio", "stem", "voice"],
         "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
         "curator_note_en": "Every producer's holy grail: AI-powered stem separation that isolates vocals, drums, bass, and instruments with studio precision.",
-        "badge_hu": "✍️ SZERZŐI AJÁNLÁS: HANG & ZENE",
-        "badge_en": "✍️ AUTHOR'S PICK: AUDIO TECH",
+        "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: HANG & ZENE",
+        "badge_en": "✍️ NEXUSHUB PICK: AUDIO TECH",
         "merit_boost": 780
     },
     {
@@ -62,8 +62,8 @@ CURATOR_ARCHETYPES = [
         "match_keys": ["wled", "led", "flipper", "matrix"],
         "curator_note_hu": "A digitális kód és a fizikai világ lenyűgöző találkozása: azonnali zenei ritmusra reagáló szobai fényinstallációk készíthetők vele percek alatt.",
         "curator_note_en": "Where software meets physical lighting: sound-reactive ambient illumination and NeoPixel matrix magic made accessible to everyone.",
-        "badge_hu": "✍️ SZERZŐI AJÁNLÁS: MAKER & IOT",
-        "badge_en": "✍️ AUTHOR'S PICK: MAKER & IOT",
+        "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: MAKER & IOT",
+        "badge_en": "✍️ NEXUSHUB PICK: MAKER & IOT",
         "merit_boost": 750
     }
 ]
