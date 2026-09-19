@@ -32,7 +32,7 @@ jobs:
         run: |
           RENDER_URL="${{ secrets.RENDER_APP_URL }}"
           if [ -z "$RENDER_URL" ]; then
-            RENDER_URL="https://nexushub-5mur.onrender.com"
+            RENDER_URL="https://gitcatalog.onrender.com"
           fi
           echo "Sending keep-alive heartbeat ping to: $RENDER_URL"
           curl -s -m 15 -A "NexusHub-KeepAlive-Bot/1.0" "$RENDER_URL" > /dev/null || true
