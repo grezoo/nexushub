@@ -5,7 +5,7 @@
   "curator_contact": "grezoo@gmail.com",
   "curator_engine": "Gemini 1.5 Flash + Bookshop Merit Rules",
   "donation_url": "https://revolut.me/grezoo",
-  "last_curated": "2026-09-19 21:47:24",
+  "last_curated": "2026-09-19 21:51:34",
   "picks": [
     {
       "id": "betaflight-betaflight",
@@ -28,6 +28,7 @@
         "flight-controller",
         "robotics"
       ],
+      "year": 2024,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Tökéletes példája annak, amikor egy apró mikrovezérlő komoly hardveres repülési fizikát kezel. Nincs szükség több százezres eszközre: böngészőből vezérelhető, azonnal építhető mérnöki gyöngyszem.",
@@ -56,6 +57,7 @@
         "animation",
         "shorts"
       ],
+      "year": 2024,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Az AI nem csupán szöveg: ezzel az eszközzel egyetlen fotóból és hangfájlból élő, lélegző beszélő karaktert animálhatunk. Rendkívül gyors és önállóan futtatható.",
@@ -88,6 +90,7 @@
         "creates",
         "sprite"
       ],
+      "year": 2022,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Az AI nem csupán szöveg: ezzel az eszközzel egyetlen fotóból és hangfájlból élő, lélegző beszélő karaktert animálhatunk. Rendkívül gyors és önállóan futtatható.",
@@ -120,6 +123,7 @@
         "transitions",
         "videos"
       ],
+      "year": 2010,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Az AI nem csupán szöveg: ezzel az eszközzel egyetlen fotóból és hangfájlból élő, lélegző beszélő karaktert animálhatunk. Rendkívül gyors és önállóan futtatható.",
@@ -152,6 +156,7 @@
         "-video-preview",
         "generates"
       ],
+      "year": 2012,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Az AI nem csupán szöveg: ezzel az eszközzel egyetlen fotóból és hangfájlból élő, lélegző beszélő karaktert animálhatunk. Rendkívül gyors és önállóan futtatható.",
@@ -184,6 +189,7 @@
         "ffmpeg-extract-",
         "video"
       ],
+      "year": 2016,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Az AI nem csupán szöveg: ezzel az eszközzel egyetlen fotóból és hangfájlból élő, lélegző beszélő karaktert animálhatunk. Rendkívül gyors és önállóan futtatható.",
@@ -216,6 +222,7 @@
         "video",
         "other"
       ],
+      "year": 2018,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Az AI nem csupán szöveg: ezzel az eszközzel egyetlen fotóból és hangfájlból élő, lélegző beszélő karaktert animálhatunk. Rendkívül gyors és önállóan futtatható.",
@@ -248,6 +255,7 @@
         "video",
         "streamlink"
       ],
+      "year": 2021,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Az AI nem csupán szöveg: ezzel az eszközzel egyetlen fotóból és hangfájlból élő, lélegző beszélő karaktert animálhatunk. Rendkívül gyors és önállóan futtatható.",
@@ -279,6 +287,7 @@
         "editly",
         "declarative"
       ],
+      "year": 2018,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Az AI nem csupán szöveg: ezzel az eszközzel egyetlen fotóból és hangfájlból élő, lélegző beszélő karaktert animálhatunk. Rendkívül gyors és önállóan futtatható.",
@@ -307,6 +316,7 @@
         "voice-clone",
         "audio-ai"
       ],
+      "year": 2021,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -336,6 +346,7 @@
         "music",
         "ai-audio"
       ],
+      "year": 2025,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -368,6 +379,7 @@
         "systems",
         "solix"
       ],
+      "year": 2019,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -398,6 +410,7 @@
         "led-effects",
         "hardware"
       ],
+      "year": 2017,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "A digitális kód és a fizikai világ lenyűgöző találkozása: azonnali zenei ritmusra reagáló szobai fényinstallációk készíthetők vele percek alatt.",
@@ -430,6 +443,7 @@
         "for",
         "bare"
       ],
+      "year": 2019,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "A digitális kód és a fizikai világ lenyűgöző találkozása: azonnali zenei ritmusra reagáló szobai fényinstallációk készíthetők vele percek alatt.",
@@ -459,6 +473,7 @@
         "music-production",
         "audio"
       ],
+      "year": 2025,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -491,6 +506,7 @@
         "ai-powered",
         "open-source"
       ],
+      "year": 2023,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -523,6 +539,7 @@
         "streaming",
         "apache-2"
       ],
+      "year": 2023,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -555,6 +572,7 @@
         "physics",
         "collision"
       ],
+      "year": 2018,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -587,6 +605,7 @@
         "file",
         "ffmpeg-extract-"
       ],
+      "year": 2014,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -619,6 +638,7 @@
         "clipboard",
         "systems"
       ],
+      "year": 2022,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -651,6 +671,7 @@
         "basics",
         "systems"
       ],
+      "year": 2019,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -683,6 +704,7 @@
         "binaries",
         "for"
       ],
+      "year": 2019,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -715,6 +737,7 @@
         "how",
         "build"
       ],
+      "year": 2024,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -747,6 +770,7 @@
         "system",
         "ai-powered"
       ],
+      "year": 2025,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -779,6 +803,7 @@
         "famicom-systems",
         "producing"
       ],
+      "year": 2018,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
@@ -808,6 +833,7 @@
         "neopixel",
         "animation"
       ],
+      "year": 2017,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "A digitális kód és a fizikai világ lenyűgöző találkozása: azonnali zenei ritmusra reagáló szobai fényinstallációk készíthetők vele percek alatt.",
@@ -840,6 +866,7 @@
         "open-source",
         "real-time"
       ],
+      "year": 2025,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "A digitális kód és a fizikai világ lenyűgöző találkozása: azonnali zenei ritmusra reagáló szobai fényinstallációk készíthetők vele percek alatt.",
@@ -872,6 +899,7 @@
         "controllers",
         "for"
       ],
+      "year": 2020,
       "is_curated_pick": true,
       "curator_author": "grezoo",
       "curator_note_hu": "A digitális kód és a fizikai világ lenyűgöző találkozása: azonnali zenei ritmusra reagáló szobai fényinstallációk készíthetők vele percek alatt.",
