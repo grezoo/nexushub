@@ -5,7 +5,7 @@
   "curator_contact": "grezoo@gmail.com",
   "curator_engine": "Gemini 1.5 Flash + Bookshop Merit Rules",
   "donation_url": "https://revolut.me/grezoo",
-  "last_curated": "2026-09-19 21:39:53",
+  "last_curated": "2026-09-19 21:40:47",
   "picks": [
     {
       "id": "betaflight-betaflight",
@@ -32,8 +32,8 @@
       "curator_author": "grezoo",
       "curator_note_hu": "Tökéletes példája annak, amikor egy apró mikrovezérlő komoly hardveres repülési fizikát kezel. Nincs szükség több százezres eszközre: böngészőből vezérelhető, azonnal építhető mérnöki gyöngyszem.",
       "curator_note_en": "A textbook example of raw engineering merit on a budget microchip. Full quadcopter flight physics controllable from any phone browser.",
-      "badge_hu": "✍️ SZERZŐI AJÁNLÁS: HARDVER KINCS",
-      "badge_en": "✍️ AUTHOR'S PICK: HARDWARE GEM",
+      "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: HARDVER KINCS",
+      "badge_en": "✍️ NEXUSHUB PICK: HARDWARE GEM",
       "merit_score": 950
     },
     {
@@ -60,8 +60,8 @@
       "curator_author": "grezoo",
       "curator_note_hu": "Az AI nem csupán szöveg: ezzel az eszközzel egyetlen fotóból és hangfájlból élő, lélegző beszélő karaktert animálhatunk. Rendkívül gyors és önállóan futtatható.",
       "curator_note_en": "AI beyond text: transforms a single still portrait and audio track into a photorealistic speaking animation in seconds.",
-      "badge_hu": "✍️ SZERZŐI AJÁNLÁS: GENERATÍV AI",
-      "badge_en": "✍️ AUTHOR'S PICK: CREATIVE AI",
+      "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: GENERATÍV AI",
+      "badge_en": "✍️ NEXUSHUB PICK: CREATIVE AI",
       "merit_score": 900
     },
     {
@@ -88,8 +88,8 @@
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
       "curator_note_en": "Every producer's holy grail: AI-powered stem separation that isolates vocals, drums, bass, and instruments with studio precision.",
-      "badge_hu": "✍️ SZERZŐI AJÁNLÁS: HANG & ZENE",
-      "badge_en": "✍️ AUTHOR'S PICK: AUDIO TECH",
+      "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: HANG & ZENE",
+      "badge_en": "✍️ NEXUSHUB PICK: AUDIO TECH",
       "merit_score": 880
     },
     {
@@ -117,8 +117,8 @@
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
       "curator_note_en": "Every producer's holy grail: AI-powered stem separation that isolates vocals, drums, bass, and instruments with studio precision.",
-      "badge_hu": "✍️ SZERZŐI AJÁNLÁS: HANG & ZENE",
-      "badge_en": "✍️ AUTHOR'S PICK: AUDIO TECH",
+      "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: HANG & ZENE",
+      "badge_en": "✍️ NEXUSHUB PICK: AUDIO TECH",
       "merit_score": 880
     },
     {
@@ -147,8 +147,8 @@
       "curator_author": "grezoo",
       "curator_note_hu": "A digitális kód és a fizikai világ lenyűgöző találkozása: azonnali zenei ritmusra reagáló szobai fényinstallációk készíthetők vele percek alatt.",
       "curator_note_en": "Where software meets physical lighting: sound-reactive ambient illumination and NeoPixel matrix magic made accessible to everyone.",
-      "badge_hu": "✍️ SZERZŐI AJÁNLÁS: MAKER & IOT",
-      "badge_en": "✍️ AUTHOR'S PICK: MAKER & IOT",
+      "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: MAKER & IOT",
+      "badge_en": "✍️ NEXUSHUB PICK: MAKER & IOT",
       "merit_score": 850
     },
     {
@@ -176,8 +176,8 @@
       "curator_author": "grezoo",
       "curator_note_hu": "Minden zenei alkotó álma: mesterséges intelligenciával izolálja az éneket, a dobot, a basszust és a hangszereket bármely hangfelvételből, professzionális stúdióminőségben.",
       "curator_note_en": "Every producer's holy grail: AI-powered stem separation that isolates vocals, drums, bass, and instruments with studio precision.",
-      "badge_hu": "✍️ SZERZŐI AJÁNLÁS: HANG & ZENE",
-      "badge_en": "✍️ AUTHOR'S PICK: AUDIO TECH",
+      "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: HANG & ZENE",
+      "badge_en": "✍️ NEXUSHUB PICK: AUDIO TECH",
       "merit_score": 780
     },
     {
@@ -205,8 +205,8 @@
       "curator_author": "grezoo",
       "curator_note_hu": "A digitális kód és a fizikai világ lenyűgöző találkozása: azonnali zenei ritmusra reagáló szobai fényinstallációk készíthetők vele percek alatt.",
       "curator_note_en": "Where software meets physical lighting: sound-reactive ambient illumination and NeoPixel matrix magic made accessible to everyone.",
-      "badge_hu": "✍️ SZERZŐI AJÁNLÁS: MAKER & IOT",
-      "badge_en": "✍️ AUTHOR'S PICK: MAKER & IOT",
+      "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: MAKER & IOT",
+      "badge_en": "✍️ NEXUSHUB PICK: MAKER & IOT",
       "merit_score": 750
     }
   ]
