@@ -72,15 +72,18 @@ Then open your browser at:
 
 ---
 
-## 💡 Intellectual Property & Creator Attribution
+## ☕ Support the Creator & Project / Támogatás (Donation)
 
-- **Original Concept & Invention:**  
-  The visual video-first catalogue paradigm, function-driven taxonomy, and star-independent **"Hidden Gems"** discovery engine are the original intellectual creation of **grezoo**.
-- **Author & Contact:**  
-  **grezoo** — [grezoo@gmail.com](mailto:grezoo@gmail.com)
-- **Support the Creator:**  
-  Direct support via Revolut: **[@grezoo](https://revolut.me/grezoo)**  
-  Link: [https://revolut.me/grezoo](https://revolut.me/grezoo)
+If you believe in **NexusHub** and our mission to democratize open-source discovery for mainstream creators and give 0-star hidden gems the visibility they deserve, please consider supporting the project!
+
+[![Support via Revolut](https://img.shields.io/badge/Donate%20via-Revolut-0075eb?style=for-the-badge&logo=revolut&logoColor=white)](https://revolut.me/grezoo)
+[![Contact Creator](https://img.shields.io/badge/Email-grezoo%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:grezoo@gmail.com)
+
+- 💳 **Revolut Tag:** [`@grezoo`](https://revolut.me/grezoo)
+- 🔗 **Direct Revolut Pay Link:** [https://revolut.me/grezoo](https://revolut.me/grezoo)
+- ✉️ **Creator & Author Email:** [grezoo@gmail.com](mailto:grezoo@gmail.com)
+
+*Minden támogatás közvetlenül a független szerverinfrastruktúra fenntartására és a nyílt forráskódú alkotók támogatására fordítódik. Köszönjük!*
 
 ---
 
