@@ -1,0 +1,46 @@
+name: Daily Autonomous GitHub Crawler & AI Curator
+
+on:
+  schedule:
+    # Runs every morning at 04:30 UTC (06:30 CEST)
+    - cron: '30 4 * * *'
+  workflow_dispatch: # Allows 1-click manual trigger from GitHub Actions tab
+
+jobs:
+  crawl-and-expand:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pillow
+
+      - name: Run Mass Importer Crawler
+        run: |
+          echo "Starting daily autonomous crawl..."
+          python crawler/mass_importer.py
+
+      - name: Run AI Curator Sync
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Curating top editorial picks..."
+          python crawler/ai_curator.py
+
+      - name: Commit and Push Database Update
+        run: |
+          git config --global user.name "NexusHub Autonomous Crawler Bot"
+          git config --global user.email "crawler-bot@nexushub.local"
+          git add data/catalogue.json data/curated_picks.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): daily automated catalogue harvest & curation [skip ci]" && git push)

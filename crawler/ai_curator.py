@@ -17,7 +17,20 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 CATALOGUE_FILE = os.path.join(DATA_DIR, "catalogue.json")
 CURATED_FILE = os.path.join(DATA_DIR, "curated_picks.json")
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
+# Try to load .env if present
+env_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env")
+if os.path.exists(env_file):
+    try:
+        with open(env_file, "r", encoding="utf-8") as ef:
+            for line in ef:
+                line = line.strip()
+                if "=" in line and not line.startswith("#"):
+                    k, v = line.split("=", 1)
+                    os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+    except Exception:
+        pass
+
+GEMINI_API_KEY = (os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or "").strip()
 
 # High quality fallbacks if Gemini API is not configured or offline
 CURATOR_ARCHETYPES = [
