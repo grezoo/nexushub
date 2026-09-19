@@ -134,7 +134,17 @@
       <div class="active-category-title" id="currentSectionTitle">Összes Felfedezése</div>
       <div class="view-controls">
         <div class="sort-wrapper">
-          <label for="sortSelect" class="sort-label">Rendezés:</label>
+          <label for="vintageSelect" class="sort-label" id="vintageLabel">📅 Évjárat:</label>
+          <select id="vintageSelect" class="sort-select">
+            <option value="all">Minden évjárat (Összes)</option>
+            <option value="2025-2026">🚀 2025–2026 (Új hullám)</option>
+            <option value="2021-2024">🏎️ 2021–2024 (Kiforrott, modern)</option>
+            <option value="2015-2020">🏛️ 2015–2020 (Időtlen klasszikus)</option>
+            <option value="legacy">📼 2014 előtt (Veterán / Oldtimer)</option>
+          </select>
+        </div>
+        <div class="sort-wrapper">
+          <label for="sortSelect" class="sort-label" id="sortLabel">Rendezés:</label>
           <select id="sortSelect" class="sort-select">
             <option value="gems">💎 Rejtett Kincsek előre (Merit & Proof)</option>
             <option value="stars">⭐ Legtöbb csillag (Népszerűség)</option>

@@ -30,6 +30,12 @@ const I18N = {
     sortGems: "💎 Hidden Gems first (Merit & Proof)",
     sortStars: "⭐ Most Stars (Popularity)",
     sortName: "🔤 Alphabetical",
+    vintageLabel: "📅 Vintage:",
+    vintageAll: "All Years (Any)",
+    vintage2025: "🚀 2025–2026 (New Wave)",
+    vintage2021: "🏎️ 2021–2024 (Modern Mature)",
+    vintage2015: "🏛️ 2015–2020 (Battle-Tested Classic)",
+    vintageLegacy: "📼 Pre-2014 (Vintage / Legendary)",
     viewGrid: "⊞ Grid",
     viewShelves: "☰ Shelves",
     functionLabel: "FUNCTION:",
@@ -95,6 +101,14 @@ const I18N = {
     sortGems: "💎 Rejtett Kincsek előre (Merit & Proof)",
     sortStars: "⭐ Legtöbb csillag (Népszerűség)",
     sortName: "🔤 ABC sorrend",
+    vintageLabel: "📅 Évjárat:",
+    vintageAll: "Minden évjárat (Összes)",
+    vintage2025: "🚀 2025–2026 (Új hullám)",
+    vintage2021: "🏎️ 2021–2024 (Kiforrott, modern)",
+    vintage2015: "🏛️ 2015–2020 (Időtlen klasszikus)",
+    vintageLegacy: "📼 2014 előtt (Veterán / Oldtimer)",
+    originalBadge: "⭐ NEXUSHUB SAJÁT FEJLESZTÉS",
+    tryLiveBtn: "🚀 Kipróbálom",
     viewGrid: "⊞ Rács",
     viewShelves: "☰ Polcok",
     functionLabel: "FUNKCIÓ:",
@@ -190,6 +204,7 @@ let currentSubCat = "all";
 let onlyVideosFilter = false;
 let onlyGemsFilter = false;
 let currentSort = "gems";
+let currentVintage = "all";
 let searchQuery = "";
 let currentViewMode = "grid";
 
@@ -199,6 +214,9 @@ const onlyVideoBtn = document.getElementById("onlyVideoBtn");
 const hiddenGemsBtn = document.getElementById("hiddenGemsBtn");
 const submitRepoBtn = document.getElementById("submitRepoBtn");
 const sortSelect = document.getElementById("sortSelect");
+const sortLabel = document.getElementById("sortLabel");
+const vintageSelect = document.getElementById("vintageSelect");
+const vintageLabel = document.getElementById("vintageLabel");
 const mainCategoriesContainer = document.getElementById("mainCategoriesContainer");
 const subCategoriesContainer = document.getElementById("subCategoriesContainer");
 const subCategoriesBar = document.getElementById("subCategoriesBar");
@@ -268,13 +286,22 @@ function applyLanguage() {
   }
 
   // Sort labels
-  const sortLabel = document.querySelector(".sort-label");
   if (sortLabel) sortLabel.textContent = t.sortLabel;
 
   if (sortSelect && sortSelect.options.length >= 3) {
     sortSelect.options[0].textContent = t.sortGems;
     sortSelect.options[1].textContent = t.sortStars;
     sortSelect.options[2].textContent = t.sortName;
+  }
+
+  // Vintage labels
+  if (vintageLabel) vintageLabel.textContent = t.vintageLabel;
+  if (vintageSelect && vintageSelect.options.length >= 5) {
+    vintageSelect.options[0].textContent = t.vintageAll;
+    vintageSelect.options[1].textContent = t.vintage2025;
+    vintageSelect.options[2].textContent = t.vintage2021;
+    vintageSelect.options[3].textContent = t.vintage2015;
+    vintageSelect.options[4].textContent = t.vintageLegacy;
   }
 
   // View buttons
@@ -561,6 +588,15 @@ function getFilteredAndSortedItems() {
     if (onlyVideosFilter && !item.has_video) return false;
     if (onlyGemsFilter && (item.stars || 0) > 100) return false;
 
+    // Vintage filtering
+    if (currentVintage !== "all") {
+      const y = item.year || 2024;
+      if (currentVintage === "2025-2026" && y < 2025) return false;
+      if (currentVintage === "2021-2024" && (y < 2021 || y > 2024)) return false;
+      if (currentVintage === "2015-2020" && (y < 2015 || y > 2020)) return false;
+      if (currentVintage === "legacy" && y >= 2015) return false;
+    }
+
     if (searchQuery.trim() !== "") {
       const q = searchQuery.toLowerCase();
       const matchTitle = (item.title || "").toLowerCase().includes(q);
@@ -761,12 +797,16 @@ function createCardElement(item) {
 
   const pinnedBadge = currentLang === "en" ? "📌 PINNED SHOWCASE" : "📌 HIVATALOS MINTA";
 
+  const isOriginal = item.is_pinned || (item.repo_name && item.repo_name.includes("nexushub"));
+  const isVintageLegacy = (item.year || 2024) < 2015;
+
   card.innerHTML = `
     <div class="card-media">
       ${mediaMarkup}
       <div class="card-media-overlay"></div>
-      ${item.is_pinned ? `<div class="badge-pinned">${pinnedBadge}</div>` : ''}
+      ${isOriginal ? `<div class="badge-pinned">${t.originalBadge}</div>` : ''}
       ${isGem ? `<div class="badge-gem">${t.gemBadge}</div>` : ''}
+      ${isVintageLegacy ? `<div class="badge-vintage">📼 ${item.year}</div>` : ''}
       ${item.has_video ? `<div class="badge-video">${t.demoBadge}</div>` : ''}
       <div class="badge-function-tag">${item.sub_category || getCategoryName(item.main_category)}</div>
     </div>
@@ -778,6 +818,7 @@ function createCardElement(item) {
       
       <div class="card-tech-meta">
         <span class="card-tech-name">📦 ${technicalRepo}</span>
+        <span class="card-year">📅 ${item.year || 2024}</span>
         <span class="card-stars">⭐ ${starsFormatted}</span>
       </div>
 
@@ -917,6 +958,14 @@ function setupEventListeners() {
     currentSort = e.target.value;
     renderItems();
   });
+
+  // Vintage change
+  if (vintageSelect) {
+    vintageSelect.addEventListener("change", (e) => {
+      currentVintage = e.target.value;
+      renderItems();
+    });
+  }
 
   // View Switchers
   viewGridBtn.addEventListener("click", () => {

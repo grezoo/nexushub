@@ -119,7 +119,8 @@
         "neopixel",
         "led-effects",
         "hardware"
-      ]
+      ],
+      "year": 2017
     },
     {
       "id": "esphome-esphome",
@@ -141,7 +142,8 @@
         "esp32",
         "smart-home",
         "sensors"
-      ]
+      ],
+      "year": 2010
     },
     {
       "id": "Klipper3d-klipper",
@@ -163,7 +165,8 @@
         "3d-printing",
         "firmware",
         "precision"
-      ]
+      ],
+      "year": 2016
     },
     {
       "id": "espressif-arduino-esp32",
@@ -185,7 +188,8 @@
         "arduino",
         "microcontroller",
         "embedded"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "betaflight-betaflight",
@@ -207,7 +211,8 @@
         "drone",
         "flight-controller",
         "robotics"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "FastLED-FastLED",
@@ -229,7 +234,8 @@
         "arduino",
         "neopixel",
         "animation"
-      ]
+      ],
+      "year": 2017
     },
     {
       "id": "comfyanonymous-ComfyUI",
@@ -251,7 +257,8 @@
         "flux",
         "diffusion",
         "creative"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "browser-use-browser-use",
@@ -272,7 +279,8 @@
         "browser-use",
         "agent",
         "automation"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "KwaiVGI-LivePortrait",
@@ -293,7 +301,8 @@
         "video-generation",
         "animation",
         "shorts"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "SWivid-F5-TTS",
@@ -314,7 +323,8 @@
         "tts",
         "voice-clone",
         "audio-ai"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "ollama-ollama",
@@ -335,7 +345,8 @@
         "local-llm",
         "offline",
         "ai"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "godotengine-godot",
@@ -358,7 +369,8 @@
         "godot",
         "3d",
         "2d"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "aseprite-aseprite",
@@ -380,7 +392,8 @@
         "animation",
         "sprite",
         "creative"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "facebookresearch-demucs",
@@ -402,7 +415,8 @@
         "vocal-remover",
         "music",
         "ai-audio"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "surge-synthesizer-surge",
@@ -424,7 +438,8 @@
         "synth",
         "music-production",
         "audio"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "jellyfin-jellyfin",
@@ -446,7 +461,8 @@
         "media-server",
         "home-lab",
         "self-hosted"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "home-assistant-core",
@@ -468,7 +484,8 @@
         "iot",
         "automation",
         "privacy"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "pi-hole-pi-hole",
@@ -490,7 +507,8 @@
         "adblock",
         "privacy",
         "raspberry-pi"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "Frooodle-Stirling-PDF",
@@ -512,7 +530,8 @@
         "ocr",
         "office",
         "utilities"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "obsproject-obs-studio",
@@ -534,7 +553,8 @@
         "screen-recording",
         "obs",
         "broadcasting"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "Krita-krita",
@@ -556,7 +576,8 @@
         "digital-art",
         "illustration",
         "creatives"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-mithi-hexapod",
@@ -581,7 +602,8 @@
         "web",
         "hexapod",
         "solve"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-atsushisakai-pythonrobotics",
@@ -606,7 +628,8 @@
         "implementations",
         "algorithms",
         "various"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-owainlewis-awesome-artificial-intelligence",
@@ -629,7 +652,8 @@
         "intelligence",
         "awesome",
         "artificial"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-jbhuang0604-awesome-computer-vision",
@@ -652,7 +676,8 @@
         "computer",
         "awesome",
         "vision"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-josephmisiti-awesome-machine-learning",
@@ -675,7 +700,8 @@
         "learning",
         "awesome",
         "machine"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-christoschristofidis-awesome-deep-learning",
@@ -698,7 +724,8 @@
         "deep",
         "learning",
         "awesome"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-kjw0612-awesome-deep-vision",
@@ -721,7 +748,8 @@
         "deep",
         "awesome",
         "vision"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-fkromer-awesome-gazebo",
@@ -743,7 +771,8 @@
       "tags": [
         "gazebo",
         "awesome"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-ahundt-awesome-robotics",
@@ -765,7 +794,8 @@
       "tags": [
         "robotics",
         "awesome"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-jslee02-awesome-robotics-libraries",
@@ -788,7 +818,8 @@
         "libraries",
         "robotics",
         "awesome"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-fkromer-awesome-ros2",
@@ -810,7 +841,8 @@
       "tags": [
         "awesome",
         "ros2"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-robocupjuniortc-awesome-rcj-soccer",
@@ -833,7 +865,8 @@
         "robocupjunior",
         "soccer",
         "awesome"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-xai-org-grok-1",
@@ -858,7 +891,8 @@
         "source",
         "open",
         "opensource"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-qwenlm-qwen",
@@ -879,7 +913,8 @@
       "creator": "QwenLM",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2026
     },
     {
       "id": "repo-moonshotai-kimi-k2",
@@ -904,7 +939,8 @@
         "language",
         "for",
         "moe"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-zai-org-glm-5",
@@ -929,7 +965,8 @@
         "for",
         "moe",
         "agentic"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-danny-avila-librechat",
@@ -950,7 +987,8 @@
       "creator": "danny-avila",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-mckaywrigley-chatbot-ui",
@@ -971,7 +1009,8 @@
       "creator": "mckaywrigley",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-zylon-ai-private-gpt",
@@ -996,7 +1035,8 @@
         "ask",
         "without",
         "the"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-quivrhq-quivr",
@@ -1021,7 +1061,8 @@
         "quivr",
         "with",
         "second"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-lynote-ai-humanize-text",
@@ -1046,7 +1087,8 @@
         "with",
         "opensource",
         "rewriting"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-tiesdekok-chat-gpt-jupyter-extension",
@@ -1071,7 +1113,8 @@
         "powered",
         "functions",
         "for"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-lfnovo-open-notebook",
@@ -1092,7 +1135,8 @@
       "creator": "lfnovo",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-screenpipe-screenpipe",
@@ -1117,7 +1161,8 @@
         "and",
         "ai-powered",
         "open-source"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-asreview-asreview",
@@ -1138,7 +1183,8 @@
       "creator": "asreview",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2026
     },
     {
       "id": "repo-learningcircuit-local-deep-research",
@@ -1163,7 +1209,8 @@
         "web",
         "with",
         "academic"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-jmiao24-paper2agent",
@@ -1184,7 +1231,8 @@
       "creator": "jmiao24",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-the-pr-agent-pr-agent",
@@ -1209,7 +1257,8 @@
         "and",
         "ai-powered",
         "analysis"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-ravenscroftj-turbopilot",
@@ -1234,7 +1283,8 @@
         "library",
         "model",
         "parameter"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-ricklamers-gpt-code-ui",
@@ -1259,7 +1309,8 @@
         "source",
         "open",
         "implementation"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-openinterpreter-open-interpreter",
@@ -1284,7 +1335,8 @@
         "openai",
         "open",
         "your"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-continuedev-continue",
@@ -1305,7 +1357,8 @@
       "creator": "continuedev",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-roocodeinc-roo-code",
@@ -1330,7 +1383,8 @@
         "coding",
         "ai-powered",
         "roo-code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-plandex-ai-plandex",
@@ -1355,7 +1409,8 @@
         "for",
         "complex",
         "source"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-jupyterlab-jupyter-ai",
@@ -1380,7 +1435,8 @@
         "and",
         "that",
         "from"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-ramiawar-dataline",
@@ -1401,7 +1457,8 @@
       "creator": "RamiAwar",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-paul-gauthier-aider",
@@ -1422,7 +1479,8 @@
       "creator": "paul-gauthier",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-kilo-org-kilocode",
@@ -1443,7 +1501,8 @@
       "creator": "Kilo-Org",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-nomic-ai-gpt4all",
@@ -1468,7 +1527,8 @@
         "stories",
         "clean",
         "collection"
-      ]
+      ],
+      "year": 2026
     },
     {
       "id": "repo-pathwaycom-llm-app",
@@ -1493,7 +1553,8 @@
         "llm-enabled",
         "open-source",
         "real-time"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-extensityai-symbolicai",
@@ -1518,7 +1579,8 @@
         "core",
         "neuro-symbolic",
         "with"
-      ]
+      ],
+      "year": 2026
     },
     {
       "id": "repo-vanna-ai-vanna",
@@ -1539,7 +1601,8 @@
       "creator": "vanna-ai",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-agenta-ai-agenta",
@@ -1564,7 +1627,8 @@
         "open-source",
         "prompt",
         "evaluation"
-      ]
+      ],
+      "year": 2026
     },
     {
       "id": "repo-cyclotruc-gitingest",
@@ -1585,7 +1649,8 @@
       "creator": "cyclotruc",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-yamadashy-repomix",
@@ -1606,7 +1671,8 @@
       "creator": "yamadashy",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-ggml-org-llama.cpp",
@@ -1631,7 +1697,8 @@
         "others",
         "inference",
         "pure"
-      ]
+      ],
+      "year": 2012
     },
     {
       "id": "repo-microsoft-bitnet",
@@ -1656,7 +1723,8 @@
         "for",
         "opensource",
         "bitnet"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-dair-ai-prompt-engineering-guide",
@@ -1681,7 +1749,8 @@
         "the",
         "covers",
         "prompt-"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-davidkimai-context-engineering",
@@ -1706,7 +1775,8 @@
         "stars",
         "davidkimai",
         "and"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-meirtz-awesome-context-engineering",
@@ -1731,7 +1801,8 @@
         "-engineering",
         "awesome-context",
         "papers"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-muratcankoylan-agent-skills-for-context-engineering",
@@ -1756,7 +1827,8 @@
         "stars",
         "multi-agent",
         "muratcankoylan"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-nanonets-graft",
@@ -1781,7 +1853,8 @@
         "prompt",
         "calls",
         "persistent"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-modelcontextprotocol-servers",
@@ -1804,7 +1877,8 @@
         "com",
         "github",
         "servers"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-a2aproject-a2a",
@@ -1826,7 +1900,8 @@
       "tags": [
         "a2a",
         "a2aproject"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-xzf-thu-voicemem",
@@ -1851,7 +1926,8 @@
         "2026",
         "streaming",
         "apache-2"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-scriptum-cheetah-texture-packer",
@@ -1876,7 +1952,8 @@
         "and",
         "bin",
         "-packer"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-z64me-ezspritesheet",
@@ -1901,7 +1978,8 @@
         "from",
         "creates",
         "sprite"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-alexpoulsen-tilesplit",
@@ -1926,7 +2004,8 @@
         "care",
         "with",
         "the"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-rodzill4-material-maker",
@@ -1951,7 +2030,8 @@
         "texture",
         "maker",
         "creator"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-ttanasart-pt-pixel-composer",
@@ -1976,7 +2056,8 @@
         "art",
         "powerful",
         "for"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-pixelpixi-spritewright",
@@ -1997,7 +2078,8 @@
       "creator": "pixelpixi",
       "tags": [
         "source"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-pixen-pixen",
@@ -2022,7 +2104,8 @@
         "pixen",
         "editor",
         "osx"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-hugo-dz-spritefusion-pixel-snapper",
@@ -2043,7 +2126,8 @@
       "creator": "Hugo-Dz",
       "tags": [
         "source"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-vbprodev-canvascript",
@@ -2068,7 +2152,8 @@
         "without",
         "for",
         "canvascript"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-daniele-cangi-worldloop-technical-showcase",
@@ -2093,7 +2178,8 @@
         "generation",
         "with",
         "playable"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-guillaumechereau-goxel",
@@ -2114,7 +2200,8 @@
       "creator": "guillaumechereau",
       "tags": [
         "goxel"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-velfi-voxelle-desktop",
@@ -2136,7 +2223,8 @@
       "tags": [
         "desktop",
         "voxelle"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-asaiyusuke-6502_test_executor",
@@ -2161,7 +2249,8 @@
         "for",
         "assembly",
         "tool"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-pedrozaalex-asimov-ts",
@@ -2186,7 +2275,8 @@
         "engine",
         "web",
         "safe"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-tek256-astera",
@@ -2211,7 +2301,8 @@
         "platform",
         "cross",
         "c99"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-axys1-axys",
@@ -2236,7 +2327,8 @@
         "texture",
         "fork",
         "full"
-      ]
+      ],
+      "year": 2010
     },
     {
       "id": "repo-bkaradzic-bgfx",
@@ -2261,7 +2353,8 @@
         "engine",
         "agnostic",
         "graphics"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-bladecoder-bladecoder-adventure-engine",
@@ -2286,7 +2379,8 @@
         "and",
         "engine",
         "adventure"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-blitz-research-blitz3d",
@@ -2311,7 +2405,8 @@
         "basic-like",
         "blitz3d",
         "language"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-boardgameio-boardgame.io",
@@ -2336,7 +2431,8 @@
         "games",
         "multiplayer",
         "for"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-ikpil-box2d.net",
@@ -2361,7 +2457,8 @@
         "engine",
         "box2d",
         "servers"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-willtobyte-carimbo",
@@ -2386,7 +2483,8 @@
         "webassembly",
         "ecs",
         "engine"
-      ]
+      ],
+      "year": 2010
     },
     {
       "id": "repo-netonjm-chipmunksharp",
@@ -2411,7 +2509,8 @@
         "lib",
         "the",
         "implementation"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-los-cocos-cocos",
@@ -2436,7 +2535,8 @@
         "and",
         "language",
         "for"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-codenameone-codenameone",
@@ -2461,7 +2561,8 @@
         "and",
         "visual",
         "builder"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-circular-studios-dash",
@@ -2486,7 +2587,8 @@
         "engine",
         "open",
         "dash"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-dem-net-dem.net",
@@ -2511,7 +2613,8 @@
         "dem",
         "from",
         "elevation"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-diligentgraphics-diligentengine",
@@ -2536,7 +2639,8 @@
         "direct3d11",
         "engine",
         "low-level"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-ikpil-dotrecast",
@@ -2561,7 +2665,8 @@
         "games",
         "toolset",
         "navigation"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-ajhager-engi",
@@ -2586,7 +2691,8 @@
         "for",
         "engi",
         "game"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-skypjack-entt",
@@ -2611,7 +2717,8 @@
         "reliable",
         "meets",
         "modern"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-almasb-fxgl",
@@ -2636,7 +2743,8 @@
         "mac",
         "engine",
         "linux"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-velcrophysics-velcrophysics",
@@ -2661,7 +2769,8 @@
         "system",
         "physics",
         "collision"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-flame-engine-flame",
@@ -2686,7 +2795,8 @@
         "flutter",
         "flame",
         "minimalist"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-papercraftgames-folded-paper-engine",
@@ -2711,7 +2821,8 @@
         "easy",
         "items",
         "featuring"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-awesome-selfhosted-awesome-selfhosted",
@@ -2734,7 +2845,8 @@
         "markdown",
         "legacy",
         "version"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-orangecoloured-analog",
@@ -2759,7 +2871,8 @@
         "docker",
         "minimal",
         "days"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-aptabase-aptabase",
@@ -2781,7 +2894,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-eldy-awstats",
@@ -2803,7 +2917,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-countly-countly-server",
@@ -2825,7 +2940,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-d8a-tech-d8a",
@@ -2847,7 +2963,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-emanuelef-daily-stars-explorer",
@@ -2869,7 +2986,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-apache-druid",
@@ -2891,7 +3009,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-jortilles-eda",
@@ -2916,7 +3035,8 @@
         "and",
         "web",
         "analysis"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-allinurl-goaccess",
@@ -2938,7 +3058,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-arp242-goatcounter",
@@ -2960,7 +3081,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-pascalebeier-hitkeep",
@@ -2982,7 +3104,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-litlyx-litlyx",
@@ -3004,7 +3127,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-explodingcamera-liwan",
@@ -3026,7 +3150,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-matomo-org-matomo",
@@ -3048,7 +3173,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-medama-io-medama",
@@ -3070,7 +3196,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-metabase-metabase",
@@ -3092,7 +3219,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-middlewarehq-middleware",
@@ -3114,7 +3242,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-lutzroeder-netron",
@@ -3136,7 +3265,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-offen-offen",
@@ -3158,7 +3288,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-posthog-posthog",
@@ -3180,7 +3311,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-gitroomhq-postiz-app",
@@ -3202,7 +3334,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-prismelabs-analytics",
@@ -3224,7 +3357,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-getredash-redash",
@@ -3246,7 +3380,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-rybbit-io-rybbit",
@@ -3268,7 +3403,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-taleshape-com-shaper",
@@ -3290,7 +3426,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-socioboard-socioboard-5.0",
@@ -3315,7 +3452,8 @@
         "socioboard",
         "reporting",
         "nine"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-robiningelbrecht-statistics-for-strava",
@@ -3340,7 +3478,8 @@
         "from",
         "strava",
         "statistics"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-apache-superset",
@@ -3362,7 +3501,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-swetrix-selfhosting",
@@ -3384,7 +3524,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-umami-software-umami",
@@ -3406,7 +3547,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-archivebox-archivebox",
@@ -3428,7 +3570,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-archivesspace-archivesspace",
@@ -3450,7 +3593,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-rustmailer-bichon",
@@ -3475,7 +3619,8 @@
         "imap",
         "database",
         "with"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-bitmagnet-io-bitmagnet",
@@ -3497,7 +3642,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-fluent-ffmpeg-node-fluent-ffmpeg",
@@ -3522,7 +3668,8 @@
         "this",
         "from",
         "www"
-      ]
+      ],
+      "year": 2010
     },
     {
       "id": "repo-transitive-bullshit-ffmpeg-probe",
@@ -3547,7 +3694,8 @@
         "for",
         "about",
         "info"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-transitive-bullshit-ffmpeg-concat",
@@ -3572,7 +3720,8 @@
         "with",
         "transitions",
         "videos"
-      ]
+      ],
+      "year": 2010
     },
     {
       "id": "repo-transitive-bullshit-ffmpeg-generate-video-preview",
@@ -3597,7 +3746,8 @@
         "from",
         "-video-preview",
         "generates"
-      ]
+      ],
+      "year": 2012
     },
     {
       "id": "repo-transitive-bullshit-ffmpeg-extract-frame",
@@ -3622,7 +3772,8 @@
         "frame",
         "ffmpeg-extract-",
         "video"
-      ]
+      ],
+      "year": 2016
     },
     {
       "id": "repo-transitive-bullshit-ffmpeg-extract-frames",
@@ -3647,7 +3798,8 @@
         "frames",
         "ffmpeg-extract-",
         "using"
-      ]
+      ],
+      "year": 2016
     },
     {
       "id": "repo-transitive-bullshit-gif-extract-frames",
@@ -3672,7 +3824,8 @@
         "from",
         "gif-extract-",
         "gifs"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-transitive-bullshit-ffmpeg-extract-audio",
@@ -3697,7 +3850,8 @@
         "from",
         "file",
         "ffmpeg-extract-"
-      ]
+      ],
+      "year": 2014
     },
     {
       "id": "repo-transitive-bullshit-ffmpeg-on-progress",
@@ -3722,7 +3876,8 @@
         "with",
         "for",
         "ffmpeg-on-"
-      ]
+      ],
+      "year": 2016
     },
     {
       "id": "repo-kagami-ffmpeg.js",
@@ -3747,7 +3902,8 @@
         "allows",
         "via",
         "limited"
-      ]
+      ],
+      "year": 2014
     },
     {
       "id": "repo-eugeneware-ffmpeg-static",
@@ -3772,7 +3928,8 @@
         "and",
         "useful",
         "linux"
-      ]
+      ],
+      "year": 2010
     },
     {
       "id": "repo-niftylettuce-tangerine",
@@ -3797,7 +3954,8 @@
         "service",
         "tangerine",
         "webcam"
-      ]
+      ],
+      "year": 2016
     },
     {
       "id": "repo-niklimenko-ffparser",
@@ -3822,7 +3980,8 @@
         "into",
         "ffparser",
         "parse"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-transitive-bullshit-ffmpeg-gl-transition",
@@ -3847,7 +4006,8 @@
         "https",
         "between",
         "for"
-      ]
+      ],
+      "year": 2014
     },
     {
       "id": "repo-leixiaohua1020-simplest_ffmpeg_mobile",
@@ -3872,7 +4032,8 @@
         "for",
         "examples",
         "ffmpeg"
-      ]
+      ],
+      "year": 2012
     },
     {
       "id": "repo-bilibili-ijkplayer",
@@ -3897,7 +4058,8 @@
         "ios",
         "ffmpeg",
         "player"
-      ]
+      ],
+      "year": 2016
     },
     {
       "id": "repo-leandromoreira-ffmpeg-libav-tutorial",
@@ -3922,7 +4084,8 @@
         "hard",
         "way",
         "learn"
-      ]
+      ],
+      "year": 2012
     },
     {
       "id": "repo-rakitzis-rc",
@@ -3943,7 +4106,8 @@
       "creator": "rakitzis",
       "tags": [
         "shell"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-redox-os-ion",
@@ -3968,7 +4132,8 @@
         "entirely",
         "modern",
         "simple"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-att-ast",
@@ -3991,7 +4156,8 @@
         "shell",
         "ksh93",
         "korn"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-mirbsd-mksh",
@@ -4015,7 +4181,8 @@
         "shell",
         "korn",
         "mirbsd"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-lmorg-murex",
@@ -4040,7 +4207,8 @@
         "features",
         "devops",
         "smarter"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-ngs-lang-ngs",
@@ -4065,7 +4233,8 @@
         "featured",
         "language",
         "ngs"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-nushell-nushell",
@@ -4090,7 +4259,8 @@
         "nushell",
         "shell",
         "rust"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-ibara-oksh",
@@ -4114,7 +4284,8 @@
         "portable",
         "ksh",
         "oksh"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-alexst07-shell-plus-plus",
@@ -4139,7 +4310,8 @@
         "and",
         "modern",
         "language"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-shenv-shenv",
@@ -4164,7 +4336,8 @@
         "shenv",
         "management",
         "shell"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-magicant-yash",
@@ -4189,7 +4362,8 @@
         "and",
         "prediction",
         "built-in"
-      ]
+      ],
+      "year": 2012
     },
     {
       "id": "repo-tanrax-terminal-advancednewfile",
@@ -4214,7 +4388,8 @@
         "and",
         "inspired",
         "the"
-      ]
+      ],
+      "year": 2014
     },
     {
       "id": "repo-ggreer-the_silver_searcher",
@@ -4239,7 +4414,8 @@
         "through",
         "hierarchy",
         "string"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-sebglazebrook-aliases",
@@ -4264,7 +4440,8 @@
         "bash",
         "dynamic",
         "aliases"
-      ]
+      ],
+      "year": 2014
     },
     {
       "id": "repo-reportaman-arttime",
@@ -4289,7 +4466,8 @@
         "pomodoro",
         "clock",
         "manager"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-hyperupcall-autoenv",
@@ -4312,7 +4490,8 @@
         "autoenv",
         "environments",
         "directory-based"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-slavaganzin-await",
@@ -4337,7 +4516,8 @@
         "run",
         "binary",
         "waits"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-nikolassv-bartib",
@@ -4362,7 +4542,8 @@
         "create",
         "reports",
         "tracked"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-rcaloras-bashhub-client",
@@ -4387,7 +4568,8 @@
         "searchable",
         "the",
         "bash"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-tmrts-boilr",
@@ -4412,7 +4594,8 @@
         "blazingly",
         "projects",
         "boilr"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-holman-boom",
@@ -4437,7 +4620,8 @@
         "and",
         "command",
         "the"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-ok-borg-borg",
@@ -4462,7 +4646,8 @@
         "based",
         "for",
         "borg"
-      ]
+      ],
+      "year": 2012
     },
     {
       "id": "repo-canop-broot",
@@ -4487,7 +4672,8 @@
         "directories",
         "broot",
         "navigate"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-browsh-org-browsh",
@@ -4512,7 +4698,8 @@
         "the",
         "text-based",
         "browsh"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-jarun-buku",
@@ -4537,7 +4724,8 @@
         "command-line",
         "powerful",
         "manager"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-dim-an-cod",
@@ -4562,7 +4750,8 @@
         "learns",
         "completion",
         "you"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-skywind3000-cloudclip",
@@ -4587,7 +4776,8 @@
         "paste",
         "clipboard",
         "systems"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-jarun-ddgr",
@@ -4612,7 +4802,8 @@
         "from",
         "the",
         "duckduckgo"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-jamesob-desk",
@@ -4637,7 +4828,8 @@
         "the",
         "manager",
         "shell"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-direnv-direnv",
@@ -4662,7 +4854,8 @@
         "switcher",
         "direnv",
         "environment"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-dnote-dnote",
@@ -4687,7 +4880,8 @@
         "interface",
         "and",
         "web"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-clvv-fasd",
@@ -4712,7 +4906,8 @@
         "fasd",
         "booster",
         "and"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-sharkdp-fd",
@@ -4737,7 +4932,8 @@
         "find",
         "simple",
         "user-friendly"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-s-p-k-foxy",
@@ -4762,7 +4958,8 @@
         "firefox",
         "for",
         "bookmarks"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-jhspetersson-fselect",
@@ -4787,7 +4984,8 @@
         "find",
         "with",
         "files"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-n1trux-awesome-donations",
@@ -4812,7 +5010,8 @@
         "the",
         "sysadmin-data",
         "issues"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-awesome-foss-awesome-sysadmin",
@@ -4834,7 +5033,8 @@
       "tags": [
         "markdown",
         "version"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-apache-ant",
@@ -4856,7 +5056,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-apache-maven",
@@ -4878,7 +5079,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-gradle-gradle",
@@ -4900,7 +5102,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-openvoxproject-openbolt",
@@ -4922,7 +5125,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-dmarcguardhq-parse-dmarc",
@@ -4944,7 +5148,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-ruby-rake",
@@ -4966,7 +5171,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-garethgeorge-backrest",
@@ -4988,7 +5194,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-bareos-bareos",
@@ -5010,7 +5217,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-enterprisedb-barman",
@@ -5032,7 +5240,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-borgbackup-borg",
@@ -5054,7 +5263,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-grke-burp",
@@ -5076,7 +5286,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-edrusb-dar",
@@ -5098,7 +5309,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-databasus-databasus",
@@ -5120,7 +5332,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-duplicati-duplicati",
@@ -5142,7 +5355,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-mitoteam-mtsaver",
@@ -5167,7 +5381,8 @@
         "based",
         "simple",
         "command-line"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-portabase-portabase",
@@ -5189,7 +5404,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-rclone-rclone",
@@ -5211,7 +5427,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-rdiff-backup-rdiff-backup",
@@ -5233,7 +5450,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-restic-restic",
@@ -5255,7 +5473,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-rsnapshot-rsnapshot",
@@ -5277,7 +5496,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-shieldproject-shield",
@@ -5302,7 +5522,8 @@
         "mit",
         "architecture",
         "database"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-uroni-urbackup_backend",
@@ -5324,7 +5545,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-easybuilders-easybuild-easyconfigs",
@@ -5346,7 +5568,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-envmodules-modules",
@@ -5368,7 +5591,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-tacc-lmod",
@@ -5390,7 +5614,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-spack-spack",
@@ -5412,7 +5637,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-eggheads-eggdrop",
@@ -5434,7 +5660,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-errbotio-errbot",
@@ -5456,7 +5683,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-hubotio-hubot",
@@ -5478,7 +5706,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-ansible-ansible",
@@ -5500,7 +5729,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-cfengine-core",
@@ -5522,7 +5752,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-canonical-cloud-init",
@@ -5544,7 +5775,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-openvoxproject-openvox",
@@ -5566,7 +5798,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-jwasham-coding-interview-university",
@@ -5591,7 +5824,8 @@
         "become",
         "computer",
         "plan"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-jzl-maker-ea-skill",
@@ -5612,7 +5846,8 @@
       "creator": "jzl-maker",
       "tags": [
         "ea-skill"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-gurugio-lowlevelprogramming-university",
@@ -5635,7 +5870,8 @@
         "programmer",
         "low-level",
         "how"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-quantumleaps-modern-embedded-programming-course",
@@ -5660,7 +5896,8 @@
         "from",
         "basics",
         "systems"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-cpq-bare-metal-programming-guide",
@@ -5685,7 +5922,8 @@
         "metal",
         "for",
         "bare"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-ckormanyos-real-time-cpp",
@@ -5710,7 +5948,8 @@
         "real-time",
         "book",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-willamhou-hypervisor",
@@ -5735,7 +5974,8 @@
         "rust",
         "ff-a",
         "bare-metal"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-uctools-msp430-template",
@@ -5760,7 +6000,8 @@
         "msp430-template",
         "msp430",
         "template"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-pitankar-tm4c",
@@ -5785,7 +6026,8 @@
         "tm4c123",
         "binaries",
         "for"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-nhivp-freertos-gcc-tm4c123glx",
@@ -5810,7 +6052,8 @@
         "the",
         "freertos-gcc-",
         "tiva"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-andoniv-stellaris_tm4c123g_gcc_template",
@@ -5835,7 +6078,8 @@
         "the",
         "tm4c123",
         "using"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-martinjaros-tm4c-gcc",
@@ -5860,7 +6104,8 @@
         "tm4c-gcc",
         "template",
         "gcc"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-alexeicolin-tivaapps",
@@ -5885,7 +6130,8 @@
         "using",
         "tiva",
         "for"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-monpeco-real_time_bn",
@@ -5910,7 +6156,8 @@
         "fundamentals",
         "how",
         "build"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-balau-nucleo_tests",
@@ -5935,7 +6182,8 @@
         "libopencm3",
         "arm",
         "toolchain"
-      ]
+      ],
+      "year": 2017
     },
     {
       "id": "repo-wangyeee-stm32f4-freertos",
@@ -5960,7 +6208,8 @@
         "running",
         "freertos",
         "stm32f4"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-devanlai-dapboot",
@@ -5985,7 +6234,8 @@
         "stm32",
         "dfu",
         "chips"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-akospasztor-stm32-bootloader",
@@ -6009,7 +6259,8 @@
         "customizable",
         "stm32",
         "for"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-dmitrystu-libusb_stm32",
@@ -6034,7 +6285,8 @@
         "stack",
         "device",
         "lightweight"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-rowol-stm32_discovery_arm_gcc",
@@ -6059,7 +6311,8 @@
         "gnu",
         "compiler",
         "stm32"
-      ]
+      ],
+      "year": 2017
     },
     {
       "id": "repo-avem-labs-ol3d",
@@ -6084,7 +6337,8 @@
         "micro",
         "controllers",
         "for"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-roanfourie-stm32f4-disco-embitz-blinky",
@@ -6109,7 +6363,8 @@
         "embitz",
         "the",
         "using"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-ve3wwg-stm32f103c8t6",
@@ -6134,7 +6389,8 @@
         "libopencm3",
         "the",
         "projects"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-szczys-stm32f0-discovery-basic-template",
@@ -6159,7 +6415,8 @@
         "for",
         "with",
         "template"
-      ]
+      ],
+      "year": 2016
     },
     {
       "id": "repo-cesanta-mongoose",
@@ -6184,7 +6441,8 @@
         "metal",
         "for",
         "stack"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-bootsector-stm32-hid-bootloader",
@@ -6209,7 +6467,8 @@
         "devices",
         "for",
         "bootloader"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-uctools-stm32l1xx-template",
@@ -6234,7 +6493,8 @@
         "the",
         "building",
         "for"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-avislab-stm32f103",
@@ -6256,7 +6516,8 @@
       "tags": [
         "stm32f103c8",
         "examples"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-trebisky-stm32f103",
@@ -6281,7 +6542,8 @@
         "stm32f103",
         "metal",
         "bare"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-dwelch67-stm32_samples",
@@ -6300,7 +6562,8 @@
       "stars": 54,
       "url": "https://github.com/dwelch67/stm32_samples",
       "creator": "dwelch67",
-      "tags": []
+      "tags": [],
+      "year": 2020
     },
     {
       "id": "repo-dwelch67-stm32f4d",
@@ -6323,7 +6586,8 @@
         "stm32f4de",
         "example",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-gemesa-stm32-rf-scanner",
@@ -6348,7 +6612,8 @@
         "and",
         "stm32",
         "stm32-rf-"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-gemesa-stm32-dc-dc",
@@ -6373,7 +6638,8 @@
         "stm32",
         "stm32-dc-dc",
         "converter"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-gemesa-rustlink",
@@ -6398,7 +6664,8 @@
         "tools",
         "program",
         "devices"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-a5021-stm32-async-1wire",
@@ -6423,7 +6690,8 @@
         "stm32g031",
         "stm32-async-",
         "validated"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-dubhad-home-assistantconfig",
@@ -6448,7 +6716,8 @@
         "dubhad",
         "known",
         "688"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-geekofweek-homeassistant",
@@ -6473,7 +6742,8 @@
         "has",
         "300",
         "477"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-arsaboo-homeassistant-config",
@@ -6498,7 +6768,8 @@
         "updated",
         "saboo",
         "known"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-frenck-home-assistant-config",
@@ -6523,7 +6794,8 @@
         "configuration",
         "based",
         "nijhof"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-klaasnicolaas-student-homeassistant-config",
@@ -6548,7 +6820,8 @@
         "regularly",
         "updated",
         "nuc"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-rwarner-home-assistant-config",
@@ -6573,7 +6846,8 @@
         "regularly",
         "documented",
         "updated"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-valentinfrlch-ha-llmvision",
@@ -6598,7 +6872,8 @@
         "caption",
         "summarize",
         "automations"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-itspecialist111-ai_automation_suggester",
@@ -6623,7 +6898,8 @@
         "ask",
         "your",
         "and"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-claytonjn-hass-circadian_lighting",
@@ -6648,7 +6924,8 @@
         "occurring",
         "the",
         "886"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-basnijholt-adaptive-lighting",
@@ -6673,7 +6950,8 @@
         "adjust",
         "the",
         "based"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-laggat-hacs-govee",
@@ -6698,7 +6976,8 @@
         "352",
         "control",
         "effects"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-kartoffeltoby-better_thermostat",
@@ -6723,7 +7002,8 @@
         "better",
         "heating",
         "profiles"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-jmcollin78-versatile_thermostat",
@@ -6748,7 +7028,8 @@
         "presence",
         "full-featured",
         "comfort"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-nbogojevic-homeassistant-midea-air-appliances-lan",
@@ -6773,7 +7054,8 @@
         "midea",
         "other",
         "lan"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-alexwijn-sat",
@@ -6798,7 +7080,8 @@
         "curve",
         "esphome",
         "gateways"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-swingerman-ha-dual-smart-thermostat",
@@ -6823,7 +7106,8 @@
         "225",
         "with",
         "version"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-bramstroker-homeassistant-powercalc",
@@ -6848,7 +7132,8 @@
         "503",
         "calculate",
         "power"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-thomluther-ha-anker-solix",
@@ -6873,7 +7158,8 @@
         "with",
         "systems",
         "solix"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-bottlecapdave-homeassistant-octopusenergy",
@@ -6898,7 +7184,8 @@
         "sessions",
         "intelligent",
         "pull"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-wlcrs-huawei_solar",
@@ -6923,7 +7210,8 @@
         "batteries",
         "charge",
         "control"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-wills106-homeassistant-solax-modbus",
@@ -6948,7 +7236,8 @@
         "solax",
         "other",
         "read-only"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-davidrapan-ha-solarman",
@@ -6973,7 +7262,8 @@
         "solarman",
         "other",
         "logger"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-lbbrhzn-ocpp",
@@ -6998,7 +7288,8 @@
         "the",
         "ocpp",
         "speak"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-bjreplay-ha-solcast-solar",
@@ -7023,7 +7314,8 @@
         "expected",
         "with",
         "see"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-mampfes-ha_epex_spot",
@@ -7048,7 +7340,8 @@
         "can",
         "loads",
         "cheapest"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-jaccor-hass-entso-e",
@@ -7073,7 +7366,8 @@
         "the",
         "entso-e",
         "from"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-willcodeforcats-solaredge-modbus-multi",
@@ -7098,7 +7392,8 @@
         "303",
         "solaredge",
         "batteries"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-nathanmarlor-foxess_modbus",
@@ -7123,7 +7418,8 @@
         "connects",
         "308",
         "for"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-sfstar-hass-victron",
@@ -7148,7 +7444,8 @@
         "from",
         "batteries",
         "victron"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-hultenvp-solis-sensor",
@@ -7173,7 +7470,8 @@
         "data",
         "and",
         "you"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-mletenay-home-assistant-goodwe-inverter",
@@ -7198,7 +7496,8 @@
         "network",
         "the",
         "solar"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-jmcollin78-solar_optimizer",
@@ -7223,7 +7522,8 @@
         "export",
         "228",
         "based"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-martinarva-dynamic_energy_cost",
@@ -7248,7 +7548,8 @@
         "189",
         "against",
         "epex"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-mtrab-energidataservice",
@@ -7273,7 +7574,8 @@
         "the",
         "automations",
         "from"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-twrecked-hass-aarlo",
@@ -7298,7 +7600,8 @@
         "aarlo",
         "site",
         "web"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-ludwig-ai-ludwig",
@@ -7323,7 +7626,8 @@
         "custom",
         "low-code",
         "building"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-unslothai-unsloth",
@@ -7344,7 +7648,8 @@
       "creator": "unslothai",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-openlit-openlit",
@@ -7369,7 +7674,8 @@
         "open-source",
         "openlit",
         "genai"
-      ]
+      ],
+      "year": 2026
     },
     {
       "id": "repo-helicone-helicone",
@@ -7390,7 +7696,8 @@
       "creator": "Helicone",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-canner-wrenai",
@@ -7411,7 +7718,8 @@
       "creator": "Canner",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2026
     },
     {
       "id": "repo-comet-ml-opik",
@@ -7436,7 +7744,8 @@
         "comet-ml",
         "https",
         "opik"
-      ]
+      ],
+      "year": 2026
     },
     {
       "id": "repo-langfuse-langfuse",
@@ -7457,7 +7766,8 @@
       "creator": "langfuse",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-mlflow-mlflow",
@@ -7478,7 +7788,8 @@
       "creator": "mlflow",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-rehydra-ai-rehydra-sdk",
@@ -7503,7 +7814,8 @@
         "response",
         "pii",
         "the"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-agentset-ai-agentset",
@@ -7524,7 +7836,8 @@
       "creator": "agentset-ai",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-mnfst-manifest",
@@ -7545,7 +7858,8 @@
       "creator": "mnfst",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-i18n-actions-ai-i18n",
@@ -7570,7 +7884,8 @@
         "uses",
         "that",
         "i18n"
-      ]
+      ],
+      "year": 2026
     },
     {
       "id": "repo-modelcontextprotocol-modelcontextprotocol",
@@ -7591,7 +7906,8 @@
       "creator": "modelcontextprotocol",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-steel-dev-steel-browser",
@@ -7616,7 +7932,8 @@
         "management",
         "screenshots",
         "open-source"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-maximhq-bifrost",
@@ -7641,7 +7958,8 @@
         "bifrost",
         "observability",
         "balancing"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-marketplace-models",
@@ -7666,7 +7984,8 @@
         "develop",
         "with",
         "and"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-open-webui-open-webui",
@@ -7691,7 +8010,8 @@
         "user-friendly",
         "open",
         "extensible"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-janhq-jan",
@@ -7712,7 +8032,8 @@
       "creator": "janhq",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-simonw-llm",
@@ -7733,7 +8054,8 @@
       "creator": "simonw",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2026
     },
     {
       "id": "repo-av-harbor",
@@ -7758,7 +8080,8 @@
         "toolkit",
         "supporting",
         "containerized"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-alichherawalla-off-grid-mobile-ai",
@@ -7783,7 +8106,8 @@
         "access",
         "models",
         "running"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-raullenchai-rapid-mlx",
@@ -7808,7 +8132,8 @@
         "server",
         "with",
         "openai-"
-      ]
+      ],
+      "year": 2026
     },
     {
       "id": "repo-significant-gravitas-autogpt",
@@ -7833,7 +8158,8 @@
         "autonomous",
         "make",
         "gpt-4"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-yoheinakajima-babyagi",
@@ -7858,7 +8184,8 @@
         "management",
         "system",
         "ai-powered"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-reworkd-agentgpt",
@@ -7883,7 +8210,8 @@
         "agentgpt",
         "your",
         "browser"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-antonosika-gpt-engineer",
@@ -7908,7 +8236,8 @@
         "want",
         "the",
         "engineer"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-mshumer-gpt-prompt-engineer",
@@ -7933,7 +8262,8 @@
         "gpt",
         "the",
         "generates"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-foundationagents-metagpt",
@@ -7958,7 +8288,8 @@
         "prd",
         "design",
         "repo"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-microsoft-autogen",
@@ -7983,7 +8314,8 @@
         "the",
         "each",
         "applications"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-pythagora-io-gpt-pilot",
@@ -8008,7 +8340,8 @@
         "the",
         "while",
         "scratch"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-openhands-openhands",
@@ -8033,7 +8366,8 @@
         "autonomous",
         "complexities",
         "opensource"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-stitionai-devika",
@@ -8058,7 +8392,8 @@
         "opensource",
         "agentic",
         "software"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-google-gemini-gemini-cli",
@@ -8079,7 +8414,8 @@
       "creator": "google-gemini",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-anomalyco-opencode",
@@ -8100,7 +8436,8 @@
       "creator": "anomalyco",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-mastra-ai-mastra",
@@ -8121,7 +8458,8 @@
       "creator": "mastra-ai",
       "tags": [
         "opensource"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-allendowney-thinkdsp",
@@ -8146,7 +8484,8 @@
         "dsp",
         "great",
         "using"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-c4labs-c4ios",
@@ -8171,7 +8510,8 @@
         "open-source",
         "for",
         "ios"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-heestand-xyz-pixelkit",
@@ -8196,7 +8536,8 @@
         "metal",
         "swift",
         "pixelkit"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-mattdesl-canvas-sketch",
@@ -8221,7 +8562,8 @@
         "artwork",
         "cross-platform",
         "the"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-heestand-xyz-asyncgraphics",
@@ -8246,7 +8588,8 @@
         "open",
         "metal",
         "swift"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-patriciogonzalezvivo-lygia",
@@ -8271,7 +8614,8 @@
         "cross-platform",
         "library",
         "flexibility"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-raphaelameaume-fragment",
@@ -8296,7 +8640,8 @@
         "tools",
         "cross-platform",
         "web"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-kousun12-eternal",
@@ -8321,7 +8666,8 @@
         "web",
         "graphs",
         "compositional"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-emicklei-melrose",
@@ -8346,7 +8692,8 @@
         "for",
         "creating",
         "environment"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-regl-project-regl",
@@ -8369,7 +8716,8 @@
         "regl",
         "functional",
         "webgl"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-evanw-lightgl.js",
@@ -8393,7 +8741,8 @@
         "lightgl",
         "lightweight",
         "library"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-tsherif-picogl.js",
@@ -8418,7 +8767,8 @@
         "library",
         "webgl",
         "picogl"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-yiwenl-alfrid",
@@ -8442,7 +8792,8 @@
         "alfrid",
         "set",
         "webgl"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-babylonjs-babylon.js",
@@ -8467,7 +8818,8 @@
         "building",
         "webgl",
         "javascript"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-greggman-twgl.js",
@@ -8492,7 +8844,8 @@
         "twgl",
         "library",
         "webgl"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-visgl-luma.gl",
@@ -8517,7 +8870,8 @@
         "for",
         "data",
         "visualization"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-oframe-ogl",
@@ -8541,7 +8895,8 @@
         "javascript",
         "ogl",
         "library"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-theatre-js-theatre",
@@ -8566,7 +8921,8 @@
         "theatre",
         "tools",
         "library"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-baku89-virtualmapper",
@@ -8591,7 +8947,8 @@
         "virtualmapper",
         "for",
         "preview"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-cdglabs-shadershop",
@@ -8616,7 +8973,8 @@
         "for",
         "interface",
         "programming"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-keijiro-klak",
@@ -8641,7 +8999,8 @@
         "scripts",
         "for",
         "with"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-marcelmue-konstrukt",
@@ -8666,7 +9025,8 @@
         "patterns",
         "commandline",
         "cross-platform"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-experience-monks-jam3-lesson-webgl-shader-intro",
@@ -8691,7 +9051,8 @@
         "lessons",
         "webgl",
         "brief"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-experience-monks-jam3-lesson-webgl-shader-threejs",
@@ -8716,7 +9077,8 @@
         "lessons",
         "webgl",
         "using"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-experience-monks-threejs-post-process-example",
@@ -8741,7 +9103,8 @@
         "post-processing",
         "example",
         "threejs"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-stackgl-glsl-lighting-walkthrough",
@@ -8766,7 +9129,8 @@
         "glslify",
         "lighting",
         "with"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-mattdesl-three-glslify-example",
@@ -8791,7 +9155,8 @@
         "how",
         "with",
         "example"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-gregtatum-talk-webgl-beyond-dom",
@@ -8816,7 +9181,8 @@
         "webgl",
         "using",
         "dom"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-tomdalling-opengl-series",
@@ -8841,7 +9207,8 @@
         "the",
         "series",
         "good"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-stackgl-shader-school",
@@ -8866,7 +9233,8 @@
         "and",
         "glsl",
         "graphics"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-stackgl-webgl-workshop",
@@ -8891,7 +9259,8 @@
         "sequel",
         "learn",
         "api"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-jasonwebb-morphogenesis-resources",
@@ -8916,7 +9285,8 @@
         "nature",
         "how",
         "exploration"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-experience-monks-math-as-code",
@@ -8941,7 +9311,8 @@
         "math",
         "cheat-sheet",
         "for"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-terkelg-math",
@@ -8966,7 +9337,8 @@
         "math",
         "with",
         "programming"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-silviopaganini-maths",
@@ -8991,7 +9363,8 @@
         "math",
         "collection",
         "and"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-mattdesl-eases",
@@ -9016,7 +9389,8 @@
         "eases",
         "easing",
         "equations"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-fosterframework-foster",
@@ -9041,7 +9415,8 @@
         "game",
         "foster",
         "small"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-gameframex-gameframex",
@@ -9066,7 +9441,8 @@
         "contract",
         "server",
         "pipeline"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-cocoatoucher-glide",
@@ -9091,7 +9467,8 @@
         "tvos",
         "swift",
         "games"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-planimeter-game-engine-2d",
@@ -9116,7 +9493,8 @@
         "for",
         "multiplayer-",
         "first"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-iioinc-iio.js",
@@ -9141,7 +9519,8 @@
         "iio",
         "library",
         "the"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-is-daouda-is-engine",
@@ -9166,7 +9545,8 @@
         "switch",
         "web",
         "that"
-      ]
+      ],
+      "year": 2016
     },
     {
       "id": "repo-mattleibow-jitterphysics",
@@ -9191,7 +9571,8 @@
         "fast",
         "and",
         "physics"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-jhasse-jngl",
@@ -9216,7 +9597,8 @@
         "switch",
         "develop",
         "jngl"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-digitsensitive-juno",
@@ -9241,7 +9623,8 @@
         "game",
         "written",
         "and"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-rxi-juno",
@@ -9266,7 +9649,8 @@
         "games",
         "for",
         "with"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-nem0-lumixengine",
@@ -9290,7 +9674,8 @@
         "lumixengine",
         "engine",
         "game"
-      ]
+      ],
+      "year": 2010
     },
     {
       "id": "repo-lums-proj-lums",
@@ -9315,7 +9700,8 @@
         "heavy",
         "under",
         "written"
-      ]
+      ],
+      "year": 2014
     },
     {
       "id": "repo-gearchicken-minx",
@@ -9340,7 +9726,8 @@
         "open",
         "written",
         "the"
-      ]
+      ],
+      "year": 2012
     },
     {
       "id": "repo-not-fl3-macroquad",
@@ -9365,7 +9752,8 @@
         "game",
         "the",
         "macroquad"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-heroiclabs-nakama",
@@ -9390,7 +9778,8 @@
         "social",
         "server",
         "for"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-immediate-mode-ui-nuklear",
@@ -9415,7 +9804,8 @@
         "mode",
         "cross-platform",
         "library"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-sygmei-obengine",
@@ -9440,7 +9830,8 @@
         "game",
         "with",
         "sfml"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-openxray-xray-16",
@@ -9465,7 +9856,8 @@
         "game",
         "series",
         "community-"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-pixelvision8-pixelvision8",
@@ -9490,7 +9882,8 @@
         "platform",
         "philosophy",
         "with"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-kitao-pyxel",
@@ -9515,7 +9908,8 @@
         "python",
         "for",
         "engine"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-rajawali-rajawali",
@@ -9539,7 +9933,8 @@
         "opengl",
         "rajawali",
         "android"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-colleagueriley-rgfw",
@@ -9564,7 +9959,8 @@
         "supports",
         "rendering",
         "library"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-attackgoat-screen-13",
@@ -9589,7 +9985,8 @@
         "rendering",
         "for",
         "graph"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-artyprof-steamworks-ffi-node",
@@ -9614,7 +10011,8 @@
         "for",
         "wrapper",
         "steamworks-ffi-"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-whitestormjs-whitestorm.js",
@@ -9639,7 +10037,8 @@
         "building",
         "for",
         "games"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-ivanmurzak-unity-mcp",
@@ -9664,7 +10063,8 @@
         "with",
         "unity",
         "assets"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-codecapers-fluent-behaviour-tree",
@@ -9689,7 +10089,8 @@
         "fluent",
         "mit",
         "with"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-bleubleu-famistudio",
@@ -9713,7 +10114,8 @@
         "famistudio",
         "music",
         "nes"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-dn-programming-core-management-dn-famitracker",
@@ -9738,7 +10140,8 @@
         "the",
         "famicom-systems",
         "producing"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-milkytracker-milkytracker",
@@ -9763,7 +10166,8 @@
         "milkytracker",
         "windows",
         "mac"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-hzoo-awesome-gametalks",
@@ -9788,7 +10192,8 @@
         "etc",
         "talks",
         "game"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-regalis11-barotrauma",
@@ -9809,7 +10214,8 @@
       "creator": "Regalis11",
       "tags": [
         "barotrauma"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-ericjohnson-canabalt-ios",
@@ -9831,7 +10237,8 @@
       "tags": [
         "canabalt",
         "ios"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-id-software-doom-3",
@@ -9852,7 +10259,8 @@
       "creator": "id-Software",
       "tags": [
         "doom"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-id-software-doom",
@@ -9873,7 +10281,8 @@
       "creator": "id-Software",
       "tags": [
         "doom"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-ckan-ckan",
@@ -9895,7 +10304,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-collectiveaccess-providence",
@@ -9917,7 +10327,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-zibbp-ganymede",
@@ -9942,7 +10353,8 @@
         "includes",
         "each",
         "platform"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-s1t5-mail-archiver",
@@ -9967,7 +10379,8 @@
         "from",
         "accounts",
         "imap"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-omeka-omeka-s",
@@ -9989,7 +10402,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-logiclabs-ou-openarchiver",
@@ -10011,7 +10425,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-wallabag-wallabag",
@@ -10033,7 +10448,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-wabarc-wayback",
@@ -10058,7 +10474,8 @@
         "gpl-3",
         "the",
         "toolkit"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-activepieces-activepieces",
@@ -10080,7 +10497,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-automatisch-automatisch",
@@ -10102,7 +10520,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-thewicklowwolf-bookbounty",
@@ -10127,7 +10546,8 @@
         "bookbounty",
         "readarr",
         "missing"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-dgtlmoon-changedetection.io",
@@ -10149,7 +10569,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-chiefonboarding-chiefonboarding",
@@ -10171,7 +10592,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-jhuckaby-cronicle",
@@ -10193,7 +10615,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-fccview-cronmaster",
@@ -10218,7 +10641,8 @@
         "cronjobs",
         "cronjob",
         "readable"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-dagucloud-dagu",
@@ -10240,7 +10664,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-cybrarist-discount-bandit",
@@ -10262,7 +10687,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-dittofeed-dittofeed",
@@ -10284,7 +10710,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-cvhariharan-flowctl",
@@ -10306,7 +10733,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-orangecoding-fredy",
@@ -10328,7 +10756,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-flohoss-gocron",
@@ -10353,7 +10782,8 @@
         "configuration",
         "gocron",
         "yaml"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-thenickoftime-handbrake-web",
@@ -10378,7 +10808,8 @@
         "agpl-3",
         "handbrake",
         "use"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-healthchecks-healthchecks",
@@ -10400,7 +10831,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-huginn-huginn",
@@ -10425,7 +10857,8 @@
         "mit",
         "that",
         "huginn"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-kestra-io-kestra",
@@ -10447,7 +10880,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-kibitzr-kibitzr",
@@ -10469,7 +10903,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-leon-ai-leon",
@@ -10491,7 +10926,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-sergree-matchering",
@@ -10516,7 +10952,8 @@
         "gpl-3",
         "alternative",
         "automated"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-mylarcomics-mylar3",
@@ -10538,7 +10975,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-olivetin-olivetin",
@@ -10560,7 +10998,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-pyload-pyload",
@@ -10582,7 +11021,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-stackstorm-st2",
@@ -10604,7 +11044,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-ovh-utask",
@@ -10629,7 +11070,8 @@
         "that",
         "declared",
         "processes"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-antville-antville",
@@ -10651,7 +11093,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-xenocrat-chyrp-lite",
@@ -10673,7 +11116,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-newsboat-newsboat",
@@ -10698,7 +11142,8 @@
         "terminals",
         "rss",
         "for"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-l4z3x-mal-cli",
@@ -10721,7 +11166,8 @@
         "client",
         "myanimelist",
         "mal-cli"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-0xjuanma-golazo",
@@ -10744,7 +11190,8 @@
         "golazo",
         "soccer",
         "matches"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-cmus-cmus",
@@ -10769,7 +11216,8 @@
         "fast",
         "and",
         "music"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-yask123-instant-music-downloader",
@@ -10793,7 +11241,8 @@
         "downloader",
         "instant-music-",
         "instant"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-mischah-itunes-remote",
@@ -10818,7 +11267,8 @@
         "via",
         "itunes",
         "itunes-remote"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-rockymadden-somafm-cli",
@@ -10843,7 +11293,8 @@
         "listen",
         "your",
         "terminal"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-musicplayerdaemon-mpd",
@@ -10867,7 +11318,8 @@
         "mpd",
         "music",
         "player"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-arybczak-ncmpcpp",
@@ -10890,7 +11342,8 @@
         "mpd",
         "ncmpcpp",
         "client"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-clangen-musikcube",
@@ -10915,7 +11368,8 @@
         "musikcube",
         "metadata",
         "server"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-beetbox-beets",
@@ -10940,7 +11394,8 @@
         "and",
         "manager",
         "music"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-largemodgames-spotatui",
@@ -10963,7 +11418,8 @@
         "client",
         "spotify",
         "spotatui"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-swaglyrics-swaglyrics-for-spotify",
@@ -10986,7 +11442,8 @@
         "spotify",
         "lyrics",
         "swaglyrics-for-"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-yne-dzr",
@@ -11010,7 +11467,8 @@
         "player",
         "dzr",
         "deezer"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-deep5050-radio-active",
@@ -11035,7 +11493,8 @@
         "internet",
         "player",
         "40k"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-gmt4-mpvc",
@@ -11060,7 +11519,8 @@
         "interfacing",
         "music",
         "player"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-dark-kernel-tuisic",
@@ -11084,7 +11544,8 @@
         "login-free",
         "tuisic",
         "music"
-      ]
+      ],
+      "year": 2016
     },
     {
       "id": "repo-tramhao-termusic",
@@ -11109,7 +11570,8 @@
         "with",
         "capabilities",
         "termusic"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-peternaame-boop-ytm-player",
@@ -11133,7 +11595,8 @@
         "ytm-player",
         "music",
         "player"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-tsirysndr-tunein-cli",
@@ -11158,7 +11621,8 @@
         "client",
         "browser",
         "and"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-bjarneo-cliamp",
@@ -11183,7 +11647,8 @@
         "local",
         "player",
         "cliamp"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-ytdl-org-youtube-dl",
@@ -11208,7 +11673,8 @@
         "from",
         "video",
         "other"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-streamlink-streamlink",
@@ -11233,7 +11699,8 @@
         "from",
         "video",
         "streamlink"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-mps-youtube-mps-youtube",
@@ -11256,7 +11723,8 @@
         "youtube",
         "mps-youtube",
         "player"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-mifi-editly",
@@ -11280,7 +11748,8 @@
         "editing",
         "editly",
         "declarative"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-yt-dlp-yt-dlp",
@@ -11305,7 +11774,8 @@
         "yt-dlp",
         "additional",
         "with"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-marm00-cinema",
@@ -11330,7 +11800,8 @@
         "for",
         "cinema",
         "and"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-renezander030-capcut-cli",
@@ -11355,7 +11826,8 @@
         "capcut",
         "jianying",
         "capcut-cli"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-ichait-moviemon",
@@ -11380,7 +11852,8 @@
         "moviemon",
         "your",
         "movies"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-mayankchd-movie",
@@ -11405,7 +11878,8 @@
         "get",
         "compare",
         "movies"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-lxgr-linux-pokete",
@@ -11427,7 +11901,8 @@
       "tags": [
         "pokemon-like",
         "pokete"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-wustho-epr",
@@ -11448,7 +11923,8 @@
       "creator": "wustho",
       "tags": [
         "epr"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-biblejs-bibleapp",
@@ -11470,7 +11946,8 @@
       "tags": [
         "cli",
         "bible"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-sunsations-speed_read",
@@ -11493,7 +11970,8 @@
         "speedread",
         "speedreader",
         "spritz-alike"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-djadmin-medium-cli",
@@ -11518,7 +11996,8 @@
         "medium-cli",
         "stories",
         "medium"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-normation-rudder",
@@ -11540,7 +12019,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-saltstack-salt",
@@ -11562,7 +12042,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-combodo-itop",
@@ -11584,7 +12065,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-netbox-community-netbox",
@@ -11606,7 +12088,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-argoproj-argo-cd",
@@ -11628,7 +12111,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-buildbot-buildbot",
@@ -11650,7 +12134,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-ovh-cds",
@@ -11672,7 +12157,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-concourse-concourse",
@@ -11694,7 +12180,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-gocd-gocd",
@@ -11716,7 +12203,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-harness-harness",
@@ -11738,7 +12226,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-ohwgiles-laminar",
@@ -11760,7 +12249,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "repo-php-censor-php-censor",
@@ -11785,7 +12275,8 @@
         "server",
         "for",
         "integration"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-stategraph-stategraph",
@@ -11807,7 +12298,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-werf-werf",
@@ -11829,7 +12321,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-woodpecker-ci-woodpecker",
@@ -11851,7 +12344,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-ajenti-ajenti",
@@ -11873,7 +12367,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-cockpit-project-cockpit",
@@ -11895,7 +12390,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-hestiacp-hestiacp",
@@ -11917,7 +12413,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-ylianst-meshcentral",
@@ -11939,7 +12436,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-webmin-webmin",
@@ -11961,7 +12459,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-capistrano-capistrano",
@@ -11983,7 +12482,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-cloudslang-score",
@@ -12005,7 +12505,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "repo-apache-cloudstack",
@@ -12027,7 +12528,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2020
     },
     {
       "id": "repo-cobbler-cobbler",
@@ -12049,7 +12551,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-fabric-fabric",
@@ -12071,7 +12574,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-ku9nov-faynosync",
@@ -12093,7 +12597,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-genesis-community-genesis",
@@ -12118,7 +12623,8 @@
         "deployments",
         "mit",
         "perl"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-munki-munki",
@@ -12140,7 +12646,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-andrewchilds-overcast",
@@ -12162,7 +12669,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-jgraph-drawio",
@@ -12184,7 +12692,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "repo-yuzutech-kroki",
@@ -12206,7 +12715,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2021
     },
     {
       "id": "repo-mermaid-js-mermaid-live-editor",
@@ -12228,7 +12738,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2025
     },
     {
       "id": "repo-ceph-ceph",
@@ -12250,7 +12761,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     },
     {
       "id": "repo-linbit-drbd",
@@ -12272,7 +12784,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2019
     },
     {
       "id": "repo-gluster-glusterfs",
@@ -12294,7 +12807,8 @@
       "tags": [
         "source",
         "code"
-      ]
+      ],
+      "year": 2018
     }
   ],
   "last_updated": "2026-09-19 23:46:46"

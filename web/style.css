@@ -802,6 +802,21 @@ body {
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
 }
 
+.badge-vintage {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  background: rgba(217, 119, 6, 0.95);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.4);
+}
+
 .badge-function-tag {
   position: absolute;
   bottom: 10px;
@@ -813,6 +828,11 @@ body {
   padding: 3px 8px;
   border-radius: var(--radius-sm);
   font-size: 11px;
+  font-weight: 700;
+}
+
+.card-year {
+  color: #fbbf24;
   font-weight: 700;
 }
 
