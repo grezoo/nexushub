@@ -3,8 +3,9 @@
   "description": "Bookshop-style editorial selection chosen personally by grezoo based on functioning proof, real-world utility, and independent craftsmanship.",
   "curator": "grezoo",
   "curator_contact": "grezoo@gmail.com",
+  "curator_engine": "Gemini 1.5 Flash + Bookshop Merit Rules",
   "donation_url": "https://revolut.me/grezoo",
-  "last_curated": "2026-09-19 23:37:15",
+  "last_curated": "2026-09-19 21:39:53",
   "picks": [
     {
       "id": "betaflight-betaflight",
