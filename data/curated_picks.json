@@ -38,6 +38,36 @@
       "merit_score": 950
     },
     {
+      "id": "repo-github-gh-aw",
+      "repo_name": "github/gh-aw",
+      "title": "GitHub Agentic Workflows",
+      "function_title": "gh-aw — GitHub Next autonóm ágens munkafolyamatok természetes nyelven leírva",
+      "title_en": "GitHub Agentic Workflows (gh-aw) — Natural language programming compiled to GitHub Actions",
+      "description": "A GitHub Next legújabb kutatási áttörése: írd le Markdownban természetes emberi nyelven a repó feladatait, és a gh-aw biztonságos autonóm AI Actions munkafolyamatokká fordítja.",
+      "description_en": "GitHub Next's research demonstrator: describe repository automation in natural language Markdown, compiled into transparent, secure GitHub Actions workflows.",
+      "main_category": "Mesterséges Intelligencia & Adat",
+      "sub_category": "Autonóm Ágensek & Automatizáció",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/github/gh-aw",
+      "video_url": "",
+      "has_video": true,
+      "video_demo": "https://opengraph.githubassets.com/1/github/gh-aw",
+      "stars": 3400,
+      "year": 2026,
+      "url": "https://github.com/github/gh-aw",
+      "creator": "github",
+      "tags": [
+        "github-next",
+        "gh-aw",
+        "agentic-workflows",
+        "ai-agents",
+        "github-actions"
+      ],
+      "badge_hu": "🔬 GITHUB NEXT KUTATÁSI ÁTTÖRÉS",
+      "badge_en": "🔬 GITHUB NEXT RESEARCH BREAKTHROUGH",
+      "curator_note_hu": "A GitHub hivatalos R&D laboratóriumának legújabb áttörése: a repó automatizációt elég emberi nyelven leírni Markdownban, és a gh-aw közvetlenül GitHub Actions ágensekké fordítja.",
+      "curator_note_en": "GitHub Next's flagship research: describe software tasks in natural language, compiled into secure, repository-native GitHub Actions agents."
+    },
+    {
       "id": "repo-karpathy-llama2-c",
       "repo_name": "karpathy/llama2.c",
       "title": "llama2.c",
