@@ -31,6 +31,11 @@ CATEGORY_RULES = [
         "default_sub": "Gépi Tanulás & Neurális Hálók"
     },
     {
+        "main": "Pénzügy, Tőzsde & Kripto Elemzés",
+        "keywords": ["finance", "trading", "crypto", "bitcoin", "ethereum", "fintech", "algorithmic-trading", "stock", "quant", "backtest", "ccxt", "binance", "defi", "onchain", "blockchain", "market-data", "portfolio", "arbitrage", "indicators", "chart"],
+        "default_sub": "Algoritmikus Kereskedés & Botok"
+    },
+    {
         "main": "Zene, Hangtechnika & Audió",
         "keywords": ["audio", "sound", "music", "dsp", "synth", "midi", "vst", "acoustic", "voice", "beats", "daw", "radio", "podcast", "speech-synthesis"],
         "default_sub": "Hangtechnika & Audió Eszközök"
@@ -74,6 +79,8 @@ CURATED_SEEDS = [
     ("Mesterséges Intelligencia & Adat", "Gépi Tanulás", "josephmisiti/awesome-machine-learning"),
     ("Mesterséges Intelligencia & Adat", "Számítógépes Látás", "jbhuang0604/awesome-computer-vision"),
     ("Mesterséges Intelligencia & Adat", "NLP & Nyelvmodellek", "keon/awesome-nlp"),
+    ("Pénzügy, Tőzsde & Kripto Elemzés", "Algoritmikus Kereskedés", "wilsonfreitas/awesome-quant"),
+    ("Pénzügy, Tőzsde & Kripto Elemzés", "Kripto & On-Chain", "coinpride/CryptoList"),
     ("Zene, Hangtechnika & Audió", "DSP & Szintetizátorok", "BillyDM/awesome-audio-dsp"),
     ("Zene, Hangtechnika & Audió", "Zenei Szoftverek", "ad-si/awesome-music"),
     ("Kreatív Média, Videóvágás & Fotó", "FFmpeg & Videó", "mifi/awesome-ffmpeg"),

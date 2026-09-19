@@ -162,6 +162,7 @@ const TRANSLATIONS = I18N;
 const CATEGORY_TRANSLATIONS = {
   "Hardver, IoT & Elektronika": { en: "Hardware, IoT & Electronics", hu: "Hardver, IoT & Elektronika", icon: "🔌" },
   "Mesterséges Intelligencia & Adat": { en: "Artificial Intelligence & Data", hu: "Mesterséges Intelligencia & Adat", icon: "🧠" },
+  "Pénzügy, Tőzsde & Kripto Elemzés": { en: "FinTech, Trading & Crypto Analytics", hu: "Pénzügy, Tőzsde & Kripto Elemzés", icon: "📈" },
   "Játékfejlesztés, 3D & Grafika": { en: "Game Dev, 3D & Graphics", hu: "Játékfejlesztés, 3D & Grafika", icon: "🎮" },
   "Zene, Hangtechnika & Audió": { en: "Music & Audio Tech", hu: "Zene, Hangtechnika & Audió", icon: "🎵" },
   "Self-Hosted & Otthoni Szerverek": { en: "Self-Hosted & Home Labs", hu: "Self-Hosted & Otthoni Szerverek", icon: "🏠" },
