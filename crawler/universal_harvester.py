@@ -386,7 +386,7 @@ UNIVERSAL_SEED_REPOSITORIES = [
         "repo_name": "jellyfin/jellyfin",
         "title": "Jellyfin",
         "function_title": "100% Ingyenes Saját Film- és Zene Streaming Szerver",
-        "description": "Építsd fel a saját privát Netflixedet és Spotify-odat otthoni gépen vagy Raspberry Pi-n, előfizetés és hirdetések nélkül.",
+        "description": "Építsd fel a saját privát médiaszerveredet és zenei könyvtáradat otthoni gépen vagy Raspberry Pi-n, előfizetés és hirdetések nélkül.",
         "main_category": "Self-Hosted & Otthoni Szerverek",
         "sub_category": "Médiaszerverek & Streaming (Jellyfin)",
         "thumbnail_url": "https://opengraph.githubassets.com/1/jellyfin/jellyfin",

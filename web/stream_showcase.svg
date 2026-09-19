@@ -33,79 +33,78 @@
   <!-- Top Navbar Mockup -->
   <rect x="30" y="25" width="740" height="40" rx="20" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
   <circle cx="60" cy="45" r="8" fill="#ec4899"/>
-  <rect x="80" y="40" width="90" height="10" rx="5" fill="#ffffff" opacity="0.9"/>
+  <rect x="80" y="40" width="120" height="10" rx="5" fill="#ffffff" opacity="0.9"/>
   
   <!-- Categories Pills Mockup -->
-  <rect x="220" y="33" width="70" height="24" rx="12" fill="url(#purpleGrad)"/>
-  <rect x="300" y="33" width="80" height="24" rx="12" fill="rgba(255,255,255,0.08)"/>
-  <rect x="390" y="33" width="75" height="24" rx="12" fill="rgba(255,255,255,0.08)"/>
-  <rect x="475" y="33" width="85" height="24" rx="12" fill="rgba(255,255,255,0.08)"/>
+  <rect x="230" y="33" width="80" height="24" rx="12" fill="url(#purpleGrad)"/>
+  <rect x="320" y="33" width="85" height="24" rx="12" fill="rgba(255,255,255,0.08)"/>
+  <rect x="415" y="33" width="80" height="24" rx="12" fill="rgba(255,255,255,0.08)"/>
+  <rect x="505" y="33" width="90" height="24" rx="12" fill="rgba(255,255,255,0.08)"/>
   
-  <!-- Netflix Shelf Title -->
+  <!-- Catalogue Rail Title -->
   <text x="35" y="105" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="800" letter-spacing="-0.3">
-    ▶ TRENDING SHORT DEMOS (NETFLIX VIEW)
+    ▶ VIZUÁLIS KATALÓGUS — KIEMELT PROJEKTEK &amp; RÖVID DEMÓK
   </text>
-  <rect x="350" y="94" width="70" height="14" rx="7" fill="#10b981" opacity="0.25"/>
-  <text x="360" y="105" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="800">LIVE DEMOS</text>
+  <rect x="530" y="93" width="115" height="16" rx="8" fill="#10b981" opacity="0.25"/>
+  <text x="540" y="105" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="800">VIZUÁLIS DEMÓK</text>
 
-  <!-- Netflix Cards Rail (Horizontal Streaming Cards) -->
+  <!-- Visual Cards Rail (Horizontal Visual Catalogue Cards) -->
   
-  <!-- Card 1 (Center Left - Generative AI Video) -->
+  <!-- Card 1 (Generative AI Video) -->
   <g transform="translate(35, 125)">
     <rect width="225" height="280" rx="14" fill="#0f172a" stroke="rgba(168,85,247,0.5)" stroke-width="1.5"/>
     <rect x="0" y="0" width="225" height="135" rx="14" fill="#1e1b4b"/>
     <!-- Play Icon Overlay -->
     <circle cx="112" cy="67" r="24" fill="url(#purpleGrad)" filter="url(#glow)"/>
     <polygon points="108,57 122,67 108,77" fill="#ffffff"/>
-    <rect x="10" y="10" width="65" height="18" rx="4" fill="#ec4899"/>
+    <rect x="10" y="10" width="68" height="18" rx="4" fill="#ec4899"/>
     <text x="16" y="23" fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="800">▶ 15s DEMO</text>
     <!-- Card Info -->
     <rect x="12" y="150" width="60" height="12" rx="3" fill="#a855f7" opacity="0.3"/>
-    <text x="16" y="159" fill="#c084fc" font-family="sans-serif" font-size="8" font-weight="800">FUNCTION:</text>
-    <text x="12" y="180" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">AI Video Generation</text>
-    <text x="12" y="196" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">&amp; Talking Portraits</text>
+    <text x="16" y="159" fill="#c084fc" font-family="sans-serif" font-size="8" font-weight="800">FUNKCIÓ:</text>
+    <text x="12" y="180" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">AI Videó Generálás</text>
+    <text x="12" y="196" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">&amp; Beszélő Portrék</text>
     <rect x="12" y="215" width="200" height="8" rx="4" fill="rgba(255,255,255,0.15)"/>
     <rect x="12" y="230" width="140" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
     <rect x="12" y="252" width="201" height="20" rx="6" fill="url(#purpleGrad)"/>
-    <text x="92" y="265" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="700">Watch Now</text>
+    <text x="80" y="265" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="700">Demó Megtekintése</text>
   </g>
 
-  <!-- Card 2 (Center - ESP32 Hardware LED Matrix) -->
+  <!-- Card 2 (ESP32 Hardware LED Matrix) -->
   <g transform="translate(285, 125)">
     <rect width="225" height="280" rx="14" fill="#0f172a" stroke="rgba(16,185,129,0.5)" stroke-width="1.5"/>
     <rect x="0" y="0" width="225" height="135" rx="14" fill="#064e3b"/>
-    <!-- Moving Waves Simulation -->
     <circle cx="112" cy="67" r="24" fill="url(#emeraldGrad)" filter="url(#glow)"/>
     <polygon points="108,57 122,67 108,77" fill="#ffffff"/>
     <rect x="10" y="10" width="65" height="18" rx="4" fill="#10b981"/>
-    <text x="16" y="23" fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="800">💎 GEM</text>
+    <text x="16" y="23" fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="800">💎 KINCS</text>
     <!-- Card Info -->
     <rect x="12" y="150" width="60" height="12" rx="3" fill="#10b981" opacity="0.3"/>
-    <text x="16" y="159" fill="#34d399" font-family="sans-serif" font-size="8" font-weight="800">FUNCTION:</text>
-    <text x="12" y="180" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">ESP32 WiFi Drone &amp;</text>
-    <text x="12" y="196" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">NeoPixel Controller</text>
+    <text x="16" y="159" fill="#34d399" font-family="sans-serif" font-size="8" font-weight="800">FUNKCIÓ:</text>
+    <text x="12" y="180" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">ESP32 WiFi Drón &amp;</text>
+    <text x="12" y="196" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">NeoPixel Vezérlő</text>
     <rect x="12" y="215" width="200" height="8" rx="4" fill="rgba(255,255,255,0.15)"/>
     <rect x="12" y="230" width="130" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
     <rect x="12" y="252" width="201" height="20" rx="6" fill="url(#emeraldGrad)"/>
-    <text x="92" y="265" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="700">Watch Now</text>
+    <text x="80" y="265" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="700">Demó Megtekintése</text>
   </g>
 
-  <!-- Card 3 (Center Right - Audio & Music Demucs) -->
+  <!-- Card 3 (Audio & Music Demucs) -->
   <g transform="translate(535, 125)">
     <rect width="225" height="280" rx="14" fill="#0f172a" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/>
     <rect x="0" y="0" width="225" height="135" rx="14" fill="#451a03"/>
     <circle cx="112" cy="67" r="24" fill="url(#amberGrad)" filter="url(#glow)"/>
     <polygon points="108,57 122,67 108,77" fill="#ffffff"/>
-    <rect x="10" y="10" width="65" height="18" rx="4" fill="#ec4899"/>
+    <rect x="10" y="10" width="68" height="18" rx="4" fill="#ec4899"/>
     <text x="16" y="23" fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="800">▶ 15s DEMO</text>
     <!-- Card Info -->
     <rect x="12" y="150" width="60" height="12" rx="3" fill="#f59e0b" opacity="0.3"/>
-    <text x="16" y="159" fill="#fbbf24" font-family="sans-serif" font-size="8" font-weight="800">FUNCTION:</text>
-    <text x="12" y="180" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">AI Vocal &amp; Audio Stem</text>
-    <text x="12" y="196" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">Separation Studio</text>
+    <text x="16" y="159" fill="#fbbf24" font-family="sans-serif" font-size="8" font-weight="800">FUNKCIÓ:</text>
+    <text x="12" y="180" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">AI Vokál &amp; Sávszétválasztó</text>
+    <text x="12" y="196" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="800">Zenei Hangstúdió</text>
     <rect x="12" y="215" width="200" height="8" rx="4" fill="rgba(255,255,255,0.15)"/>
     <rect x="12" y="230" width="150" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
     <rect x="12" y="252" width="201" height="20" rx="6" fill="url(#amberGrad)"/>
-    <text x="92" y="265" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="700">Watch Now</text>
+    <text x="80" y="265" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="700">Demó Megtekintése</text>
   </g>
 </svg>

@@ -50,7 +50,7 @@ NexusHub introduces an open standard for all GitHub repositories.
 - **💎 Star-Independent Discovery (Hidden Gems):** Zero-star projects with working proof get top priority over high-star projects with no visual evidence.
 - **🌐 Full Bilingual Experience:** Native toggle between English (default) and Hungarian (`EN / HU`).
 - **📚 Universal Taxonomy:** Covers the entire spectrum from **Hardware & IoT (ESP32, Arduino, Klipper, Betaflight)** to **Generative AI, GameDev, Music & DAWs, Self-Hosted Servers, and Productivity**.
-- **⊞ Grid & ☰ Netflix-Style Shelves:** Browse by horizontal thematic rails or a dense cards grid.
+- **⊞ Grid & ☰ Visual Catalogue Shelves:** Browse by horizontal thematic rails or a dense cards grid.
 
 ---
 

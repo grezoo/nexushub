@@ -358,21 +358,21 @@ const PINNED_SHOWCASE_ITEM = {
   id: "nexushub-official-standard",
   is_pinned: true,
   repo_name: "grezoo/nexushub",
-  title: "NexusHub — Open Source Streaming Library",
-  function_title: "Netflix-stílusú Vizuális Felfedező a Nyílt Forráskódhoz",
-  title_en: "Visual Streaming & Netflix-Style Discovery for Open Source",
-  description: "Böngéssz a nyílt forráskódú eszközök, hardverek és AI projektek között úgy, mint egy streaming platformon: képes kártyák, 15 mp-es élő videók és azonnali kipróbálás kódböngészés helyett.",
-  description_en: "Browse open-source tools, hardware, and AI like a streaming service: visual cards, live 15-second video previews, and merit-based discovery instead of reading code.",
+  title: "NexusHub — Open Source Visual Catalogue",
+  function_title: "Nyílt Forráskódú Vizuális Katalógus & Rövid Demó Kereső",
+  title_en: "Visual Catalogue & Short-Demo Discovery for Open Source",
+  description: "A nyílt forráskódú projektek élményalapú vizuális katalógusa. Valós működést bemutató 15-30 mp-es videós demókkal (preview.mp4 / preview.gif), funkció-központú kártyákkal és érdemalapú rangsorolással.",
+  description_en: "A visual catalogue and short-demo discovery platform for open-source repositories. Featuring 15-30s real video demos (preview.mp4 / preview.gif), function-first cards, and merit-based discovery.",
   main_category: "Rendszer, Biztonság & Segédprogramok",
-  sub_category: "Vizuális Streaming & Katalógus",
-  thumbnail_url: "netflix_showcase.svg",
-  video_url: "netflix_showcase.svg",
+  sub_category: "Vizuális Katalógus & Rendszerező",
+  thumbnail_url: "stream_showcase.svg",
+  video_url: "stream_showcase.svg",
   has_video: true,
-  video_demo: "netflix_showcase.svg",
+  video_demo: "stream_showcase.svg",
   stars: 100,
   url: "https://github.com/grezoo/nexushub",
   creator: "grezoo",
-  tags: ["netflix-ui", "open-source-discovery", "visual-cards", "hidden-gems"]
+  tags: ["visual-catalogue", "open-source-discovery", "visual-cards", "hidden-gems"]
 };
 
 // Ensure 0-50 star hidden gems exist in seed and pin the flagship showcase
