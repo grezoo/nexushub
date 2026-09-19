@@ -127,7 +127,9 @@
       "curator_note_en": "A textbook example of raw engineering merit on a budget microchip. Full quadcopter flight physics controllable from any phone browser.",
       "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: HARDVER KINCS",
       "badge_en": "✍️ NEXUSHUB PICK: HARDWARE GEM",
-      "merit_score": 950
+      "merit_score": 950,
+      "description_en": "The world-leading flight control software for drones: advanced gyro filtering, acrobatic flight modes, GPS rescue, and blackbox telemetry.",
+      "title_en": "Betaflight — Leading open-source flight controller firmware for racing and freestyle FPV drones"
     },
     {
       "id": "repo-karpathy-llama2-c",
@@ -401,7 +403,9 @@
       "curator_note_en": "AI beyond text: transforms a single still portrait and audio track into a photorealistic speaking animation in seconds.",
       "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: GENERATÍV AI",
       "badge_en": "✍️ NEXUSHUB PICK: CREATIVE AI",
-      "merit_score": 900
+      "merit_score": 900,
+      "description_en": "Bring static portraits or anime characters to life with seamless eye-tracking, mouth lip-sync, and head rotation driven by audio or reference video.",
+      "title_en": "LivePortrait — High-speed, high-fidelity portrait animation and talking character generation"
     },
     {
       "id": "repo-z64me-ezspritesheet",
@@ -891,7 +895,9 @@
       "curator_note_en": "Every producer's holy grail: AI-powered stem separation that isolates vocals, drums, bass, and instruments with studio precision.",
       "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: HANG & ZENE",
       "badge_en": "✍️ NEXUSHUB PICK: AUDIO TECH",
-      "merit_score": 880
+      "merit_score": 880,
+      "description_en": "Upload a 3-second clean speech sample and synthesize natural, expressive speech with identical timbre, emotion, and cadence.",
+      "title_en": "F5-TTS — Fair and Fast Non-autoregressive Flow Matching Speech Synthesis system"
     },
     {
       "id": "facebookresearch-demucs",
@@ -921,7 +927,9 @@
       "curator_note_en": "Every producer's holy grail: AI-powered stem separation that isolates vocals, drums, bass, and instruments with studio precision.",
       "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: HANG & ZENE",
       "badge_en": "✍️ NEXUSHUB PICK: AUDIO TECH",
-      "merit_score": 880
+      "merit_score": 880,
+      "description_en": "Isolate crystal-clear vocals, drums, bass, and instruments from any audio file with studio quality using Meta AI deep learning models.",
+      "title_en": "Demucs — Deep learning audio source separation (music stems: vocals, drums, bass, other)"
     },
     {
       "id": "repo-thomluther-ha-anker-solix",
@@ -1018,7 +1026,9 @@
       "curator_note_en": "Where software meets physical lighting: sound-reactive ambient illumination and NeoPixel matrix magic made accessible to everyone.",
       "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: MAKER & IOT",
       "badge_en": "✍️ NEXUSHUB PICK: MAKER & IOT",
-      "merit_score": 850
+      "merit_score": 850,
+      "description_en": "Control NeoPixel and WS2812 LED strips directly from phone or browser. Music rhythm sync, timers, and over 100 stunning lighting effects.",
+      "title_en": "WLED — Fast and feature-rich implementation of an ESP8266/ESP32 webserver to control NeoPixel (WS2812B, WS2811, SK6812) LEDs"
     },
     {
       "id": "repo-cpq-bare-metal-programming-guide",
@@ -1209,7 +1219,9 @@
       "curator_note_en": "Every producer's holy grail: AI-powered stem separation that isolates vocals, drums, bass, and instruments with studio precision.",
       "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: HANG & ZENE",
       "badge_en": "✍️ NEXUSHUB PICK: AUDIO TECH",
-      "merit_score": 780
+      "merit_score": 780,
+      "description_en": "Professional hybrid synthesizer featuring wavetable, analog, and FM synthesis, extensive filter topologies, and flexible modulation matrix.",
+      "title_en": "Surge XT — Open-source hybrid synthesizer VST3/AU plugin with infinite modulation capabilities"
     },
     {
       "id": "repo-screenpipe-screenpipe",
@@ -2227,7 +2239,9 @@
       "curator_note_en": "Where software meets physical lighting: sound-reactive ambient illumination and NeoPixel matrix magic made accessible to everyone.",
       "badge_hu": "✍️ NEXUSHUB AJÁNLÁS: MAKER & IOT",
       "badge_en": "✍️ NEXUSHUB PICK: MAKER & IOT",
-      "merit_score": 750
+      "merit_score": 750,
+      "description_en": "Create breathtaking light animations and high-density matrices with any addressable LED chipset on Arduino and ESP32 microcontrollers.",
+      "title_en": "FastLED — Fast, efficient, easy-to-use LED animation library for Arduino and ESP devices"
     },
     {
       "id": "repo-pathwaycom-llm-app",

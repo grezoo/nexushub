@@ -171,6 +171,68 @@ const CATEGORY_TRANSLATIONS = {
   "Rendszer, Biztonság & Segédprogramok": { en: "System, Security & Utilities", hu: "Rendszer, Biztonság & Segédprogramok", icon: "⚡" }
 };
 
+// Bilingual Subcategory Translations
+const SUBCATEGORY_TRANSLATIONS = {
+  "3D Nyomtatás, CNC & Klipper": "3D Printing, CNC & Klipper",
+  "Algoritmikus Kereskedés & Botok": "Algorithmic Trading & Bots",
+  "Arduino & Mikrokontrollerek": "Arduino & Microcontrollers",
+  "Automatizáció & Produktivitás": "Automation & Productivity",
+  "Autonóm Ágensek & Automatizáció": "Autonomous Agents & Automation",
+  "Backtesting & Portfóliókezelés": "Backtesting & Portfolio Management",
+  "Biztonsági Tesztelés & Adatvédelem": "Security Testing & Privacy",
+  "Blender Kiegészítők & 3D Eszközök": "Blender Addons & 3D Tools",
+  "Digitális Audió Munkaállomások (DAW)": "Digital Audio Workstations (DAW)",
+  "ESP32 & ESP8266 Projektek": "ESP32 & ESP8266 Projects",
+  "Emuláció & Retró Játékok": "Emulation & Retro Gaming",
+  "Fizikai Szimulációk": "Physics & Simulations",
+  "Godot Motor & Kiegészítők": "Godot Engine & Plugins",
+  "Gyorsindítók & Asztali Kiegészítők": "Launchers & Desktop Utilities",
+  "Gépi Tanulás & Neurális Hálók": "Machine Learning & Neural Networks",
+  "Hangklónozás & Beszédszintézis": "Voice Cloning & Speech Synthesis",
+  "Hangtechnika & Audió Eszközök": "Audio Engineering & Tools",
+  "Hangtisztítás & Sávszétválasztás": "Audio Cleaning & Stem Separation",
+  "Home Assistant & Otthonautomatizálás": "Home Assistant & Home Automation",
+  "Hálózatkezelés & VPN (Pi-hole, Wireguard)": "Networking & VPN (Pi-hole, WireGuard)",
+  "Jegyzetelés & Ismeretbázis (Obsidian / Logseq)": "Knowledge Base & Notes (Obsidian / Logseq)",
+  "Jelszókezelők & Adatbiztonság (Vaultwarden)": "Password Managers & Security (Vaultwarden)",
+  "Játékmotorok & 3D Grafika": "Game Engines & 3D Graphics",
+  "Játékmotorok (Godot / Raylib)": "Game Engines (Godot / Raylib)",
+  "Kiberbiztonság & Titkosítás": "Cybersecurity & Cryptography",
+  "Konténerek & Docker Környezetek": "Containers & Docker Environments",
+  "Kreatív Média & Videófeldolgozás": "Creative Media & Video Processing",
+  "Kripto & On-Chain Metrikák": "Crypto & On-Chain Metrics",
+  "Képalkotás & Grafika (FLUX / SD)": "Image Generation & Graphics (FLUX / SD)",
+  "Képernyőfelvétel & Streaming (OBS Studio)": "Screen Recording & Streaming (OBS)",
+  "Képszerkesztők & Kreatív Kódolás": "Image Editors & Creative Coding",
+  "Képszerkesztők (Krita / GIMP / Inkscape)": "Image Editors (Krita / GIMP / Inkscape)",
+  "Közösségi Eszközök": "Community Tools",
+  "Lokális LLM-ek & Csevegők": "Local LLMs & Chatbots",
+  "Mikrokontrollerek & Hardver": "Microcontrollers & Hardware",
+  "Munkafolyamat & Task Management": "Workflows & Task Management",
+  "Médiaszerverek & Otthoni Felhő": "Media Servers & Home Cloud",
+  "Médiaszerverek & Streaming (Jellyfin)": "Media Servers & Streaming (Jellyfin)",
+  "Okosotthon & ESPHome / Zigbee": "Smart Home & ESPHome / Zigbee",
+  "PDF & Dokumentumkezelés": "PDF & Document Management",
+  "Piaci Elemzés & Diagramok": "Market Analysis & Charts",
+  "Pixel Art, Shaders & Vizuális Effektek": "Pixel Art, Shaders & Visual Effects",
+  "Podcast & Streamer Eszközök": "Podcast & Streaming Tools",
+  "Privát Felhő & Fájlkezelés (Nextcloud)": "Private Cloud & File Sync (Nextcloud)",
+  "RAG & Dokumentumelemzés": "RAG & Document Intelligence",
+  "Rendszeradminisztráció & Biztonság": "System Administration & Security",
+  "Rendszerfigyelés & Diagnosztika": "System Monitoring & Diagnostics",
+  "Robotika, Drónok & Edge AI": "Robotics, Drones & Edge AI",
+  "Szenzorok, Kijelzők & LED Mátrixok": "Sensors, Displays & LED Matrices",
+  "Számlázás & Kisvállalati Eszközök": "Invoicing & Small Business Tools",
+  "Számítógépes Látás & Képfelismerés": "Computer Vision & Recognition",
+  "Színkorrekció & Médiakonvertálók (FFmpeg)": "Color Grading & Converters (FFmpeg)",
+  "Terminálok & Shell Eszközök": "Terminals & Shell Tools",
+  "Táblázatok & Adatvizualizáció": "Spreadsheets & Data Visualization",
+  "VST Pluginek & Szintetizátorok": "VST Plugins & Synthesizers",
+  "Videógenerálás & Mozgókép": "Video Generation & Motion",
+  "Videóvágók & Compositing (Kdenlive / Shotcut)": "Video Editors & Compositing (Kdenlive / Shotcut)",
+  "Zenevizualizáció & Algoritmikus Zene": "Music Visualization & Algorithmic Audio"
+};
+
 // English Translations for Seed Functions
 const FUNCTION_TRANSLATIONS_EN = {
   "WiFi-s Címezhető LED Szalag Vezérlő (100+ Effekt)": "WiFi Addressable LED Strip Controller (100+ Effects)",
@@ -382,6 +444,15 @@ function getCategoryName(rawName) {
   return rawName;
 }
 
+// Get translated subcategory name
+function getSubcategoryName(rawName) {
+  if (!rawName) return "";
+  if (currentLang === "en" && SUBCATEGORY_TRANSLATIONS[rawName]) {
+    return SUBCATEGORY_TRANSLATIONS[rawName];
+  }
+  return rawName;
+}
+
 // Get translated function title for card
 function getItemFunctionTitle(item) {
   if (!item) return "";
@@ -464,7 +535,9 @@ function ensureSampleGems() {
       repo_name: "open-maker/esp32-wifi-drone",
       title: "ESP32 WiFi Micro-Drón Vezérlő",
       function_title: "ESP32 WiFi Micro-Drón Vezérlő",
+      title_en: "ESP32 WiFi Micro-Drone Flight Controller & Web Remote",
       description: "Egyetlen ESP32-vel és MPU6050 giroszkóppal működő ultrakönnyű minidrón teljes szoftvere, böngészős távirányítással.",
+      description_en: "Full ultralight micro-drone flight controller firmware powered by a single ESP32 and MPU6050 gyro, featuring browser-based remote control.",
       main_category: "Hardver, IoT & Elektronika",
       sub_category: "Robotika, Drónok & Edge AI",
       thumbnail_url: "https://opengraph.githubassets.com/1/open-maker/esp32-wifi-drone",
@@ -481,7 +554,9 @@ function ensureSampleGems() {
       repo_name: "hungarian-ai/magyar-hang-tts",
       title: "Magyar Hangszintézis Modell (TTS)",
       function_title: "Magyar Hangszintézis Modell (TTS)",
+      title_en: "High-Quality Neural Hungarian Speech Synthesizer (TTS)",
       description: "Tiszta magyar kiejtésre és intonációra tanított könnyűsúlyú hangklónozó modell Raspberry Pi-re és mobilra.",
+      description_en: "Lightweight neural voice cloning model trained on clean Hungarian pronunciation and natural intonation for Raspberry Pi and mobile.",
       main_category: "Mesterséges Intelligencia & Adat",
       sub_category: "Hangklónozás & Beszédszintézis",
       thumbnail_url: "https://opengraph.githubassets.com/1/hungarian-ai/magyar-hang-tts",
@@ -584,7 +659,7 @@ function renderSubCategories() {
   subList.forEach(subName => {
     const btn = document.createElement("button");
     btn.className = `sub-btn ${currentSubCat === subName ? "active" : ""}`;
-    btn.textContent = subName;
+    btn.textContent = getSubcategoryName(subName);
     btn.onclick = () => {
       currentSubCat = subName;
       currentGridLimit = 60;
@@ -617,9 +692,10 @@ function getFilteredAndSortedItems() {
       const matchTitle = (item.title || "").toLowerCase().includes(q);
       const matchFunc = (item.function_title || "").toLowerCase().includes(q);
       const matchDesc = (item.description || "").toLowerCase().includes(q);
+      const matchDescEn = (item.description_en || "").toLowerCase().includes(q);
       const matchRepo = (item.repo_name || "").toLowerCase().includes(q);
       const matchTags = (item.tags || []).some(t => t.toLowerCase().includes(q));
-      if (!matchTitle && !matchFunc && !matchDesc && !matchRepo && !matchTags) {
+      if (!matchTitle && !matchFunc && !matchDesc && !matchDescEn && !matchRepo && !matchTags) {
         return false;
       }
     }
@@ -668,7 +744,7 @@ function renderItems() {
     ? t.hiddenGemsSectionTitle
     : currentMainCat === "all" 
       ? t.exploreAllTitle
-      : `${getCategoryName(currentMainCat)} ${currentSubCat !== "all" ? "› " + currentSubCat : ""}`;
+      : `${getCategoryName(currentMainCat)} ${currentSubCat !== "all" ? "› " + getSubcategoryName(currentSubCat) : ""}`;
   
   itemsFoundText.textContent = `${filtered.length} ${t.projectsFound}`;
 
@@ -777,7 +853,7 @@ function renderShelfView(items) {
     const shelf = document.createElement("div");
     shelf.className = "shelf";
 
-    const displayGroupName = currentMainCat === "all" ? getCategoryName(groupName) : groupName;
+    const displayGroupName = currentMainCat === "all" ? getCategoryName(groupName) : getSubcategoryName(groupName);
 
     const title = document.createElement("h3");
     title.className = "shelf-title";
@@ -814,6 +890,7 @@ function createCardElement(item) {
   const thumbUrl = item.thumbnail_url || `https://opengraph.githubassets.com/1/${item.repo_name}`;
   const functionTitle = getItemFunctionTitle(item);
   const technicalRepo = item.repo_name || item.title;
+  const itemDescription = getItemDescription(item);
 
   // Direct moving video or image markup
   let mediaMarkup = "";
@@ -823,16 +900,16 @@ function createCardElement(item) {
   if (hasMp4) {
     mediaMarkup = `
       <video class="card-video" src="${item.video_demo}" autoplay muted loop playsinline poster="${thumbUrl}"></video>
-      <img src="${thumbUrl}" alt="${functionTitle}" class="card-img card-poster-fallback" loading="lazy" onerror="this.onerror=null; this.src='https://opengraph.githubassets.com/1/${item.repo_name}'">
+      <img src="${thumbUrl}" alt="${escapeHtml(functionTitle)}" class="card-img card-poster-fallback" loading="lazy" onerror="this.onerror=null; this.src='https://opengraph.githubassets.com/1/${item.repo_name}'">
     `;
   } else if (isGif || (item.thumbnail_url && item.thumbnail_url.endsWith(".gif"))) {
     const gifSrc = item.video_demo && item.video_demo.endsWith(".gif") ? item.video_demo : item.thumbnail_url;
     mediaMarkup = `
-      <img src="${gifSrc}" alt="${functionTitle}" class="card-img card-moving-media" loading="eager" onerror="this.onerror=null; this.src='${thumbUrl}'">
+      <img src="${gifSrc}" alt="${escapeHtml(functionTitle)}" class="card-img card-moving-media" loading="eager" onerror="this.onerror=null; this.src='${thumbUrl}'">
     `;
   } else {
     mediaMarkup = `
-      <img src="${thumbUrl}" alt="${functionTitle}" class="card-img" loading="lazy" onerror="this.onerror=null; this.src='https://opengraph.githubassets.com/1/${item.repo_name}'">
+      <img src="${thumbUrl}" alt="${escapeHtml(functionTitle)}" class="card-img" loading="lazy" onerror="this.onerror=null; this.src='https://opengraph.githubassets.com/1/${item.repo_name}'">
     `;
   }
 
@@ -849,24 +926,24 @@ function createCardElement(item) {
       ${isGem ? `<div class="badge-gem">${t.gemBadge}</div>` : ''}
       ${isVintageLegacy ? `<div class="badge-vintage">📼 ${item.year}</div>` : ''}
       ${item.has_video ? `<div class="badge-video">${t.demoBadge}</div>` : ''}
-      <div class="badge-function-tag">${item.sub_category || getCategoryName(item.main_category)}</div>
+      <div class="badge-function-tag">${getSubcategoryName(item.sub_category) || getCategoryName(item.main_category)}</div>
     </div>
     <div class="card-body">
       <div class="card-function-lead">
         <span class="function-label">${t.functionLabel}</span>
-        <h3 class="card-title">${functionTitle}</h3>
+        <h3 class="card-title">${escapeHtml(functionTitle)}</h3>
       </div>
       
       <div class="card-tech-meta">
-        <span class="card-tech-name">📦 ${technicalRepo}</span>
+        <span class="card-tech-name">📦 ${escapeHtml(technicalRepo)}</span>
         <span class="card-year">📅 ${item.year || 2024}</span>
         <span class="card-stars">⭐ ${starsFormatted}</span>
       </div>
 
-      <p class="card-desc">${item.description}</p>
+      <p class="card-desc">${escapeHtml(itemDescription)}</p>
       
       <div class="card-footer">
-        <span class="card-creator">👤 ${item.creator || technicalRepo.split("/")[0]}</span>
+        <span class="card-creator">👤 ${escapeHtml(item.creator || technicalRepo.split("/")[0])}</span>
         <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="card-btn">${t.openGithub}</a>
       </div>
     </div>
@@ -904,10 +981,10 @@ function openDetailModal(item) {
   const functionTitle = getItemFunctionTitle(item);
   modalTitle.textContent = functionTitle;
   modalCategory.textContent = getCategoryName(item.main_category);
-  modalSubCategory.textContent = item.sub_category;
+  modalSubCategory.textContent = getSubcategoryName(item.sub_category);
   modalStars.textContent = `⭐ ${(item.stars || 0).toLocaleString()}`;
-  modalCreator.innerHTML = `${t.modalTechnicalRepo} <strong>${item.repo_name}</strong> | ${t.modalAuthor} <strong>${item.creator || item.repo_name.split("/")[0]}</strong>`;
-  modalDesc.textContent = item.description;
+  modalCreator.innerHTML = `${t.modalTechnicalRepo} <strong>${escapeHtml(item.repo_name)}</strong> | ${t.modalAuthor} <strong>${escapeHtml(item.creator || item.repo_name.split("/")[0])}</strong>`;
+  modalDesc.textContent = getItemDescription(item);
   modalGithubLink.href = item.url;
   modalGithubLink.querySelector("span").textContent = t.modalOpenGithub;
   copyUrlBtn.textContent = t.modalCopyLink;

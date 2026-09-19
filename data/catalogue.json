@@ -1358,7 +1358,9 @@
         "led-effects",
         "hardware"
       ],
-      "year": 2017
+      "year": 2017,
+      "title_en": "WLED — Fast and feature-rich implementation of an ESP8266/ESP32 webserver to control NeoPixel (WS2812B, WS2811, SK6812) LEDs",
+      "description_en": "Control NeoPixel and WS2812 LED strips directly from phone or browser. Music rhythm sync, timers, and over 100 stunning lighting effects."
     },
     {
       "id": "esphome-esphome",
@@ -1381,7 +1383,9 @@
         "smart-home",
         "sensors"
       ],
-      "year": 2010
+      "year": 2010,
+      "title_en": "ESPHome — System to control your ESP8266/ESP32 by simple yet powerful configuration files and Home Assistant",
+      "description_en": "Build smart plugs, climate sensors, and relay controllers with simple YAML config files, zero C++ coding, and instant Home Assistant discovery."
     },
     {
       "id": "Klipper3d-klipper",
@@ -1404,7 +1408,9 @@
         "firmware",
         "precision"
       ],
-      "year": 2016
+      "year": 2016,
+      "title_en": "Klipper — High-precision 3D-printer firmware utilizing Raspberry Pi computing power",
+      "description_en": "Multiply your 3D printer speed without losing print quality. Offloads heavy kinematics calculations to a Raspberry Pi with microsecond precision."
     },
     {
       "id": "espressif-arduino-esp32",
@@ -1427,7 +1433,9 @@
         "microcontroller",
         "embedded"
       ],
-      "year": 2020
+      "year": 2020,
+      "title_en": "Arduino Core for ESP32 — Official Arduino development framework for ESP32 microcontrollers",
+      "description_en": "Program high-speed ESP32 chips using the familiar Arduino framework: built-in WiFi, Bluetooth BLE, capacitive touch, and hardware crypto."
     },
     {
       "id": "betaflight-betaflight",
@@ -1450,7 +1458,9 @@
         "flight-controller",
         "robotics"
       ],
-      "year": 2024
+      "year": 2024,
+      "title_en": "Betaflight — Leading open-source flight controller firmware for racing and freestyle FPV drones",
+      "description_en": "The world-leading flight control software for drones: advanced gyro filtering, acrobatic flight modes, GPS rescue, and blackbox telemetry."
     },
     {
       "id": "FastLED-FastLED",
@@ -1473,7 +1483,9 @@
         "neopixel",
         "animation"
       ],
-      "year": 2017
+      "year": 2017,
+      "title_en": "FastLED — Fast, efficient, easy-to-use LED animation library for Arduino and ESP devices",
+      "description_en": "Create breathtaking light animations and high-density matrices with any addressable LED chipset on Arduino and ESP32 microcontrollers."
     },
     {
       "id": "comfyanonymous-ComfyUI",
@@ -1496,7 +1508,9 @@
         "diffusion",
         "creative"
       ],
-      "year": 2024
+      "year": 2024,
+      "title_en": "ComfyUI — The most powerful modular diffusion GUI and node-based backend for FLUX and SD",
+      "description_en": "Assemble visual node graphs to generate photorealistic imagery, upscale artwork, and design production pipelines with FLUX and Stable Diffusion."
     },
     {
       "id": "browser-use-browser-use",
@@ -1518,7 +1532,9 @@
         "agent",
         "automation"
       ],
-      "year": 2019
+      "year": 2019,
+      "title_en": "Browser Use — Open-source web automation library making AI agents click, browse, and fill forms",
+      "description_en": "Let AI agents handle your web tasks: find cheap flight tickets, fill out complex multistep forms, and extract structured data automatically."
     },
     {
       "id": "KwaiVGI-LivePortrait",
@@ -1540,7 +1556,9 @@
         "animation",
         "shorts"
       ],
-      "year": 2024
+      "year": 2024,
+      "title_en": "LivePortrait — High-speed, high-fidelity portrait animation and talking character generation",
+      "description_en": "Bring static portraits or anime characters to life with seamless eye-tracking, mouth lip-sync, and head rotation driven by audio or reference video."
     },
     {
       "id": "SWivid-F5-TTS",
@@ -1562,7 +1580,9 @@
         "voice-clone",
         "audio-ai"
       ],
-      "year": 2021
+      "year": 2021,
+      "title_en": "F5-TTS — Fair and Fast Non-autoregressive Flow Matching Speech Synthesis system",
+      "description_en": "Upload a 3-second clean speech sample and synthesize natural, expressive speech with identical timbre, emotion, and cadence."
     },
     {
       "id": "ollama-ollama",
@@ -1584,7 +1604,9 @@
         "offline",
         "ai"
       ],
-      "year": 2024
+      "year": 2024,
+      "title_en": "Ollama — Get up and running with Llama 3, DeepSeek, and other large language models locally",
+      "description_en": "Run Llama 3, DeepSeek, and Qwen locally on your laptop without internet or subscription fees. Complete privacy, local chat, and API access."
     },
     {
       "id": "godotengine-godot",
@@ -1608,7 +1630,9 @@
         "3d",
         "2d"
       ],
-      "year": 2018
+      "year": 2018,
+      "title_en": "Godot Engine — Feature-rich, cross-platform 2D and 3D open-source game engine",
+      "description_en": "Build professional 2D and 3D indie games. Lightweight dedicated editor, built-in physics engine, and one-click export to PC, mobile, and web."
     },
     {
       "id": "aseprite-aseprite",
@@ -1631,7 +1655,9 @@
         "sprite",
         "creative"
       ],
-      "year": 2023
+      "year": 2023,
+      "title_en": "Aseprite — Animated sprite editor and pixel art tool for game developers and artists",
+      "description_en": "The gold standard for animated pixel art: frame-by-frame timeline, layers, color palettes, onionskinning, and direct spritesheet export."
     },
     {
       "id": "facebookresearch-demucs",
@@ -1654,7 +1680,9 @@
         "music",
         "ai-audio"
       ],
-      "year": 2025
+      "year": 2025,
+      "title_en": "Demucs — Deep learning audio source separation (music stems: vocals, drums, bass, other)",
+      "description_en": "Isolate crystal-clear vocals, drums, bass, and instruments from any audio file with studio quality using Meta AI deep learning models."
     },
     {
       "id": "surge-synthesizer-surge",
@@ -1677,7 +1705,9 @@
         "music-production",
         "audio"
       ],
-      "year": 2025
+      "year": 2025,
+      "title_en": "Surge XT — Open-source hybrid synthesizer VST3/AU plugin with infinite modulation capabilities",
+      "description_en": "Professional hybrid synthesizer featuring wavetable, analog, and FM synthesis, extensive filter topologies, and flexible modulation matrix."
     },
     {
       "id": "jellyfin-jellyfin",
@@ -1700,7 +1730,9 @@
         "home-lab",
         "self-hosted"
       ],
-      "year": 2019
+      "year": 2019,
+      "title_en": "Jellyfin — The Free Software Media System for movies, TV shows, and music streaming",
+      "description_en": "Build your own private media streaming service on a home server or Raspberry Pi with zero subscription fees, tracking, or ads."
     },
     {
       "id": "home-assistant-core",
@@ -1723,7 +1755,9 @@
         "automation",
         "privacy"
       ],
-      "year": 2023
+      "year": 2023,
+      "title_en": "Home Assistant — Open-source home automation that puts local control and privacy first",
+      "description_en": "Connect and unify smart lights, climate controls, sensors, and locks into one dashboard — completely offline with 100% local data privacy."
     },
     {
       "id": "pi-hole-pi-hole",
@@ -1746,7 +1780,9 @@
         "privacy",
         "raspberry-pi"
       ],
-      "year": 2018
+      "year": 2018,
+      "title_en": "Pi-hole — Network-wide DNS sinkhole for blocking ads and malicious tracking domains",
+      "description_en": "Block ads and tracking domains across your entire home network: protect smart TVs, phones, tablets, and computers simultaneously."
     },
     {
       "id": "Frooodle-Stirling-PDF",
@@ -1769,7 +1805,9 @@
         "office",
         "utilities"
       ],
-      "year": 2020
+      "year": 2020,
+      "title_en": "Stirling-PDF — Locally hosted one-stop-shop web application for all your PDF editing needs",
+      "description_en": "Powerful local PDF Swiss-Army knife: merge, split, OCR text recognition, rotate, redact, and convert PDFs directly inside your browser."
     },
     {
       "id": "obsproject-obs-studio",
@@ -1792,7 +1830,9 @@
         "obs",
         "broadcasting"
       ],
-      "year": 2024
+      "year": 2024,
+      "title_en": "OBS Studio — Free and open-source software for video recording and live streaming",
+      "description_en": "Create professional tutorial videos, YouTube live broadcasts, and multi-camera recordings with real-time video/audio mixing and GPU encoding."
     },
     {
       "id": "Krita-krita",
@@ -1815,7 +1855,9 @@
         "illustration",
         "creatives"
       ],
-      "year": 2018
+      "year": 2018,
+      "title_en": "Krita — Free and open-source digital painting, illustration, and concept art application",
+      "description_en": "Professional digital painting and concept art studio engineered for illustrators, comic artists, and matte painters with advanced brush engines."
     },
     {
       "id": "repo-mithi-hexapod",
