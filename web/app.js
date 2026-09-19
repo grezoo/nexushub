@@ -77,7 +77,9 @@ const I18N = {
     sliderTitle: "NexusHub Official Bookshop Showcase — Hand-Curated Open Source Gems",
     sliderCuratorLead: "✨ NexusHub Editorial Review:",
     sliderWatchDemo: "Watch Live Demo ▶",
-    sliderOpenRepo: "Open GitHub ↗"
+    sliderOpenRepo: "Open GitHub ↗",
+    loadMoreBtn: "⬇ Load More Projects",
+    showingCount: "Showing"
   },
   hu: {
     searchPlaceholder: "Keresés projektek, funkciók, tagek között... (pl. flux, esp32, whisper)",
@@ -148,7 +150,9 @@ const I18N = {
     sliderTitle: "NexusHub Könyvesbolti Kurátori Válogatás — Működő demók és rejtett kincsek",
     sliderCuratorLead: "✨ NexusHub Kurátori Indoklás:",
     sliderWatchDemo: "Demó Megtekintése ▶",
-    sliderOpenRepo: "GitHub Megnyitása ↗"
+    sliderOpenRepo: "GitHub Megnyitása ↗",
+    loadMoreBtn: "⬇ További Projektek Betöltése",
+    showingCount: "Megjelenítve"
   }
 };
 
@@ -533,6 +537,7 @@ function renderMainCategories() {
 function selectMainCategory(catName) {
   currentMainCat = catName;
   currentSubCat = "all";
+  currentGridLimit = 60;
   renderMainCategories();
   renderSubCategories();
   renderItems();
@@ -558,6 +563,7 @@ function renderSubCategories() {
   allSubBtn.textContent = t.allSubcategories;
   allSubBtn.onclick = () => {
     currentSubCat = "all";
+    currentGridLimit = 60;
     renderSubCategories();
     renderItems();
   };
@@ -573,6 +579,7 @@ function renderSubCategories() {
     btn.textContent = subName;
     btn.onclick = () => {
       currentSubCat = subName;
+      currentGridLimit = 60;
       renderSubCategories();
       renderItems();
     };
@@ -668,7 +675,9 @@ function renderItems() {
   }
 }
 
-// Render Grid View
+let currentGridLimit = 60;
+
+// Render Grid View with Smart Batch Loading (Scales to 50,000+ items seamlessly)
 function renderGridView(items) {
   const t = I18N[currentLang];
   cardsGrid.innerHTML = "";
@@ -684,9 +693,33 @@ function renderGridView(items) {
     return;
   }
 
-  items.forEach(item => {
+  const batch = items.slice(0, currentGridLimit);
+  batch.forEach(item => {
     cardsGrid.appendChild(createCardElement(item));
   });
+
+  if (items.length > currentGridLimit) {
+    const loadMoreWrapper = document.createElement("div");
+    loadMoreWrapper.className = "load-more-wrapper";
+    loadMoreWrapper.style.cssText = "grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 0 20px;";
+
+    const info = document.createElement("p");
+    info.style.cssText = "font-size: 13px; color: var(--text-dim); margin-bottom: 14px; font-weight: 500;";
+    info.textContent = `${t.showingCount}: ${batch.length} / ${items.length} ${t.projectsFound}`;
+
+    const btn = document.createElement("button");
+    btn.className = "btn btn-primary";
+    btn.style.cssText = "padding: 12px 36px; font-size: 14px; font-weight: 700; border-radius: 9999px; cursor: pointer; box-shadow: 0 4px 20px rgba(168, 85, 247, 0.35); transition: transform 0.2s ease;";
+    btn.textContent = `${t.loadMoreBtn} (+60)`;
+    btn.onclick = () => {
+      currentGridLimit += 60;
+      renderGridView(items);
+    };
+
+    loadMoreWrapper.appendChild(info);
+    loadMoreWrapper.appendChild(btn);
+    cardsGrid.appendChild(loadMoreWrapper);
+  }
 }
 
 // Render Shelf View
@@ -925,6 +958,7 @@ function setupEventListeners() {
   // Search input
   searchInput.addEventListener("input", (e) => {
     searchQuery = e.target.value;
+    currentGridLimit = 60;
     renderItems();
   });
 
@@ -943,6 +977,7 @@ function setupEventListeners() {
   onlyVideoBtn.addEventListener("click", () => {
     onlyVideosFilter = !onlyVideosFilter;
     onlyVideoBtn.classList.toggle("active", onlyVideosFilter);
+    currentGridLimit = 60;
     renderItems();
   });
 
@@ -950,12 +985,14 @@ function setupEventListeners() {
   hiddenGemsBtn.addEventListener("click", () => {
     onlyGemsFilter = !onlyGemsFilter;
     hiddenGemsBtn.classList.toggle("active", onlyGemsFilter);
+    currentGridLimit = 60;
     renderItems();
   });
 
   // Sort change
   sortSelect.addEventListener("change", (e) => {
     currentSort = e.target.value;
+    currentGridLimit = 60;
     renderItems();
   });
 
@@ -963,6 +1000,7 @@ function setupEventListeners() {
   if (vintageSelect) {
     vintageSelect.addEventListener("change", (e) => {
       currentVintage = e.target.value;
+      currentGridLimit = 60;
       renderItems();
     });
   }

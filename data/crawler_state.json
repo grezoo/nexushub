@@ -1,0 +1,2744 @@
+{
+  "total_runs": 1,
+  "discovered_lists": {
+    "bcoe/awesome-cross-platform-nodejs": {
+      "crawled": false,
+      "count": 0
+    },
+    "dypsilon/frontend-dev-bookmarks": {
+      "crawled": false,
+      "count": 0
+    },
+    "vsouza/awesome-ios": {
+      "crawled": false,
+      "count": 0
+    },
+    "JStumpp/awesome-android": {
+      "crawled": false,
+      "count": 0
+    },
+    "weblancaster/awesome-IoT-hybrid": {
+      "crawled": false,
+      "count": 0
+    },
+    "busterc/awesome-cordova": {
+      "crawled": false,
+      "count": 0
+    },
+    "jondot/awesome-react-native": {
+      "crawled": false,
+      "count": 0
+    },
+    "Friz-zy/awesome-linux-containers": {
+      "crawled": false,
+      "count": 0
+    },
+    "zoidbergwill/awesome-ebpf": {
+      "crawled": false,
+      "count": 0
+    },
+    "PandaFoss/Awesome-Arch": {
+      "crawled": false,
+      "count": 0
+    },
+    "AppImageCommunity/awesome-appimage": {
+      "crawled": false,
+      "count": 0
+    },
+    "aorumbayev/awesome-omarchy": {
+      "crawled": false,
+      "count": 0
+    },
+    "agarrharr/awesome-macos-screensavers": {
+      "crawled": false,
+      "count": 0
+    },
+    "jaywcjlove/awesome-mac": {
+      "crawled": false,
+      "count": 0
+    },
+    "serhii-londar/open-source-mac-os-apps": {
+      "crawled": false,
+      "count": 0
+    },
+    "yenchenlin/awesome-watchos": {
+      "crawled": false,
+      "count": 0
+    },
+    "deephacks/awesome-jvm": {
+      "crawled": false,
+      "count": 0
+    },
+    "mailtoharshit/awesome-salesforce": {
+      "crawled": false,
+      "count": 0
+    },
+    "donnemartin/awesome-aws": {
+      "crawled": false,
+      "count": 0
+    },
+    "0pandadev/awesome-windows": {
+      "crawled": false,
+      "count": 0
+    },
+    "hlaueriksson/awesome-powertoys-run-plugins": {
+      "crawled": false,
+      "count": 0
+    },
+    "ipfs/awesome-ipfs": {
+      "crawled": false,
+      "count": 0
+    },
+    "fuse-compound/awesome-fuse": {
+      "crawled": false,
+      "count": 0
+    },
+    "ianstormtaylor/awesome-heroku": {
+      "crawled": false,
+      "count": 0
+    },
+    "thibmaek/awesome-raspberry-pi": {
+      "crawled": false,
+      "count": 0
+    },
+    "fregante/Awesome-WebExtensions": {
+      "crawled": false,
+      "count": 0
+    },
+    "vitalets/awesome-smart-tv": {
+      "crawled": false,
+      "count": 0
+    },
+    "Kazhnuz/awesome-gnome": {
+      "crawled": false,
+      "count": 0
+    },
+    "francoism90/awesome-kde": {
+      "crawled": false,
+      "count": 0
+    },
+    "quozd/awesome-dotnet": {
+      "crawled": false,
+      "count": 0
+    },
+    "thangchung/awesome-dotnet-core": {
+      "crawled": false,
+      "count": 0
+    },
+    "ironcev/awesome-roslyn": {
+      "crawled": false,
+      "count": 0
+    },
+    "jonleibowitz/awesome-digitalocean": {
+      "crawled": false,
+      "count": 0
+    },
+    "Solido/awesome-flutter": {
+      "crawled": false,
+      "count": 0
+    },
+    "frenck/awesome-home-assistant": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Hardver, IoT & Elektronika",
+      "sub_cat": "Okosotthon"
+    },
+    "victorshinya/awesome-ibmcloud": {
+      "crawled": false,
+      "count": 0
+    },
+    "jthegedus/awesome-firebase": {
+      "crawled": false,
+      "count": 0
+    },
+    "adafruit/awesome-adafruitio": {
+      "crawled": false,
+      "count": 0
+    },
+    "irazasyed/awesome-cloudflare": {
+      "crawled": false,
+      "count": 0
+    },
+    "ravirupareliya/awesome-actions-on-google": {
+      "crawled": false,
+      "count": 0
+    },
+    "agucova/awesome-esp": {
+      "crawled": false,
+      "count": 0
+    },
+    "denolib/awesome-deno": {
+      "crawled": false,
+      "count": 0
+    },
+    "balintkissdev/awesome-dos": {
+      "crawled": false,
+      "count": 0
+    },
+    "nix-community/awesome-nix": {
+      "crawled": false,
+      "count": 0
+    },
+    "stn1slv/awesome-integration": {
+      "crawled": false,
+      "count": 0
+    },
+    "naimo84/awesome-nodered": {
+      "crawled": false,
+      "count": 0
+    },
+    "zenitysec/awesome-low-code": {
+      "crawled": false,
+      "count": 0
+    },
+    "riderx/awesome-capacitor": {
+      "crawled": false,
+      "count": 0
+    },
+    "Esri/awesome-arcgis-developer": {
+      "crawled": false,
+      "count": 0
+    },
+    "dotintent/awesome-ble": {
+      "crawled": false,
+      "count": 0
+    },
+    "MartinZikmund/awesome-uno-platform": {
+      "crawled": false,
+      "count": 0
+    },
+    "xavidop/awesome-firebase-genkit": {
+      "crawled": false,
+      "count": 0
+    },
+    "shano/awesome-backstage": {
+      "crawled": false,
+      "count": 0
+    },
+    "sorrycc/awesome-javascript": {
+      "crawled": false,
+      "count": 0
+    },
+    "wbinnssmith/awesome-promises": {
+      "crawled": false,
+      "count": 0
+    },
+    "standard/awesome-standard": {
+      "crawled": false,
+      "count": 0
+    },
+    "bolshchikov/js-must-watch": {
+      "crawled": false,
+      "count": 0
+    },
+    "loverajoel/jstips": {
+      "crawled": false,
+      "count": 0
+    },
+    "Kikobeats/awesome-network-js": {
+      "crawled": false,
+      "count": 0
+    },
+    "parro-it/awesome-micro-npm-packages": {
+      "crawled": false,
+      "count": 0
+    },
+    "feross/awesome-mad-science": {
+      "crawled": false,
+      "count": 0
+    },
+    "maxogden/maintenance-modules": {
+      "crawled": false,
+      "count": 0
+    },
+    "avajs/awesome-ava": {
+      "crawled": false,
+      "count": 0
+    },
+    "dustinspecker/awesome-eslint": {
+      "crawled": false,
+      "count": 0
+    },
+    "stoeffel/awesome-fp-js": {
+      "crawled": false,
+      "count": 0
+    },
+    "RyanZim/awesome-npm-scripts": {
+      "crawled": false,
+      "count": 0
+    },
+    "30-seconds/30-seconds-of-code": {
+      "crawled": false,
+      "count": 0
+    },
+    "Richienb/awesome-ponyfills": {
+      "crawled": false,
+      "count": 0
+    },
+    "matteocrippa/awesome-swift": {
+      "crawled": false,
+      "count": 0
+    },
+    "hsavit1/Awesome-Swift-Education": {
+      "crawled": false,
+      "count": 0
+    },
+    "uraimo/Awesome-Swift-Playgrounds": {
+      "crawled": false,
+      "count": 0
+    },
+    "vinta/awesome-python": {
+      "crawled": false,
+      "count": 0
+    },
+    "timofurrer/awesome-asyncio": {
+      "crawled": false,
+      "count": 0
+    },
+    "faroit/awesome-python-scientific-audio": {
+      "crawled": false,
+      "count": 0
+    },
+    "adafruit/awesome-circuitpython": {
+      "crawled": false,
+      "count": 0
+    },
+    "krzjoa/awesome-python-data-science": {
+      "crawled": false,
+      "count": 0
+    },
+    "typeddjango/awesome-python-typing": {
+      "crawled": false,
+      "count": 0
+    },
+    "mcauser/awesome-micropython": {
+      "crawled": false,
+      "count": 0
+    },
+    "rust-unofficial/awesome-rust": {
+      "crawled": false,
+      "count": 0
+    },
+    "pest-parser/awesome-pest": {
+      "crawled": false,
+      "count": 0
+    },
+    "krispo/awesome-haskell": {
+      "crawled": false,
+      "count": 0
+    },
+    "passy/awesome-purescript": {
+      "crawled": false,
+      "count": 0
+    },
+    "avelino/awesome-go": {
+      "crawled": false,
+      "count": 0
+    },
+    "lauris/awesome-scala": {
+      "crawled": false,
+      "count": 0
+    },
+    "tindzk/awesome-scala-native": {
+      "crawled": false,
+      "count": 0
+    },
+    "markets/awesome-ruby": {
+      "crawled": false,
+      "count": 0
+    },
+    "razum2um/awesome-clojure": {
+      "crawled": false,
+      "count": 0
+    },
+    "hantuzun/awesome-clojurescript": {
+      "crawled": false,
+      "count": 0
+    },
+    "h4cc/awesome-elixir": {
+      "crawled": false,
+      "count": 0
+    },
+    "sporto/awesome-elm": {
+      "crawled": false,
+      "count": 0
+    },
+    "drobakowski/awesome-erlang": {
+      "crawled": false,
+      "count": 0
+    },
+    "svaksha/Julia.jl": {
+      "crawled": false,
+      "count": 0
+    },
+    "LewisJEllis/awesome-lua": {
+      "crawled": false,
+      "count": 0
+    },
+    "fffaraz/awesome-cpp": {
+      "crawled": false,
+      "count": 0
+    },
+    "qinwf/awesome-R": {
+      "crawled": false,
+      "count": 0
+    },
+    "iamericfletcher/awesome-r-learning-resources": {
+      "crawled": false,
+      "count": 0
+    },
+    "dlang-community/awesome-d": {
+      "crawled": false,
+      "count": 0
+    },
+    "CodyReichert/awesome-cl": {
+      "crawled": false,
+      "count": 0
+    },
+    "GustavBertram/awesome-common-lisp-learning": {
+      "crawled": false,
+      "count": 0
+    },
+    "hachiojipm/awesome-perl": {
+      "crawled": false,
+      "count": 0
+    },
+    "kdabir/awesome-groovy": {
+      "crawled": false,
+      "count": 0
+    },
+    "yissachar/awesome-dart": {
+      "crawled": false,
+      "count": 0
+    },
+    "akullpp/awesome-java": {
+      "crawled": false,
+      "count": 0
+    },
+    "eleventigers/awesome-rxjava": {
+      "crawled": true,
+      "count": 32
+    },
+    "hstsethi/awesome-j2me": {
+      "crawled": false,
+      "count": 0
+    },
+    "KotlinBy/awesome-kotlin": {
+      "crawled": false,
+      "count": 0
+    },
+    "ocaml-community/awesome-ocaml": {
+      "crawled": false,
+      "count": 0
+    },
+    "seancoyne/awesome-coldfusion": {
+      "crawled": false,
+      "count": 0
+    },
+    "rabbiabram/awesome-fortran": {
+      "crawled": false,
+      "count": 0
+    },
+    "ziadoz/awesome-php": {
+      "crawled": false,
+      "count": 0
+    },
+    "jakoch/awesome-composer": {
+      "crawled": false,
+      "count": 0
+    },
+    "Fr0sT-Brutal/awesome-pascal": {
+      "crawled": false,
+      "count": 0
+    },
+    "ahkscript/awesome-AutoHotkey": {
+      "crawled": false,
+      "count": 0
+    },
+    "J2TeaM/awesome-AutoIt": {
+      "crawled": false,
+      "count": 0
+    },
+    "veelenga/awesome-crystal": {
+      "crawled": false,
+      "count": 0
+    },
+    "onqtam/awesome-cmake": {
+      "crawled": false,
+      "count": 0
+    },
+    "robinrodricks/awesome-actionscript3": {
+      "crawled": false,
+      "count": 0
+    },
+    "joaomilho/awesome-idris": {
+      "crawled": false,
+      "count": 0
+    },
+    "ohenley/awesome-ada": {
+      "crawled": false,
+      "count": 0
+    },
+    "ebraminio/awesome-qsharp": {
+      "crawled": false,
+      "count": 0
+    },
+    "koolamusic/awesome-imba": {
+      "crawled": false,
+      "count": 0
+    },
+    "desiderantes/awesome-vala": {
+      "crawled": false,
+      "count": 0
+    },
+    "coq-community/awesome-coq": {
+      "crawled": false,
+      "count": 0
+    },
+    "vlang/awesome-v": {
+      "crawled": false,
+      "count": 0
+    },
+    "MystenLabs/awesome-move": {
+      "crawled": false,
+      "count": 0
+    },
+    "angrykoala/awesome-esolangs": {
+      "crawled": false,
+      "count": 0
+    },
+    "sancarn/awesome-vba": {
+      "crawled": false,
+      "count": 0
+    },
+    "fsprojects/awesome-fsharp": {
+      "crawled": false,
+      "count": 0
+    },
+    "addyosmani/es6-tools": {
+      "crawled": false,
+      "count": 0
+    },
+    "davidsonfellipe/awesome-wpo": {
+      "crawled": false,
+      "count": 0
+    },
+    "lvwzhen/tools": {
+      "crawled": false,
+      "count": 0
+    },
+    "awesome-css-group/awesome-css": {
+      "crawled": false,
+      "count": 0
+    },
+    "addyosmani/critical-path-css-tools": {
+      "crawled": false,
+      "count": 0
+    },
+    "davidtheclark/scalable-css-reading-list": {
+      "crawled": false,
+      "count": 0
+    },
+    "AllThingsSmitty/must-watch-css": {
+      "crawled": false,
+      "count": 0
+    },
+    "AllThingsSmitty/css-protips": {
+      "crawled": false,
+      "count": 0
+    },
+    "troxler/awesome-css-frameworks": {
+      "crawled": false,
+      "count": 0
+    },
+    "enaqx/awesome-react": {
+      "crawled": false,
+      "count": 0
+    },
+    "expede/awesome-relay": {
+      "crawled": false,
+      "count": 0
+    },
+    "glauberfc/awesome-react-hooks": {
+      "crawled": false,
+      "count": 0
+    },
+    "web-padawan/awesome-web-components": {
+      "crawled": false,
+      "count": 0
+    },
+    "Granze/awesome-polymer": {
+      "crawled": false,
+      "count": 0
+    },
+    "PatrickJS/awesome-angular": {
+      "crawled": false,
+      "count": 0
+    },
+    "sadcitizen/awesome-backbone": {
+      "crawled": false,
+      "count": 0
+    },
+    "diegocard/awesome-html5": {
+      "crawled": false,
+      "count": 0
+    },
+    "willianjusten/awesome-svg": {
+      "crawled": false,
+      "count": 0
+    },
+    "raphamorim/awesome-canvas": {
+      "crawled": false,
+      "count": 0
+    },
+    "dnbard/awesome-knockout": {
+      "crawled": false,
+      "count": 0
+    },
+    "petk/awesome-dojo": {
+      "crawled": false,
+      "count": 0
+    },
+    "NoahBuscher/Inspire": {
+      "crawled": false,
+      "count": 0
+    },
+    "ember-community-russia/awesome-ember": {
+      "crawled": false,
+      "count": 0
+    },
+    "wasabeef/awesome-android-ui": {
+      "crawled": false,
+      "count": 0
+    },
+    "cjwirth/awesome-ios-ui": {
+      "crawled": false,
+      "count": 0
+    },
+    "Urigo/awesome-meteor": {
+      "crawled": false,
+      "count": 0
+    },
+    "sturobson/BEM-resources": {
+      "crawled": false,
+      "count": 0
+    },
+    "afonsopacifer/awesome-flexbox": {
+      "crawled": false,
+      "count": 0
+    },
+    "deanhume/typography": {
+      "crawled": false,
+      "count": 0
+    },
+    "brunopulis/awesome-a11y": {
+      "crawled": false,
+      "count": 0
+    },
+    "sachin1092/awesome-material": {
+      "crawled": false,
+      "count": 0
+    },
+    "wbkd/awesome-d3": {
+      "crawled": false,
+      "count": 0
+    },
+    "jonathandion/awesome-emails": {
+      "crawled": false,
+      "count": 0
+    },
+    "petk/awesome-jquery": {
+      "crawled": false,
+      "count": 0
+    },
+    "AllThingsSmitty/jquery-tips-everyone-should-know": {
+      "crawled": false,
+      "count": 0
+    },
+    "notthetup/awesome-webaudio": {
+      "crawled": false,
+      "count": 0
+    },
+    "pazguille/offline-first": {
+      "crawled": false,
+      "count": 0
+    },
+    "agarrharr/awesome-static-website-services": {
+      "crawled": false,
+      "count": 0
+    },
+    "cyclejs-community/awesome-cyclejs": {
+      "crawled": false,
+      "count": 0
+    },
+    "dok/awesome-text-editing": {
+      "crawled": false,
+      "count": 0
+    },
+    "fliptheweb/motion-ui-design": {
+      "crawled": false,
+      "count": 0
+    },
+    "vuejs/awesome-vue": {
+      "crawled": false,
+      "count": 0
+    },
+    "sadcitizen/awesome-marionette": {
+      "crawled": false,
+      "count": 0
+    },
+    "aurelia-contrib/awesome-aurelia": {
+      "crawled": false,
+      "count": 0
+    },
+    "zingchart/awesome-charting": {
+      "crawled": false,
+      "count": 0
+    },
+    "candelibas/awesome-ionic": {
+      "crawled": false,
+      "count": 0
+    },
+    "ChromeDevTools/awesome-chrome-devtools": {
+      "crawled": false,
+      "count": 0
+    },
+    "jdrgomes/awesome-postcss": {
+      "crawled": false,
+      "count": 0
+    },
+    "nikgraf/awesome-draft-js": {
+      "crawled": false,
+      "count": 0
+    },
+    "TalAter/awesome-service-workers": {
+      "crawled": false,
+      "count": 0
+    },
+    "TalAter/awesome-progressive-web-apps": {
+      "crawled": false,
+      "count": 0
+    },
+    "choojs/awesome-choo": {
+      "crawled": false,
+      "count": 0
+    },
+    "brillout/awesome-redux": {
+      "crawled": false,
+      "count": 0
+    },
+    "browserify/awesome-browserify": {
+      "crawled": false,
+      "count": 0
+    },
+    "Famolus/awesome-sass": {
+      "crawled": false,
+      "count": 0
+    },
+    "websemantics/awesome-ant-design": {
+      "crawled": false,
+      "count": 0
+    },
+    "LucasBassetti/awesome-less": {
+      "crawled": false,
+      "count": 0
+    },
+    "sjfricke/awesome-webgl": {
+      "crawled": false,
+      "count": 0
+    },
+    "preactjs/awesome-preact": {
+      "crawled": false,
+      "count": 0
+    },
+    "jbmoelker/progressive-enhancement-resources": {
+      "crawled": false,
+      "count": 0
+    },
+    "unicodeveloper/awesome-nextjs": {
+      "crawled": false,
+      "count": 0
+    },
+    "web-padawan/awesome-lit": {
+      "crawled": false,
+      "count": 0
+    },
+    "automata/awesome-jamstack": {
+      "crawled": false,
+      "count": 0
+    },
+    "henrikwirth/awesome-wordpress-gatsby": {
+      "crawled": false,
+      "count": 0
+    },
+    "myshov/awesome-mobile-web-development": {
+      "crawled": false,
+      "count": 0
+    },
+    "lauthieb/awesome-storybook": {
+      "crawled": false,
+      "count": 0
+    },
+    "AdrienTorris/awesome-blazor": {
+      "crawled": false,
+      "count": 0
+    },
+    "csabapalfi/awesome-pagespeed-metrics": {
+      "crawled": false,
+      "count": 0
+    },
+    "aniftyco/awesome-tailwindcss": {
+      "crawled": false,
+      "count": 0
+    },
+    "seed-rs/awesome-seed-rs": {
+      "crawled": false,
+      "count": 0
+    },
+    "pajaydev/awesome-web-performance-budget": {
+      "crawled": false,
+      "count": 0
+    },
+    "sergey-pimenov/awesome-web-animation": {
+      "crawled": false,
+      "count": 0
+    },
+    "jetli/awesome-yew": {
+      "crawled": false,
+      "count": 0
+    },
+    "nadunindunil/awesome-material-ui": {
+      "crawled": false,
+      "count": 0
+    },
+    "componently-com/awesome-building-blocks-for-web-apps": {
+      "crawled": false,
+      "count": 0
+    },
+    "TheComputerM/awesome-svelte": {
+      "crawled": false,
+      "count": 0
+    },
+    "klaufel/awesome-design-systems": {
+      "crawled": false,
+      "count": 0
+    },
+    "innocenzi/awesome-inertiajs": {
+      "crawled": false,
+      "count": 0
+    },
+    "mdbootstrap/awesome-mdbootstrap": {
+      "crawled": false,
+      "count": 0
+    },
+    "master-co/awesome-master-css": {
+      "crawled": false,
+      "count": 0
+    },
+    "shopify/awesome-hydrogen": {
+      "crawled": false,
+      "count": 0
+    },
+    "thoughtspile/awesome-tiny-js": {
+      "crawled": false,
+      "count": 0
+    },
+    "joewdavies/awesome-frontend-gis": {
+      "crawled": false,
+      "count": 0
+    },
+    "mikbry/awesome-webgpu": {
+      "crawled": false,
+      "count": 0
+    },
+    "idematos/awesome-webassembly": {
+      "crawled": false,
+      "count": 0
+    },
+    "mjhea0/awesome-flask": {
+      "crawled": false,
+      "count": 0
+    },
+    "veggiemonk/awesome-docker": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Rendszer, Biztonság & Segédprogramok",
+      "sub_cat": "Docker & Konténerek"
+    },
+    "iJackUA/awesome-vagrant": {
+      "crawled": false,
+      "count": 0
+    },
+    "uralbash/awesome-pyramid": {
+      "crawled": false,
+      "count": 0
+    },
+    "PerfectCarl/awesome-play1": {
+      "crawled": false,
+      "count": 0
+    },
+    "friendsofcake/awesome-cakephp": {
+      "crawled": false,
+      "count": 0
+    },
+    "sitepoint-editors/awesome-symfony": {
+      "crawled": false,
+      "count": 0
+    },
+    "pehapkari/awesome-symfony-education": {
+      "crawled": false,
+      "count": 0
+    },
+    "chiraggude/awesome-laravel": {
+      "crawled": false,
+      "count": 0
+    },
+    "fukuball/Awesome-Laravel-Education": {
+      "crawled": false,
+      "count": 0
+    },
+    "gramantin/awesome-rails": {
+      "crawled": false,
+      "count": 0
+    },
+    "hothero/awesome-rails-gem": {
+      "crawled": false,
+      "count": 0
+    },
+    "phalcon/awesome-phalcon": {
+      "crawled": false,
+      "count": 0
+    },
+    "phanan/htaccess": {
+      "crawled": false,
+      "count": 0
+    },
+    "fcambus/nginx-resources": {
+      "crawled": false,
+      "count": 0
+    },
+    "stve/awesome-dropwizard": {
+      "crawled": false,
+      "count": 0
+    },
+    "ramitsurana/awesome-kubernetes": {
+      "crawled": false,
+      "count": 0
+    },
+    "unicodeveloper/awesome-lumen": {
+      "crawled": false,
+      "count": 0
+    },
+    "pmuens/awesome-serverless": {
+      "crawled": false,
+      "count": 0
+    },
+    "PhantomYdn/awesome-wicket": {
+      "crawled": false,
+      "count": 0
+    },
+    "vert-x3/vertx-awesome": {
+      "crawled": false,
+      "count": 0
+    },
+    "shuaibiyy/awesome-terraform": {
+      "crawled": false,
+      "count": 0
+    },
+    "vapor-community/awesome-vapor": {
+      "crawled": false,
+      "count": 0
+    },
+    "ucg8j/awesome-dash": {
+      "crawled": false,
+      "count": 0
+    },
+    "mjhea0/awesome-fastapi": {
+      "crawled": false,
+      "count": 0
+    },
+    "kolomied/awesome-cdk": {
+      "crawled": false,
+      "count": 0
+    },
+    "kdeldycke/awesome-iam": {
+      "crawled": false,
+      "count": 0
+    },
+    "nekofar/awesome-slim": {
+      "crawled": false,
+      "count": 0
+    },
+    "gofiber/awesome-fiber": {
+      "crawled": false,
+      "count": 0
+    },
+    "DevOpsHiveHQ/awesome-kustomize": {
+      "crawled": false,
+      "count": 0
+    },
+    "virtualroot/awesome-opentofu": {
+      "crawled": false,
+      "count": 0
+    },
+    "reflex-dev/awesome-reflex": {
+      "crawled": false,
+      "count": 0
+    },
+    "prakhar1989/awesome-courses": {
+      "crawled": false,
+      "count": 0
+    },
+    "academic/awesome-datascience": {
+      "crawled": false,
+      "count": 0
+    },
+    "siboehm/awesome-learn-datascience": {
+      "crawled": false,
+      "count": 0
+    },
+    "josephmisiti/awesome-machine-learning": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Mesterséges Intelligencia & Adat",
+      "sub_cat": "Gépi Tanulás"
+    },
+    "ujjwalkarn/Machine-Learning-Tutorials": {
+      "crawled": false,
+      "count": 0
+    },
+    "arbox/machine-learning-with-ruby": {
+      "crawled": false,
+      "count": 0
+    },
+    "likedan/Awesome-CoreML-Models": {
+      "crawled": false,
+      "count": 0
+    },
+    "h2oai/awesome-h2o": {
+      "crawled": false,
+      "count": 0
+    },
+    "SE-ML/awesome-seml": {
+      "crawled": false,
+      "count": 0
+    },
+    "georgezouq/awesome-ai-in-finance": {
+      "crawled": false,
+      "count": 0
+    },
+    "n2cholas/awesome-jax": {
+      "crawled": false,
+      "count": 0
+    },
+    "altamiracorp/awesome-xai": {
+      "crawled": false,
+      "count": 0
+    },
+    "edobashira/speech-language-processing": {
+      "crawled": false,
+      "count": 0
+    },
+    "dav009/awesome-spanish-nlp": {
+      "crawled": false,
+      "count": 0
+    },
+    "arbox/nlp-with-ruby": {
+      "crawled": false,
+      "count": 0
+    },
+    "seriousran/awesome-qa": {
+      "crawled": false,
+      "count": 0
+    },
+    "accelerated-text/awesome-nlg": {
+      "crawled": false,
+      "count": 0
+    },
+    "theimpossibleastronaut/awesome-linguistics": {
+      "crawled": false,
+      "count": 0
+    },
+    "sobolevn/awesome-cryptography": {
+      "crawled": false,
+      "count": 0
+    },
+    "pFarb/awesome-crypto-papers": {
+      "crawled": false,
+      "count": 0
+    },
+    "jbhuang0604/awesome-computer-vision": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Mesterséges Intelligencia & Adat",
+      "sub_cat": "Számítógépes Látás"
+    },
+    "ChristosChristofidis/awesome-deep-learning": {
+      "crawled": false,
+      "count": 0
+    },
+    "jtoy/awesome-tensorflow": {
+      "crawled": false,
+      "count": 0
+    },
+    "aaronhma/awesome-tensorflow-js": {
+      "crawled": false,
+      "count": 0
+    },
+    "margaretmz/awesome-tensorflow-lite": {
+      "crawled": false,
+      "count": 0
+    },
+    "terryum/awesome-deep-learning-papers": {
+      "crawled": false,
+      "count": 0
+    },
+    "guillaume-chevalier/awesome-deep-learning-resources": {
+      "crawled": false,
+      "count": 0
+    },
+    "kjw0612/awesome-deep-vision": {
+      "crawled": false,
+      "count": 0
+    },
+    "ossu/computer-science": {
+      "crawled": false,
+      "count": 0
+    },
+    "lucasviola/awesome-functional-programming": {
+      "crawled": false,
+      "count": 0
+    },
+    "dspinellis/awesome-msr": {
+      "crawled": false,
+      "count": 0
+    },
+    "analysis-tools-dev/static-analysis": {
+      "crawled": false,
+      "count": 0
+    },
+    "harpribot/awesome-information-retrieval": {
+      "crawled": false,
+      "count": 0
+    },
+    "desireevl/awesome-quantum-computing": {
+      "crawled": false,
+      "count": 0
+    },
+    "mostafatouny/awesome-theoretical-computer-science": {
+      "crawled": true,
+      "count": 2
+    },
+    "jyguyomarch/awesome-conversational-ai": {
+      "crawled": false,
+      "count": 0
+    },
+    "steven2358/awesome-generative-ai": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Mesterséges Intelligencia & Adat",
+      "sub_cat": "Generatív AI"
+    },
+    "Renaller/awesome-position-based-quantum-cryptography": {
+      "crawled": false,
+      "count": 0
+    },
+    "0xnr/awesome-bigdata": {
+      "crawled": false,
+      "count": 0
+    },
+    "awesomedata/awesome-public-datasets": {
+      "crawled": false,
+      "count": 0
+    },
+    "youngwookim/awesome-hadoop": {
+      "crawled": false,
+      "count": 0
+    },
+    "igorbarinov/awesome-data-engineering": {
+      "crawled": false,
+      "count": 0
+    },
+    "manuzhang/awesome-streaming": {
+      "crawled": false,
+      "count": 0
+    },
+    "awesome-spark/awesome-spark": {
+      "crawled": false,
+      "count": 0
+    },
+    "ambster-public/awesome-qlik": {
+      "crawled": false,
+      "count": 0
+    },
+    "sduff/awesome-splunk": {
+      "crawled": false,
+      "count": 0
+    },
+    "briatte/awesome-network-analysis": {
+      "crawled": false,
+      "count": 0
+    },
+    "papers-we-love/papers-we-love": {
+      "crawled": false,
+      "count": 0
+    },
+    "JanVanRyswyck/awesome-talks": {
+      "crawled": false,
+      "count": 0
+    },
+    "tayllan/awesome-algorithms": {
+      "crawled": false,
+      "count": 0
+    },
+    "gaerae/awesome-algorithms-education": {
+      "crawled": false,
+      "count": 0
+    },
+    "enjalot/algovis": {
+      "crawled": false,
+      "count": 0
+    },
+    "owainlewis/awesome-artificial-intelligence": {
+      "crawled": false,
+      "count": 0
+    },
+    "marcobiedermann/search-engine-optimization": {
+      "crawled": false,
+      "count": 0
+    },
+    "lnishan/awesome-competitive-programming": {
+      "crawled": false,
+      "count": 0
+    },
+    "rossant/awesome-math": {
+      "crawled": false,
+      "count": 0
+    },
+    "passy/awesome-recursion-schemes": {
+      "crawled": false,
+      "count": 0
+    },
+    "erwanlemerrer/awesome-audit-algorithms": {
+      "crawled": false,
+      "count": 0
+    },
+    "YuzheSHI/awesome-agi-cocosci": {
+      "crawled": false,
+      "count": 0
+    },
+    "sellisd/awesome-complexity": {
+      "crawled": false,
+      "count": 0
+    },
+    "gokayfem/awesome-vlm-architectures": {
+      "crawled": false,
+      "count": 0
+    },
+    "EbookFoundation/free-programming-books": {
+      "crawled": false,
+      "count": 0
+    },
+    "dariubs/GoBooks": {
+      "crawled": false,
+      "count": 0
+    },
+    "RomanTsegelskyi/rbooks": {
+      "crawled": false,
+      "count": 0
+    },
+    "hackerkid/Mind-Expanding-Books": {
+      "crawled": false,
+      "count": 0
+    },
+    "TalAter/awesome-book-authoring": {
+      "crawled": false,
+      "count": 0
+    },
+    "sger/ElixirBooks": {
+      "crawled": false,
+      "count": 0
+    },
+    "dreikanter/sublime-bookmarks": {
+      "crawled": false,
+      "count": 0
+    },
+    "mhinz/vim-galore": {
+      "crawled": false,
+      "count": 0
+    },
+    "rockerBOO/awesome-neovim": {
+      "crawled": false,
+      "count": 0
+    },
+    "emacs-tw/awesome-emacs": {
+      "crawled": false,
+      "count": 0
+    },
+    "viatsko/awesome-vscode": {
+      "crawled": false,
+      "count": 0
+    },
+    "ellisonleao/magictools": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Játékfejlesztés, 3D & Grafika",
+      "sub_cat": "Gamedev Eszközök"
+    },
+    "hzoo/awesome-gametalks": {
+      "crawled": false,
+      "count": 0
+    },
+    "godotengine/awesome-godot": {
+      "crawled": false,
+      "count": 0
+    },
+    "michelpereira/awesome-open-source-games": {
+      "crawled": false,
+      "count": 0
+    },
+    "hkirat/awesome-chess": {
+      "crawled": false,
+      "count": 0
+    },
+    "love2d-community/awesome-love2d": {
+      "crawled": false,
+      "count": 0
+    },
+    "pico-8/awesome-PICO-8": {
+      "crawled": false,
+      "count": 0
+    },
+    "gbdev/awesome-gbdev": {
+      "crawled": false,
+      "count": 0
+    },
+    "ConstructCommunity/awesome-construct": {
+      "crawled": false,
+      "count": 0
+    },
+    "stetso/awesome-gideros": {
+      "crawled": false,
+      "count": 0
+    },
+    "bs-community/awesome-minecraft": {
+      "crawled": false,
+      "count": 0
+    },
+    "tomodachi94/awesome-computercraft": {
+      "crawled": false,
+      "count": 0
+    },
+    "leomaurodesenv/game-datasets": {
+      "crawled": false,
+      "count": 0
+    },
+    "Dvergar/awesome-haxe-gamedev": {
+      "crawled": false,
+      "count": 0
+    },
+    "rafaskb/awesome-libgdx": {
+      "crawled": false,
+      "count": 0
+    },
+    "playcanvas/awesome-playcanvas": {
+      "crawled": false,
+      "count": 0
+    },
+    "radek-sprta/awesome-game-remakes": {
+      "crawled": false,
+      "count": 0
+    },
+    "flame-engine/awesome-flame": {
+      "crawled": false,
+      "count": 0
+    },
+    "mhxion/awesome-discord-communities": {
+      "crawled": false,
+      "count": 0
+    },
+    "tobiasvl/awesome-chip-8": {
+      "crawled": false,
+      "count": 0
+    },
+    "michelpereira/awesome-games-of-coding": {
+      "crawled": false,
+      "count": 0
+    },
+    "strift/awesome-esports": {
+      "crawled": false,
+      "count": 0
+    },
+    "notpresident35/awesome-learn-gamedev": {
+      "crawled": false,
+      "count": 0
+    },
+    "stevinz/awesome-game-engine-dev": {
+      "crawled": false,
+      "count": 0
+    },
+    "bytecauldron/awesome-gamemaker": {
+      "crawled": false,
+      "count": 0
+    },
+    "vhladiienko/awesome-game-production": {
+      "crawled": false,
+      "count": 0
+    },
+    "Symbitic/awesome-babylonjs": {
+      "crawled": false,
+      "count": 0
+    },
+    "awesome-roblox/awesome-roblox": {
+      "crawled": false,
+      "count": 0
+    },
+    "sindresorhus/quick-look-plugins": {
+      "crawled": false,
+      "count": 0
+    },
+    "jondot/awesome-devenv": {
+      "crawled": false,
+      "count": 0
+    },
+    "webpro/awesome-dotfiles": {
+      "crawled": false,
+      "count": 0
+    },
+    "alebcay/awesome-shell": {
+      "crawled": false,
+      "count": 0
+    },
+    "jorgebucaran/awsm.fish": {
+      "crawled": false,
+      "count": 0
+    },
+    "agarrharr/awesome-cli-apps": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Produktivitás & Irodai Munka",
+      "sub_cat": "CLI Eszközök"
+    },
+    "unixorn/awesome-zsh-plugins": {
+      "crawled": false,
+      "count": 0
+    },
+    "phillipadsmith/awesome-github": {
+      "crawled": false,
+      "count": 0
+    },
+    "stefanbuck/awesome-browser-extensions-for-github": {
+      "crawled": false,
+      "count": 0
+    },
+    "tiimgreen/github-cheat-sheet": {
+      "crawled": false,
+      "count": 0
+    },
+    "matchai/awesome-pinned-gists": {
+      "crawled": false,
+      "count": 0
+    },
+    "arslanbilal/git-cheat-sheet": {
+      "crawled": false,
+      "count": 0
+    },
+    "git-tips/tips": {
+      "crawled": false,
+      "count": 0
+    },
+    "stevemao/awesome-git-addons": {
+      "crawled": false,
+      "count": 0
+    },
+    "compscilauren/awesome-git-hooks": {
+      "crawled": false,
+      "count": 0
+    },
+    "moul/awesome-ssh": {
+      "crawled": false,
+      "count": 0
+    },
+    "tvvocold/FOSS-for-Dev": {
+      "crawled": false,
+      "count": 0
+    },
+    "bnb/awesome-hyper": {
+      "crawled": false,
+      "count": 0
+    },
+    "k4m4/terminals-are-sexy": {
+      "crawled": false,
+      "count": 0
+    },
+    "sdras/awesome-actions": {
+      "crawled": false,
+      "count": 0
+    },
+    "michaelbrusegard/awesome-wezterm": {
+      "crawled": true,
+      "count": 50
+    },
+    "RichardLitt/awesome-fantasy": {
+      "crawled": false,
+      "count": 0
+    },
+    "ayr-ton/awesome-geek-podcasts": {
+      "crawled": false,
+      "count": 0
+    },
+    "zudochkin/awesome-newsletters": {
+      "crawled": false,
+      "count": 0
+    },
+    "victorlaerte/awesome-it-quotes": {
+      "crawled": false,
+      "count": 0
+    },
+    "numetriclabz/awesome-db": {
+      "crawled": false,
+      "count": 0
+    },
+    "shlomi-noach/awesome-mysql": {
+      "crawled": false,
+      "count": 0
+    },
+    "dahlia/awesome-sqlalchemy": {
+      "crawled": false,
+      "count": 0
+    },
+    "mark-rushakoff/awesome-influxdb": {
+      "crawled": false,
+      "count": 0
+    },
+    "neueda/awesome-neo4j": {
+      "crawled": false,
+      "count": 0
+    },
+    "ramnes/awesome-mongodb": {
+      "crawled": false,
+      "count": 0
+    },
+    "d3viant0ne/awesome-rethinkdb": {
+      "crawled": false,
+      "count": 0
+    },
+    "mohataher/awesome-tinkerpop": {
+      "crawled": false,
+      "count": 0
+    },
+    "dhamaniasad/awesome-postgres": {
+      "crawled": false,
+      "count": 0
+    },
+    "quangv/awesome-couchdb": {
+      "crawled": false,
+      "count": 0
+    },
+    "rayokota/awesome-hbase": {
+      "crawled": false,
+      "count": 0
+    },
+    "erictleung/awesome-nosql-guides": {
+      "crawled": false,
+      "count": 0
+    },
+    "mgramin/awesome-db-tools": {
+      "crawled": false,
+      "count": 0
+    },
+    "vaticle/typedb-awesome": {
+      "crawled": false,
+      "count": 0
+    },
+    "lyqht/awesome-supabase": {
+      "crawled": false,
+      "count": 0
+    },
+    "benallfree/awesome-pocketbase": {
+      "crawled": false,
+      "count": 0
+    },
+    "tyaga001/awesome-neon": {
+      "crawled": false,
+      "count": 0
+    },
+    "brabadu/awesome-fonts": {
+      "crawled": false,
+      "count": 0
+    },
+    "chrissimpkins/codeface": {
+      "crawled": false,
+      "count": 0
+    },
+    "neutraltone/awesome-stock-resources": {
+      "crawled": false,
+      "count": 0
+    },
+    "davisonio/awesome-gif": {
+      "crawled": false,
+      "count": 0
+    },
+    "ciconia/awesome-music": {
+      "crawled": false,
+      "count": 0
+    },
+    "44bits/awesome-opensource-documents": {
+      "crawled": false,
+      "count": 0
+    },
+    "willianjusten/awesome-audio-visualization": {
+      "crawled": false,
+      "count": 0
+    },
+    "ebu/awesome-broadcasting": {
+      "crawled": false,
+      "count": 0
+    },
+    "Siilwyn/awesome-pixel-art": {
+      "crawled": true,
+      "count": 0
+    },
+    "transitive-bullshit/awesome-ffmpeg": {
+      "crawled": false,
+      "count": 0
+    },
+    "notlmn/awesome-icons": {
+      "crawled": false,
+      "count": 0
+    },
+    "stingalleman/awesome-audiovisual": {
+      "crawled": false,
+      "count": 0
+    },
+    "mfkl/awesome-vlc": {
+      "crawled": true,
+      "count": 21
+    },
+    "Mo-way/awesome-aoip": {
+      "crawled": false,
+      "count": 0
+    },
+    "therebelrobot/awesome-workshopper": {
+      "crawled": false,
+      "count": 0
+    },
+    "karlhorky/learn-to-program": {
+      "crawled": false,
+      "count": 0
+    },
+    "matteofigus/awesome-speaking": {
+      "crawled": true,
+      "count": 2
+    },
+    "lucasviola/awesome-tech-videos": {
+      "crawled": false,
+      "count": 0
+    },
+    "watson/awesome-computer-history": {
+      "crawled": false,
+      "count": 0
+    },
+    "HollyAdele/awesome-programming-for-kids": {
+      "crawled": false,
+      "count": 0
+    },
+    "RahulBirCodes/awesome-steam": {
+      "crawled": false,
+      "count": 0
+    },
+    "yrgo/awesome-educational-games": {
+      "crawled": false,
+      "count": 0
+    },
+    "micromata/awesome-javascript-learning": {
+      "crawled": false,
+      "count": 0
+    },
+    "micromata/awesome-css-learning": {
+      "crawled": false,
+      "count": 0
+    },
+    "dend/awesome-product-management": {
+      "crawled": false,
+      "count": 0
+    },
+    "liuchong/awesome-roadmaps": {
+      "crawled": false,
+      "count": 0
+    },
+    "JoseDeFreitas/awesome-youtubers": {
+      "crawled": false,
+      "count": 0
+    },
+    "dribdat/awesome-hackathon": {
+      "crawled": false,
+      "count": 0
+    },
+    "PanXProject/awesome-certificates": {
+      "crawled": false,
+      "count": 0
+    },
+    "paragonie/awesome-appsec": {
+      "crawled": false,
+      "count": 0
+    },
+    "sbilly/awesome-security": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Rendszer, Biztonság & Segédprogramok",
+      "sub_cat": "Biztonság & Hacking"
+    },
+    "apsdehal/awesome-ctf": {
+      "crawled": false,
+      "count": 0
+    },
+    "brootware/awesome-cyber-security-university": {
+      "crawled": false,
+      "count": 0
+    },
+    "rshipp/awesome-malware-analysis": {
+      "crawled": false,
+      "count": 0
+    },
+    "ashishb/android-security-awesome": {
+      "crawled": false,
+      "count": 0
+    },
+    "carpedm20/awesome-hacking": {
+      "crawled": false,
+      "count": 0
+    },
+    "daviddias/awesome-hacking-locations": {
+      "crawled": false,
+      "count": 0
+    },
+    "paralax/awesome-honeypots": {
+      "crawled": false,
+      "count": 0
+    },
+    "meirwah/awesome-incident-response": {
+      "crawled": false,
+      "count": 0
+    },
+    "jaredthecoder/awesome-vehicle-security": {
+      "crawled": false,
+      "count": 0
+    },
+    "qazbnm456/awesome-web-security": {
+      "crawled": false,
+      "count": 0
+    },
+    "fabacab/awesome-lockpicking": {
+      "crawled": false,
+      "count": 0
+    },
+    "fabacab/awesome-cybersecurity-blueteam": {
+      "crawled": false,
+      "count": 0
+    },
+    "cpuu/awesome-fuzzing": {
+      "crawled": false,
+      "count": 0
+    },
+    "fkie-cad/awesome-embedded-and-iot-security": {
+      "crawled": false,
+      "count": 0
+    },
+    "bakke92/awesome-gdpr": {
+      "crawled": false,
+      "count": 0
+    },
+    "TaptuIT/awesome-devsecops": {
+      "crawled": false,
+      "count": 0
+    },
+    "dhondta/awesome-executable-packing": {
+      "crawled": false,
+      "count": 0
+    },
+    "Karneades/awesome-malware-persistence": {
+      "crawled": false,
+      "count": 0
+    },
+    "kareniel/awesome-evm-security": {
+      "crawled": false,
+      "count": 0
+    },
+    "n0kovo/awesome-password-cracking": {
+      "crawled": false,
+      "count": 0
+    },
+    "Karneades/awesome-security-card-games": {
+      "crawled": false,
+      "count": 0
+    },
+    "satta/awesome-suricata": {
+      "crawled": false,
+      "count": 0
+    },
+    "FonduAI/awesome-prompt-injection": {
+      "crawled": false,
+      "count": 0
+    },
+    "infosecB/awesome-detection-engineering": {
+      "crawled": false,
+      "count": 0
+    },
+    "jacobdjwilson/awesome-annual-security-reports": {
+      "crawled": false,
+      "count": 0
+    },
+    "TupleType/awesome-cicd-attacks": {
+      "crawled": false,
+      "count": 0
+    },
+    "cerberauth/awesome-openid-connect": {
+      "crawled": false,
+      "count": 0
+    },
+    "umbraco-community/awesome-umbraco": {
+      "crawled": false,
+      "count": 0
+    },
+    "refinerycms-contrib/awesome-refinerycms": {
+      "crawled": false,
+      "count": 0
+    },
+    "springload/awesome-wagtail": {
+      "crawled": false,
+      "count": 0
+    },
+    "drmonkeyninja/awesome-textpattern": {
+      "crawled": false,
+      "count": 0
+    },
+    "nirgn975/awesome-drupal": {
+      "crawled": false,
+      "count": 0
+    },
+    "craftcms/awesome": {
+      "crawled": false,
+      "count": 0
+    },
+    "MartinMiles/Awesome-Sitecore": {
+      "crawled": false,
+      "count": 0
+    },
+    "wernerkrauss/awesome-silverstripe-cms": {
+      "crawled": false,
+      "count": 0
+    },
+    "directus-community/awesome-directus": {
+      "crawled": false,
+      "count": 0
+    },
+    "collective/awesome-plone": {
+      "crawled": false,
+      "count": 0
+    },
+    "DanailMinchev/awesome-payload": {
+      "crawled": false,
+      "count": 0
+    },
+    "Kiloreux/awesome-robotics": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Hardver, IoT & Elektronika",
+      "sub_cat": "Robotika & Drónok"
+    },
+    "HQarroum/awesome-iot": {
+      "crawled": false,
+      "count": 0
+    },
+    "kitspace/awesome-electronics": {
+      "crawled": false,
+      "count": 0
+    },
+    "rabschi/awesome-beacon": {
+      "crawled": true,
+      "count": 34
+    },
+    "gitfrage/guitarspecs": {
+      "crawled": false,
+      "count": 0
+    },
+    "beardicus/awesome-plotters": {
+      "crawled": false,
+      "count": 0
+    },
+    "protontypes/awesome-robotic-tooling": {
+      "crawled": false,
+      "count": 0
+    },
+    "szenergy/awesome-lidar": {
+      "crawled": false,
+      "count": 0
+    },
+    "delftopenhardware/awesome-open-hardware": {
+      "crawled": false,
+      "count": 0
+    },
+    "rickstaa/awesome-adsb": {
+      "crawled": false,
+      "count": 0
+    },
+    "Matthias84/awesome-flying-fpv": {
+      "crawled": false,
+      "count": 0
+    },
+    "opencompany/awesome-open-company": {
+      "crawled": false,
+      "count": 0
+    },
+    "mmccaff/PlacesToPostYourStartup": {
+      "crawled": false,
+      "count": 0
+    },
+    "domenicosolazzo/awesome-okr": {
+      "crawled": false,
+      "count": 0
+    },
+    "mezod/awesome-indie": {
+      "crawled": false,
+      "count": 0
+    },
+    "cjbarber/ToolsOfTheTrade": {
+      "crawled": false,
+      "count": 0
+    },
+    "nglgzz/awesome-clean-tech": {
+      "crawled": false,
+      "count": 0
+    },
+    "wardley-maps-community/awesome-wardley-maps": {
+      "crawled": false,
+      "count": 0
+    },
+    "RayBB/awesome-social-enterprise": {
+      "crawled": false,
+      "count": 0
+    },
+    "kdeldycke/awesome-engineering-team-management": {
+      "crawled": true,
+      "count": 11
+    },
+    "agamm/awesome-developer-first": {
+      "crawled": false,
+      "count": 0
+    },
+    "kdeldycke/awesome-billing": {
+      "crawled": false,
+      "count": 0
+    },
+    "aleixmorgadas/awesome-engineering-strategy": {
+      "crawled": false,
+      "count": 0
+    },
+    "matiassingers/awesome-slack": {
+      "crawled": false,
+      "count": 0
+    },
+    "filipelinhares/awesome-slack": {
+      "crawled": false,
+      "count": 0
+    },
+    "lukasz-madon/awesome-remote-job": {
+      "crawled": false,
+      "count": 0
+    },
+    "jyguyomarch/awesome-productivity": {
+      "crawled": false,
+      "count": 0
+    },
+    "tramcar/awesome-job-boards": {
+      "crawled": false,
+      "count": 0
+    },
+    "joho/awesome-code-review": {
+      "crawled": false,
+      "count": 0
+    },
+    "j0hnm4r5/awesome-creative-technology": {
+      "crawled": false,
+      "count": 0
+    },
+    "caesar0301/awesome-pcaptools": {
+      "crawled": false,
+      "count": 0
+    },
+    "rtckit/awesome-rtc": {
+      "crawled": false,
+      "count": 0
+    },
+    "eozer/awesome-snmp": {
+      "crawled": false,
+      "count": 0
+    },
+    "secdev/awesome-scapy": {
+      "crawled": false,
+      "count": 0
+    },
+    "seifrajhi/awesome-cilium": {
+      "crawled": false,
+      "count": 0
+    },
+    "igorbarinov/awesome-bitcoin": {
+      "crawled": false,
+      "count": 0
+    },
+    "vhpoet/awesome-ripple": {
+      "crawled": false,
+      "count": 0
+    },
+    "machinomy/awesome-non-financial-blockchain": {
+      "crawled": false,
+      "count": 0
+    },
+    "hyperupcall/awesome-mastodon": {
+      "crawled": false,
+      "count": 0
+    },
+    "ttumiel/Awesome-Ethereum": {
+      "crawled": false,
+      "count": 0
+    },
+    "steven2358/awesome-blockchain-ai": {
+      "crawled": false,
+      "count": 0
+    },
+    "DanailMinchev/awesome-eosio": {
+      "crawled": false,
+      "count": 0
+    },
+    "chainstack/awesome-corda": {
+      "crawled": false,
+      "count": 0
+    },
+    "msmolyakov/awesome-waves": {
+      "crawled": false,
+      "count": 0
+    },
+    "substrate-developer-hub/awesome-substrate": {
+      "crawled": false,
+      "count": 0
+    },
+    "golemfactory/awesome-golem": {
+      "crawled": false,
+      "count": 0
+    },
+    "friedger/awesome-stacks-chain": {
+      "crawled": false,
+      "count": 0
+    },
+    "aorumbayev/awesome-algorand": {
+      "crawled": false,
+      "count": 0
+    },
+    "zolagonano/awesome-zeronet": {
+      "crawled": false,
+      "count": 0
+    },
+    "cosmos/awesome-cosmos": {
+      "crawled": false,
+      "count": 0
+    },
+    "polycarbohydrate/awesome-tor": {
+      "crawled": false,
+      "count": 0
+    },
+    "atblueprints/awesome-atproto": {
+      "crawled": false,
+      "count": 0
+    },
+    "caufieldjh/awesome-bioie": {
+      "crawled": false,
+      "count": 0
+    },
+    "eselkin/awesome-computational-neuroscience": {
+      "crawled": false,
+      "count": 0
+    },
+    "folkswhocode/awesome-diversity": {
+      "crawled": false,
+      "count": 0
+    },
+    "maehr/awesome-digital-history": {
+      "crawled": false,
+      "count": 0
+    },
+    "KimberlyMunoz/empathy-in-engineering": {
+      "crawled": false,
+      "count": 0
+    },
+    "kakoni/awesome-healthcare": {
+      "crawled": false,
+      "count": 0
+    },
+    "dreamingechoes/awesome-mental-health": {
+      "crawled": false,
+      "count": 0
+    },
+    "analyticalmonk/awesome-neuroscience": {
+      "crawled": false,
+      "count": 0
+    },
+    "dh-tech/awesome-digital-humanities": {
+      "crawled": false,
+      "count": 0
+    },
+    "IAmCoder/awesome-lucid-dreams": {
+      "crawled": false,
+      "count": 0
+    },
+    "NPACore/awesome-neuroimaging": {
+      "crawled": false,
+      "count": 0
+    },
+    "cvyl/awesome-transgender": {
+      "crawled": false,
+      "count": 0
+    },
+    "danvoyce/awesome-creative-tech-events": {
+      "crawled": false,
+      "count": 0
+    },
+    "ildoc/awesome-italy-events": {
+      "crawled": false,
+      "count": 0
+    },
+    "awkward/awesome-netherlands-events": {
+      "crawled": false,
+      "count": 0
+    },
+    "TheJambo/awesome-testing": {
+      "crawled": false,
+      "count": 0
+    },
+    "mojoaxel/awesome-regression-testing": {
+      "crawled": false,
+      "count": 0
+    },
+    "christian-bromann/awesome-selenium": {
+      "crawled": false,
+      "count": 0
+    },
+    "SrinivasanTarget/awesome-appium": {
+      "crawled": false,
+      "count": 0
+    },
+    "aliesbelik/awesome-jmeter": {
+      "crawled": false,
+      "count": 0
+    },
+    "grafana/awesome-k6": {
+      "crawled": false,
+      "count": 0
+    },
+    "mxschmitt/awesome-playwright": {
+      "crawled": false,
+      "count": 0
+    },
+    "fityanos/awesome-quality-assurance-roadmap": {
+      "crawled": false,
+      "count": 0
+    },
+    "aliesbelik/awesome-gatling": {
+      "crawled": false,
+      "count": 0
+    },
+    "coderabbitai/awesome-coderabbit": {
+      "crawled": false,
+      "count": 0
+    },
+    "writing-resources/awesome-scientific-writing": {
+      "crawled": false,
+      "count": 0
+    },
+    "burningtree/awesome-json": {
+      "crawled": false,
+      "count": 0
+    },
+    "tmcw/awesome-geojson": {
+      "crawled": false,
+      "count": 0
+    },
+    "secretGeek/awesomeCSV": {
+      "crawled": false,
+      "count": 0
+    },
+    "AchoArnold/discount-for-student-dev": {
+      "crawled": false,
+      "count": 0
+    },
+    "kyleterry/awesome-radio": {
+      "crawled": false,
+      "count": 0
+    },
+    "0xnr/awesome-analytics": {
+      "crawled": false,
+      "count": 0
+    },
+    "marmelab/awesome-rest": {
+      "crawled": false,
+      "count": 0
+    },
+    "cicdops/awesome-ciandcd": {
+      "crawled": false,
+      "count": 0
+    },
+    "mmcgrana/services-engineering": {
+      "crawled": false,
+      "count": 0
+    },
+    "ripienaar/free-for-dev": {
+      "crawled": false,
+      "count": 0
+    },
+    "melvin0008/awesome-projects-boilerplates": {
+      "crawled": false,
+      "count": 0
+    },
+    "matiassingers/awesome-readme": {
+      "crawled": false,
+      "count": 0
+    },
+    "MyHoneyBadger/awesome-github-wiki": {
+      "crawled": false,
+      "count": 0
+    },
+    "NARKOZ/guides": {
+      "crawled": false,
+      "count": 0
+    },
+    "kilimchoi/engineering-blogs": {
+      "crawled": false,
+      "count": 0
+    },
+    "awesome-selfhosted/awesome-selfhosted": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Self-Hosted & Otthoni Szerverek",
+      "sub_cat": "Otthoni Szerverek"
+    },
+    "DataDaoDe/awesome-foss-apps": {
+      "crawled": false,
+      "count": 0
+    },
+    "alferov/awesome-gulp": {
+      "crawled": false,
+      "count": 0
+    },
+    "sindresorhus/amas": {
+      "crawled": false,
+      "count": 0
+    },
+    "stoeffel/awesome-ama-answers": {
+      "crawled": false,
+      "count": 0
+    },
+    "ibaaj/awesome-OpenSourcePhotography": {
+      "crawled": false,
+      "count": 0
+    },
+    "eug/awesome-opengl": {
+      "crawled": false,
+      "count": 0
+    },
+    "chentsulin/awesome-graphql": {
+      "crawled": false,
+      "count": 0
+    },
+    "APA-Technology-Division/urban-and-regional-planning-resources": {
+      "crawled": false,
+      "count": 0
+    },
+    "MobilityData/awesome-transit": {
+      "crawled": false,
+      "count": 0
+    },
+    "emptymalei/awesome-research": {
+      "crawled": false,
+      "count": 0
+    },
+    "javierluraschi/awesome-dataviz": {
+      "crawled": false,
+      "count": 0
+    },
+    "mfornos/awesome-microservices": {
+      "crawled": false,
+      "count": 0
+    },
+    "jagracey/Awesome-Unicode": {
+      "crawled": false,
+      "count": 0
+    },
+    "Codepoints/awesome-codepoints": {
+      "crawled": false,
+      "count": 0
+    },
+    "MunGell/awesome-for-beginners": {
+      "crawled": false,
+      "count": 0
+    },
+    "gamontal/awesome-katas": {
+      "crawled": false,
+      "count": 0
+    },
+    "drewrwilson/toolsforactivism": {
+      "crawled": false,
+      "count": 0
+    },
+    "dylanrees/citizen-science": {
+      "crawled": false,
+      "count": 0
+    },
+    "hobbyquaker/awesome-mqtt": {
+      "crawled": false,
+      "count": 0
+    },
+    "cristianoliveira/awesome4girls": {
+      "crawled": false,
+      "count": 0
+    },
+    "vorpaljs/awesome-vorpal": {
+      "crawled": false,
+      "count": 0
+    },
+    "vinjn/awesome-vulkan": {
+      "crawled": false,
+      "count": 0
+    },
+    "egeerardyn/awesome-LaTeX": {
+      "crawled": false,
+      "count": 0
+    },
+    "antontarasenko/awesome-economics": {
+      "crawled": false,
+      "count": 0
+    },
+    "sublimino/awesome-funny-markov": {
+      "crawled": false,
+      "count": 0
+    },
+    "danielecook/Awesome-Bioinformatics": {
+      "crawled": false,
+      "count": 0
+    },
+    "hsiaoyi0504/awesome-cheminformatics": {
+      "crawled": false,
+      "count": 0
+    },
+    "Siddharth11/Colorful": {
+      "crawled": false,
+      "count": 0
+    },
+    "scholtzm/awesome-steam": {
+      "crawled": false,
+      "count": 0
+    },
+    "hackerkid/bots": {
+      "crawled": false,
+      "count": 0
+    },
+    "dastergon/awesome-sre": {
+      "crawled": false,
+      "count": 0
+    },
+    "xen0l/awesome-dtrace": {
+      "crawled": false,
+      "count": 0
+    },
+    "bvolpato/awesome-userscripts": {
+      "crawled": false,
+      "count": 0
+    },
+    "tobiasbueschel/awesome-pokemon": {
+      "crawled": false,
+      "count": 0
+    },
+    "exAspArk/awesome-chatops": {
+      "crawled": false,
+      "count": 0
+    },
+    "kdeldycke/awesome-falsehood": {
+      "crawled": false,
+      "count": 0
+    },
+    "heynickc/awesome-ddd": {
+      "crawled": false,
+      "count": 0
+    },
+    "woop/awesome-quantified-self": {
+      "crawled": false,
+      "count": 0
+    },
+    "nicolesaidy/awesome-web-design": {
+      "crawled": false,
+      "count": 0
+    },
+    "terkelg/awesome-creative-coding": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Kreatív Média, Videóvágás & Fotó",
+      "sub_cat": "Kreatív Kódolás"
+    },
+    "aviaryan/awesome-no-login-web-apps": {
+      "crawled": true,
+      "count": 1
+    },
+    "johnjago/awesome-free-software": {
+      "crawled": false,
+      "count": 0
+    },
+    "podo/awesome-framer": {
+      "crawled": false,
+      "count": 0
+    },
+    "BubuAnabelas/awesome-markdown": {
+      "crawled": false,
+      "count": 0
+    },
+    "mislavcimpersak/awesome-dev-fun": {
+      "crawled": false,
+      "count": 0
+    },
+    "DavidLambauer/awesome-magento2": {
+      "crawled": false,
+      "count": 0
+    },
+    "xiaohanyu/awesome-tikz": {
+      "crawled": false,
+      "count": 0
+    },
+    "johnjago/awesome-ad-free": {
+      "crawled": false,
+      "count": 0
+    },
+    "roaldnefs/awesome-prometheus": {
+      "crawled": false,
+      "count": 0
+    },
+    "homematic-community/awesome-homematic": {
+      "crawled": false,
+      "count": 0
+    },
+    "sfischer13/awesome-ledger": {
+      "crawled": false,
+      "count": 0
+    },
+    "thomasbnt/awesome-web-monetization": {
+      "crawled": false,
+      "count": 0
+    },
+    "johnjago/awesome-uncopyright": {
+      "crawled": false,
+      "count": 0
+    },
+    "Zheaoli/awesome-coins": {
+      "crawled": false,
+      "count": 0
+    },
+    "zachflower/awesome-open-source-supporters": {
+      "crawled": false,
+      "count": 0
+    },
+    "robinstickel/awesome-design-principles": {
+      "crawled": false,
+      "count": 0
+    },
+    "johnjago/awesome-theravada": {
+      "crawled": false,
+      "count": 0
+    },
+    "inspectit-labs/awesome-inspectit": {
+      "crawled": false,
+      "count": 0
+    },
+    "nayafia/awesome-maintainers": {
+      "crawled": false,
+      "count": 0
+    },
+    "xxczaki/awesome-calculators": {
+      "crawled": false,
+      "count": 0
+    },
+    "ZYSzys/awesome-captcha": {
+      "crawled": false,
+      "count": 0
+    },
+    "markusschanta/awesome-jupyter": {
+      "crawled": false,
+      "count": 0
+    },
+    "andrewda/awesome-frc": {
+      "crawled": false,
+      "count": 0
+    },
+    "karlhorky/awesome-speakers": {
+      "crawled": true,
+      "count": 0
+    },
+    "edm00se/awesome-board-games": {
+      "crawled": false,
+      "count": 0
+    },
+    "uraimo/awesome-software-patreons": {
+      "crawled": false,
+      "count": 0
+    },
+    "ecohealthalliance/awesome-parasite": {
+      "crawled": false,
+      "count": 0
+    },
+    "jzarca01/awesome-food": {
+      "crawled": false,
+      "count": 0
+    },
+    "alexk111/awesome-bitcoin-payment-processors": {
+      "crawled": false,
+      "count": 0
+    },
+    "nschloe/awesome-scientific-computing": {
+      "crawled": false,
+      "count": 0
+    },
+    "ScaleLeap/awesome-amazon-seller": {
+      "crawled": false,
+      "count": 0
+    },
+    "brycejohnston/awesome-agriculture": {
+      "crawled": false,
+      "count": 0
+    },
+    "ttt30ga/awesome-product-design": {
+      "crawled": false,
+      "count": 0
+    },
+    "catalinmiron/awesome-prisma": {
+      "crawled": false,
+      "count": 0
+    },
+    "simskij/awesome-software-architecture": {
+      "crawled": false,
+      "count": 0
+    },
+    "stevesong/awesome-connectivity-info": {
+      "crawled": false,
+      "count": 0
+    },
+    "stackshareio/awesome-stacks": {
+      "crawled": false,
+      "count": 0
+    },
+    "cytodata/awesome-cytodata": {
+      "crawled": false,
+      "count": 0
+    },
+    "davisonio/awesome-irc": {
+      "crawled": false,
+      "count": 0
+    },
+    "cenoura/awesome-ads": {
+      "crawled": false,
+      "count": 0
+    },
+    "philsturgeon/awesome-earth": {
+      "crawled": false,
+      "count": 0
+    },
+    "gruhn/awesome-naming": {
+      "crawled": false,
+      "count": 0
+    },
+    "iipc/awesome-web-archiving": {
+      "crawled": false,
+      "count": 0
+    },
+    "schlessera/awesome-wp-cli": {
+      "crawled": false,
+      "count": 0
+    },
+    "mourarthur/awesome-credit-modeling": {
+      "crawled": false,
+      "count": 0
+    },
+    "ansible-community/awesome-ansible": {
+      "crawled": false,
+      "count": 0
+    },
+    "keller-mark/awesome-biological-visualizations": {
+      "crawled": false,
+      "count": 0
+    },
+    "make-github-pseudonymous-again/awesome-qr-code": {
+      "crawled": false,
+      "count": 0
+    },
+    "sdassow/awesome-veganism": {
+      "crawled": false,
+      "count": 0
+    },
+    "mbiesiad/awesome-translations": {
+      "crawled": false,
+      "count": 0
+    },
+    "dersvenhesse/awesome-scriptable": {
+      "crawled": false,
+      "count": 0
+    },
+    "msub2/awesome-webxr": {
+      "crawled": false,
+      "count": 0
+    },
+    "atkirtland/awesome-computational-geometry": {
+      "crawled": false,
+      "count": 0
+    },
+    "osmlab/awesome-openstreetmap": {
+      "crawled": false,
+      "count": 0
+    },
+    "inoue0426/awesome-computational-biology": {
+      "crawled": false,
+      "count": 0
+    },
+    "readthedocs-examples/awesome-read-the-docs": {
+      "crawled": false,
+      "count": 0
+    },
+    "mcanouil/awesome-quarto": {
+      "crawled": false,
+      "count": 0
+    },
+    "hallvaaw/awesome-biological-image-analysis": {
+      "crawled": false,
+      "count": 0
+    },
+    "shi-rudo/awesome-stock-trading": {
+      "crawled": false,
+      "count": 0
+    },
+    "airscripts/awesome-steam-deck": {
+      "crawled": false,
+      "count": 0
+    },
+    "lunohodov/awesome-astrophotography": {
+      "crawled": false,
+      "count": 0
+    },
+    "dstdev/awesome-hpc": {
+      "crawled": false,
+      "count": 0
+    },
+    "FoxFil/awesome-geocaching": {
+      "crawled": false,
+      "count": 0
+    },
+    "slevithan/awesome-regex": {
+      "crawled": false,
+      "count": 0
+    },
+    "lutzh/awesome-event-driven-architecture": {
+      "crawled": false,
+      "count": 0
+    },
+    "idematos/awesome-permacomputing": {
+      "crawled": false,
+      "count": 0
+    },
+    "donBarbos/awesome-standards": {
+      "crawled": false,
+      "count": 0
+    },
+    "hesreallyhim/awesome-claude-code": {
+      "crawled": false,
+      "count": 0
+    },
+    "Piebald-AI/awesome-gemini-cli": {
+      "crawled": false,
+      "count": 0
+    },
+    "eminyagiz42/awesome-sap-commerce": {
+      "crawled": false,
+      "count": 0
+    },
+    "sampart/awesome-tech-ethics": {
+      "crawled": false,
+      "count": 0
+    },
+    "Code-and-Sorts/awesome-copilot-agents": {
+      "crawled": false,
+      "count": 0
+    },
+    "basharovV/StumbleUponAwesome": {
+      "crawled": false,
+      "count": 0
+    },
+    "umutphp/awesome-cli": {
+      "crawled": false,
+      "count": 0
+    },
+    "aganders3/awesome-esp32": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Hardver, IoT & Elektronika",
+      "sub_cat": "ESP32 & ESP8266"
+    },
+    "fabiolb/awesome-esp8266": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Hardver, IoT & Elektronika",
+      "sub_cat": "ESP32 & ESP8266"
+    },
+    "nhivp/Awesome-Embedded": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Hardver, IoT & Elektronika",
+      "sub_cat": "Arduino & Beágyazott"
+    },
+    "thibauts/awesome-raspberry-pi": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Hardver, IoT & Elektronika",
+      "sub_cat": "Raspberry Pi"
+    },
+    "keon/awesome-nlp": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Mesterséges Intelligencia & Adat",
+      "sub_cat": "NLP & Nyelvmodellek"
+    },
+    "BillyDM/awesome-audio-dsp": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Zene, Hangtechnika & Audió",
+      "sub_cat": "DSP & Szintetizátorok"
+    },
+    "ad-si/awesome-music": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Zene, Hangtechnika & Audió",
+      "sub_cat": "Zenei Szoftverek"
+    },
+    "mifi/awesome-ffmpeg": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Kreatív Média, Videóvágás & Fotó",
+      "sub_cat": "FFmpeg & Videó"
+    },
+    "Calinou/awesome-godot": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Játékfejlesztés, 3D & Grafika",
+      "sub_cat": "Godot Ökoszisztéma"
+    },
+    "n1trux/awesome-sysadmin": {
+      "crawled": false,
+      "count": 0,
+      "main_cat": "Rendszer, Biztonság & Segédprogramok",
+      "sub_cat": "Sysadmin Eszközök"
+    }
+  },
+  "last_run": "2026-09-20 00:45:54"
+}

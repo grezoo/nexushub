@@ -42,5 +42,5 @@ jobs:
         run: |
           git config --global user.name "NexusHub Autonomous Crawler Bot"
           git config --global user.email "crawler-bot@nexushub.local"
-          git add data/catalogue.json data/curated_picks.json
+          git add data/catalogue.json data/curated_picks.json data/crawler_state.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): daily automated catalogue harvest & curation [skip ci]" && git push)
