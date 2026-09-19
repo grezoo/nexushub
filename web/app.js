@@ -381,10 +381,10 @@ const PINNED_SHOWCASE_ITEM = {
   description_en: "A visual catalogue and short-demo discovery platform for open-source repositories. Featuring 15-30s real video demos (preview.mp4 / preview.gif), function-first cards, and merit-based discovery.",
   main_category: "Rendszer, Biztonság & Segédprogramok",
   sub_category: "Vizuális Katalógus & Rendszerező",
-  thumbnail_url: "stream_showcase.svg",
-  video_url: "stream_showcase.svg",
+  thumbnail_url: "preview.gif",
+  video_url: "preview.gif",
   has_video: true,
-  video_demo: "stream_showcase.svg",
+  video_demo: "preview.gif",
   stars: 100,
   url: "https://github.com/grezoo/nexushub",
   creator: "grezoo",
@@ -706,19 +706,20 @@ function createCardElement(item) {
   const functionTitle = getItemFunctionTitle(item);
   const technicalRepo = item.repo_name || item.title;
 
-  // Direct video or image markup
+  // Direct moving video or image markup
   let mediaMarkup = "";
   const hasMp4 = item.has_video && item.video_demo && item.video_demo.endsWith(".mp4");
   const isGif = item.video_demo && (item.video_demo.endsWith(".gif") || item.video_demo.includes("giphy.com"));
 
   if (hasMp4) {
     mediaMarkup = `
-      <video class="card-video" src="${item.video_demo}" muted loop playsinline preload="metadata" poster="${thumbUrl}"></video>
+      <video class="card-video" src="${item.video_demo}" autoplay muted loop playsinline poster="${thumbUrl}"></video>
       <img src="${thumbUrl}" alt="${functionTitle}" class="card-img card-poster-fallback" loading="lazy" onerror="this.src='https://opengraph.githubassets.com/1/${item.repo_name}'">
     `;
-  } else if (isGif) {
+  } else if (isGif || (item.thumbnail_url && item.thumbnail_url.endsWith(".gif"))) {
+    const gifSrc = item.video_demo && item.video_demo.endsWith(".gif") ? item.video_demo : item.thumbnail_url;
     mediaMarkup = `
-      <img src="${item.video_demo}" alt="${functionTitle}" class="card-img" loading="lazy" onerror="this.src='${thumbUrl}'">
+      <img src="${gifSrc}" alt="${functionTitle}" class="card-img card-moving-media" loading="eager" onerror="this.src='${thumbUrl}'">
     `;
   } else {
     mediaMarkup = `
@@ -1055,11 +1056,23 @@ function renderWeeklySlider() {
     const catName = getCategoryName(item.main_category);
     const rankLabel = currentLang === "en" ? (item.rank_label_en || `#${idx + 1} TOP PICK`) : (item.rank_label_hu || `#${idx + 1} KIEMELT`);
     const mediaSrc = item.thumbnail_url || `https://opengraph.githubassets.com/1/${item.repo_name}`;
+    const hasMp4 = item.has_video && item.video_demo && item.video_demo.endsWith(".mp4");
+    const isGif = (item.video_demo && item.video_demo.endsWith(".gif")) || (item.thumbnail_url && item.thumbnail_url.endsWith(".gif"));
+
+    let sliderMediaMarkup = "";
+    if (hasMp4) {
+      sliderMediaMarkup = `<video class="slide-media" src="${item.video_demo}" autoplay muted loop playsinline poster="${mediaSrc}"></video>`;
+    } else if (isGif) {
+      const gifSrc = item.video_demo && item.video_demo.endsWith(".gif") ? item.video_demo : item.thumbnail_url;
+      sliderMediaMarkup = `<img src="${gifSrc}" alt="${escapeHtml(title)}" class="slide-media" loading="eager" />`;
+    } else {
+      sliderMediaMarkup = `<img src="${mediaSrc}" alt="${escapeHtml(title)}" class="slide-media" loading="lazy" />`;
+    }
 
     return `
       <div class="slider-slide" data-slide-index="${idx}">
         <div class="slide-media-wrapper" onclick="openDetailModalById('${item.id || item.repo_name}')">
-          <img src="${mediaSrc}" alt="${escapeHtml(title)}" class="slide-media" loading="lazy" />
+          ${sliderMediaMarkup}
           <div class="slide-play-overlay">
             <div class="slide-play-btn">▶</div>
           </div>
