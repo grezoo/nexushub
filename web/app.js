@@ -993,7 +993,7 @@ function setupEventListeners() {
   if (showBadgeGuideBtn) {
     showBadgeGuideBtn.addEventListener("click", () => {
       const t = I18N[currentLang];
-      const badgeCode = `[![NexusHub 15s Demo](https://img.shields.io/badge/NexusHub-15s_Demo_Verified-ec4899?style=for-the-badge&logo=youtube)](http://localhost:8765)`;
+      const badgeCode = `[![NexusHub 15s Demo](https://img.shields.io/badge/NexusHub-15s_Demo_Verified-ec4899?style=for-the-badge&logo=youtube)](https://gitcatalog.onrender.com)`;
       navigator.clipboard.writeText(badgeCode);
       showBadgeGuideBtn.textContent = t.standardCopied;
       setTimeout(() => {
