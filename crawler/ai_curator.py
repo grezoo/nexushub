@@ -95,7 +95,7 @@ def ask_gemini_curator(repo_data):
     if not GEMINI_API_KEY:
         return None
         
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={GEMINI_API_KEY}"
     prompt = f"""
 Te vagy a NexusHub nyílt forráskódú vizuális katalógus szigorú, de lelkes kurátora (mint egy igényes technikai könyvesbolt tulajdonosa, grezoo).
 Értékeld ezt a projektet a működőképesség, kézzelfogható alkotói hasznosság és újdonságérték alapján.
@@ -141,6 +141,8 @@ def curate_projects():
     items = data.get("items", [])
     
     curated_list = []
+    gemini_calls = 0
+    gemini_failures = 0
     
     for item in items:
         repo = (item.get("repo_name") or item.get("title") or "").lower()
@@ -162,10 +164,13 @@ def curate_projects():
         # 2. Check if item has visual proof or high merit
         has_visual = item.get("has_video") or (item.get("stars", 0) <= 50)
         
-        # Try Gemini API evaluation if key available
+        # Try Gemini API evaluation if key available and quota healthy
         gemini_result = None
-        if GEMINI_API_KEY and has_visual and len(curated_list) < 8:
+        if GEMINI_API_KEY and has_visual and len(curated_list) < 8 and gemini_calls < 5 and gemini_failures < 2:
+            gemini_calls += 1
             gemini_result = ask_gemini_curator(item)
+            if not gemini_result:
+                gemini_failures += 1
             
         if gemini_result:
             curated_item = dict(item)
