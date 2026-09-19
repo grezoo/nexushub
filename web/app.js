@@ -266,6 +266,14 @@ let catalogueData = {
   last_updated: ""
 };
 
+let serverItems = [];
+let serverTotalCount = 0;
+let serverCurrentPage = 1;
+let serverTotalPages = 1;
+const serverPageLimit = 40;
+let isLoadingItems = false;
+let searchDebounceTimer = null;
+
 let currentMainCat = "all";
 let currentSubCat = "all";
 let onlyVideosFilter = false;
@@ -485,106 +493,38 @@ function escapeHtml(str) {
 
 // Initialize application
 async function init() {
-  try {
-    const res = await fetch("/api/catalogue");
-    catalogueData = await res.json();
-  } catch (err) {
-    try {
-      const res = await fetch("../data/catalogue.json");
-      catalogueData = await res.json();
-    } catch (e) {
-      console.error("Failed to load catalogue:", e);
-    }
-  }
-
-  await loadCuratedPicks();
-  ensureSampleGems();
-  updateStats();
+  await Promise.all([
+    loadCategories(),
+    loadStats(),
+    loadCuratedPicks()
+  ]);
   applyLanguage();
   setupEventListeners();
+  fetchServerItems(1, false);
 }
 
-// Pinned Flagship Reference Project demonstrating the standard
-const PINNED_SHOWCASE_ITEM = {
-  id: "nexushub-official-standard",
-  is_pinned: true,
-  repo_name: "grezoo/nexushub",
-  title: "NexusHub — Open Source Visual Catalogue",
-  function_title: "Nyílt Forráskódú Vizuális Katalógus & Rövid Demó Kereső",
-  title_en: "Visual Catalogue & Short-Demo Discovery for Open Source",
-  description: "A nyílt forráskódú projektek élményalapú vizuális katalógusa. Valós működést bemutató 15-30 mp-es videós demókkal (preview.mp4 / preview.gif), funkció-központú kártyákkal és érdemalapú rangsorolással.",
-  description_en: "A visual catalogue and short-demo discovery platform for open-source repositories. Featuring 15-30s real video demos (preview.mp4 / preview.gif), function-first cards, and merit-based discovery.",
-  main_category: "Rendszer, Biztonság & Segédprogramok",
-  sub_category: "Vizuális Katalógus & Rendszerező",
-  thumbnail_url: "preview.gif",
-  video_url: "preview.gif",
-  has_video: true,
-  video_demo: "preview.gif",
-  stars: 100,
-  url: "https://github.com/grezoo/nexushub",
-  creator: "grezoo",
-  tags: ["visual-catalogue", "open-source-discovery", "visual-cards", "hidden-gems"]
-};
-
-// Ensure 0-50 star hidden gems exist in seed and pin the flagship showcase
-function ensureSampleGems() {
-  const gems = [
-    PINNED_SHOWCASE_ITEM,
-    {
-      id: "maker-esp32-drone-fc",
-      repo_name: "open-maker/esp32-wifi-drone",
-      title: "ESP32 WiFi Micro-Drón Vezérlő",
-      function_title: "ESP32 WiFi Micro-Drón Vezérlő",
-      title_en: "ESP32 WiFi Micro-Drone Flight Controller & Web Remote",
-      description: "Egyetlen ESP32-vel és MPU6050 giroszkóppal működő ultrakönnyű minidrón teljes szoftvere, böngészős távirányítással.",
-      description_en: "Full ultralight micro-drone flight controller firmware powered by a single ESP32 and MPU6050 gyro, featuring browser-based remote control.",
-      main_category: "Hardver, IoT & Elektronika",
-      sub_category: "Robotika, Drónok & Edge AI",
-      thumbnail_url: "https://opengraph.githubassets.com/1/open-maker/esp32-wifi-drone",
-      video_url: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=800&auto=format&fit=crop&q=60",
-      has_video: true,
-      video_demo: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=800&auto=format&fit=crop&q=60",
-      stars: 4,
-      url: "https://github.com/espressif/arduino-esp32",
-      creator: "open-maker",
-      tags: ["esp32", "drone", "flight-control", "hidden-gem"]
-    },
-    {
-      id: "solo-ai-voice-hu",
-      repo_name: "hungarian-ai/magyar-hang-tts",
-      title: "Magyar Hangszintézis Modell (TTS)",
-      function_title: "Magyar Hangszintézis Modell (TTS)",
-      title_en: "High-Quality Neural Hungarian Speech Synthesizer (TTS)",
-      description: "Tiszta magyar kiejtésre és intonációra tanított könnyűsúlyú hangklónozó modell Raspberry Pi-re és mobilra.",
-      description_en: "Lightweight neural voice cloning model trained on clean Hungarian pronunciation and natural intonation for Raspberry Pi and mobile.",
-      main_category: "Mesterséges Intelligencia & Adat",
-      sub_category: "Hangklónozás & Beszédszintézis",
-      thumbnail_url: "https://opengraph.githubassets.com/1/hungarian-ai/magyar-hang-tts",
-      video_url: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&auto=format&fit=crop&q=60",
-      has_video: true,
-      video_demo: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&auto=format&fit=crop&q=60",
-      stars: 9,
-      url: "https://github.com/SWivid/F5-TTS",
-      creator: "hungarian-ai",
-      tags: ["hungarian", "tts", "voice-clone", "garage-project"]
-    }
-  ];
-
-  gems.forEach(g => {
-    if (!catalogueData.items.some(i => i.id === g.id)) {
-      catalogueData.items.unshift(g);
-    }
-  });
+// Load dynamic categories from database
+async function loadCategories() {
+  try {
+    const res = await fetch("/api/categories");
+    catalogueData.categories = await res.json();
+    renderMainCategories();
+  } catch (err) {
+    console.error("Failed to load categories:", err);
+  }
 }
 
-// Update Hero Stats
-function updateStats() {
-  const t = I18N[currentLang];
-  const total = catalogueData.items.length;
-  const withVideo = catalogueData.items.filter(i => i.has_video).length;
-  totalCountEl.textContent = total;
-  videoCountEl.textContent = withVideo;
-  lastUpdatedEl.textContent = catalogueData.last_updated || t.statNow;
+// Load real-time aggregate statistics from database
+async function loadStats() {
+  try {
+    const res = await fetch("/api/stats");
+    const stats = await res.json();
+    totalCountEl.textContent = (stats.total || 0).toLocaleString();
+    videoCountEl.textContent = (stats.with_video || 0).toLocaleString();
+    lastUpdatedEl.textContent = stats.last_updated || I18N[currentLang].statNow;
+  } catch (err) {
+    console.error("Failed to load stats:", err);
+  }
 }
 
 // Render Main Categories navigation
@@ -599,7 +539,7 @@ function renderMainCategories() {
   allBtn.onclick = () => selectMainCategory("all");
   mainCategoriesContainer.appendChild(allBtn);
 
-  catalogueData.categories.forEach(cat => {
+  (catalogueData.categories || []).forEach(cat => {
     const btn = document.createElement("button");
     btn.className = `cat-btn ${currentMainCat === cat.main ? "active" : ""}`;
     const translatedName = getCategoryName(cat.main);
@@ -613,10 +553,9 @@ function renderMainCategories() {
 function selectMainCategory(catName) {
   currentMainCat = catName;
   currentSubCat = "all";
-  currentGridLimit = 60;
   renderMainCategories();
   renderSubCategories();
-  renderItems();
+  fetchServerItems(1, false);
 
   setTimeout(() => {
     const activeBtn = mainCategoriesContainer.querySelector(".cat-btn.active");
@@ -637,7 +576,7 @@ function renderSubCategories() {
   }
 
   subCategoriesBar.style.display = "flex";
-  const catObj = catalogueData.categories.find(c => c.main === currentMainCat);
+  const catObj = (catalogueData.categories || []).find(c => c.main === currentMainCat);
   if (!catObj) return;
 
   // 'All subcategories' button
@@ -646,9 +585,8 @@ function renderSubCategories() {
   allSubBtn.textContent = t.allSubcategories;
   allSubBtn.onclick = () => {
     currentSubCat = "all";
-    currentGridLimit = 60;
     renderSubCategories();
-    renderItems();
+    fetchServerItems(1, false);
   };
   subCategoriesContainer.appendChild(allSubBtn);
 
@@ -662,109 +600,104 @@ function renderSubCategories() {
     btn.textContent = getSubcategoryName(subName);
     btn.onclick = () => {
       currentSubCat = subName;
-      currentGridLimit = 60;
       renderSubCategories();
-      renderItems();
+      fetchServerItems(1, false);
     };
     subCategoriesContainer.appendChild(btn);
   });
 }
 
-// Filter and sort items based on active criteria
-function getFilteredAndSortedItems() {
-  let list = catalogueData.items.filter(item => {
-    if (currentMainCat !== "all" && item.main_category !== currentMainCat) return false;
-    if (currentSubCat !== "all" && item.sub_category !== currentSubCat) return false;
-    if (onlyVideosFilter && !item.has_video) return false;
-    if (onlyGemsFilter && (item.stars || 0) > 100) return false;
+// Fetch items dynamically from SQLite + FTS5 database API
+async function fetchServerItems(page = 1, append = false) {
+  if (isLoadingItems) return;
+  isLoadingItems = true;
+  const t = I18N[currentLang];
 
-    // Vintage filtering
-    if (currentVintage !== "all") {
-      const y = item.year || 2024;
-      if (currentVintage === "2025-2026" && y < 2025) return false;
-      if (currentVintage === "2021-2024" && (y < 2021 || y > 2024)) return false;
-      if (currentVintage === "2015-2020" && (y < 2015 || y > 2020)) return false;
-      if (currentVintage === "legacy" && y >= 2015) return false;
-    }
+  if (!append) {
+    cardsGrid.innerHTML = `
+      <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-dim);">
+        <div style="font-size: 36px; margin-bottom: 12px; animation: pulse 1.5s infinite ease-in-out;">⚡</div>
+        <p style="font-weight: 500;">${currentLang === 'en' ? 'Searching catalogue database...' : 'Keresés az adatbázisban...'}</p>
+      </div>
+    `;
+  }
 
-    if (searchQuery.trim() !== "") {
-      const q = searchQuery.toLowerCase();
-      const matchTitle = (item.title || "").toLowerCase().includes(q);
-      const matchFunc = (item.function_title || "").toLowerCase().includes(q);
-      const matchDesc = (item.description || "").toLowerCase().includes(q);
-      const matchDescEn = (item.description_en || "").toLowerCase().includes(q);
-      const matchRepo = (item.repo_name || "").toLowerCase().includes(q);
-      const matchTags = (item.tags || []).some(t => t.toLowerCase().includes(q));
-      if (!matchTitle && !matchFunc && !matchDesc && !matchDescEn && !matchRepo && !matchTags) {
-        return false;
-      }
-    }
-    return true;
+  const limitToUse = currentViewMode === "shelf" ? 100 : serverPageLimit;
+  const params = new URLSearchParams({
+    page: page,
+    limit: limitToUse,
+    sort: currentSort,
+    vintage: currentVintage,
+    category: currentMainCat,
+    sub_category: currentSubCat
   });
 
-  // Sorting
-  if (currentSort === "gems") {
-    list.sort((a, b) => {
-      if (a.is_pinned) return -1;
-      if (b.is_pinned) return 1;
-      const aScore = (a.has_video ? 1000 : 0) - (a.stars || 0);
-      const bScore = (b.has_video ? 1000 : 0) - (b.stars || 0);
-      return bScore - aScore;
-    });
-  } else if (currentSort === "stars") {
-    list.sort((a, b) => {
-      if (a.is_pinned) return -1;
-      if (b.is_pinned) return 1;
-      return (b.stars || 0) - (a.stars || 0);
-    });
-  } else if (currentSort === "name") {
-    list.sort((a, b) => {
-      if (a.is_pinned) return -1;
-      if (b.is_pinned) return 1;
-      return (a.title || "").localeCompare(b.title || "");
-    });
-  }
+  if (searchQuery.trim()) params.set("search", searchQuery.trim());
+  if (onlyVideosFilter) params.set("only_videos", "1");
+  if (onlyGemsFilter) params.set("only_gems", "1");
 
-  // Double check pinned item is first
-  const pinnedIdx = list.findIndex(i => i.is_pinned);
-  if (pinnedIdx > 0) {
-    const [pinned] = list.splice(pinnedIdx, 1);
-    list.unshift(pinned);
-  }
+  try {
+    const res = await fetch(`/api/items?${params.toString()}`);
+    const data = await res.json();
 
-  return list;
+    serverCurrentPage = data.page || page;
+    serverTotalPages = data.total_pages || 1;
+    serverTotalCount = data.total || 0;
+
+    if (append) {
+      serverItems = serverItems.concat(data.items || []);
+    } else {
+      serverItems = data.items || [];
+    }
+
+    renderItems(append);
+  } catch (err) {
+    console.error("Failed to fetch items from database:", err);
+    if (!append) {
+      cardsGrid.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: #f87171;">
+          <p>⚠️ ${currentLang === 'en' ? 'Could not reach database server.' : 'Nem sikerült elérni az adatbázis szervert.'}</p>
+        </div>
+      `;
+    }
+  } finally {
+    isLoadingItems = false;
+  }
 }
 
 // Render items into Grid or Shelf view
-function renderItems() {
+function renderItems(append = false) {
   const t = I18N[currentLang];
-  const filtered = getFilteredAndSortedItems();
 
   currentSectionTitle.textContent = onlyGemsFilter 
     ? t.hiddenGemsSectionTitle
     : currentMainCat === "all" 
-      ? t.exploreAllTitle
+      ? (searchQuery.trim() ? `${t.projectsFound}: "${escapeHtml(searchQuery)}"` : t.exploreAllTitle)
       : `${getCategoryName(currentMainCat)} ${currentSubCat !== "all" ? "› " + getSubcategoryName(currentSubCat) : ""}`;
   
-  itemsFoundText.textContent = `${filtered.length} ${t.projectsFound}`;
+  itemsFoundText.textContent = `${serverTotalCount} ${t.projectsFound}`;
 
   if (currentViewMode === "grid") {
     cardsGrid.style.display = "grid";
     shelvesContainer.style.display = "none";
-    renderGridView(filtered);
+    renderGridView(serverItems, append);
   } else {
     cardsGrid.style.display = "none";
     shelvesContainer.style.display = "block";
-    renderShelfView(filtered);
+    renderShelfView(serverItems);
   }
 }
 
-let currentGridLimit = 60;
-
-// Render Grid View with Smart Batch Loading (Scales to 50,000+ items seamlessly)
-function renderGridView(items) {
+// Render Grid View with Server-Side Pagination
+function renderGridView(items, append = false) {
   const t = I18N[currentLang];
-  cardsGrid.innerHTML = "";
+
+  if (!append) {
+    cardsGrid.innerHTML = "";
+  } else {
+    const oldBtn = cardsGrid.querySelector(".load-more-wrapper");
+    if (oldBtn) oldBtn.remove();
+  }
 
   if (items.length === 0) {
     cardsGrid.innerHTML = `
@@ -777,27 +710,29 @@ function renderGridView(items) {
     return;
   }
 
-  const batch = items.slice(0, currentGridLimit);
-  batch.forEach(item => {
-    cardsGrid.appendChild(createCardElement(item));
-  });
+  if (!append) {
+    items.forEach(item => cardsGrid.appendChild(createCardElement(item)));
+  } else {
+    const newItems = items.slice((serverCurrentPage - 1) * serverPageLimit);
+    newItems.forEach(item => cardsGrid.appendChild(createCardElement(item)));
+  }
 
-  if (items.length > currentGridLimit) {
+  // If there are more pages in SQLite database, render Load More button
+  if (serverCurrentPage < serverTotalPages) {
     const loadMoreWrapper = document.createElement("div");
     loadMoreWrapper.className = "load-more-wrapper";
     loadMoreWrapper.style.cssText = "grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 0 20px;";
 
     const info = document.createElement("p");
     info.style.cssText = "font-size: 13px; color: var(--text-dim); margin-bottom: 14px; font-weight: 500;";
-    info.textContent = `${t.showingCount}: ${batch.length} / ${items.length} ${t.projectsFound}`;
+    info.textContent = `${t.showingCount}: ${items.length} / ${serverTotalCount} ${t.projectsFound}`;
 
     const btn = document.createElement("button");
     btn.className = "btn btn-primary";
     btn.style.cssText = "padding: 12px 36px; font-size: 14px; font-weight: 700; border-radius: 9999px; cursor: pointer; box-shadow: 0 4px 20px rgba(168, 85, 247, 0.35); transition: transform 0.2s ease;";
-    btn.textContent = `${t.loadMoreBtn} (+60)`;
+    btn.textContent = `${t.loadMoreBtn} (+${serverPageLimit})`;
     btn.onclick = () => {
-      currentGridLimit += 60;
-      renderGridView(items);
+      fetchServerItems(serverCurrentPage + 1, true);
     };
 
     loadMoreWrapper.appendChild(info);
@@ -1040,11 +975,13 @@ function setupEventListeners() {
   langEnBtn.addEventListener("click", () => setLanguage("en"));
   langHuBtn.addEventListener("click", () => setLanguage("hu"));
 
-  // Search input
+  // Search input with 300ms debounce
   searchInput.addEventListener("input", (e) => {
     searchQuery = e.target.value;
-    currentGridLimit = 60;
-    renderItems();
+    clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = setTimeout(() => {
+      fetchServerItems(1, false);
+    }, 280);
   });
 
   // Keyboard shortcut '/' to focus search
@@ -1062,31 +999,27 @@ function setupEventListeners() {
   onlyVideoBtn.addEventListener("click", () => {
     onlyVideosFilter = !onlyVideosFilter;
     onlyVideoBtn.classList.toggle("active", onlyVideosFilter);
-    currentGridLimit = 60;
-    renderItems();
+    fetchServerItems(1, false);
   });
 
   // Toggle Hidden Gems
   hiddenGemsBtn.addEventListener("click", () => {
     onlyGemsFilter = !onlyGemsFilter;
     hiddenGemsBtn.classList.toggle("active", onlyGemsFilter);
-    currentGridLimit = 60;
-    renderItems();
+    fetchServerItems(1, false);
   });
 
   // Sort change
   sortSelect.addEventListener("change", (e) => {
     currentSort = e.target.value;
-    currentGridLimit = 60;
-    renderItems();
+    fetchServerItems(1, false);
   });
 
   // Vintage change
   if (vintageSelect) {
     vintageSelect.addEventListener("change", (e) => {
       currentVintage = e.target.value;
-      currentGridLimit = 60;
-      renderItems();
+      fetchServerItems(1, false);
     });
   }
 
@@ -1095,14 +1028,14 @@ function setupEventListeners() {
     currentViewMode = "grid";
     viewGridBtn.classList.add("active");
     viewShelfBtn.classList.remove("active");
-    renderItems();
+    fetchServerItems(1, false);
   });
 
   viewShelfBtn.addEventListener("click", () => {
     currentViewMode = "shelf";
     viewShelfBtn.classList.add("active");
     viewGridBtn.classList.remove("active");
-    renderItems();
+    fetchServerItems(1, false);
   });
 
   // Category sliding strip buttons & wheel event handlers
@@ -1247,10 +1180,10 @@ function setupEventListeners() {
       }
 
       if (data.item) {
-        catalogueData.items.unshift(data.item);
-        updateStats();
-        currentGridLimit = 60;
-        renderItems();
+        serverItems.unshift(data.item);
+        serverTotalCount += 1;
+        loadStats();
+        renderItems(false);
       }
 
       setTimeout(() => {
