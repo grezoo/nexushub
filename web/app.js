@@ -542,6 +542,13 @@ function selectMainCategory(catName) {
   renderMainCategories();
   renderSubCategories();
   renderItems();
+
+  setTimeout(() => {
+    const activeBtn = mainCategoriesContainer.querySelector(".cat-btn.active");
+    if (activeBtn) {
+      activeBtn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    }
+  }, 50);
 }
 
 // Render Subcategories
@@ -1020,6 +1027,42 @@ function setupEventListeners() {
     viewGridBtn.classList.remove("active");
     renderItems();
   });
+
+  // Category sliding strip buttons & wheel event handlers
+  const catNavPrevBtn = document.getElementById("catNavPrevBtn");
+  const catNavNextBtn = document.getElementById("catNavNextBtn");
+  if (catNavPrevBtn && catNavNextBtn && mainCategoriesContainer) {
+    catNavPrevBtn.addEventListener("click", () => {
+      mainCategoriesContainer.scrollBy({ left: -240, behavior: "smooth" });
+    });
+    catNavNextBtn.addEventListener("click", () => {
+      mainCategoriesContainer.scrollBy({ left: 240, behavior: "smooth" });
+    });
+    mainCategoriesContainer.addEventListener("wheel", (e) => {
+      if (e.deltaY !== 0) {
+        e.preventDefault();
+        mainCategoriesContainer.scrollLeft += e.deltaY;
+      }
+    }, { passive: false });
+  }
+
+  // Subcategory sliding strip buttons & wheel event handlers
+  const subNavPrevBtn = document.getElementById("subNavPrevBtn");
+  const subNavNextBtn = document.getElementById("subNavNextBtn");
+  if (subNavPrevBtn && subNavNextBtn && subCategoriesContainer) {
+    subNavPrevBtn.addEventListener("click", () => {
+      subCategoriesContainer.scrollBy({ left: -200, behavior: "smooth" });
+    });
+    subNavNextBtn.addEventListener("click", () => {
+      subCategoriesContainer.scrollBy({ left: 200, behavior: "smooth" });
+    });
+    subCategoriesContainer.addEventListener("wheel", (e) => {
+      if (e.deltaY !== 0) {
+        e.preventDefault();
+        subCategoriesContainer.scrollLeft += e.deltaY;
+      }
+    }, { passive: false });
+  }
 
   // Modal close events
   modalCloseBtn.addEventListener("click", closeModal);
