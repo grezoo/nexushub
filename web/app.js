@@ -1040,8 +1040,13 @@ function setupEventListeners() {
     });
   }
 
-  // Submit Modal Open & Close
+  // Submit Modal Open & Close with Anti-Bot Time Trap
+  let submitModalOpenedAt = 0;
+
   submitRepoBtn.addEventListener("click", () => {
+    submitModalOpenedAt = Date.now();
+    const statusMsg = document.getElementById("submitStatusMsg");
+    if (statusMsg) statusMsg.style.display = "none";
     submitModal.classList.add("active");
     document.body.style.overflow = "hidden";
   });
@@ -1050,7 +1055,7 @@ function setupEventListeners() {
     if (e.target === submitModal) closeModal();
   });
 
-  // Handle Form Submission for 0-Star Projects
+  // Handle Quality-Gated Form Submission with Anti-Spam
   submitForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     const t = I18N[currentLang];
@@ -1059,45 +1064,96 @@ function setupEventListeners() {
     const category = document.getElementById("submitCategory").value;
     const demoUrl = document.getElementById("submitDemoUrl").value.trim();
     const desc = document.getElementById("submitDesc").value.trim();
+    const hp = document.getElementById("submitHoneypot") ? document.getElementById("submitHoneypot").value : "";
+    const statusMsg = document.getElementById("submitStatusMsg");
+    const btn = document.getElementById("submitBtnMain") || submitForm.querySelector("button[type='submit']");
 
-    let repoName = repoUrl.replace("https://github.com/", "").replace(/\/$/, "");
-    if (!repoName.includes("/")) repoName = `creator/${title.toLowerCase().replace(/\s+/g, "-")}`;
+    const elapsedSec = (Date.now() - submitModalOpenedAt) / 1000;
 
-    const newProject = {
-      id: "submitted-" + Date.now(),
-      repo_name: repoName,
-      title: title,
-      function_title: title,
-      description: desc,
-      main_category: category,
-      sub_category: currentLang === "en" ? "Community Discoveries" : "Közösségi Felfedezések",
-      thumbnail_url: demoUrl || `https://opengraph.githubassets.com/1/${repoName}`,
-      video_url: demoUrl,
-      has_video: Boolean(demoUrl),
-      video_demo: demoUrl,
-      stars: 1,
-      url: repoUrl,
-      creator: repoName.split("/")[0],
-      tags: ["community-submission", "hidden-gem"]
-    };
-
-    catalogueData.items.unshift(newProject);
-    updateStats();
-    renderItems();
-
-    try {
-      await fetch("/api/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(newProject)
-      });
-    } catch (err) {
-      console.warn("Could not save to backend:", err);
+    // UI Loading state
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = currentLang === "en" ? "⏳ Running Quality Gate..." : "⏳ Minőségellenőrzés folyamatban...";
+    }
+    if (statusMsg) {
+      statusMsg.style.display = "block";
+      statusMsg.style.background = "rgba(168, 85, 247, 0.15)";
+      statusMsg.style.border = "1px solid rgba(168, 85, 247, 0.4)";
+      statusMsg.style.color = "#c084fc";
+      statusMsg.textContent = currentLang === "en"
+        ? "Verifying repository existence, public README, and media integrity on GitHub..."
+        : "GitHub repó létezésének, publikus README fájljának és médiájának ellenőrzése...";
     }
 
-    submitForm.reset();
-    closeModal();
-    alert(t.submitSuccessAlert);
+    const payload = {
+      url: repoUrl,
+      title: title,
+      main_category: category,
+      video_demo: demoUrl,
+      description: desc,
+      website_hp: hp,
+      client_elapsed_sec: elapsedSec
+    };
+
+    try {
+      const res = await fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json();
+
+      if (res.status !== 200 || data.status === "error") {
+        if (statusMsg) {
+          statusMsg.style.background = "rgba(239, 68, 68, 0.15)";
+          statusMsg.style.border = "1px solid rgba(239, 68, 68, 0.4)";
+          statusMsg.style.color = "#f87171";
+          statusMsg.innerHTML = `❌ <strong>${currentLang === "en" ? "Submission Rejected:" : "Minőségellenőrzés sikertelen:"}</strong> ${escapeHtml(data.error || "Hiba történt.")}`;
+        }
+        if (btn) {
+          btn.disabled = false;
+          btn.textContent = currentLang === "en" ? "🚀 Verify & Publish" : "🚀 Minőségellenőrzés & Közzététel";
+        }
+        return;
+      }
+
+      // Success
+      if (statusMsg) {
+        statusMsg.style.background = "rgba(34, 197, 94, 0.15)";
+        statusMsg.style.border = "1px solid rgba(34, 197, 94, 0.4)";
+        statusMsg.style.color = "#4ade80";
+        statusMsg.innerHTML = `✅ <strong>${currentLang === "en" ? "Quality Verified!" : "Minőségellenőrzés sikeres!"}</strong> ${data.message || ""}`;
+      }
+
+      if (data.item) {
+        catalogueData.items.unshift(data.item);
+        updateStats();
+        currentGridLimit = 60;
+        renderItems();
+      }
+
+      setTimeout(() => {
+        submitForm.reset();
+        if (statusMsg) statusMsg.style.display = "none";
+        if (btn) {
+          btn.disabled = false;
+          btn.textContent = currentLang === "en" ? "🚀 Verify & Publish" : "🚀 Minőségellenőrzés & Közzététel";
+        }
+        closeModal();
+      }, 1800);
+
+    } catch (err) {
+      if (statusMsg) {
+        statusMsg.style.background = "rgba(239, 68, 68, 0.15)";
+        statusMsg.style.border = "1px solid rgba(239, 68, 68, 0.4)";
+        statusMsg.style.color = "#f87171";
+        statusMsg.innerHTML = `❌ Hálózati hiba: ${escapeHtml(String(err))}`;
+      }
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = currentLang === "en" ? "🚀 Verify & Publish" : "🚀 Minőségellenőrzés & Közzététel";
+      }
+    }
   });
 
   // Initialize weekly top slider events

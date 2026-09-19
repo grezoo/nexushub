@@ -240,8 +240,15 @@
             <label style="display: block; font-size: 12px; font-weight: 700; margin-bottom: 6px; color: var(--text-muted);">1 mondatos leírás:</label>
             <textarea id="submitDesc" rows="2" placeholder="Mit csinál a projekt? Miért nagyszerű?" required style="width: 100%; padding: 10px; background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); border-radius: 6px; color: #fff; font-size: 14px; font-family: sans-serif;"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" style="justify-content: center; margin-top: 10px;">
-            🚀 Azonnali Közzététel a Katalógusban
+          <!-- Anti-Bot Honeypot field (hidden for humans, traps bots) -->
+          <div style="display: none !important;" aria-hidden="true">
+            <input type="text" id="submitHoneypot" name="website_hp" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div id="submitStatusMsg" style="display: none; padding: 12px; border-radius: 6px; font-size: 13px; font-weight: 600; line-height: 1.4;"></div>
+
+          <button type="submit" id="submitBtnMain" class="btn btn-primary" style="justify-content: center; margin-top: 10px;">
+            🚀 Minőségellenőrzés & Közzététel
           </button>
         </form>
       </div>
