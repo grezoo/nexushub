@@ -358,21 +358,21 @@ const PINNED_SHOWCASE_ITEM = {
   id: "nexushub-official-standard",
   is_pinned: true,
   repo_name: "grezoo/nexushub",
-  title: "NexusHub Video Standard Showcase",
-  function_title: "Hivatalos Referencia-Repó: 15s preview.mp4 & GIF Szabvány",
-  title_en: "Official Reference Repo: 15s preview.mp4 & GIF Standard",
-  description: "A hivatalos nyílt forráskódú referencia-tár, amely bemutatja, hogyan tegyél preview.mp4 vagy preview.gif fájlt a repódba az azonnali kártyás videómegjelenésért.",
-  description_en: "The official open-source reference repository demonstrating how placing a preview.mp4 or preview.gif in your repo root enables instant card-level video playback on NexusHub.",
+  title: "NexusHub — Open Source Streaming Library",
+  function_title: "Netflix-stílusú Vizuális Felfedező a Nyílt Forráskódhoz",
+  title_en: "Visual Streaming & Netflix-Style Discovery for Open Source",
+  description: "Böngéssz a nyílt forráskódú eszközök, hardverek és AI projektek között úgy, mint egy streaming platformon: képes kártyák, 15 mp-es élő videók és azonnali kipróbálás kódböngészés helyett.",
+  description_en: "Browse open-source tools, hardware, and AI like a streaming service: visual cards, live 15-second video previews, and merit-based discovery instead of reading code.",
   main_category: "Rendszer, Biztonság & Segédprogramok",
-  sub_category: "Nyílt Szabványok & API",
-  thumbnail_url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80",
-  video_url: "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
+  sub_category: "Vizuális Streaming & Katalógus",
+  thumbnail_url: "netflix_showcase.svg",
+  video_url: "netflix_showcase.svg",
   has_video: true,
-  video_demo: "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
+  video_demo: "netflix_showcase.svg",
   stars: 100,
   url: "https://github.com/grezoo/nexushub",
   creator: "grezoo",
-  tags: ["open-standard", "preview-mp4", "showcase", "creator-guide"]
+  tags: ["netflix-ui", "open-source-discovery", "visual-cards", "hidden-gems"]
 };
 
 // Ensure 0-50 star hidden gems exist in seed and pin the flagship showcase
