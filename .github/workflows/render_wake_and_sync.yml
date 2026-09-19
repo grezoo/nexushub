@@ -1,0 +1,53 @@
+name: OnRender Keep-Alive & AI Curator Sync
+
+on:
+  schedule:
+    # Runs every 12 minutes to keep OnRender free tier awake (timeout is 15 min)
+    - cron: '*/12 * * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+  push:
+    branches: [ main ]
+
+jobs:
+  wake-and-curate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pillow
+
+      - name: Ping & Wake Up OnRender Server
+        run: |
+          RENDER_URL="${{ secrets.RENDER_APP_URL }}"
+          if [ -z "$RENDER_URL" ]; then
+            RENDER_URL="https://nexushub.onrender.com"
+          fi
+          echo "Sending keep-alive heartbeat ping to: $RENDER_URL"
+          curl -s -m 15 -A "NexusHub-KeepAlive-Bot/1.0" "$RENDER_URL" > /dev/null || true
+          echo "Keep-alive ping sent successfully!"
+
+      - name: Run AI Curator & Bookshop Picks Sync
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Running AI Curator for author's picks..."
+          python crawler/ai_curator.py
+
+      - name: Commit and Push Updated Curated Picks
+        run: |
+          git config --global user.name "NexusHub Curator Bot"
+          git config --global user.email "bot@nexushub.local"
+          git add data/curated_picks.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(curator): auto-sync author's curated picks [skip ci]" && git push)

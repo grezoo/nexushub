@@ -52,6 +52,21 @@ class CatalogueRequestHandler(http.server.SimpleHTTPRequestHandler):
                 self.wfile.write(b'[]')
             return
 
+        # API: Return author's curated picks (grezoo's bookshop selection)
+        if self.path.startswith("/api/curated"):
+            curated_path = os.path.join(DATA_DIR, "curated_picks.json")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+
+            if os.path.exists(curated_path):
+                with open(curated_path, "rb") as f:
+                    self.wfile.write(f.read())
+            else:
+                self.wfile.write(b'{"picks":[]}')
+            return
+
         # Serve static assets from WEB_DIR
         super().do_GET()
 

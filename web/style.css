@@ -1461,6 +1461,44 @@ body {
   color: #a855f7;
 }
 
+/* Bookshop Curator Box */
+.slide-curator-box {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-left: 4px solid #f59e0b;
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.curator-box-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.curator-seal {
+  font-size: 15px;
+}
+
+.curator-header-title {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #fbbf24;
+  text-transform: uppercase;
+}
+
+.curator-note-text {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #e2e8f0;
+  font-style: italic;
+  margin: 0;
+}
+
 .slide-description {
   font-size: 14px;
   line-height: 1.6;

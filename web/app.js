@@ -65,8 +65,9 @@ const I18N = {
     standardDesc: "Place a 15-30s demo named <strong>preview.mp4</strong> or <strong>preview.gif</strong> in your repo root. NexusHub automatically detects it, plays it directly on your card, highlights your project on the homepage, and grants the <strong>▶ Verified Short Demo</strong> badge!",
     standardBtn: "Copy README Badge",
     standardCopied: "✅ Badge Copied!",
-    sliderBadge: "WEEKLY TOP PICKS",
-    sliderTitle: "Top Visual Discoveries of the Week",
+    sliderBadge: "✍️ AUTHOR'S PICKS (GREZOO)",
+    sliderTitle: "The Bookshop Showcase — Hand-Curated Open Source Gems",
+    sliderCuratorLead: "Curated by grezoo:",
     sliderWatchDemo: "Watch Live Demo ▶",
     sliderOpenRepo: "Open GitHub ↗"
   },
@@ -127,8 +128,9 @@ const I18N = {
     standardDesc: "Helyezz el egy 15-30 másodperces demót <strong>preview.mp4</strong> vagy <strong>preview.gif</strong> néven a repód gyökerében. A NexusHub automatikusan felismeri, közvetlenül a kártyádon játssza le, előresorolja a kezdőlapon, és megkapod a <strong>▶ Ellenőrzött Short Demó</strong> jelvényt!",
     standardBtn: "README Jelvény Másolása",
     standardCopied: "✅ Jelvény Másolva!",
-    sliderBadge: "HETI TOP VÁLOGATÁS",
-    sliderTitle: "A hét legizgalmasabb vizuális projektjei",
+    sliderBadge: "✍️ A SZERZŐ AJÁNLÁSA (GREZOO)",
+    sliderTitle: "Könyvesbolti Kurátori Válogatás — Működő demók és rejtett kincsek",
+    sliderCuratorLead: "✍️ grezoo kurátori ajánlása:",
     sliderWatchDemo: "Demó Megtekintése ▶",
     sliderOpenRepo: "GitHub Megnyitása ↗"
   }
@@ -390,6 +392,7 @@ async function init() {
     }
   }
 
+  await loadCuratedPicks();
   ensureSampleGems();
   updateStats();
   applyLanguage();
@@ -1017,33 +1020,57 @@ function setupEventListeners() {
 // ==========================================
 let currentSlideIndex = 0;
 let sliderAutoplayTimer = null;
+let curatedPicksData = null;
+
+async function loadCuratedPicks() {
+  try {
+    const res = await fetch("/api/curated");
+    curatedPicksData = await res.json();
+  } catch (err) {
+    try {
+      const res = await fetch("../data/curated_picks.json");
+      curatedPicksData = await res.json();
+    } catch (e) {
+      console.warn("Could not load curated picks:", e);
+    }
+  }
+}
 
 function getWeeklyTopItems() {
+  if (curatedPicksData && curatedPicksData.picks && curatedPicksData.picks.length > 0) {
+    return curatedPicksData.picks;
+  }
+
   const topPicks = [
     {
       ...PINNED_SHOWCASE_ITEM,
-      rank_label_hu: "🏆 #1 HETI ZÁSZLÓSHAJÓ",
-      rank_label_en: "🏆 #1 WEEKLY FLAGSHIP"
+      badge_hu: "👑 #1 A SZERZŐ KÖNYVESBOLTI AJÁNLÁSA",
+      badge_en: "👑 #1 AUTHOR'S FLAGSHIP PICK (GREZOO)",
+      curator_note_hu: "A vizuális nyílt forráskód forradalma: kódnevek helyett működő 15-30 mp-es demókkal, funkció-címekkel és rejtett kincsekkel.",
+      curator_note_en: "The visual revolution of open source: replacing code-centric browsing with dynamic 15-30s demos and merit-first discovery."
     }
   ];
 
-  // Pick high quality gems & visual projects from catalogue
   if (catalogueData && catalogueData.items) {
     const drone = catalogueData.items.find(i => i.repo_name && i.repo_name.includes("esp32-wifi-drone"));
     if (drone) {
       topPicks.push({
         ...drone,
-        rank_label_hu: "💎 #2 HETI REJTETT KINCS",
-        rank_label_en: "💎 #2 WEEKLY HIDDEN GEM"
+        badge_hu: "✍️ SZERZŐI AJÁNLÁS: HARDVER KINCS",
+        badge_en: "✍️ AUTHOR'S PICK: HARDWARE GEM",
+        curator_note_hu: "Mérnöki remekmű apró mikrovezérlőn: valódi repülési fizika és okostelefonos távirányítás kódolás nélkül.",
+        curator_note_en: "A triumph of hardware engineering: full flight mechanics on a tiny ESP32 chip controlled via mobile browser."
       });
     }
 
-    const aiVideo = catalogueData.items.find(i => i.tags && i.tags.includes("sadtalker") || (i.repo_name && i.repo_name.includes("SadTalker")));
+    const aiVideo = catalogueData.items.find(i => (i.tags && i.tags.includes("sadtalker")) || (i.repo_name && i.repo_name.includes("SadTalker")));
     if (aiVideo) {
       topPicks.push({
         ...aiVideo,
-        rank_label_hu: "✨ #3 HETI AI VÁLOGATÁS",
-        rank_label_en: "✨ #3 WEEKLY AI PICK"
+        badge_hu: "✍️ SZERZŐI AJÁNLÁS: GENERATÍV AI",
+        badge_en: "✍️ AUTHOR'S PICK: CREATIVE AI",
+        curator_note_hu: "Bármilyen állóképből és hangból másodpercek alatt beszélő videót készít közvetlenül böngészőből.",
+        curator_note_en: "Transforms static portraits into lifelike speaking characters using voice files in seconds."
       });
     }
 
@@ -1051,17 +1078,10 @@ function getWeeklyTopItems() {
     if (demucs) {
       topPicks.push({
         ...demucs,
-        rank_label_hu: "🎵 #4 HETI AUDIO STÚDIÓ",
-        rank_label_en: "🎵 #4 WEEKLY AUDIO STUDIO"
-      });
-    }
-
-    const wled = catalogueData.items.find(i => i.repo_name && i.repo_name.includes("WLED"));
-    if (wled) {
-      topPicks.push({
-        ...wled,
-        rank_label_hu: "💡 #5 HETI MAKER PROJEKT",
-        rank_label_en: "💡 #5 WEEKLY MAKER PICK"
+        badge_hu: "✍️ SZERZŐI AJÁNLÁS: HANG & ZENE",
+        badge_en: "✍️ AUTHOR'S PICK: AUDIO TECH",
+        curator_note_hu: "Professzionális sávbontó stúdió: izolálja a hangsávokat (ének, dob, gitár) bármely dalból.",
+        curator_note_en: "Studio-grade stem separation that isolates vocals, drums, and instruments with AI precision."
       });
     }
   }
@@ -1081,7 +1101,8 @@ function renderWeeklySlider() {
     const title = getItemFunctionTitle(item);
     const desc = getItemDescription(item);
     const catName = getCategoryName(item.main_category);
-    const rankLabel = currentLang === "en" ? (item.rank_label_en || `#${idx + 1} TOP PICK`) : (item.rank_label_hu || `#${idx + 1} KIEMELT`);
+    const rankLabel = currentLang === "en" ? (item.badge_en || item.rank_label_en || `#${idx + 1} AUTHOR'S PICK`) : (item.badge_hu || item.rank_label_hu || `#${idx + 1} SZERZŐI AJÁNLÁS`);
+    const curatorNote = currentLang === "en" ? (item.curator_note_en || desc) : (item.curator_note_hu || desc);
     const mediaSrc = item.thumbnail_url || `https://opengraph.githubassets.com/1/${item.repo_name}`;
     const hasMp4 = item.has_video && item.video_demo && item.video_demo.endsWith(".mp4");
     const isGif = (item.video_demo && item.video_demo.endsWith(".gif")) || (item.thumbnail_url && item.thumbnail_url.endsWith(".gif"));
@@ -1115,7 +1136,16 @@ function renderWeeklySlider() {
           <div class="slide-repo-author">
             📦 <strong>${escapeHtml(item.repo_name)}</strong> • ${t.modalAuthor} ${escapeHtml(item.creator || "grezoo")}
           </div>
-          <p class="slide-description">${escapeHtml(desc)}</p>
+
+          <!-- Bookshop-style Author's Curator Recommendation Box -->
+          <div class="slide-curator-box">
+            <div class="curator-box-header">
+              <span class="curator-seal">🎖️</span>
+              <span class="curator-header-title">${t.sliderCuratorLead}</span>
+            </div>
+            <p class="curator-note-text">„${escapeHtml(curatorNote)}”</p>
+          </div>
+
           <div class="slide-actions">
             <button class="btn btn-primary" onclick="openDetailModalById('${item.id || item.repo_name}')">
               ${t.sliderWatchDemo}
