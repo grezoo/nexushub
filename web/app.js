@@ -134,6 +134,8 @@ const I18N = {
   }
 };
 
+const TRANSLATIONS = I18N;
+
 // Bilingual Category Translations
 const CATEGORY_TRANSLATIONS = {
   "Hardver, IoT & Elektronika": { en: "Hardware, IoT & Electronics", hu: "Hardver, IoT & Elektronika", icon: "🔌" },
@@ -1048,7 +1050,7 @@ function renderWeeklySlider() {
   if (!track || !indicators) return;
 
   const items = getWeeklyTopItems();
-  const t = TRANSLATIONS[currentLang];
+  const t = I18N[currentLang];
 
   track.innerHTML = items.map((item, idx) => {
     const title = getItemFunctionTitle(item);
