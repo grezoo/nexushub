@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Hub — Nyílt Forráskódú AI & Hardver Katalógus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glows -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-badge">PROMPT TO HARDWARE</div>
+        <div class="logo-title">
+          <span class="logo-accent">Nexus</span>Hub
+          <span class="logo-tag">Visual Library</span>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Keresés projektek, funkciók, tagek között... (pl. flux, esp32, whisper)" autocomplete="off">
+        <kbd class="search-kbd">/</kbd>
+      </div>
+
+      <div class="header-actions">
+        <div class="lang-switch-wrapper">
+          <button class="lang-btn active" id="langEnBtn" title="Switch to English">EN</button>
+          <span class="lang-divider">/</span>
+          <button class="lang-btn" id="langHuBtn" title="Váltás magyarra">HU</button>
+        </div>
+
+        <button id="hiddenGemsBtn" class="filter-toggle-btn gems-btn" title="Low stars (<100 ⭐), proven working merit and demo">
+          <span>💎 Hidden Gems</span>
+        </button>
+        <button id="onlyVideoBtn" class="filter-toggle-btn" title="Only projects with 15s video / GIF demos">
+          <span class="pulse-dot"></span>
+          <span>▶ Short Demos</span>
+        </button>
+        <button id="submitRepoBtn" class="action-btn submit-btn" title="Submit your project (even with 0 stars)">
+          <span>+ Submit Project</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="manifesto-pill">💡 A GITHUB ÚJ KORSZAKA</div>
+      <h1 class="hero-title">Ne kódneveket böngéssz. <br><span class="gradient-text">Lásd a funkciót és a megoldást!</span></h1>
+      
+      <!-- AI Revolution & Changed Demographic Manifesto -->
+      <div class="manifesto-card">
+        <div class="manifesto-quote-icon">“</div>
+        <p class="manifesto-text">
+          <strong>Az AI forradalma alapjaiban változtatta meg a GitHub felhasználói táborát.</strong> 
+          A kódolók mellett megjelentek a mainstream tartalomkészítők, elektronikai alkotók, dizájnerek és vállalkozók milliói. 
+          A régi GitHub-kereső nem nekik készült — <em>a NexusHub viszont igen:</em> a technikai betűszavak helyett 
+          <strong>emberi funkciókat, 15 másodperces működő videós demókat és a 0 csillagos rejtett kincseket</strong> hozza felszínre.
+        </p>
+      </div>
+
+      <!-- Creator Standard Banner: The 15s Video & GIF Standard -->
+      <div class="standard-banner" id="standardBanner">
+        <div class="standard-icon">🎬</div>
+        <div class="standard-content">
+          <h4 class="standard-title">Are you an Open Source Creator? Upload a <code class="standard-code">preview.mp4</code> or <code class="standard-code">preview.gif</code>!</h4>
+          <p class="standard-desc">
+            Place a 15-30s demo named <strong>preview.mp4</strong> or <strong>preview.gif</strong> in your repo root. 
+            NexusHub automatically detects it, plays it directly on your card, highlights your project on the homepage, and grants the <strong>▶ Verified Short Demo</strong> badge!
+          </p>
+        </div>
+        <button class="standard-btn" id="showBadgeGuideBtn">Copy README Badge</button>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item"><span class="stat-number" id="totalCount">0</span> projekt a katalógusban</div>
+        <div class="stat-divider">•</div>
+        <div class="stat-item"><span class="stat-number" id="videoCount">0</span> videós / animált demó</div>
+        <div class="stat-divider">•</div>
+        <div class="stat-item">Frissítve: <span id="lastUpdated">-</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Navigation -->
+  <nav class="category-nav">
+    <div class="main-categories" id="mainCategoriesContainer">
+      <!-- Generated via JS -->
+    </div>
+  </nav>
+
+  <!-- Subcategory Filters -->
+  <div class="sub-nav-bar" id="subCategoriesBar">
+    <span class="sub-label">Alcsoportok:</span>
+    <div class="sub-categories" id="subCategoriesContainer">
+      <!-- Generated via JS -->
+    </div>
+  </div>
+
+  <!-- Content Showcase -->
+  <main class="content-area">
+    <!-- Active Filters & View Controls -->
+    <div class="content-toolbar">
+      <div class="active-category-title" id="currentSectionTitle">Összes Felfedezése</div>
+      <div class="view-controls">
+        <div class="sort-wrapper">
+          <label for="sortSelect" class="sort-label">Rendezés:</label>
+          <select id="sortSelect" class="sort-select">
+            <option value="gems">💎 Rejtett Kincsek előre (Merit & Proof)</option>
+            <option value="stars">⭐ Legtöbb csillag (Népszerűség)</option>
+            <option value="name">🔤 ABC sorrend</option>
+          </select>
+        </div>
+        <span class="items-found" id="itemsFoundText">0 projekt</span>
+        <div class="view-mode-buttons">
+          <button class="view-btn active" id="viewGridBtn" title="Rács nézet">⊞ Rács</button>
+          <button class="view-btn" id="viewShelfBtn" title="Netflix polc nézet">☰ Polcok</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards Container -->
+    <div class="cards-grid" id="cardsGrid">
+      <!-- Cards rendered via JS -->
+    </div>
+
+    <!-- Shelves View Container -->
+    <div class="shelves-container" id="shelvesContainer" style="display: none;">
+      <!-- Shelves rendered via JS -->
+    </div>
+  </main>
+
+  <!-- Video & Project Detail Modal -->
+  <div class="modal-overlay" id="detailModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="modal-media" id="modalMediaContainer">
+        <!-- Video or big image preview -->
+      </div>
+      <div class="modal-info">
+        <div class="modal-badges">
+          <span class="badge badge-category" id="modalCategory">Kategória</span>
+          <span class="badge badge-sub" id="modalSubCategory">Alcsoport</span>
+          <span class="badge badge-stars" id="modalStars">⭐ 0</span>
+        </div>
+        <h2 class="modal-title" id="modalTitle">Projekt Címe</h2>
+        <p class="modal-creator" id="modalCreator">Készítő: <strong>-</strong></p>
+        <p class="modal-desc" id="modalDesc">Részletes leírás...</p>
+        
+        <div class="modal-tags" id="modalTags"></div>
+
+        <div class="modal-actions">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modalGithubLink">
+            <span>Ugrás a GitHub Repóra</span>
+            <span class="arrow">↗</span>
+          </a>
+          <button class="btn btn-secondary" id="copyUrlBtn">🔗 Link Másolása</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit Repo Modal -->
+  <div class="modal-overlay" id="submitModal">
+    <div class="modal-card" style="max-width: 540px;">
+      <button class="modal-close" id="submitModalCloseBtn">&times;</button>
+      <div class="modal-info">
+        <div class="brand-badge" style="margin-bottom: 8px;">FÜGGETLEN ALKOTÓKNAK</div>
+        <h2 class="modal-title">💎 Ajánlj egy Kincset!</h2>
+        <p class="modal-desc" style="margin-bottom: 20px;">
+          Legyen az egy 0 csillagos saját Arduino vezérlőd, ESP32 projekted vagy AI fejlesztésed – ha működik és van bizonyítékod, itt a helye!
+        </p>
+
+        <form id="submitForm" style="display: flex; flex-direction: column; gap: 14px;">
+          <div>
+            <label style="display: block; font-size: 12px; font-weight: 700; margin-bottom: 6px; color: var(--text-muted);">GitHub Repó URL (Kötelező):</label>
+            <input type="url" id="submitRepoUrl" placeholder="https://github.com/szerzo/projekt-neve" required style="width: 100%; padding: 10px; background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); border-radius: 6px; color: #fff; font-size: 14px;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 12px; font-weight: 700; margin-bottom: 6px; color: var(--text-muted);">Projekt Címe:</label>
+            <input type="text" id="submitTitle" placeholder="pl. ESP32 Szolár Drón Távirányító" required style="width: 100%; padding: 10px; background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); border-radius: 6px; color: #fff; font-size: 14px;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 12px; font-weight: 700; margin-bottom: 6px; color: var(--text-muted);">Főcsoport:</label>
+            <select id="submitCategory" style="width: 100%; padding: 10px; background: #0f172a; border: 1px solid var(--border-subtle); border-radius: 6px; color: #fff; font-size: 14px;">
+              <option value="Hardver, IoT & Elektronika">🔌 Hardver, IoT & Elektronika (ESP32/Arduino)</option>
+              <option value="Mesterséges Intelligencia & Adat">🧠 Mesterséges Intelligencia & Adat</option>
+              <option value="Játékfejlesztés, 3D & Grafika">🎮 Játékfejlesztés, 3D & Grafika</option>
+              <option value="Zene, Hangtechnika & Audió">🎵 Zene, Hangtechnika & Audió</option>
+              <option value="Self-Hosted & Otthoni Szerverek">🏠 Self-Hosted & Otthoni Szerverek</option>
+              <option value="Produktivitás & Irodai Munka">📊 Produktivitás & Irodai Munka</option>
+              <option value="Kreatív Média, Videóvágás & Fotó">🎬 Kreatív Média, Videóvágás & Fotó</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; font-size: 12px; font-weight: 700; margin-bottom: 6px; color: var(--text-muted);">15-30s Demó Videó / GIF Link (Ajánlott):</label>
+            <input type="url" id="submitDemoUrl" placeholder="https://... vagy YouTube Shorts link" style="width: 100%; padding: 10px; background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); border-radius: 6px; color: #fff; font-size: 14px;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 12px; font-weight: 700; margin-bottom: 6px; color: var(--text-muted);">1 mondatos leírás:</label>
+            <textarea id="submitDesc" rows="2" placeholder="Mit csinál a projekt? Miért nagyszerű?" required style="width: 100%; padding: 10px; background: rgba(255,255,255,0.06); border: 1px solid var(--border-subtle); border-radius: 6px; color: #fff; font-size: 14px; font-family: sans-serif;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="justify-content: center; margin-top: 10px;">
+            🚀 Azonnali Közzététel a Katalógusban
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo-title">
+          <span class="logo-accent">Nexus</span>Hub
+          <span class="logo-tag">Visual Library</span>
+        </div>
+        <p class="footer-mission">
+          Az AI-korszak megváltozott felhasználói igényeihez igazított, funkció- és videóalapú nyílt forráskódú keresőmotor.
+        </p>
+      </div>
+
+      <div class="footer-attribution">
+        <div class="concept-badge">💡 ORIGINAL CONCEPT & INTELLECTUAL PROPERTY</div>
+        <p class="concept-text">
+          Created by <strong>grezoo</strong> (<a href="mailto:grezoo@gmail.com" class="author-email-link">grezoo@gmail.com</a>). 
+          The visual, function-first open-source discovery paradigm, video-first shelves, and the star-independent <strong>"Hidden Gems"</strong> engine are the original intellectual creation of <strong>grezoo</strong>.
+        </p>
+        <p class="copyright-year">© 2026 NexusHub by grezoo. All rights reserved.</p>
+      </div>
+
+      <div class="footer-donation">
+        <span class="donation-label">SUPPORT THE CREATOR</span>
+        <a href="https://revolut.me/grezoo" target="_blank" rel="noopener noreferrer" class="donate-btn" id="donateBtn" title="Send a tip or support via Revolut to @grezoo">
+          <span class="donate-icon">💳</span>
+          <span>Support via Revolut (@grezoo)</span>
+        </a>
+        <span class="donation-subtext">Revolut Tag: <strong>@grezoo</strong> | Direct & secure creator support</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
