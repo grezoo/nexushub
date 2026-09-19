@@ -782,16 +782,16 @@ function createCardElement(item) {
   if (hasMp4) {
     mediaMarkup = `
       <video class="card-video" src="${item.video_demo}" autoplay muted loop playsinline poster="${thumbUrl}"></video>
-      <img src="${thumbUrl}" alt="${functionTitle}" class="card-img card-poster-fallback" loading="lazy" onerror="this.src='https://opengraph.githubassets.com/1/${item.repo_name}'">
+      <img src="${thumbUrl}" alt="${functionTitle}" class="card-img card-poster-fallback" loading="lazy" onerror="this.onerror=null; this.src='https://opengraph.githubassets.com/1/${item.repo_name}'">
     `;
   } else if (isGif || (item.thumbnail_url && item.thumbnail_url.endsWith(".gif"))) {
     const gifSrc = item.video_demo && item.video_demo.endsWith(".gif") ? item.video_demo : item.thumbnail_url;
     mediaMarkup = `
-      <img src="${gifSrc}" alt="${functionTitle}" class="card-img card-moving-media" loading="eager" onerror="this.src='${thumbUrl}'">
+      <img src="${gifSrc}" alt="${functionTitle}" class="card-img card-moving-media" loading="eager" onerror="this.onerror=null; this.src='${thumbUrl}'">
     `;
   } else {
     mediaMarkup = `
-      <img src="${thumbUrl}" alt="${functionTitle}" class="card-img" loading="lazy" onerror="this.src='https://opengraph.githubassets.com/1/${item.repo_name}'">
+      <img src="${thumbUrl}" alt="${functionTitle}" class="card-img" loading="lazy" onerror="this.onerror=null; this.src='https://opengraph.githubassets.com/1/${item.repo_name}'">
     `;
   }
 
