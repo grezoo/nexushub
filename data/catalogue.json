@@ -110,6 +110,35 @@
   ],
   "items": [
     {
+      "id": "verified-jarrodwatts-jev-trader",
+      "repo_name": "jarrodwatts/jev-trader",
+      "title": "Jev Trader — Monad AI Orderbook Bot",
+      "function_title": "Jev Trader — AI kereskedési döntés minden Monad blokkban (~300 ms)",
+      "title_en": "Jev Trader — Autonomous AI trading bot on Monad (Kuru MON-USDC)",
+      "function_title_en": "Jev Trader — Autonomous AI trading bot on Monad (Kuru MON-USDC)",
+      "description": "Minden Monad blokkban döntést hozó AI trading bot. Egy Jev modell figyeli a Kuru MON-USDC ajánlati könyvet, és ~300 ms-onként helyez el limit megbízásokat a spread learatására.",
+      "description_en": "Autonomous AI trading bot making trade decisions on every Monad block (~300ms). Watches Kuru MON-USDC order book and places post-only limit orders to capture the spread.",
+      "main_category": "Pénzügy, Tőzsde & Kripto Elemzés",
+      "sub_category": "Algoritmikus Kereskedés & Botok",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/jarrodwatts/jev-trader",
+      "video_url": "",
+      "has_video": false,
+      "video_demo": "",
+      "stars": 1247,
+      "year": 2026,
+      "url": "https://github.com/jarrodwatts/jev-trader",
+      "creator": "jarrodwatts",
+      "tags": [
+        "monad",
+        "kuru",
+        "ai-trader",
+        "orderbook",
+        "high-frequency",
+        "hft"
+      ],
+      "is_pinned": false
+    },
+    {
       "id": "harvest-calesthio-OpenMontage",
       "repo_name": "calesthio/OpenMontage",
       "title": "OpenMontage",
