@@ -173,6 +173,7 @@ const CATEGORY_TRANSLATIONS = {
 
 // Bilingual Subcategory Translations
 const SUBCATEGORY_TRANSLATIONS = {
+  "3D Modellezés & Képszerkesztés": "3D Modeling & Image Editing",
   "3D Nyomtatás, CNC & Klipper": "3D Printing, CNC & Klipper",
   "Algoritmikus Kereskedés & Botok": "Algorithmic Trading & Bots",
   "Arduino & Mikrokontrollerek": "Arduino & Microcontrollers",
@@ -188,6 +189,7 @@ const SUBCATEGORY_TRANSLATIONS = {
   "Godot Motor & Kiegészítők": "Godot Engine & Plugins",
   "Gyorsindítók & Asztali Kiegészítők": "Launchers & Desktop Utilities",
   "Gépi Tanulás & Neurális Hálók": "Machine Learning & Neural Networks",
+  "Hang, Beszéd & Zene AI": "Audio, Speech & Music AI",
   "Hangklónozás & Beszédszintézis": "Voice Cloning & Speech Synthesis",
   "Hangtechnika & Audió Eszközök": "Audio Engineering & Tools",
   "Hangtisztítás & Sávszétválasztás": "Audio Cleaning & Stem Separation",
@@ -197,6 +199,7 @@ const SUBCATEGORY_TRANSLATIONS = {
   "Jelszókezelők & Adatbiztonság (Vaultwarden)": "Password Managers & Security (Vaultwarden)",
   "Játékmotorok & 3D Grafika": "Game Engines & 3D Graphics",
   "Játékmotorok (Godot / Raylib)": "Game Engines (Godot / Raylib)",
+  "Kiberbiztonság & Jelszókezelők": "Cybersecurity & Password Managers",
   "Kiberbiztonság & Titkosítás": "Cybersecurity & Cryptography",
   "Konténerek & Docker Környezetek": "Containers & Docker Environments",
   "Kreatív Média & Videófeldolgozás": "Creative Media & Video Processing",
@@ -205,12 +208,14 @@ const SUBCATEGORY_TRANSLATIONS = {
   "Képernyőfelvétel & Streaming (OBS Studio)": "Screen Recording & Streaming (OBS)",
   "Képszerkesztők & Kreatív Kódolás": "Image Editors & Creative Coding",
   "Képszerkesztők (Krita / GIMP / Inkscape)": "Image Editors (Krita / GIMP / Inkscape)",
+  "Költségvetés & Pénzügyi Tervezés": "Budgeting & Financial Planning",
   "Közösségi Eszközök": "Community Tools",
   "Lokális LLM-ek & Csevegők": "Local LLMs & Chatbots",
   "Mikrokontrollerek & Hardver": "Microcontrollers & Hardware",
   "Munkafolyamat & Task Management": "Workflows & Task Management",
   "Médiaszerverek & Otthoni Felhő": "Media Servers & Home Cloud",
   "Médiaszerverek & Streaming (Jellyfin)": "Media Servers & Streaming (Jellyfin)",
+  "Nagy Nyelvi Modellek & LLM": "Large Language Models & LLMs",
   "Okosotthon & ESPHome / Zigbee": "Smart Home & ESPHome / Zigbee",
   "PDF & Dokumentumkezelés": "PDF & Document Management",
   "Piaci Elemzés & Diagramok": "Market Analysis & Charts",
@@ -232,6 +237,16 @@ const SUBCATEGORY_TRANSLATIONS = {
   "Videóvágók & Compositing (Kdenlive / Shotcut)": "Video Editors & Compositing (Kdenlive / Shotcut)",
   "Zenevizualizáció & Algoritmikus Zene": "Music Visualization & Algorithmic Audio"
 };
+
+// Resilient normalized lookup map for subcategory translations
+const NORMALIZED_SUBCAT_MAP = {};
+Object.entries(SUBCATEGORY_TRANSLATIONS).forEach(([huKey, enVal]) => {
+  const norm = huKey.toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]/g, "");
+  NORMALIZED_SUBCAT_MAP[norm] = enVal;
+});
+
 
 // English Translations for Seed Functions
 const FUNCTION_TRANSLATIONS_EN = {
@@ -455,11 +470,20 @@ function getCategoryName(rawName) {
 // Get translated subcategory name
 function getSubcategoryName(rawName) {
   if (!rawName) return "";
-  if (currentLang === "en" && SUBCATEGORY_TRANSLATIONS[rawName]) {
-    return SUBCATEGORY_TRANSLATIONS[rawName];
+  if (currentLang === "en") {
+    if (SUBCATEGORY_TRANSLATIONS[rawName]) {
+      return SUBCATEGORY_TRANSLATIONS[rawName];
+    }
+    const norm = rawName.toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]/g, "");
+    if (NORMALIZED_SUBCAT_MAP[norm]) {
+      return NORMALIZED_SUBCAT_MAP[norm];
+    }
   }
   return rawName;
 }
+
 
 // Get translated function title for card
 function getItemFunctionTitle(item) {
