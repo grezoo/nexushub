@@ -337,6 +337,15 @@ class CatalogueRequestHandler(http.server.SimpleHTTPRequestHandler):
         path = parsed.path
         query_params = urllib.parse.parse_qs(parsed.query)
 
+        # Health check & Keep-alive ping endpoint (ultra-fast, 0ms DB overhead)
+        if path in ["/ping", "/health"]:
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            self.wfile.write(b'{"status":"ok","time":%d}' % int(time.time()))
+            return
+
         # API: Paginated, FTS-indexed items query from SQLite
         if path == "/api/items":
             data = query_repositories(query_params)

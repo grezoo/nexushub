@@ -19,7 +19,7 @@ jobs:
           if [ -z "$RENDER_URL" ]; then
             RENDER_URL="https://gitcatalog.onrender.com"
           fi
-          echo "Sending keep-alive heartbeat ping to: $RENDER_URL"
-          curl -s -m 30 --retry 2 --retry-delay 2 -A "NexusHub-KeepAlive-Bot/1.0" "$RENDER_URL" > /dev/null || true
+          echo "Sending keep-alive heartbeat ping to: $RENDER_URL/ping"
+          curl -s -m 30 --retry 2 --retry-delay 2 -A "NexusHub-KeepAlive-Bot/1.0" "$RENDER_URL/ping" > /dev/null || true
           echo "Keep-alive ping sent successfully!"
 
