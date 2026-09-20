@@ -491,8 +491,62 @@ function escapeHtml(str) {
     .replace(/'/g, "&#039;");
 }
 
+// Parse URL Search Parameters for Shareable Deep Links
+function parseUrlParameters() {
+  const urlParams = new URLSearchParams(window.location.search);
+  
+  if (urlParams.has("lang")) {
+    const l = urlParams.get("lang");
+    if (l === "en" || l === "hu") currentLang = l;
+  }
+  if (urlParams.has("search") || urlParams.has("q")) {
+    searchQuery = urlParams.get("search") || urlParams.get("q") || "";
+    if (searchInput) searchInput.value = searchQuery;
+  }
+  if (urlParams.has("category")) {
+    currentMainCat = urlParams.get("category");
+  }
+  if (urlParams.has("sub_category") || urlParams.has("sub")) {
+    currentSubCat = urlParams.get("sub_category") || urlParams.get("sub");
+  }
+  if (urlParams.has("sort")) {
+    currentSort = urlParams.get("sort");
+    if (sortSelect) sortSelect.value = currentSort;
+  }
+  if (urlParams.has("vintage")) {
+    currentVintage = urlParams.get("vintage");
+    if (vintageSelect) vintageSelect.value = currentVintage;
+  }
+  if (urlParams.has("videos")) {
+    onlyVideosFilter = urlParams.get("videos") === "1" || urlParams.get("videos") === "true";
+    if (onlyVideoBtn) onlyVideoBtn.classList.toggle("active", onlyVideosFilter);
+  }
+  if (urlParams.has("gems")) {
+    onlyGemsFilter = urlParams.get("gems") === "1" || urlParams.get("gems") === "true";
+    if (hiddenGemsBtn) hiddenGemsBtn.classList.toggle("active", onlyGemsFilter);
+  }
+}
+
+// Update URL bar silently so users can copy and share the exact view link
+function updateUrlState() {
+  const params = new URLSearchParams();
+  if (currentLang !== "en") params.set("lang", currentLang);
+  if (searchQuery.trim()) params.set("q", searchQuery.trim());
+  if (currentMainCat !== "all") params.set("category", currentMainCat);
+  if (currentSubCat !== "all") params.set("sub", currentSubCat);
+  if (currentSort !== "gems") params.set("sort", currentSort);
+  if (currentVintage !== "all") params.set("vintage", currentVintage);
+  if (onlyVideosFilter) params.set("videos", "1");
+  if (onlyGemsFilter) params.set("gems", "1");
+
+  const qs = params.toString();
+  const newUrl = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
+  window.history.replaceState({}, "", newUrl);
+}
+
 // Initialize application
 async function init() {
+  parseUrlParameters();
   await Promise.all([
     loadCategories(),
     loadStats(),
@@ -650,6 +704,7 @@ async function fetchServerItems(page = 1, append = false) {
       serverItems = data.items || [];
     }
 
+    updateUrlState();
     renderItems(append);
   } catch (err) {
     console.error("Failed to fetch items from database:", err);
