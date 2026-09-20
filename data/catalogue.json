@@ -110,6 +110,168 @@
   ],
   "items": [
     {
+      "id": "saas-bitwarden-server",
+      "repo_name": "bitwarden/server",
+      "title": "Bitwarden",
+      "function_title": "Bitwarden — A legmegbízhatóbb nyílt forráskódú jelszókezelő (1Password /...",
+      "title_en": "Bitwarden — Open source password management solution with end-to-end zero-knowledge encrypti...",
+      "function_title_en": "Bitwarden — Open source password management solution with end-to-end zero-knowledge encrypti...",
+      "description": "A legmegbízhatóbb nyílt forráskódú jelszókezelő (1Password / LastPass alternatíva): végpontok közötti titkosítás, kétlépcsős azonosítás.",
+      "description_en": "Open source password management solution with end-to-end zero-knowledge encryption. Free self-hosted alternative to 1Password.",
+      "main_category": "Rendszer, Biztonság & Segédprogramok",
+      "sub_category": "Kiberbiztonság & Jelszókezelők",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/bitwarden/server",
+      "video_url": "",
+      "has_video": false,
+      "video_demo": "",
+      "stars": 18500,
+      "year": 2023,
+      "url": "https://github.com/bitwarden/server",
+      "creator": "bitwarden",
+      "tags": [
+        "bitwarden",
+        "saas-alternative",
+        "open-source",
+        "self-hosted"
+      ],
+      "is_pinned": false
+    },
+    {
+      "id": "saas-calcom-cal.com",
+      "repo_name": "calcom/cal.com",
+      "title": "Cal.com",
+      "function_title": "Cal.com — A Calendly nyílt forráskódú alternatívája: időpontfoglalási ...",
+      "title_en": "Cal.com — Scheduling infrastructure for everyone. Open source Calendly alternative with wh...",
+      "function_title_en": "Cal.com — Scheduling infrastructure for everyone. Open source Calendly alternative with wh...",
+      "description": "A Calendly nyílt forráskódú alternatívája: időpontfoglalási infrastruktúra fejlesztőknek és cégeknek naptárszinkronizációval és beágyazhatósággal.",
+      "description_en": "Scheduling infrastructure for everyone. Open source Calendly alternative with white-labeling, calendar sync, and API integrations.",
+      "main_category": "Produktivitás & Irodai Munka",
+      "sub_category": "Automatizáció & Produktivitás",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/calcom/cal.com",
+      "video_url": "",
+      "has_video": false,
+      "video_demo": "",
+      "stars": 37000,
+      "year": 2023,
+      "url": "https://github.com/calcom/cal.com",
+      "creator": "calcom",
+      "tags": [
+        "cal.com",
+        "saas-alternative",
+        "open-source",
+        "self-hosted"
+      ],
+      "is_pinned": false
+    },
+    {
+      "id": "saas-penpot-penpot",
+      "repo_name": "penpot/penpot",
+      "title": "Penpot",
+      "function_title": "Penpot — A Figma első számú nyílt forráskódú alternatívája: web-alapú...",
+      "title_en": "Penpot — The open-source design and prototyping platform for product teams. Native web st...",
+      "function_title_en": "Penpot — The open-source design and prototyping platform for product teams. Native web st...",
+      "description": "A Figma első számú nyílt forráskódú alternatívája: web-alapú UI/UX tervezés és prototípus-készítés szabványos SVG formátumban csapatoknak.",
+      "description_en": "The open-source design and prototyping platform for product teams. Native web standards (SVG/CSS) alternative to Figma.",
+      "main_category": "Kreatív Média, Videóvágás & Fotó",
+      "sub_category": "3D Modellezés & Képszerkesztés",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/penpot/penpot",
+      "video_url": "",
+      "has_video": false,
+      "video_demo": "",
+      "stars": 34500,
+      "year": 2023,
+      "url": "https://github.com/penpot/penpot",
+      "creator": "penpot",
+      "tags": [
+        "penpot",
+        "saas-alternative",
+        "open-source",
+        "self-hosted"
+      ],
+      "is_pinned": false
+    },
+    {
+      "id": "saas-AppFlowy-IO-AppFlowy",
+      "repo_name": "AppFlowy-IO/AppFlowy",
+      "title": "AppFlowy",
+      "function_title": "AppFlowy — A nyílt forráskódú Notion alternatíva: feladatkezelés, wiki,...",
+      "title_en": "AppFlowy — Open-source Notion alternative giving you 100% data control with wiki, docs, and...",
+      "function_title_en": "AppFlowy — Open-source Notion alternative giving you 100% data control with wiki, docs, and...",
+      "description": "A nyílt forráskódú Notion alternatíva: feladatkezelés, wiki, adatbázisok és jegyzetek saját szerveren vagy lokálisan, korlátlan felhasználóval.",
+      "description_en": "Open-source Notion alternative giving you 100% data control with wiki, docs, and project boards without per-user subscription fees.",
+      "main_category": "Produktivitás & Irodai Munka",
+      "sub_category": "Automatizáció & Produktivitás",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/AppFlowy-IO/AppFlowy",
+      "video_url": "",
+      "has_video": false,
+      "video_demo": "",
+      "stars": 62000,
+      "year": 2023,
+      "url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "creator": "AppFlowy-IO",
+      "tags": [
+        "appflowy",
+        "saas-alternative",
+        "open-source",
+        "self-hosted"
+      ],
+      "is_pinned": false
+    },
+    {
+      "id": "saas-plausible-analytics",
+      "repo_name": "plausible/analytics",
+      "title": "Plausible Analytics",
+      "function_title": "Plausible Analytics — Könnyűsúlyú, adatvédelmet tisztelő nyílt forráskódú webanali...",
+      "title_en": "Plausible Analytics — Simple, open-source, lightweight (< 1 KB) and privacy-first web analytics. Free ...",
+      "function_title_en": "Plausible Analytics — Simple, open-source, lightweight (< 1 KB) and privacy-first web analytics. Free ...",
+      "description": "Könnyűsúlyú, adatvédelmet tisztelő nyílt forráskódú webanalitika. Cookie-mentes, GDPR-kompatibilis Google Analytics alternatíva.",
+      "description_en": "Simple, open-source, lightweight (< 1 KB) and privacy-first web analytics. Free self-hosted Google Analytics alternative.",
+      "main_category": "Produktivitás & Irodai Munka",
+      "sub_category": "Automatizáció & Produktivitás",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/plausible/analytics",
+      "video_url": "",
+      "has_video": false,
+      "video_demo": "",
+      "stars": 22500,
+      "year": 2023,
+      "url": "https://github.com/plausible/analytics",
+      "creator": "plausible",
+      "tags": [
+        "plausible analytics",
+        "saas-alternative",
+        "open-source",
+        "self-hosted"
+      ],
+      "is_pinned": false
+    },
+    {
+      "id": "saas-lllyasviel-Fooocus",
+      "repo_name": "lllyasviel/Fooocus",
+      "title": "Fooocus",
+      "function_title": "Fooocus — Midjourney minőségű képgenerálás a saját videokártyádon. Tel...",
+      "title_en": "Fooocus — Midjourney-quality image generation on your own GPU. Free, offline, unlimited al...",
+      "function_title_en": "Fooocus — Midjourney-quality image generation on your own GPU. Free, offline, unlimited al...",
+      "description": "Midjourney minőségű képgenerálás a saját videokártyádon. Teljesen ingyenes, korlátlan offline alternatíva drága képgeneráló előfizetések helyett.",
+      "description_en": "Midjourney-quality image generation on your own GPU. Free, offline, unlimited alternative to paid image generation subscriptions.",
+      "main_category": "Kreatív Média, Videóvágás & Fotó",
+      "sub_category": "3D Modellezés & Képszerkesztés",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/lllyasviel/Fooocus",
+      "video_url": "",
+      "has_video": false,
+      "video_demo": "",
+      "stars": 42500,
+      "year": 2023,
+      "url": "https://github.com/lllyasviel/Fooocus",
+      "creator": "lllyasviel",
+      "tags": [
+        "fooocus",
+        "saas-alternative",
+        "open-source",
+        "self-hosted"
+      ],
+      "is_pinned": false
+    },
+    {
       "id": "useful-freeCodeCamp-freeCodeCamp",
       "repo_name": "freeCodeCamp/freeCodeCamp",
       "title": "freeCodeCamp",
@@ -526,14 +688,14 @@
       "is_pinned": false
     },
     {
-      "id": "useful-n8n-io-n8n",
+      "id": "saas-n8n-io-n8n",
       "repo_name": "n8n-io/n8n",
       "title": "n8n",
-      "function_title": "n8n — Fair-code licencű vizuális munkafolyamat-automatizációs plat...",
-      "title_en": "n8n — Fair-code workflow automation platform with native AI capabilities and hundreds of integrations.",
-      "function_title_en": "n8n — Fair-code workflow automation platform with native AI capabilities and hundreds of integrations.",
-      "description": "Fair-code licencű vizuális munkafolyamat-automatizációs platform AI és API integrációkkal.",
-      "description_en": "Fair-code workflow automation platform with native AI capabilities and hundreds of integrations.",
+      "function_title": "n8n — A Zapier nyílt forráskódú kihívója: vizuális munkafolyamat-a...",
+      "title_en": "n8n — Fair-code workflow automation platform with native AI capabilities. Self-hostabl...",
+      "function_title_en": "n8n — Fair-code workflow automation platform with native AI capabilities. Self-hostabl...",
+      "description": "A Zapier nyílt forráskódú kihívója: vizuális munkafolyamat-automatizáció több száz integrációval, natív AI lépésekkel és korlátlan futtatással.",
+      "description_en": "Fair-code workflow automation platform with native AI capabilities. Self-hostable alternative to Zapier without task limits.",
       "main_category": "Produktivitás & Irodai Munka",
       "sub_category": "Automatizáció & Produktivitás",
       "thumbnail_url": "https://opengraph.githubassets.com/1/n8n-io/n8n",
@@ -541,13 +703,14 @@
       "has_video": false,
       "video_demo": "",
       "stars": 62000,
-      "year": 2024,
+      "year": 2023,
       "url": "https://github.com/n8n-io/n8n",
       "creator": "n8n-io",
       "tags": [
         "n8n",
+        "saas-alternative",
         "open-source",
-        "developer-tools"
+        "self-hosted"
       ],
       "is_pinned": false
     },
@@ -4396,11 +4559,11 @@
       "description_en": "Upload a 3-second clean speech sample and synthesize natural, expressive speech with identical timbre, emotion, and cadence."
     },
     {
-      "id": "useful-ollama-ollama",
+      "id": "saas-ollama-ollama",
       "repo_name": "ollama/ollama",
       "title": "Ollama",
-      "function_title": "Ollama — Futtass nyílt forráskódú nagy nyelvi modelleket lokálisan a ...",
-      "description": "Futtass nyílt forráskódú nagy nyelvi modelleket lokálisan a saját gépeden egyetlen paranccsal.",
+      "function_title": "Ollama — Futtass nyílt AI modelleket a saját laptopodon fizetős API k...",
+      "description": "Futtass nyílt AI modelleket a saját laptopodon fizetős API költségek nélkül. Havi többszáz dolláros számlát vált ki ingyen.",
       "main_category": "Mesterséges Intelligencia & Adat",
       "sub_category": "Nagy Nyelvi Modellek & LLM",
       "thumbnail_url": "https://opengraph.githubassets.com/1/ollama/ollama",
@@ -4412,13 +4575,14 @@
       "creator": "ollama",
       "tags": [
         "ollama",
+        "saas-alternative",
         "open-source",
-        "developer-tools"
+        "self-hosted"
       ],
-      "year": 2024,
-      "title_en": "Ollama — Get up and running with Llama 3, Mistral, Gemma, and other large language models locally.",
-      "description_en": "Get up and running with Llama 3, Mistral, Gemma, and other large language models locally.",
-      "function_title_en": "Ollama — Get up and running with Llama 3, Mistral, Gemma, and other large language models locally.",
+      "year": 2023,
+      "title_en": "Ollama — Run open-source large language models locally without paying for API tokens. Rep...",
+      "description_en": "Run open-source large language models locally without paying for API tokens. Replaces expensive monthly subscriptions with zero running cost.",
+      "function_title_en": "Ollama — Run open-source large language models locally without paying for API tokens. Rep...",
       "is_pinned": false
     },
     {
@@ -15847,30 +16011,31 @@
       "year": 2018
     },
     {
-      "id": "repo-yt-dlp-yt-dlp",
+      "id": "saas-yt-dlp-yt-dlp",
       "repo_name": "yt-dlp/yt-dlp",
       "title": "yt-dlp",
-      "function_title": "yt-dlp — A youtube-dl fork with additional features and fixes",
-      "title_en": "yt-dlp — A `youtube-dl` fork with additional features and fixes....",
-      "description": "A `youtube-dl` fork with additional features and fixes.",
-      "description_en": "A `youtube-dl` fork with additional features and fixes.",
-      "main_category": "Rendszer, Biztonság & Segédprogramok",
-      "sub_category": "Terminálok & Shell Eszközök",
+      "function_title": "yt-dlp — Ingyenes, parancssori multimédia letöltő több ezer weboldalh...",
+      "title_en": "yt-dlp — A feature-rich command-line audio/video downloader with support for thousands of...",
+      "description": "Ingyenes, parancssori multimédia letöltő több ezer weboldalhoz. A legnépszerűbb nyílt forráskódú YouTube és videó letöltő motor.",
+      "description_en": "A feature-rich command-line audio/video downloader with support for thousands of sites. Complete free alternative to video subscription tools.",
+      "main_category": "Kreatív Média, Videóvágás & Fotó",
+      "sub_category": "Videógenerálás & Mozgókép",
       "thumbnail_url": "https://opengraph.githubassets.com/1/yt-dlp/yt-dlp",
       "video_url": "",
       "has_video": false,
       "video_demo": "",
-      "stars": 111,
+      "stars": 122000,
       "url": "https://github.com/yt-dlp/yt-dlp",
       "creator": "yt-dlp",
       "tags": [
-        "youtube-dl",
-        "features",
         "yt-dlp",
-        "additional",
-        "with"
+        "saas-alternative",
+        "open-source",
+        "self-hosted"
       ],
-      "year": 2024
+      "year": 2023,
+      "function_title_en": "yt-dlp — A feature-rich command-line audio/video downloader with support for thousands of...",
+      "is_pinned": false
     },
     {
       "id": "repo-marm00-cinema",
@@ -19055,26 +19220,31 @@
       "year": 2026
     },
     {
-      "id": "repo-openai-whisper",
+      "id": "saas-openai-whisper",
       "repo_name": "openai/whisper",
-      "title": "#opensource",
-      "function_title": "#opensource — Nyílt forráskódú eszköz",
-      "title_en": "#opensource",
-      "description": "#opensource nyílt forráskódú projekt a(z) Lokális LLM-ek & Csevegők területén.",
-      "description_en": "#opensource open-source project for Lokális LLM-ek & Csevegők.",
+      "title": "Whisper",
+      "function_title": "Whisper — Ingyenes, rendkívül pontos hang-szöveg átíró modell 99 nyelv...",
+      "title_en": "Whisper — Robust speech recognition via large-scale weak supervision across 99 languages. ...",
+      "description": "Ingyenes, rendkívül pontos hang-szöveg átíró modell 99 nyelven az OpenAI-tól. Kiváltja a drága havidíjas átíró szolgáltatásokat (Otter.ai).",
+      "description_en": "Robust speech recognition via large-scale weak supervision across 99 languages. High-accuracy open alternative to paid transcription SaaS like Otter.",
       "main_category": "Mesterséges Intelligencia & Adat",
-      "sub_category": "Lokális LLM-ek & Csevegők",
+      "sub_category": "Hang, Beszéd & Zene AI",
       "thumbnail_url": "https://opengraph.githubassets.com/1/openai/whisper",
       "video_url": "",
       "has_video": false,
       "video_demo": "",
-      "stars": 109,
+      "stars": 85000,
       "url": "https://github.com/openai/whisper",
       "creator": "openai",
       "tags": [
-        "opensource"
+        "whisper",
+        "saas-alternative",
+        "open-source",
+        "self-hosted"
       ],
-      "year": 2023
+      "year": 2023,
+      "function_title_en": "Whisper — Robust speech recognition via large-scale weak supervision across 99 languages. ...",
+      "is_pinned": false
     },
     {
       "id": "repo-thewh1teagle-vibe",
@@ -41149,5 +41319,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-20 02:13:40"
+  "last_updated": "2026-09-20 02:16:09"
 }
