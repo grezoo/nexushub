@@ -11,23 +11,8 @@ on:
 jobs:
   wake-and-curate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install pillow
-
       - name: Ping & Wake Up OnRender Server
         run: |
           RENDER_URL="${{ secrets.RENDER_APP_URL }}"
@@ -35,5 +20,6 @@ jobs:
             RENDER_URL="https://gitcatalog.onrender.com"
           fi
           echo "Sending keep-alive heartbeat ping to: $RENDER_URL"
-          curl -s -m 15 -A "NexusHub-KeepAlive-Bot/1.0" "$RENDER_URL" > /dev/null || true
+          curl -s -m 30 --retry 2 --retry-delay 2 -A "NexusHub-KeepAlive-Bot/1.0" "$RENDER_URL" > /dev/null || true
           echo "Keep-alive ping sent successfully!"
+
