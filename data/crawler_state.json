@@ -1,5 +1,5 @@
 {
-  "total_runs": 2,
+  "total_runs": 3,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -10,8 +10,8 @@
       "count": 0
     },
     "vsouza/awesome-ios": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "JStumpp/awesome-android": {
       "crawled": false,
@@ -304,8 +304,8 @@
       "count": 0
     },
     "krzjoa/awesome-python-data-science": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "typeddjango/awesome-python-typing": {
       "crawled": false,
@@ -320,8 +320,8 @@
       "count": 0
     },
     "pest-parser/awesome-pest": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 31
     },
     "krispo/awesome-haskell": {
       "crawled": false,
@@ -376,8 +376,8 @@
       "count": 0
     },
     "fffaraz/awesome-cpp": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "qinwf/awesome-R": {
       "crawled": false,
@@ -914,8 +914,8 @@
       "count": 0
     },
     "fcambus/nginx-resources": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 12
     },
     "stve/awesome-dropwizard": {
       "crawled": false,
@@ -1414,8 +1414,8 @@
       "count": 0
     },
     "agarrharr/awesome-cli-apps": {
-      "crawled": false,
-      "count": 0,
+      "crawled": true,
+      "count": 50,
       "main_cat": "Produktivitás & Irodai Munka",
       "sub_cat": "CLI Eszközök"
     },
@@ -1424,8 +1424,8 @@
       "count": 0
     },
     "phillipadsmith/awesome-github": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 35
     },
     "stefanbuck/awesome-browser-extensions-for-github": {
       "crawled": false,
@@ -1572,8 +1572,8 @@
       "count": 0
     },
     "neutraltone/awesome-stock-resources": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 6
     },
     "davisonio/awesome-gif": {
       "crawled": false,
@@ -1884,8 +1884,8 @@
       "count": 0
     },
     "Matthias84/awesome-flying-fpv": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "opencompany/awesome-open-company": {
       "crawled": false,
@@ -2374,7 +2374,7 @@
       "count": 0
     },
     "nicolesaidy/awesome-web-design": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "terkelg/awesome-creative-coding": {
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-09-20 09:23:54"
+  "last_run": "2026-09-21 10:07:46"
 }
