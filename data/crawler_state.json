@@ -1,5 +1,5 @@
 {
-  "total_runs": 3,
+  "total_runs": 4,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -102,8 +102,8 @@
       "count": 0
     },
     "fregante/Awesome-WebExtensions": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 32
     },
     "vitalets/awesome-smart-tv": {
       "crawled": false,
@@ -252,8 +252,8 @@
       "count": 0
     },
     "avajs/awesome-ava": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 31
     },
     "dustinspecker/awesome-eslint": {
       "crawled": false,
@@ -356,8 +356,8 @@
       "count": 0
     },
     "h4cc/awesome-elixir": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "sporto/awesome-elm": {
       "crawled": false,
@@ -460,8 +460,8 @@
       "count": 0
     },
     "veelenga/awesome-crystal": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "onqtam/awesome-cmake": {
       "crawled": false,
@@ -660,7 +660,7 @@
       "count": 0
     },
     "pazguille/offline-first": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "agarrharr/awesome-static-website-services": {
@@ -1064,7 +1064,7 @@
       "count": 0
     },
     "pFarb/awesome-crypto-papers": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "jbhuang0604/awesome-computer-vision": {
@@ -1134,7 +1134,7 @@
       "count": 0
     },
     "steven2358/awesome-generative-ai": {
-      "crawled": false,
+      "crawled": true,
       "count": 0,
       "main_cat": "Mesterséges Intelligencia & Adat",
       "sub_cat": "Generatív AI"
@@ -1976,8 +1976,8 @@
       "count": 0
     },
     "secdev/awesome-scapy": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 35
     },
     "seifrajhi/awesome-cilium": {
       "crawled": false,
@@ -2036,7 +2036,7 @@
       "count": 0
     },
     "zolagonano/awesome-zeronet": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "cosmos/awesome-cosmos": {
@@ -2652,8 +2652,8 @@
       "count": 0
     },
     "hesreallyhim/awesome-claude-code": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "Piebald-AI/awesome-gemini-cli": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-09-21 10:07:46"
+  "last_run": "2026-09-22 09:25:16"
 }
