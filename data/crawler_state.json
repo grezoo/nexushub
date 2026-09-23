@@ -1,5 +1,5 @@
 {
-  "total_runs": 4,
+  "total_runs": 5,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -388,8 +388,8 @@
       "count": 0
     },
     "dlang-community/awesome-d": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "CodyReichert/awesome-cl": {
       "crawled": false,
@@ -612,7 +612,7 @@
       "count": 0
     },
     "cjwirth/awesome-ios-ui": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "Urigo/awesome-meteor": {
@@ -954,8 +954,8 @@
       "count": 0
     },
     "mjhea0/awesome-fastapi": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "kolomied/awesome-cdk": {
       "crawled": false,
@@ -1082,8 +1082,8 @@
       "count": 0
     },
     "aaronhma/awesome-tensorflow-js": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 6
     },
     "margaretmz/awesome-tensorflow-lite": {
       "crawled": false,
@@ -1196,7 +1196,7 @@
       "count": 0
     },
     "enjalot/algovis": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "owainlewis/awesome-artificial-intelligence": {
@@ -1390,8 +1390,8 @@
       "count": 0
     },
     "awesome-roblox/awesome-roblox": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "sindresorhus/quick-look-plugins": {
       "crawled": false,
@@ -1428,7 +1428,7 @@
       "count": 35
     },
     "stefanbuck/awesome-browser-extensions-for-github": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "tiimgreen/github-cheat-sheet": {
@@ -1656,8 +1656,8 @@
       "count": 0
     },
     "micromata/awesome-css-learning": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "dend/awesome-product-management": {
       "crawled": false,
@@ -1996,8 +1996,8 @@
       "count": 0
     },
     "hyperupcall/awesome-mastodon": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 8
     },
     "ttumiel/Awesome-Ethereum": {
       "crawled": false,
@@ -2564,8 +2564,8 @@
       "count": 0
     },
     "ansible-community/awesome-ansible": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 38
     },
     "keller-mark/awesome-biological-visualizations": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-09-22 09:25:16"
+  "last_run": "2026-09-23 09:25:47"
 }
