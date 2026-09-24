@@ -1,5 +1,5 @@
 {
-  "total_runs": 5,
+  "total_runs": 6,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -272,8 +272,8 @@
       "count": 0
     },
     "Richienb/awesome-ponyfills": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "matteocrippa/awesome-swift": {
       "crawled": false,
@@ -744,8 +744,8 @@
       "count": 0
     },
     "sjfricke/awesome-webgl": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 19
     },
     "preactjs/awesome-preact": {
       "crawled": false,
@@ -1256,7 +1256,7 @@
       "count": 0
     },
     "sger/ElixirBooks": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "dreikanter/sublime-bookmarks": {
@@ -1290,8 +1290,8 @@
       "count": 0
     },
     "godotengine/awesome-godot": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "michelpereira/awesome-open-source-games": {
       "crawled": false,
@@ -1532,8 +1532,8 @@
       "count": 0
     },
     "quangv/awesome-couchdb": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 3
     },
     "rayokota/awesome-hbase": {
       "crawled": false,
@@ -1560,8 +1560,8 @@
       "count": 0
     },
     "tyaga001/awesome-neon": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "brabadu/awesome-fonts": {
       "crawled": false,
@@ -2032,8 +2032,8 @@
       "count": 0
     },
     "aorumbayev/awesome-algorand": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "zolagonano/awesome-zeronet": {
       "crawled": true,
@@ -2226,8 +2226,8 @@
       "count": 0
     },
     "alferov/awesome-gulp": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "sindresorhus/amas": {
       "crawled": false,
@@ -2350,8 +2350,8 @@
       "count": 0
     },
     "bvolpato/awesome-userscripts": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 1
     },
     "tobiasbueschel/awesome-pokemon": {
       "crawled": false,
@@ -2576,8 +2576,8 @@
       "count": 0
     },
     "sdassow/awesome-veganism": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 1
     },
     "mbiesiad/awesome-translations": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-09-23 09:25:47"
+  "last_run": "2026-09-24 09:26:04"
 }
