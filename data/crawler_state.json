@@ -1,5 +1,5 @@
 {
-  "total_runs": 6,
+  "total_runs": 7,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -50,7 +50,7 @@
       "count": 0
     },
     "agarrharr/awesome-macos-screensavers": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "jaywcjlove/awesome-mac": {
@@ -244,8 +244,8 @@
       "count": 0
     },
     "feross/awesome-mad-science": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 6
     },
     "maxogden/maintenance-modules": {
       "crawled": false,
@@ -580,8 +580,8 @@
       "count": 0
     },
     "diegocard/awesome-html5": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 8
     },
     "willianjusten/awesome-svg": {
       "crawled": false,
@@ -616,8 +616,8 @@
       "count": 0
     },
     "Urigo/awesome-meteor": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "sturobson/BEM-resources": {
       "crawled": false,
@@ -1516,8 +1516,8 @@
       "count": 0
     },
     "ramnes/awesome-mongodb": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "d3viant0ne/awesome-rethinkdb": {
       "crawled": false,
@@ -1786,8 +1786,8 @@
       "count": 0
     },
     "jacobdjwilson/awesome-annual-security-reports": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 1
     },
     "TupleType/awesome-cicd-attacks": {
       "crawled": false,
@@ -2016,8 +2016,8 @@
       "count": 0
     },
     "msmolyakov/awesome-waves": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 35
     },
     "substrate-developer-hub/awesome-substrate": {
       "crawled": false,
@@ -2222,7 +2222,7 @@
       "sub_cat": "Otthoni Szerverek"
     },
     "DataDaoDe/awesome-foss-apps": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "alferov/awesome-gulp": {
@@ -2294,12 +2294,12 @@
       "count": 0
     },
     "hobbyquaker/awesome-mqtt": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "cristianoliveira/awesome4girls": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "vorpaljs/awesome-vorpal": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-09-24 09:26:04"
+  "last_run": "2026-09-25 09:43:47"
 }
