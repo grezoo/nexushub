@@ -38,9 +38,15 @@ jobs:
           echo "Curating top editorial picks..."
           python crawler/ai_curator.py
 
+      - name: Synchronize SQLite Database
+        run: |
+          echo "Syncing SQLite FTS5 database..."
+          python scripts/migrate_to_db.py
+
       - name: Commit and Push Database Update
         run: |
           git config --global user.name "NexusHub Autonomous Crawler Bot"
           git config --global user.email "crawler-bot@nexushub.local"
-          git add data/catalogue.json data/curated_picks.json data/crawler_state.json data/submissions_queue.json
+          git add data/nexus.db data/catalogue.json data/curated_picks.json data/crawler_state.json data/submissions_queue.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): daily automated catalogue harvest & curation [skip ci]" && git push)
+
