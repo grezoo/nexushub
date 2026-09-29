@@ -1,5 +1,5 @@
 {
-  "total_runs": 10,
+  "total_runs": 11,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -348,8 +348,8 @@
       "count": 0
     },
     "razum2um/awesome-clojure": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "hantuzun/awesome-clojurescript": {
       "crawled": false,
@@ -496,8 +496,8 @@
       "count": 0
     },
     "vlang/awesome-v": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "MystenLabs/awesome-move": {
       "crawled": true,
@@ -918,8 +918,8 @@
       "count": 12
     },
     "stve/awesome-dropwizard": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 47
     },
     "ramitsurana/awesome-kubernetes": {
       "crawled": false,
@@ -1074,7 +1074,7 @@
       "sub_cat": "Számítógépes Látás"
     },
     "ChristosChristofidis/awesome-deep-learning": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "jtoy/awesome-tensorflow": {
@@ -1552,8 +1552,8 @@
       "count": 0
     },
     "lyqht/awesome-supabase": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 17
     },
     "benallfree/awesome-pocketbase": {
       "crawled": false,
@@ -1672,8 +1672,8 @@
       "count": 0
     },
     "dribdat/awesome-hackathon": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "PanXProject/awesome-certificates": {
       "crawled": false,
@@ -1948,8 +1948,8 @@
       "count": 0
     },
     "jyguyomarch/awesome-productivity": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 4
     },
     "tramcar/awesome-job-boards": {
       "crawled": false,
@@ -1992,7 +1992,7 @@
       "count": 0
     },
     "machinomy/awesome-non-financial-blockchain": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "hyperupcall/awesome-mastodon": {
@@ -2092,15 +2092,15 @@
       "count": 6
     },
     "NPACore/awesome-neuroimaging": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 11
     },
     "cvyl/awesome-transgender": {
       "crawled": false,
       "count": 0
     },
     "danvoyce/awesome-creative-tech-events": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "ildoc/awesome-italy-events": {
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-09-28 11:07:56"
+  "last_run": "2026-09-29 10:50:07"
 }
