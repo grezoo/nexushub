@@ -1,5 +1,5 @@
 {
-  "total_runs": 12,
+  "total_runs": 13,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -596,8 +596,8 @@
       "count": 0
     },
     "petk/awesome-dojo": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "NoahBuscher/Inspire": {
       "crawled": false,
@@ -648,8 +648,8 @@
       "count": 0
     },
     "petk/awesome-jquery": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "AllThingsSmitty/jquery-tips-everyone-should-know": {
       "crawled": false,
@@ -672,8 +672,8 @@
       "count": 0
     },
     "dok/awesome-text-editing": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 11
     },
     "fliptheweb/motion-ui-design": {
       "crawled": false,
@@ -800,8 +800,8 @@
       "count": 0
     },
     "sergey-pimenov/awesome-web-animation": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "jetli/awesome-yew": {
       "crawled": true,
@@ -938,8 +938,8 @@
       "count": 0
     },
     "vert-x3/vertx-awesome": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "shuaibiyy/awesome-terraform": {
       "crawled": false,
@@ -1028,8 +1028,8 @@
       "count": 0
     },
     "n2cholas/awesome-jax": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "altamiracorp/awesome-xai": {
       "crawled": false,
@@ -1468,8 +1468,8 @@
       "count": 0
     },
     "k4m4/terminals-are-sexy": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "sdras/awesome-actions": {
       "crawled": false,
@@ -1668,7 +1668,7 @@
       "count": 0
     },
     "JoseDeFreitas/awesome-youtubers": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "dribdat/awesome-hackathon": {
@@ -2116,8 +2116,8 @@
       "count": 0
     },
     "mojoaxel/awesome-regression-testing": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "christian-bromann/awesome-selenium": {
       "crawled": false,
@@ -2184,8 +2184,8 @@
       "count": 0
     },
     "cicdops/awesome-ciandcd": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 9
     },
     "mmcgrana/services-engineering": {
       "crawled": true,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-09-30 10:37:54"
+  "last_run": "2026-10-01 11:05:49"
 }
