@@ -1,5 +1,5 @@
 {
-  "total_runs": 13,
+  "total_runs": 14,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -148,8 +148,8 @@
       "count": 0
     },
     "jthegedus/awesome-firebase": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "adafruit/awesome-adafruitio": {
       "crawled": false,
@@ -568,8 +568,8 @@
       "count": 0
     },
     "Granze/awesome-polymer": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 28
     },
     "PatrickJS/awesome-angular": {
       "crawled": false,
@@ -588,12 +588,12 @@
       "count": 0
     },
     "raphamorim/awesome-canvas": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 19
     },
     "dnbard/awesome-knockout": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 32
     },
     "petk/awesome-dojo": {
       "crawled": true,
@@ -788,8 +788,8 @@
       "count": 0
     },
     "aniftyco/awesome-tailwindcss": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 31
     },
     "seed-rs/awesome-seed-rs": {
       "crawled": false,
@@ -1156,8 +1156,8 @@
       "count": 0
     },
     "igorbarinov/awesome-data-engineering": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "manuzhang/awesome-streaming": {
       "crawled": false,
@@ -1536,8 +1536,8 @@
       "count": 3
     },
     "rayokota/awesome-hbase": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 25
     },
     "erictleung/awesome-nosql-guides": {
       "crawled": false,
@@ -1548,8 +1548,8 @@
       "count": 0
     },
     "vaticle/typedb-awesome": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 17
     },
     "lyqht/awesome-supabase": {
       "crawled": true,
@@ -1984,8 +1984,8 @@
       "count": 0
     },
     "igorbarinov/awesome-bitcoin": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "vhpoet/awesome-ripple": {
       "crawled": false,
@@ -2262,8 +2262,8 @@
       "count": 0
     },
     "javierluraschi/awesome-dataviz": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "mfornos/awesome-microservices": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-01 11:05:49"
+  "last_run": "2026-10-02 10:38:27"
 }
