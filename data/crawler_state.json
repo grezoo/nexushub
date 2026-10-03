@@ -1,5 +1,5 @@
 {
-  "total_runs": 14,
+  "total_runs": 15,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -708,8 +708,8 @@
       "count": 0
     },
     "nikgraf/awesome-draft-js": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 46
     },
     "TalAter/awesome-service-workers": {
       "crawled": false,
@@ -740,8 +740,8 @@
       "count": 0
     },
     "LucasBassetti/awesome-less": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "sjfricke/awesome-webgl": {
       "crawled": true,
@@ -1436,8 +1436,8 @@
       "count": 0
     },
     "matchai/awesome-pinned-gists": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "arslanbilal/git-cheat-sheet": {
       "crawled": false,
@@ -1512,8 +1512,8 @@
       "count": 0
     },
     "neueda/awesome-neo4j": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "ramnes/awesome-mongodb": {
       "crawled": true,
@@ -1842,7 +1842,7 @@
       "count": 0
     },
     "Kiloreux/awesome-robotics": {
-      "crawled": false,
+      "crawled": true,
       "count": 0,
       "main_cat": "Hardver, IoT & Elektronika",
       "sub_cat": "Robotika & Drónok"
@@ -1896,8 +1896,8 @@
       "count": 0
     },
     "domenicosolazzo/awesome-okr": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "mezod/awesome-indie": {
       "crawled": false,
@@ -2056,7 +2056,7 @@
       "count": 0
     },
     "eselkin/awesome-computational-neuroscience": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "folkswhocode/awesome-diversity": {
@@ -2528,8 +2528,8 @@
       "count": 0
     },
     "stackshareio/awesome-stacks": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "cytodata/awesome-cytodata": {
       "crawled": false,
@@ -2572,16 +2572,16 @@
       "count": 0
     },
     "make-github-pseudonymous-again/awesome-qr-code": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 25
     },
     "sdassow/awesome-veganism": {
       "crawled": true,
       "count": 1
     },
     "mbiesiad/awesome-translations": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 19
     },
     "dersvenhesse/awesome-scriptable": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-02 10:38:27"
+  "last_run": "2026-10-03 09:58:52"
 }
