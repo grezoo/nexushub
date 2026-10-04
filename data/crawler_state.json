@@ -1,5 +1,5 @@
 {
-  "total_runs": 15,
+  "total_runs": 16,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -942,8 +942,8 @@
       "count": 50
     },
     "shuaibiyy/awesome-terraform": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "vapor-community/awesome-vapor": {
       "crawled": false,
@@ -1738,8 +1738,8 @@
       "count": 50
     },
     "cpuu/awesome-fuzzing": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "fkie-cad/awesome-embedded-and-iot-security": {
       "crawled": true,
@@ -1814,8 +1814,8 @@
       "count": 0
     },
     "nirgn975/awesome-drupal": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 3
     },
     "craftcms/awesome": {
       "crawled": false,
@@ -1900,8 +1900,8 @@
       "count": 2
     },
     "mezod/awesome-indie": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 3
     },
     "cjbarber/ToolsOfTheTrade": {
       "crawled": true,
@@ -1936,8 +1936,8 @@
       "count": 0
     },
     "matiassingers/awesome-slack": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "filipelinhares/awesome-slack": {
       "crawled": false,
@@ -2318,8 +2318,8 @@
       "count": 0
     },
     "sublimino/awesome-funny-markov": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "danielecook/Awesome-Bioinformatics": {
       "crawled": false,
@@ -2468,8 +2468,8 @@
       "count": 0
     },
     "markusschanta/awesome-jupyter": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "andrewda/awesome-frc": {
       "crawled": false,
@@ -2504,8 +2504,8 @@
       "count": 0
     },
     "ScaleLeap/awesome-amazon-seller": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 4
     },
     "brycejohnston/awesome-agriculture": {
       "crawled": false,
@@ -2604,8 +2604,8 @@
       "count": 0
     },
     "readthedocs-examples/awesome-read-the-docs": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "mcanouil/awesome-quarto": {
       "crawled": false,
@@ -2628,8 +2628,8 @@
       "count": 0
     },
     "dstdev/awesome-hpc": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 40
     },
     "FoxFil/awesome-geocaching": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-03 09:58:52"
+  "last_run": "2026-10-04 10:41:55"
 }
