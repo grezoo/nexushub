@@ -1,5 +1,5 @@
 {
-  "total_runs": 18,
+  "total_runs": 19,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -328,8 +328,8 @@
       "count": 0
     },
     "passy/awesome-purescript": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "avelino/awesome-go": {
       "crawled": false,
@@ -340,8 +340,8 @@
       "count": 0
     },
     "tindzk/awesome-scala-native": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "markets/awesome-ruby": {
       "crawled": false,
@@ -512,8 +512,8 @@
       "count": 0
     },
     "fsprojects/awesome-fsharp": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "addyosmani/es6-tools": {
       "crawled": false,
@@ -680,8 +680,8 @@
       "count": 0
     },
     "vuejs/awesome-vue": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "sadcitizen/awesome-marionette": {
       "crawled": false,
@@ -1052,8 +1052,8 @@
       "count": 0
     },
     "accelerated-text/awesome-nlg": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 41
     },
     "theimpossibleastronaut/awesome-linguistics": {
       "crawled": false,
@@ -1374,8 +1374,8 @@
       "count": 2
     },
     "stevinz/awesome-game-engine-dev": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "bytecauldron/awesome-gamemaker": {
       "crawled": false,
@@ -1556,8 +1556,8 @@
       "count": 17
     },
     "benallfree/awesome-pocketbase": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "tyaga001/awesome-neon": {
       "crawled": true,
@@ -1714,8 +1714,8 @@
       "count": 0
     },
     "paralax/awesome-honeypots": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "meirwah/awesome-incident-response": {
       "crawled": false,
@@ -1952,7 +1952,7 @@
       "count": 4
     },
     "tramcar/awesome-job-boards": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "joho/awesome-code-review": {
@@ -2608,8 +2608,8 @@
       "count": 2
     },
     "mcanouil/awesome-quarto": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "hallvaaw/awesome-biological-image-analysis": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-06 11:25:26"
+  "last_run": "2026-10-07 11:15:01"
 }
