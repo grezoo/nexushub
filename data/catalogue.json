@@ -110,6 +110,62 @@
   ],
   "items": [
     {
+      "id": "harvest-EvoMap-evolver",
+      "repo_name": "EvoMap/evolver",
+      "title": "evolver",
+      "function_title": "evolver — The GEP-powered self-evolving engine for AI agents. Auditabl...",
+      "title_en": "evolver — The GEP-powered self-evolving engine for AI agents. Auditabl...",
+      "function_title_en": "evolver — The GEP-powered self-evolving engine for AI agents. Auditabl...",
+      "description": "The GEP-powered self-evolving engine for AI agents. Auditable evolution with Genes, Capsules, and Events. | evomap.ai",
+      "description_en": "The GEP-powered self-evolving engine for AI agents. Auditable evolution with Genes, Capsules, and Events. | evomap.ai",
+      "main_category": "Mesterséges Intelligencia & Adat",
+      "sub_category": "Autonóm Ágensek & Automatizáció",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/EvoMap/evolver",
+      "video_url": "",
+      "video_demo": "",
+      "has_video": false,
+      "stars": 9135,
+      "year": 2026,
+      "url": "https://github.com/EvoMap/evolver",
+      "creator": "EvoMap",
+      "tags": [
+        "a2a",
+        "agent-evolution",
+        "agent-framework",
+        "agent-protocol",
+        "ai-agent",
+        "auditable-ai"
+      ],
+      "is_pinned": false
+    },
+    {
+      "id": "harvest-vectorize-io-hindsight",
+      "repo_name": "vectorize-io/hindsight",
+      "title": "hindsight",
+      "function_title": "hindsight — Hindsight: Agent Memory That Learns...",
+      "title_en": "hindsight — Hindsight: Agent Memory That Learns...",
+      "function_title_en": "hindsight — Hindsight: Agent Memory That Learns...",
+      "description": "Hindsight: Agent Memory That Learns",
+      "description_en": "Hindsight: Agent Memory That Learns",
+      "main_category": "Mesterséges Intelligencia & Adat",
+      "sub_category": "Autonóm Ágensek & Automatizáció",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/vectorize-io/hindsight",
+      "video_url": "",
+      "video_demo": "",
+      "has_video": false,
+      "stars": 47018,
+      "year": 2025,
+      "url": "https://github.com/vectorize-io/hindsight",
+      "creator": "vectorize-io",
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "ai-memory",
+        "memory"
+      ],
+      "is_pinned": false
+    },
+    {
       "id": "harvest-reactive-resume-reactive-resume",
       "repo_name": "reactive-resume/reactive-resume",
       "title": "reactive-resume",
@@ -170269,5 +170325,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-07 11:15:08"
+  "last_updated": "2026-10-08 08:12:11"
 }
