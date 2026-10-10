@@ -1,5 +1,5 @@
 {
-  "total_runs": 21,
+  "total_runs": 22,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -118,8 +118,8 @@
       "count": 0
     },
     "quozd/awesome-dotnet": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "thangchung/awesome-dotnet-core": {
       "crawled": false,
@@ -628,8 +628,8 @@
       "count": 19
     },
     "deanhume/typography": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 4
     },
     "brunopulis/awesome-a11y": {
       "crawled": false,
@@ -1004,8 +1004,8 @@
       "sub_cat": "Gépi Tanulás"
     },
     "ujjwalkarn/Machine-Learning-Tutorials": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 42
     },
     "arbox/machine-learning-with-ruby": {
       "crawled": false,
@@ -1160,8 +1160,8 @@
       "count": 50
     },
     "manuzhang/awesome-streaming": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "awesome-spark/awesome-spark": {
       "crawled": false,
@@ -1192,7 +1192,7 @@
       "count": 0
     },
     "gaerae/awesome-algorithms-education": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "enjalot/algovis": {
@@ -1268,8 +1268,8 @@
       "count": 3
     },
     "rockerBOO/awesome-neovim": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "emacs-tw/awesome-emacs": {
       "crawled": false,
@@ -1302,8 +1302,8 @@
       "count": 0
     },
     "love2d-community/awesome-love2d": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "pico-8/awesome-PICO-8": {
       "crawled": false,
@@ -1500,8 +1500,8 @@
       "count": 38
     },
     "shlomi-noach/awesome-mysql": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "dahlia/awesome-sqlalchemy": {
       "crawled": false,
@@ -1944,7 +1944,7 @@
       "count": 0
     },
     "lukasz-madon/awesome-remote-job": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "jyguyomarch/awesome-productivity": {
@@ -2048,8 +2048,8 @@
       "count": 44
     },
     "atblueprints/awesome-atproto": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 5
     },
     "caufieldjh/awesome-bioie": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-09 11:27:03"
+  "last_run": "2026-10-10 10:44:21"
 }
