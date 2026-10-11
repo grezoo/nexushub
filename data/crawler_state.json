@@ -1,5 +1,5 @@
 {
-  "total_runs": 22,
+  "total_runs": 23,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -188,8 +188,8 @@
       "count": 0
     },
     "zenitysec/awesome-low-code": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 21
     },
     "riderx/awesome-capacitor": {
       "crawled": false,
@@ -248,7 +248,7 @@
       "count": 6
     },
     "maxogden/maintenance-modules": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "avajs/awesome-ava": {
@@ -564,8 +564,8 @@
       "count": 0
     },
     "web-padawan/awesome-web-components": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "Granze/awesome-polymer": {
       "crawled": true,
@@ -1298,8 +1298,8 @@
       "count": 0
     },
     "hkirat/awesome-chess": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 10
     },
     "love2d-community/awesome-love2d": {
       "crawled": true,
@@ -1410,8 +1410,8 @@
       "count": 50
     },
     "jorgebucaran/awsm.fish": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 23
     },
     "agarrharr/awesome-cli-apps": {
       "crawled": true,
@@ -1782,8 +1782,8 @@
       "count": 0
     },
     "infosecB/awesome-detection-engineering": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 21
     },
     "jacobdjwilson/awesome-annual-security-reports": {
       "crawled": true,
@@ -2040,8 +2040,8 @@
       "count": 0
     },
     "cosmos/awesome-cosmos": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "polycarbohydrate/awesome-tor": {
       "crawled": true,
@@ -2212,7 +2212,7 @@
       "count": 0
     },
     "kilimchoi/engineering-blogs": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "awesome-selfhosted/awesome-selfhosted": {
@@ -2472,8 +2472,8 @@
       "count": 50
     },
     "andrewda/awesome-frc": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 32
     },
     "karlhorky/awesome-speakers": {
       "crawled": true,
@@ -2512,8 +2512,8 @@
       "count": 0
     },
     "ttt30ga/awesome-product-design": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "catalinmiron/awesome-prisma": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-10 10:44:21"
+  "last_run": "2026-10-11 10:57:05"
 }
