@@ -1,12 +1,12 @@
 {
-  "total_runs": 23,
+  "total_runs": 24,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
       "count": 0
     },
     "dypsilon/frontend-dev-bookmarks": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "vsouza/awesome-ios": {
@@ -126,8 +126,8 @@
       "count": 0
     },
     "ironcev/awesome-roslyn": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 32
     },
     "jonleibowitz/awesome-digitalocean": {
       "crawled": false,
@@ -906,8 +906,8 @@
       "count": 50
     },
     "phalcon/awesome-phalcon": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "phanan/htaccess": {
       "crawled": false,
@@ -994,8 +994,8 @@
       "count": 0
     },
     "siboehm/awesome-learn-datascience": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "josephmisiti/awesome-machine-learning": {
       "crawled": true,
@@ -1322,8 +1322,8 @@
       "count": 0
     },
     "bs-community/awesome-minecraft": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 38
     },
     "tomodachi94/awesome-computercraft": {
       "crawled": false,
@@ -1810,7 +1810,7 @@
       "count": 0
     },
     "drmonkeyninja/awesome-textpattern": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "nirgn975/awesome-drupal": {
@@ -2258,8 +2258,8 @@
       "count": 50
     },
     "emptymalei/awesome-research": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "javierluraschi/awesome-dataviz": {
       "crawled": true,
@@ -2456,8 +2456,8 @@
       "count": 0
     },
     "nayafia/awesome-maintainers": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 31
     },
     "xxczaki/awesome-calculators": {
       "crawled": false,
@@ -2588,8 +2588,8 @@
       "count": 0
     },
     "msub2/awesome-webxr": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 7
     },
     "atkirtland/awesome-computational-geometry": {
       "crawled": true,
@@ -2636,8 +2636,8 @@
       "count": 0
     },
     "slevithan/awesome-regex": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "lutzh/awesome-event-driven-architecture": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-11 10:57:05"
+  "last_run": "2026-10-12 12:17:57"
 }
