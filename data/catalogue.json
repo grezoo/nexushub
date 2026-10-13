@@ -110,6 +110,35 @@
   ],
   "items": [
     {
+      "id": "harvest-paperclipai-paperclip",
+      "repo_name": "paperclipai/paperclip",
+      "title": "paperclip",
+      "function_title": "paperclip — The open-source app everyone uses to manage agents at work...",
+      "title_en": "paperclip — The open-source app everyone uses to manage agents at work...",
+      "function_title_en": "paperclip — The open-source app everyone uses to manage agents at work...",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "description_en": "The open-source app everyone uses to manage agents at work",
+      "main_category": "Mesterséges Intelligencia & Adat",
+      "sub_category": "Autonóm Ágensek & Automatizáció",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/paperclipai/paperclip",
+      "video_url": "",
+      "video_demo": "",
+      "has_video": false,
+      "stars": 101179,
+      "year": 2026,
+      "url": "https://github.com/paperclipai/paperclip",
+      "creator": "paperclipai",
+      "tags": [
+        "acpx",
+        "agent-orchestration",
+        "agent-skills",
+        "agentic-ai",
+        "ai-agents",
+        "ai-engineering"
+      ],
+      "is_pinned": false
+    },
+    {
       "id": "harvest-EvoMap-evolver",
       "repo_name": "EvoMap/evolver",
       "title": "evolver",
@@ -201122,5 +201151,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-12 12:18:00"
+  "last_updated": "2026-10-13 08:44:20"
 }
