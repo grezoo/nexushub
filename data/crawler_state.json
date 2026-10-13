@@ -1,5 +1,5 @@
 {
-  "total_runs": 24,
+  "total_runs": 25,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -220,8 +220,8 @@
       "count": 0
     },
     "wbinnssmith/awesome-promises": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "standard/awesome-standard": {
       "crawled": false,
@@ -484,8 +484,8 @@
       "count": 0
     },
     "koolamusic/awesome-imba": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 32
     },
     "desiderantes/awesome-vala": {
       "crawled": false,
@@ -1188,8 +1188,8 @@
       "count": 0
     },
     "tayllan/awesome-algorithms": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "gaerae/awesome-algorithms-education": {
       "crawled": true,
@@ -1488,8 +1488,8 @@
       "count": 0
     },
     "zudochkin/awesome-newsletters": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "victorlaerte/awesome-it-quotes": {
       "crawled": false,
@@ -1592,8 +1592,8 @@
       "count": 0
     },
     "ebu/awesome-broadcasting": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "Siilwyn/awesome-pixel-art": {
       "crawled": true,
@@ -1924,7 +1924,7 @@
       "count": 11
     },
     "agamm/awesome-developer-first": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "kdeldycke/awesome-billing": {
@@ -2028,8 +2028,8 @@
       "count": 0
     },
     "friedger/awesome-stacks-chain": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 29
     },
     "aorumbayev/awesome-algorand": {
       "crawled": true,
@@ -2148,8 +2148,8 @@
       "count": 0
     },
     "coderabbitai/awesome-coderabbit": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 12
     },
     "writing-resources/awesome-scientific-writing": {
       "crawled": false,
@@ -2290,8 +2290,8 @@
       "count": 0
     },
     "dylanrees/citizen-science": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 4
     },
     "hobbyquaker/awesome-mqtt": {
       "crawled": true,
@@ -2624,8 +2624,8 @@
       "count": 0
     },
     "lunohodov/awesome-astrophotography": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 4
     },
     "dstdev/awesome-hpc": {
       "crawled": true,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-12 12:17:57"
+  "last_run": "2026-10-13 12:01:57"
 }
