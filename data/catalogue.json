@@ -110,6 +110,35 @@
   ],
   "items": [
     {
+      "id": "harvest-strands-agents-harness-sdk",
+      "repo_name": "strands-agents/harness-sdk",
+      "title": "harness-sdk",
+      "function_title": "harness-sdk — Build an agent harness and control it end-to-end. Open-sourc...",
+      "title_en": "harness-sdk — Build an agent harness and control it end-to-end. Open-sourc...",
+      "function_title_en": "harness-sdk — Build an agent harness and control it end-to-end. Open-sourc...",
+      "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.",
+      "description_en": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.",
+      "main_category": "Mesterséges Intelligencia & Adat",
+      "sub_category": "Autonóm Ágensek & Automatizáció",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/strands-agents/harness-sdk",
+      "video_url": "",
+      "video_demo": "",
+      "has_video": false,
+      "stars": 8797,
+      "year": 2025,
+      "url": "https://github.com/strands-agents/harness-sdk",
+      "creator": "strands-agents",
+      "tags": [
+        "agent-framework",
+        "agentic",
+        "agentic-ai",
+        "agents",
+        "ai",
+        "ai-agents"
+      ],
+      "is_pinned": false
+    },
+    {
       "id": "harvest-paperclipai-paperclip",
       "repo_name": "paperclipai/paperclip",
       "title": "paperclip",
@@ -205939,5 +205968,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-13 12:02:00"
+  "last_updated": "2026-10-14 06:55:26"
 }
