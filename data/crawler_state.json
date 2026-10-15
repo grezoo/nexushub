@@ -1,5 +1,5 @@
 {
-  "total_runs": 26,
+  "total_runs": 27,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -176,8 +176,8 @@
       "count": 0
     },
     "nix-community/awesome-nix": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "stn1slv/awesome-integration": {
       "crawled": false,
@@ -316,8 +316,8 @@
       "count": 0
     },
     "rust-unofficial/awesome-rust": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "pest-parser/awesome-pest": {
       "crawled": true,
@@ -408,8 +408,8 @@
       "count": 0
     },
     "yissachar/awesome-dart": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 44
     },
     "akullpp/awesome-java": {
       "crawled": false,
@@ -452,12 +452,12 @@
       "count": 0
     },
     "ahkscript/awesome-AutoHotkey": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "J2TeaM/awesome-AutoIt": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 9
     },
     "veelenga/awesome-crystal": {
       "crawled": true,
@@ -524,8 +524,8 @@
       "count": 50
     },
     "lvwzhen/tools": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 3
     },
     "awesome-css-group/awesome-css": {
       "crawled": false,
@@ -974,8 +974,8 @@
       "count": 0
     },
     "DevOpsHiveHQ/awesome-kustomize": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 9
     },
     "virtualroot/awesome-opentofu": {
       "crawled": false,
@@ -1102,7 +1102,7 @@
       "count": 0
     },
     "ossu/computer-science": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "lucasviola/awesome-functional-programming": {
@@ -1690,8 +1690,8 @@
       "sub_cat": "Biztonság & Hacking"
     },
     "apsdehal/awesome-ctf": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "brootware/awesome-cyber-security-university": {
       "crawled": false,
@@ -2492,8 +2492,8 @@
       "count": 0
     },
     "jzarca01/awesome-food": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "alexk111/awesome-bitcoin-payment-processors": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-14 09:39:03"
+  "last_run": "2026-10-15 09:17:24"
 }
