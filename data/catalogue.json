@@ -110,6 +110,35 @@
   ],
   "items": [
     {
+      "id": "harvest-pathwaycom-serviette",
+      "repo_name": "pathwaycom/serviette",
+      "title": "serviette",
+      "function_title": "serviette — Ready-to-run cloud templates for RAG, AI pipelines, and ente...",
+      "title_en": "serviette — Ready-to-run cloud templates for RAG, AI pipelines, and ente...",
+      "function_title_en": "serviette — Ready-to-run cloud templates for RAG, AI pipelines, and ente...",
+      "description": "Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-friendly.⚡Always in sync with Sharepoint, Google Drive, S3, Kafka, PostgreSQL, real-time data APIs, and more.",
+      "description_en": "Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-friendly.⚡Always in sync with Sharepoint, Google Drive, S3, Kafka, PostgreSQL, real-time data APIs, and more.",
+      "main_category": "Self-Hosted & Otthoni Szerverek",
+      "sub_category": "Privát Felhő & Fájlkezelés (Nextcloud)",
+      "thumbnail_url": "https://opengraph.githubassets.com/1/pathwaycom/serviette",
+      "video_url": "",
+      "video_demo": "",
+      "has_video": false,
+      "stars": 58797,
+      "year": 2023,
+      "url": "https://github.com/pathwaycom/serviette",
+      "creator": "pathwaycom",
+      "tags": [
+        "chromadb",
+        "document-qa",
+        "document-search",
+        "duckdb",
+        "live-data",
+        "llm"
+      ],
+      "is_pinned": false
+    },
+    {
       "id": "harvest-strands-agents-harness-sdk",
       "repo_name": "strands-agents/harness-sdk",
       "title": "harness-sdk",
@@ -221061,5 +221090,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-15 09:17:26"
+  "last_updated": "2026-10-16 06:35:53"
 }
