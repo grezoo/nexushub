@@ -1,5 +1,5 @@
 {
-  "total_runs": 27,
+  "total_runs": 28,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -42,8 +42,8 @@
       "count": 28
     },
     "AppImageCommunity/awesome-appimage": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "aorumbayev/awesome-omarchy": {
       "crawled": false,
@@ -70,8 +70,8 @@
       "count": 0
     },
     "mailtoharshit/awesome-salesforce": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 46
     },
     "donnemartin/awesome-aws": {
       "crawled": true,
@@ -276,8 +276,8 @@
       "count": 50
     },
     "matteocrippa/awesome-swift": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "hsavit1/Awesome-Swift-Education": {
       "crawled": false,
@@ -820,8 +820,8 @@
       "count": 0
     },
     "klaufel/awesome-design-systems": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 8
     },
     "innocenzi/awesome-inertiajs": {
       "crawled": false,
@@ -898,8 +898,8 @@
       "count": 27
     },
     "gramantin/awesome-rails": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "hothero/awesome-rails-gem": {
       "crawled": true,
@@ -1480,7 +1480,7 @@
       "count": 50
     },
     "RichardLitt/awesome-fantasy": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "ayr-ton/awesome-geek-podcasts": {
@@ -2060,8 +2060,8 @@
       "count": 0
     },
     "folkswhocode/awesome-diversity": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 4
     },
     "maehr/awesome-digital-history": {
       "crawled": false,
@@ -2480,7 +2480,7 @@
       "count": 0
     },
     "edm00se/awesome-board-games": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "uraimo/awesome-software-patreons": {
@@ -2508,8 +2508,8 @@
       "count": 4
     },
     "brycejohnston/awesome-agriculture": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 44
     },
     "ttt30ga/awesome-product-design": {
       "crawled": true,
@@ -2568,8 +2568,8 @@
       "count": 38
     },
     "keller-mark/awesome-biological-visualizations": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 1
     },
     "make-github-pseudonymous-again/awesome-qr-code": {
       "crawled": true,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-15 09:17:24"
+  "last_run": "2026-10-16 09:11:07"
 }
