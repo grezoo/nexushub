@@ -1,5 +1,5 @@
 {
-  "total_runs": 28,
+  "total_runs": 29,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -216,8 +216,8 @@
       "count": 0
     },
     "sorrycc/awesome-javascript": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "wbinnssmith/awesome-promises": {
       "crawled": true,
@@ -236,8 +236,8 @@
       "count": 0
     },
     "Kikobeats/awesome-network-js": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "parro-it/awesome-micro-npm-packages": {
       "crawled": false,
@@ -1090,7 +1090,7 @@
       "count": 0
     },
     "terryum/awesome-deep-learning-papers": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "guillaume-chevalier/awesome-deep-learning-resources": {
@@ -1620,7 +1620,7 @@
       "count": 0
     },
     "therebelrobot/awesome-workshopper": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "karlhorky/learn-to-program": {
@@ -2004,8 +2004,8 @@
       "count": 0
     },
     "steven2358/awesome-blockchain-ai": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 3
     },
     "DanailMinchev/awesome-eosio": {
       "crawled": true,
@@ -2076,7 +2076,7 @@
       "count": 0
     },
     "dreamingechoes/awesome-mental-health": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "analyticalmonk/awesome-neuroscience": {
@@ -2084,8 +2084,8 @@
       "count": 31
     },
     "dh-tech/awesome-digital-humanities": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 5
     },
     "IAmCoder/awesome-lucid-dreams": {
       "crawled": true,
@@ -2616,12 +2616,12 @@
       "count": 0
     },
     "shi-rudo/awesome-stock-trading": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "airscripts/awesome-steam-deck": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "lunohodov/awesome-astrophotography": {
       "crawled": true,
@@ -2722,7 +2722,7 @@
       "sub_cat": "Zenei Szoftverek"
     },
     "mifi/awesome-ffmpeg": {
-      "crawled": false,
+      "crawled": true,
       "count": 0,
       "main_cat": "Kreatív Média, Videóvágás & Fotó",
       "sub_cat": "FFmpeg & Videó"
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-16 09:11:07"
+  "last_run": "2026-10-17 08:43:21"
 }
