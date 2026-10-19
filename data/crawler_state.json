@@ -1,5 +1,5 @@
 {
-  "total_runs": 30,
+  "total_runs": 31,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -62,8 +62,8 @@
       "count": 50
     },
     "yenchenlin/awesome-watchos": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 21
     },
     "deephacks/awesome-jvm": {
       "crawled": false,
@@ -504,8 +504,8 @@
       "count": 50
     },
     "angrykoala/awesome-esolangs": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 38
     },
     "sancarn/awesome-vba": {
       "crawled": false,
@@ -736,8 +736,8 @@
       "count": 0
     },
     "websemantics/awesome-ant-design": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "LucasBassetti/awesome-less": {
       "crawled": true,
@@ -1444,8 +1444,8 @@
       "count": 0
     },
     "git-tips/tips": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 1
     },
     "stevemao/awesome-git-addons": {
       "crawled": false,
@@ -1508,8 +1508,8 @@
       "count": 0
     },
     "mark-rushakoff/awesome-influxdb": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "neueda/awesome-neo4j": {
       "crawled": true,
@@ -1880,8 +1880,8 @@
       "count": 16
     },
     "rickstaa/awesome-adsb": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 16
     },
     "Matthias84/awesome-flying-fpv": {
       "crawled": true,
@@ -2020,8 +2020,8 @@
       "count": 35
     },
     "substrate-developer-hub/awesome-substrate": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "golemfactory/awesome-golem": {
       "crawled": true,
@@ -2338,8 +2338,8 @@
       "count": 0
     },
     "hackerkid/bots": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 32
     },
     "dastergon/awesome-sre": {
       "crawled": false,
@@ -2488,8 +2488,8 @@
       "count": 0
     },
     "ecohealthalliance/awesome-parasite": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 1
     },
     "jzarca01/awesome-food": {
       "crawled": true,
@@ -2532,7 +2532,7 @@
       "count": 50
     },
     "cytodata/awesome-cytodata": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "davisonio/awesome-irc": {
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-18 08:59:00"
+  "last_run": "2026-10-19 10:08:06"
 }
