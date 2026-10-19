@@ -676,6 +676,20 @@ class CatalogueRequestHandler(http.server.SimpleHTTPRequestHandler):
         # Serve static assets from WEB_DIR
         super().do_GET()
 
+    def do_HEAD(self):
+        parsed = urllib.parse.urlparse(self.path)
+        path = parsed.path
+        if path in ["/ping", "/health"]:
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            return
+        if path in ["/analytics", "/analytics/"]:
+            self.path = "/analytics.html"
+            return super().do_HEAD()
+        super().do_HEAD()
+
     def do_POST(self):
         # API: Quality-Gated Repository Submission
         if self.path.startswith("/api/submit"):
