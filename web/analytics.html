@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusHub Analytics — Élő Látogatottsági Statisztika</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .analytics-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 30px 20px 80px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .analytics-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 30px;
+    }
+
+    .analytics-title-group h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .live-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #34d399;
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 10px #10b981;
+      animation: pulse-live 2s infinite;
+    }
+
+    @keyframes pulse-live {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-analytics {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-main);
+    }
+
+    .btn-analytics:hover {
+      background: rgba(255, 255, 255, 0.09);
+      border-color: var(--border-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-analytics-primary {
+      background: linear-gradient(135deg, #a855f7, #6366f1);
+      border: none;
+      color: #fff;
+    }
+
+    .btn-analytics-primary:hover {
+      box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
+    }
+
+    /* KPI Cards Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .kpi-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-card);
+      backdrop-filter: blur(16px);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .kpi-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-hover);
+    }
+
+    .kpi-icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .kpi-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+
+    .kpi-value {
+      font-size: 32px;
+      font-weight: 800;
+      font-family: var(--font-mono);
+      color: #fff;
+      line-height: 1.1;
+    }
+
+    .kpi-subtext {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 8px;
+    }
+
+    /* Section Cards */
+    .dashboard-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 30px;
+      box-shadow: var(--shadow-card);
+      backdrop-filter: blur(16px);
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+    }
+
+    .two-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 860px) {
+      .two-cols {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Bar Charts & Lists */
+    .stat-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .stat-row {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .stat-row-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+    }
+
+    .stat-row-name {
+      font-weight: 600;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .stat-row-count {
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .progress-bar-bg {
+      height: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(90deg, #a855f7, #06b6d4);
+      transition: width 0.5s ease;
+    }
+
+    /* SVG Daily Chart */
+    .chart-box {
+      width: 100%;
+      height: 180px;
+      position: relative;
+    }
+
+    /* Recent Activity Table */
+    .activity-table-wrapper {
+      overflow-x: auto;
+    }
+
+    .activity-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    .activity-table th {
+      color: var(--text-muted);
+      font-weight: 600;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .activity-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      color: var(--text-main);
+    }
+
+    .activity-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .time-badge {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+
+    .source-tag {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      background: rgba(168, 85, 247, 0.15);
+      color: #c084fc;
+      border: 1px solid rgba(168, 85, 247, 0.3);
+    }
+
+    .bot-tag {
+      background: rgba(244, 63, 94, 0.15);
+      color: #fb7185;
+      border-color: rgba(244, 63, 94, 0.3);
+    }
+
+    .privacy-notice {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .privacy-notice strong {
+      color: var(--text-main);
+    }
+  </style>
+</head>
+<body>
+  <!-- Ambient background glow -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <div class="analytics-container">
+    <!-- Header -->
+    <header class="analytics-header">
+      <div class="analytics-title-group">
+        <div style="font-size: 12px; font-weight: 700; color: var(--accent-purple); text-transform: uppercase; margin-bottom: 4px;">
+          NexusHub Visual Library
+        </div>
+        <h1>
+          <span>📊 Élő Látogatottsági Statisztika</span>
+          <span class="live-indicator"><span class="live-dot"></span> ÉLŐ</span>
+        </h1>
+      </div>
+      <div class="header-actions">
+        <button class="btn-analytics" id="refreshBtn" onclick="fetchAnalytics()">
+          <span>🔄 Frissítés</span>
+          <span id="countdownText" style="font-size: 11px; opacity: 0.7;">(30s)</span>
+        </button>
+        <a href="/" class="btn-analytics btn-analytics-primary">
+          <span>🏠 Vissza a Katalógushoz</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Top KPI Cards -->
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-icon">👥</div>
+        <div class="kpi-label">Mai Egyedi Látogatók</div>
+        <div class="kpi-value" id="kpiTodayVisitors">--</div>
+        <div class="kpi-subtext">Valós emberi felhasználók (sózott hash)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">👁️</div>
+        <div class="kpi-label">Mai Oldalletöltések</div>
+        <div class="kpi-value" id="kpiTodayViews">--</div>
+        <div class="kpi-subtext">Megnyitások és keresési lekérdezések</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">📈</div>
+        <div class="kpi-label">Összesített Megtekintés</div>
+        <div class="kpi-value" id="kpiTotalViews">--</div>
+        <div class="kpi-subtext">Robot- és bot-szűrt valós forgalom</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">📦</div>
+        <div class="kpi-label">Indexelt Repozitóriumok</div>
+        <div class="kpi-value" id="kpiTotalRepos">--</div>
+        <div class="kpi-subtext" id="kpiWithVideo">-- videós demóval felszerelve</div>
+      </div>
+    </div>
+
+    <!-- 14 Days Trend Chart -->
+    <section class="dashboard-section">
+      <div class="section-head">
+        <h2 class="section-title">📅 Napi Forgalom (Utolsó 14 nap)</h2>
+        <span style="font-size: 12px; color: var(--text-dim);" id="chartRange">Adatok betöltése...</span>
+      </div>
+      <div class="chart-box" id="chartContainer">
+        <svg id="trendSvg" width="100%" height="100%" style="overflow: visible;"></svg>
+      </div>
+    </section>
+
+    <!-- Two columns: Referrers & Top Searches -->
+    <div class="two-cols">
+      <!-- Traffic Sources -->
+      <section class="dashboard-section" style="margin-bottom: 0;">
+        <div class="section-head">
+          <h2 class="section-title">🌐 Forgalmi Források</h2>
+        </div>
+        <div class="stat-list" id="referrersList">
+          <div style="color: var(--text-dim); font-size: 13px;">Betöltés...</div>
+        </div>
+      </section>
+
+      <!-- Top Searches -->
+      <section class="dashboard-section" style="margin-bottom: 0;">
+        <div class="section-head">
+          <h2 class="section-title">🔍 Leggyakoribb Keresések & Szűrők</h2>
+        </div>
+        <div class="stat-list" id="searchesList">
+          <div style="color: var(--text-dim); font-size: 13px;">Betöltés...</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Recent Activity Table -->
+    <section class="dashboard-section">
+      <div class="section-head">
+        <h2 class="section-title">⚡ Legutóbbi Tevékenység (Valós idejű napló)</h2>
+        <span style="font-size: 12px; color: var(--text-muted);" id="lastUpdatedText">-</span>
+      </div>
+      <div class="activity-table-wrapper">
+        <table class="activity-table">
+          <thead>
+            <tr>
+              <th>Időpont</th>
+              <th>Típus / Útvonal</th>
+              <th>Forrás (Referrer)</th>
+              <th>Keresés / Kategória</th>
+              <th>Státusz</th>
+            </tr>
+          </thead>
+          <tbody id="activityTableBody">
+            <tr><td colspan="5" style="text-align: center; color: var(--text-dim);">Betöltés folyamatban...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Privacy & Architecture Notice -->
+    <div class="privacy-notice">
+      🔒 <strong>Adatvédelem és GDPR garancia:</strong> A NexusHub látogatottságmérése 100%-ban sütimentes (Zero-Cookie) és nem használ sem Google Analytics-et, sem harmadik féltől származó trackereket, így a reklámblokkolók (AdBlock, uBlock) nem torzítják az adatokat. Az IP-címek nem kerülnek tárolásra; a látogatókat egy naponta változó sóval előállított 1-utas SHA-256 hash azonosítja kizárólag a napi egyedi látogatások kimutatására. Az automatikus Keep-Alive pölések (`/ping`) és keresőrobotok szűrésre kerülnek a statisztikákból.
+    </div>
+  </div>
+
+  <script>
+    let countdown = 30;
+    let timer = null;
+
+    async function fetchAnalytics() {
+      try {
+        const btn = document.getElementById("refreshBtn");
+        btn.style.opacity = "0.6";
+
+        const res = await fetch("/api/analytics");
+        if (!res.ok) throw new Error("Hálózati hiba: " + res.status);
+        const data = await res.json();
+
+        renderDashboard(data);
+        countdown = 30;
+        btn.style.opacity = "1";
+      } catch (err) {
+        console.error("Analytics fetch error:", err);
+      }
+    }
+
+    function renderDashboard(data) {
+      if (!data || data.status !== "success") return;
+
+      // KPIs
+      document.getElementById("kpiTodayVisitors").textContent = Number(data.today_visitors).toLocaleString();
+      document.getElementById("kpiTodayViews").textContent = Number(data.today_views).toLocaleString();
+      document.getElementById("kpiTotalViews").textContent = Number(data.total_views).toLocaleString();
+
+      if (data.catalogue_stats) {
+        document.getElementById("kpiTotalRepos").textContent = Number(data.catalogue_stats.total_repositories).toLocaleString();
+        document.getElementById("kpiWithVideo").textContent = `${Number(data.catalogue_stats.with_video).toLocaleString()} videós demóval felszerelve`;
+      }
+
+      document.getElementById("lastUpdatedText").textContent = `Utolsó frissítés: ${data.generated_at}`;
+
+      // Render Trend Chart
+      renderChart(data.daily_history || []);
+
+      // Render Referrers
+      renderList(
+        document.getElementById("referrersList"),
+        data.top_referrers || [],
+        item => item.source,
+        item => item.count,
+        "Nincs még külső hivatkozási adat."
+      );
+
+      // Render Top Searches
+      renderList(
+        document.getElementById("searchesList"),
+        data.top_searches || [],
+        item => `"${item.query}"`,
+        item => item.count,
+        "Nincs még rögzített keresési kifejezés."
+      );
+
+      // Render Activity Table
+      renderActivityTable(data.recent_activity || []);
+    }
+
+    function renderList(container, items, getName, getCount, emptyText) {
+      if (!items || items.length === 0) {
+        container.innerHTML = `<div style="color: var(--text-dim); font-size: 13px;">${emptyText}</div>`;
+        return;
+      }
+
+      const maxCount = Math.max(...items.map(getCount), 1);
+      container.innerHTML = items.map(item => {
+        const count = getCount(item);
+        const pct = Math.round((count / maxCount) * 100);
+        return `
+          <div class="stat-row">
+            <div class="stat-row-info">
+              <span class="stat-row-name">${escapeHtml(getName(item))}</span>
+              <span class="stat-row-count">${count.toLocaleString()}</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: ${pct}%;"></div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderActivityTable(activity) {
+      const tbody = document.getElementById("activityTableBody");
+      if (!activity || activity.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--text-dim);">Még nem érkezett látogatói esemény.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = activity.map(ev => {
+        const isBot = ev.is_bot;
+        const statusBadge = isBot
+          ? `<span class="source-tag bot-tag">Robot / Pinger</span>`
+          : `<span class="source-tag" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.3);">Valós látogató</span>`;
+
+        const filterInfo = ev.search
+          ? `🔍 "${escapeHtml(ev.search)}"`
+          : (ev.category && ev.category !== 'all' ? `📁 ${escapeHtml(ev.category)}` : '—');
+
+        return `
+          <tr>
+            <td class="time-badge">${escapeHtml(ev.time)}</td>
+            <td><code>${escapeHtml(ev.path)}</code></td>
+            <td><span class="source-tag">${escapeHtml(ev.source)}</span></td>
+            <td>${filterInfo}</td>
+            <td>${statusBadge}</td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function renderChart(history) {
+      const svg = document.getElementById("trendSvg");
+      if (!history || history.length === 0) {
+        svg.innerHTML = `<text x="50%" y="50%" text-anchor="middle" fill="#64748b" font-size="13">Még nem áll rendelkezésre elegendő napi adat.</text>`;
+        return;
+      }
+
+      const rect = svg.getBoundingClientRect();
+      const width = rect.width || 800;
+      const height = rect.height || 180;
+      const padLeft = 40;
+      const padRight = 20;
+      const padTop = 20;
+      const padBottom = 30;
+
+      const chartW = width - padLeft - padRight;
+      const chartH = height - padTop - padBottom;
+
+      const maxViews = Math.max(...history.map(d => d.views), 5);
+      const stepX = chartW / Math.max(history.length - 1, 1);
+
+      let pointsViews = [];
+      let pointsVisitors = [];
+
+      history.forEach((d, i) => {
+        const x = padLeft + i * stepX;
+        const yViews = padTop + chartH - (d.views / maxViews) * chartH;
+        const yVisitors = padTop + chartH - (d.visitors / maxViews) * chartH;
+        pointsViews.push({ x, y: yViews, data: d });
+        pointsVisitors.push({ x, y: yVisitors, data: d });
+      });
+
+      const lineViewsD = pointsViews.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(" ");
+      const areaViewsD = `${lineViewsD} L ${pointsViews[pointsViews.length-1].x} ${padTop + chartH} L ${pointsViews[0].x} ${padTop + chartH} Z`;
+
+      const lineVisitorsD = pointsVisitors.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(" ");
+
+      svg.innerHTML = `
+        <defs>
+          <linearGradient id="viewsGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Horizontal grid line -->
+        <line x1="${padLeft}" y1="${padTop + chartH}" x2="${width - padRight}" y2="${padTop + chartH}" stroke="rgba(255,255,255,0.08)"/>
+        <line x1="${padLeft}" y1="${padTop + chartH/2}" x2="${width - padRight}" y2="${padTop + chartH/2}" stroke="rgba(255,255,255,0.04)" stroke-dasharray="4"/>
+
+        <!-- Views Area -->
+        <path d="${areaViewsD}" fill="url(#viewsGrad)"/>
+        <!-- Views Line -->
+        <path d="${lineViewsD}" fill="none" stroke="#a855f7" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Visitors Line -->
+        <path d="${lineVisitorsD}" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-dasharray="4"/>
+
+        <!-- Points -->
+        ${pointsViews.map(p => `
+          <circle cx="${p.x}" cy="${p.y}" r="4" fill="#a855f7" stroke="#090d16" stroke-width="2">
+            <title>${p.data.date}: ${p.data.views} megtekintés, ${p.data.visitors} látogató</title>
+          </circle>
+          <text x="${p.x}" y="${padTop + chartH + 18}" fill="#64748b" font-size="10" text-anchor="middle" font-family="monospace">
+            ${p.data.date.slice(5)}
+          </text>
+        `).join("")}
+      `;
+    }
+
+    function escapeHtml(str) {
+      if (!str) return "";
+      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    // Auto-refresh countdown loop
+    setInterval(() => {
+      countdown--;
+      const el = document.getElementById("countdownText");
+      if (el) el.textContent = `(${countdown}s)`;
+      if (countdown <= 0) {
+        fetchAnalytics();
+      }
+    }, 1000);
+
+    // Initial load
+    fetchAnalytics();
+  </script>
+</body>
+</html>

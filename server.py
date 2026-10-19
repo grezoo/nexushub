@@ -5,6 +5,7 @@ SQLite + FTS5 Full-Text Search, server-side pagination, and hardened anti-spam q
 Zero external dependencies, works with standard Python library.
 """
 
+import hashlib
 import http.server
 import json
 import os
@@ -40,6 +41,231 @@ def get_db_connection():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
+
+
+# Known crawler / bot substrings for clean analytics filtering
+KNOWN_BOT_SUBSTRINGS = [
+    "bot", "spider", "crawl", "slurp", "headless", "lighthouse",
+    "uptime", "cron-job", "curl", "wget", "python", "http-client",
+    "go-http", "postman", "feedly", "facebookexternalhit", "embedly",
+    "twitterbot", "discordbot", "telegrambot", "googlebot", "bingbot"
+]
+
+
+def init_analytics_db():
+    """Ensures page_views table and indexes exist in nexus.db."""
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS page_views (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+                ip_hash TEXT NOT NULL,
+                path TEXT NOT NULL,
+                referrer TEXT,
+                referrer_source TEXT,
+                user_agent TEXT,
+                search_query TEXT,
+                category TEXT,
+                is_bot INTEGER DEFAULT 0
+            )
+        """)
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_page_views_timestamp ON page_views (timestamp)")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_page_views_ip_hash ON page_views (ip_hash, timestamp)")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_page_views_is_bot ON page_views (is_bot)")
+        conn.commit()
+        conn.close()
+        print("[+] Analytics database initialized.")
+    except Exception as e:
+        print(f"[-] Analytics DB init error: {e}")
+
+
+def parse_referrer_source(ref_url):
+    """Classifies incoming referrer into human-readable source category."""
+    if not ref_url:
+        return "Közvetlen / Direct"
+    try:
+        parsed = urllib.parse.urlparse(ref_url)
+        host = parsed.netloc.lower()
+        if not host:
+            return "Közvetlen / Direct"
+        if any(x in host for x in ["t.co", "twitter.com", "x.com"]):
+            return "Twitter / X"
+        if "reddit.com" in host:
+            return "Reddit"
+        if "google." in host:
+            return "Google Kereső"
+        if "github.com" in host:
+            return "GitHub"
+        if "linkedin.com" in host:
+            return "LinkedIn"
+        if "facebook.com" in host or "fb.com" in host:
+            return "Facebook"
+        if "gitalogue.org" in host:
+            return "Gitalogue"
+        if "ycombinator.com" in host:
+            return "Hacker News"
+        if "onrender.com" in host or "localhost" in host:
+            return "Belső navigáció"
+        return host.replace("www.", "")
+    except Exception:
+        return "Egyéb"
+
+
+def log_page_view(client_ip, path, referrer, user_agent, search_query="", category=""):
+    """
+    Logs visitor activity with 1-way daily salted hash (GDPR & privacy compliant).
+    Zero cookies, no personal data stored.
+    """
+    try:
+        # Don't log static assets
+        if any(path.endswith(ext) for ext in [".css", ".js", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".ico", ".woff", ".woff2"]):
+            return
+
+        ua_lower = (user_agent or "").lower()
+        is_bot = 1 if any(b in ua_lower for b in KNOWN_BOT_SUBSTRINGS) else 0
+
+        today_salt = time.strftime("%Y-%m-%d")
+        ip_hash = hashlib.sha256(f"{client_ip}-{today_salt}-nexushub-privacy".encode("utf-8")).hexdigest()[:16]
+        referrer_source = parse_referrer_source(referrer)
+
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        cursor.execute("""
+            INSERT INTO page_views (
+                ip_hash, path, referrer, referrer_source, user_agent, search_query, category, is_bot
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            ip_hash,
+            path,
+            (referrer or "")[:300],
+            referrer_source[:100],
+            (user_agent or "")[:250],
+            (search_query or "")[:100],
+            (category or "")[:50],
+            is_bot
+        ))
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        print(f"[-] Analytics log error: {e}")
+
+
+def get_analytics_summary():
+    """Aggregates metrics for the public/admin analytics dashboard."""
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Today's human metrics
+        cursor.execute("""
+            SELECT COUNT(*), COUNT(DISTINCT ip_hash)
+            FROM page_views
+            WHERE is_bot = 0 AND date(timestamp) = date('now')
+        """)
+        row = cursor.fetchone()
+        today_views = row[0] if row else 0
+        today_visitors = row[1] if row else 0
+
+        # Total human metrics
+        cursor.execute("""
+            SELECT COUNT(*), COUNT(DISTINCT ip_hash || '-' || date(timestamp))
+            FROM page_views
+            WHERE is_bot = 0
+        """)
+        row_total = cursor.fetchone()
+        total_views = row_total[0] if row_total else 0
+        total_visitors = row_total[1] if row_total else 0
+
+        # Last 14 days trend
+        cursor.execute("""
+            SELECT date(timestamp) as day, COUNT(*) as views, COUNT(DISTINCT ip_hash) as visitors
+            FROM page_views
+            WHERE is_bot = 0 AND timestamp >= datetime('now', '-14 days')
+            GROUP BY date(timestamp)
+            ORDER BY day ASC
+        """)
+        daily_history = [{"date": r[0], "views": r[1], "visitors": r[2]} for r in cursor.fetchall()]
+
+        # Top referrer sources
+        cursor.execute("""
+            SELECT referrer_source, COUNT(*) as count
+            FROM page_views
+            WHERE is_bot = 0 AND referrer_source != 'Belső navigáció'
+            GROUP BY referrer_source
+            ORDER BY count DESC
+            LIMIT 10
+        """)
+        top_referrers = [{"source": r[0], "count": r[1]} for r in cursor.fetchall()]
+
+        # Top searches
+        cursor.execute("""
+            SELECT search_query, COUNT(*) as count
+            FROM page_views
+            WHERE is_bot = 0 AND search_query IS NOT NULL AND search_query != ''
+            GROUP BY search_query
+            ORDER BY count DESC
+            LIMIT 15
+        """)
+        top_searches = [{"query": r[0], "count": r[1]} for r in cursor.fetchall()]
+
+        # Top categories
+        cursor.execute("""
+            SELECT category, COUNT(*) as count
+            FROM page_views
+            WHERE is_bot = 0 AND category IS NOT NULL AND category != '' AND category != 'all'
+            GROUP BY category
+            ORDER BY count DESC
+            LIMIT 10
+        """)
+        top_categories = [{"category": r[0], "count": r[1]} for r in cursor.fetchall()]
+
+        # Recent 25 events
+        cursor.execute("""
+            SELECT timestamp, path, referrer_source, search_query, category, is_bot
+            FROM page_views
+            ORDER BY id DESC
+            LIMIT 25
+        """)
+        recent_activity = [
+            {
+                "time": r[0],
+                "path": r[1],
+                "source": r[2],
+                "search": r[3] or "",
+                "category": r[4] or "",
+                "is_bot": bool(r[5])
+            }
+            for r in cursor.fetchall()
+        ]
+
+        # Total catalogue items
+        cursor.execute("SELECT COUNT(*), SUM(CASE WHEN has_video = 1 THEN 1 ELSE 0 END) FROM repositories")
+        repo_row = cursor.fetchone()
+        catalogue_stats = {
+            "total_repositories": repo_row[0] if repo_row else 0,
+            "with_video": repo_row[1] if repo_row and repo_row[1] else 0
+        }
+
+        conn.close()
+
+        return {
+            "status": "success",
+            "today_views": today_views,
+            "today_visitors": today_visitors,
+            "total_views": total_views,
+            "total_visitors": total_visitors,
+            "daily_history": daily_history,
+            "top_referrers": top_referrers,
+            "top_searches": top_searches,
+            "top_categories": top_categories,
+            "recent_activity": recent_activity,
+            "catalogue_stats": catalogue_stats,
+            "generated_at": time.strftime("%Y-%m-%d %H:%M:%S")
+        }
+    except Exception as e:
+        return {"status": "error", "error": str(e)}
 
 
 def query_repositories(params):
@@ -337,6 +563,10 @@ class CatalogueRequestHandler(http.server.SimpleHTTPRequestHandler):
         path = parsed.path
         query_params = urllib.parse.parse_qs(parsed.query)
 
+        client_ip = self.headers.get("X-Forwarded-For", self.client_address[0]).split(",")[0].strip()
+        user_agent = self.headers.get("User-Agent", "")
+        referrer = self.headers.get("Referer", "")
+
         # Health check & Keep-alive ping endpoint (ultra-fast, 0ms DB overhead)
         if path in ["/ping", "/health"]:
             self.send_response(200)
@@ -346,8 +576,33 @@ class CatalogueRequestHandler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(b'{"status":"ok","time":%d}' % int(time.time()))
             return
 
+        # Direct /analytics HTML route
+        if path in ["/analytics", "/analytics/"]:
+            self.path = "/analytics.html"
+            log_page_view(client_ip, "/analytics", referrer, user_agent)
+            return super().do_GET()
+
+        # Log main page visits
+        if path in ["/", "/index.html", "/browse"]:
+            log_page_view(client_ip, path, referrer, user_agent)
+
+        # API: Real-time traffic analytics
+        if path == "/api/analytics":
+            data = get_analytics_summary()
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            self.wfile.write(json.dumps(data, ensure_ascii=False).encode("utf-8"))
+            return
+
         # API: Paginated, FTS-indexed items query from SQLite
         if path == "/api/items":
+            s_q = query_params.get("search", [""])[0] if isinstance(query_params.get("search"), list) else str(query_params.get("search", ""))
+            cat_q = query_params.get("category", ["all"])[0] if isinstance(query_params.get("category"), list) else str(query_params.get("category", "all"))
+            if s_q.strip() or (cat_q and cat_q != "all"):
+                log_page_view(client_ip, "/api/items", referrer, user_agent, search_query=s_q.strip(), category=cat_q)
+
             data = query_repositories(query_params)
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
@@ -561,7 +816,8 @@ class CatalogueRequestHandler(http.server.SimpleHTTPRequestHandler):
 def run():
     port = PORT
     try:
-        # Pre-verify DB connection on boot
+        # Pre-verify DB connection and analytics table on boot
+        init_analytics_db()
         conn = get_db_connection()
         cursor = conn.cursor()
         cursor.execute("SELECT COUNT(*) FROM repositories")

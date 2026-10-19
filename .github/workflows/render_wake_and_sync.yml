@@ -1,15 +1,15 @@
-name: OnRender Keep-Alive & AI Curator Sync
+name: OnRender Keep-Alive Heartbeat
 
 on:
   schedule:
-    # Runs every 12 minutes to keep OnRender free tier awake (timeout is 15 min)
-    - cron: '*/12 * * * *'
+    # Runs every 10 minutes to guarantee OnRender free tier never reaches the 15 min idle timeout
+    - cron: '*/10 * * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
   push:
     branches: [ main ]
 
 jobs:
-  wake-and-curate:
+  wake-and-ping:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,6 +20,7 @@ jobs:
             RENDER_URL="https://gitcatalog.onrender.com"
           fi
           echo "Sending keep-alive heartbeat ping to: $RENDER_URL/ping"
-          curl -s -m 30 --retry 2 --retry-delay 2 -A "NexusHub-KeepAlive-Bot/1.0" "$RENDER_URL/ping" > /dev/null || true
-          echo "Keep-alive ping sent successfully!"
+          curl -s -m 25 --retry 3 --retry-delay 2 -A "NexusHub-KeepAlive-Bot/2.0" "$RENDER_URL/ping" || true
+          curl -s -m 25 --retry 3 --retry-delay 2 -A "NexusHub-KeepAlive-Bot/2.0" "$RENDER_URL/health" || true
+          echo "Keep-alive pings executed successfully!"
 
