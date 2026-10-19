@@ -287,6 +287,9 @@ def query_repositories(params):
     only_gems_val = params.get("only_gems", ["0"])[0] if isinstance(params.get("only_gems"), list) else str(params.get("only_gems", "0"))
     only_gems = only_gems_val in ["1", "true", "True"]
 
+    only_saas_val = params.get("only_saas", ["0"])[0] if isinstance(params.get("only_saas"), list) else str(params.get("only_saas", "0"))
+    only_saas = only_saas_val in ["1", "true", "True"]
+
     sort = params.get("sort", ["gems"])[0] if isinstance(params.get("sort"), list) else str(params.get("sort", "gems"))
 
     try:
@@ -328,6 +331,9 @@ def query_repositories(params):
     if only_gems:
         where_clauses.append("r.stars <= 100")
 
+    if only_saas:
+        where_clauses.append("(r.replaces_saas IS NOT NULL AND r.replaces_saas != '')")
+
     if vintage == "2025-2026":
         where_clauses.append("r.year >= 2025")
     elif vintage == "2021-2024":
@@ -357,7 +363,7 @@ def query_repositories(params):
         SELECT r.id, r.repo_name, r.title, r.function_title, r.title_en, r.function_title_en,
                r.description, r.description_en, r.main_category, r.sub_category,
                r.thumbnail_url, r.video_url, r.video_demo, r.has_video, r.stars, r.year,
-               r.url, r.creator, r.tags, r.is_pinned
+               r.url, r.creator, r.tags, r.is_pinned, r.replaces_saas, r.saas_savings
         FROM repositories r{where_sql}{order_sql}
         LIMIT ? OFFSET ?
     """

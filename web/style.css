@@ -269,6 +269,20 @@ body {
   box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
 }
 
+.saas-btn {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.4);
+  color: #fbbf24;
+}
+
+.saas-btn:hover,
+.saas-btn.active {
+  background: #f59e0b;
+  color: #ffffff;
+  border-color: #f59e0b;
+  box-shadow: 0 0 18px rgba(245, 158, 11, 0.5);
+}
+
 .action-btn {
   padding: 8px 14px;
   border-radius: 999px;
@@ -921,6 +935,37 @@ body {
   font-weight: 800;
   letter-spacing: 0.5px;
   box-shadow: 0 4px 12px rgba(217, 119, 6, 0.4);
+}
+
+.badge-saas {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.5);
+  z-index: 5;
+}
+
+.saas-replacement-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  width: fit-content;
 }
 
 .badge-function-tag {

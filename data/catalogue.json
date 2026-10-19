@@ -538,7 +538,9 @@
         "javascript",
         "mobile-app"
       ],
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "Google Photos / iCloud",
+      "saas_savings": "$10–30 / hó tárhelymegtakarítás"
     },
     {
       "id": "harvest-justcallmekoko-ESP32Marauder",
@@ -1296,7 +1298,9 @@
         "open-source",
         "self-hosted"
       ],
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "1Password / LastPass",
+      "saas_savings": "$3–8 / hó megtakarítás"
     },
     {
       "id": "saas-calcom-cal.com",
@@ -1323,7 +1327,9 @@
         "open-source",
         "self-hosted"
       ],
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "Calendly",
+      "saas_savings": "$16 / hó / felhasználó"
     },
     {
       "id": "saas-penpot-penpot",
@@ -1350,7 +1356,9 @@
         "open-source",
         "self-hosted"
       ],
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "Figma",
+      "saas_savings": "$15 / hó / szerkesztő"
     },
     {
       "id": "saas-AppFlowy-IO-AppFlowy",
@@ -1377,7 +1385,9 @@
         "open-source",
         "self-hosted"
       ],
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "Notion",
+      "saas_savings": "$20 / hó / felhasználó"
     },
     {
       "id": "saas-plausible-analytics",
@@ -1404,7 +1414,9 @@
         "open-source",
         "self-hosted"
       ],
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "Google Analytics",
+      "saas_savings": "$19–100 / hó megtakarítás"
     },
     {
       "id": "saas-lllyasviel-Fooocus",
@@ -1431,7 +1443,9 @@
         "open-source",
         "self-hosted"
       ],
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "Midjourney",
+      "saas_savings": "$30 / hó (korlátlan ingyen)"
     },
     {
       "id": "useful-freeCodeCamp-freeCodeCamp",
@@ -1639,7 +1653,9 @@
         "open-source",
         "developer-tools"
       ],
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "Felhős GPU API",
+      "saas_savings": "$100–500 / hó megtakarítás"
     },
     {
       "id": "useful-huggingface-transformers",
@@ -1691,7 +1707,9 @@
         "open-source",
         "developer-tools"
       ],
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "ScrapingBee / BrightData",
+      "saas_savings": "$49–249 / hó megtakarítás"
     },
     {
       "id": "useful-browserbase-stagehand",
@@ -1874,7 +1892,9 @@
         "open-source",
         "self-hosted"
       ],
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "Zapier / Make",
+      "saas_savings": "$50–300 / hó megtakarítás"
     },
     {
       "id": "useful-langchain-ai-langchain",
@@ -4868,7 +4888,9 @@
         "rust",
         "self-hosted",
         "security"
-      ]
+      ],
+      "replaces_saas": "1Password",
+      "saas_savings": "$3–8 / hó megtakarítás"
     },
     {
       "id": "repo-localsend-localsend",
@@ -5668,7 +5690,9 @@
       "title_en": "Browser Use — Make websites accessible for AI agents with autonomous browser automation and interaction.",
       "description_en": "Make websites accessible for AI agents with autonomous browser automation and interaction.",
       "function_title_en": "Browser Use — Make websites accessible for AI agents with autonomous browser automation and interaction.",
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "Fizetős AI Scraper & RPA",
+      "saas_savings": "$50–200 / hó megtakarítás"
     },
     {
       "id": "KwaiVGI-LivePortrait",
@@ -5743,7 +5767,9 @@
       "title_en": "Ollama — Run open-source large language models locally without paying for API tokens. Rep...",
       "description_en": "Run open-source large language models locally without paying for API tokens. Replaces expensive monthly subscriptions with zero running cost.",
       "function_title_en": "Ollama — Run open-source large language models locally without paying for API tokens. Rep...",
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "OpenAI / Claude API",
+      "saas_savings": "$50–500 / hó megtakarítás"
     },
     {
       "id": "godotengine-godot",
@@ -8732,7 +8758,9 @@
         "source",
         "code"
       ],
-      "year": 2023
+      "year": 2023,
+      "replaces_saas": "Mixpanel / Amplitude",
+      "saas_savings": "$150+ / hó megtakarítás"
     },
     {
       "id": "repo-gitroomhq-postiz-app",
@@ -8968,7 +8996,9 @@
         "source",
         "code"
       ],
-      "year": 2018
+      "year": 2018,
+      "replaces_saas": "Google Analytics",
+      "saas_savings": "Cookie- és AdBlock-mentes 0 Ft"
     },
     {
       "id": "repo-archivebox-archivebox",
@@ -15918,7 +15948,9 @@
         "source",
         "code"
       ],
-      "year": 2024
+      "year": 2024,
+      "replaces_saas": "Zapier",
+      "saas_savings": "$50–250 / hó megtakarítás"
     },
     {
       "id": "repo-automatisch-automatisch",
@@ -17196,7 +17228,9 @@
       ],
       "year": 2023,
       "function_title_en": "yt-dlp — A feature-rich command-line audio/video downloader with support for thousands of...",
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "YouTube Premium",
+      "saas_savings": "$16 / hó megtakarítás"
     },
     {
       "id": "repo-marm00-cinema",
@@ -20405,7 +20439,9 @@
       ],
       "year": 2023,
       "function_title_en": "Whisper — Robust speech recognition via large-scale weak supervision across 99 languages. ...",
-      "is_pinned": false
+      "is_pinned": false,
+      "replaces_saas": "Otter.ai / Descript",
+      "saas_savings": "$20–30 / hó megtakarítás"
     },
     {
       "id": "repo-thewh1teagle-vibe",
@@ -20453,7 +20489,9 @@
         "openai",
         "whisper"
       ],
-      "year": 2023
+      "year": 2023,
+      "replaces_saas": "Otter.ai / Descript",
+      "saas_savings": "$20–30 / hó megtakarítás"
     },
     {
       "id": "repo-softcatala-whisper-ctranslate2",
@@ -21744,7 +21782,9 @@
         "source",
         "code"
       ],
-      "year": 2024
+      "year": 2024,
+      "replaces_saas": "Medium / Substack",
+      "saas_savings": "Platform jutalékok megtakarítása"
     },
     {
       "id": "repo-havenweb-haven",
@@ -31870,7 +31910,9 @@
       "tags": [
         "code",
         "source"
-      ]
+      ],
+      "replaces_saas": "Slack / Teams",
+      "saas_savings": "$8 / hó / felhasználó"
     },
     {
       "id": "repo-anonaddy-anonaddy",
@@ -204935,7 +204977,9 @@
         "github",
         "com",
         "review"
-      ]
+      ],
+      "replaces_saas": "DocuSign",
+      "saas_savings": "$15–40 / hó megtakarítás"
     },
     {
       "id": "repo-formbricks-formbricks",
@@ -204961,7 +205005,9 @@
         "github",
         "com",
         "formbricks"
-      ]
+      ],
+      "replaces_saas": "Typeform",
+      "saas_savings": "$35–99 / hó megtakarítás"
     },
     {
       "id": "repo-nextui-org-nextui",
@@ -205091,7 +205137,9 @@
         "com",
         "review",
         "https"
-      ]
+      ],
+      "replaces_saas": "Jira / Linear",
+      "saas_savings": "$12–25 / hó / felhasználó"
     },
     {
       "id": "repo-unkeyed-unkey",

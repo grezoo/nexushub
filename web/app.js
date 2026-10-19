@@ -25,6 +25,9 @@ const I18N = {
     allSubcategories: "All subcategories",
     exploreAllTitle: "Explore All Open Source & AI Projects",
     hiddenGemsSectionTitle: "💎 Hidden Gems & Independent Projects",
+    saasSectionTitle: "🔥 Free Open-Source SaaS Alternatives",
+    saasBtnText: "🔥 Free Alternatives",
+    saasBadge: "🔥 FREE ALTERNATIVE",
     projectsFound: "projects found",
     sortLabel: "Sort by:",
     sortGems: "💎 Hidden Gems first (Merit & Proof)",
@@ -98,6 +101,9 @@ const I18N = {
     allSubcategories: "Összes alcsoport",
     exploreAllTitle: "Összes Nyílt Forráskódú & AI Projekt",
     hiddenGemsSectionTitle: "💎 Rejtett Kincsek & Független Projektek",
+    saasSectionTitle: "🔥 Ingyenes Nyílt Forráskódú SaaS Alternatívák",
+    saasBtnText: "🔥 SaaS Alternatívák",
+    saasBadge: "🔥 INGYENES ALTERNATÍVA",
     projectsFound: "projekt találat",
     sortLabel: "Rendezés:",
     sortGems: "💎 Rejtett Kincsek előre (Merit & Proof)",
@@ -293,6 +299,7 @@ let currentMainCat = "all";
 let currentSubCat = "all";
 let onlyVideosFilter = false;
 let onlyGemsFilter = false;
+let onlySaasFilter = false;
 let currentSort = "gems";
 let currentVintage = "all";
 let searchQuery = "";
@@ -300,6 +307,7 @@ let currentViewMode = "grid";
 
 // DOM Elements
 const searchInput = document.getElementById("searchInput");
+const saasAlternativesBtn = document.getElementById("saasAlternativesBtn");
 const onlyVideoBtn = document.getElementById("onlyVideoBtn");
 const hiddenGemsBtn = document.getElementById("hiddenGemsBtn");
 const submitRepoBtn = document.getElementById("submitRepoBtn");
@@ -407,6 +415,11 @@ function applyLanguage() {
 
   const showBadgeGuideBtn = document.getElementById("showBadgeGuideBtn");
   if (showBadgeGuideBtn) showBadgeGuideBtn.textContent = t.standardBtn;
+
+  const saasBtn = document.getElementById("saasAlternativesBtn");
+  if (saasBtn && saasBtn.querySelector("span")) {
+    saasBtn.querySelector("span").textContent = t.saasBtnText;
+  }
 
   // Subcategories label
   const subLabel = document.querySelector(".sub-label");
@@ -549,6 +562,10 @@ function parseUrlParameters() {
     onlyGemsFilter = urlParams.get("gems") === "1" || urlParams.get("gems") === "true";
     if (hiddenGemsBtn) hiddenGemsBtn.classList.toggle("active", onlyGemsFilter);
   }
+  if (urlParams.has("saas") || urlParams.has("alternatives")) {
+    onlySaasFilter = urlParams.get("saas") === "1" || urlParams.get("alternatives") === "1" || urlParams.get("saas") === "true";
+    if (saasAlternativesBtn) saasAlternativesBtn.classList.toggle("active", onlySaasFilter);
+  }
 }
 
 // Update URL bar silently so users can copy and share the exact view link
@@ -562,6 +579,7 @@ function updateUrlState() {
   if (currentVintage !== "all") params.set("vintage", currentVintage);
   if (onlyVideosFilter) params.set("videos", "1");
   if (onlyGemsFilter) params.set("gems", "1");
+  if (onlySaasFilter) params.set("saas", "1");
 
   const qs = params.toString();
   const newUrl = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
@@ -713,6 +731,7 @@ async function fetchServerItems(page = 1, append = false) {
   if (searchQuery.trim()) params.set("search", searchQuery.trim());
   if (onlyVideosFilter) params.set("only_videos", "1");
   if (onlyGemsFilter) params.set("only_gems", "1");
+  if (onlySaasFilter) params.set("only_saas", "1");
 
   try {
     const res = await fetch(`/api/items?${params.toString()}`);
@@ -748,11 +767,13 @@ async function fetchServerItems(page = 1, append = false) {
 function renderItems(append = false) {
   const t = I18N[currentLang];
 
-  currentSectionTitle.textContent = onlyGemsFilter 
-    ? t.hiddenGemsSectionTitle
-    : currentMainCat === "all" 
-      ? (searchQuery.trim() ? `${t.projectsFound}: "${escapeHtml(searchQuery)}"` : t.exploreAllTitle)
-      : `${getCategoryName(currentMainCat)} ${currentSubCat !== "all" ? "› " + getSubcategoryName(currentSubCat) : ""}`;
+  currentSectionTitle.textContent = onlySaasFilter
+    ? t.saasSectionTitle
+    : onlyGemsFilter 
+      ? t.hiddenGemsSectionTitle
+      : currentMainCat === "all" 
+        ? (searchQuery.trim() ? `${t.projectsFound}: "${escapeHtml(searchQuery)}"` : t.exploreAllTitle)
+        : `${getCategoryName(currentMainCat)} ${currentSubCat !== "all" ? "› " + getSubcategoryName(currentSubCat) : ""}`;
   
   itemsFoundText.textContent = `${serverTotalCount} ${t.projectsFound}`;
 
@@ -937,12 +958,18 @@ function createCardElement(item) {
       ${mediaMarkup}
       <div class="card-media-overlay"></div>
       ${isOriginal ? `<div class="badge-pinned">${t.originalBadge}</div>` : ''}
-      ${isGem ? `<div class="badge-gem">${t.gemBadge}</div>` : ''}
+      ${item.replaces_saas ? `<div class="badge-saas">${t.saasBadge}</div>` : (isGem ? `<div class="badge-gem">${t.gemBadge}</div>` : '')}
       ${isVintageLegacy ? `<div class="badge-vintage">📼 ${item.year}</div>` : ''}
       ${item.has_video ? `<div class="badge-video">${t.demoBadge}</div>` : ''}
       <div class="badge-function-tag">${getSubcategoryName(item.sub_category) || getCategoryName(item.main_category)}</div>
     </div>
     <div class="card-body">
+      ${item.replaces_saas ? `
+        <div class="saas-replacement-badge" title="${escapeHtml(item.saas_savings || '')}">
+          <span>⚡ ${escapeHtml(item.replaces_saas)} ${currentLang === 'en' ? 'alternative' : 'helyett'}</span>
+          ${item.saas_savings ? `<span style="opacity: 0.9; font-size: 10px; font-weight: 500;">(${escapeHtml(item.saas_savings)})</span>` : ''}
+        </div>
+      ` : ''}
       <div class="card-function-lead">
         <span class="function-label">${t.functionLabel}</span>
         <h3 class="card-title">${escapeHtml(functionTitle)}</h3>
@@ -1080,6 +1107,15 @@ function setupEventListeners() {
     onlyVideoBtn.classList.toggle("active", onlyVideosFilter);
     fetchServerItems(1, false);
   });
+
+  // Toggle Free SaaS Alternatives
+  if (saasAlternativesBtn) {
+    saasAlternativesBtn.addEventListener("click", () => {
+      onlySaasFilter = !onlySaasFilter;
+      saasAlternativesBtn.classList.toggle("active", onlySaasFilter);
+      fetchServerItems(1, false);
+    });
+  }
 
   // Toggle Hidden Gems
   hiddenGemsBtn.addEventListener("click", () => {
