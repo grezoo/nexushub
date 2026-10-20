@@ -1,5 +1,5 @@
 {
-  "total_runs": 31,
+  "total_runs": 32,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -212,8 +212,8 @@
       "count": 0
     },
     "shano/awesome-backstage": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 9
     },
     "sorrycc/awesome-javascript": {
       "crawled": true,
@@ -428,8 +428,8 @@
       "count": 0
     },
     "ocaml-community/awesome-ocaml": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "seancoyne/awesome-coldfusion": {
       "crawled": false,
@@ -840,8 +840,8 @@
       "count": 0
     },
     "thoughtspile/awesome-tiny-js": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "joewdavies/awesome-frontend-gis": {
       "crawled": true,
@@ -1098,8 +1098,8 @@
       "count": 0
     },
     "kjw0612/awesome-deep-vision": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 8
     },
     "ossu/computer-science": {
       "crawled": true,
@@ -1280,8 +1280,8 @@
       "count": 0
     },
     "ellisonleao/magictools": {
-      "crawled": false,
-      "count": 0,
+      "crawled": true,
+      "count": 3,
       "main_cat": "Játékfejlesztés, 3D & Grafika",
       "sub_cat": "Gamedev Eszközök"
     },
@@ -1420,8 +1420,8 @@
       "sub_cat": "CLI Eszközök"
     },
     "unixorn/awesome-zsh-plugins": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "phillipadsmith/awesome-github": {
       "crawled": true,
@@ -1722,8 +1722,8 @@
       "count": 50
     },
     "jaredthecoder/awesome-vehicle-security": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 35
     },
     "qazbnm456/awesome-web-security": {
       "crawled": true,
@@ -2392,8 +2392,8 @@
       "count": 0
     },
     "podo/awesome-framer": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "BubuAnabelas/awesome-markdown": {
       "crawled": false,
@@ -2672,7 +2672,7 @@
       "count": 0
     },
     "basharovV/StumbleUponAwesome": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "umutphp/awesome-cli": {
@@ -2734,11 +2734,11 @@
       "sub_cat": "Godot Ökoszisztéma"
     },
     "n1trux/awesome-sysadmin": {
-      "crawled": false,
-      "count": 0,
+      "crawled": true,
+      "count": 47,
       "main_cat": "Rendszer, Biztonság & Segédprogramok",
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-19 10:08:06"
+  "last_run": "2026-10-20 09:33:38"
 }
