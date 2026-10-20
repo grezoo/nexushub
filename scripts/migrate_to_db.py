@@ -38,8 +38,8 @@ def migrate():
                 id, repo_name, title, function_title, title_en, function_title_en,
                 description, description_en, main_category, sub_category,
                 thumbnail_url, video_url, video_demo, has_video, stars, year,
-                url, creator, tags, is_pinned
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                url, creator, tags, is_pinned, replaces_saas, saas_savings
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             item.get("id") or item.get("repo_name"),
             item.get("repo_name", ""),
@@ -60,7 +60,9 @@ def migrate():
             item.get("url", ""),
             item.get("creator", ""),
             tags_json,
-            1 if item.get("is_pinned") else 0
+            1 if item.get("is_pinned") else 0,
+            item.get("replaces_saas"),
+            item.get("saas_savings")
         ))
         inserted += 1
 
@@ -72,20 +74,16 @@ def migrate():
     fts_count = cursor.fetchone()[0]
     print(f"FTS5 virtual table count: {fts_count}")
 
-    # Test FTS query
-    test_terms = ["whisper", "esp32", "trading", "quant"]
-    for term in test_terms:
-        cursor.execute("""
-            SELECT r.title, r.stars FROM repositories r
-            JOIN repositories_fts fts ON r.rowid = fts.rowid
-            WHERE repositories_fts MATCH ?
-            LIMIT 3
-        """, (f"{term}*",))
-        results = cursor.fetchall()
-        print(f"FTS query '{term}*' returned {len(results)} sample matches: {[r[0] for r in results]}")
-
     conn.close()
-    print("Migration completed successfully!")
+
+    # Automatically run SaaS alternative enrichment
+    try:
+        from scripts.enrich_saas_alternatives import run_enrichment
+        run_enrichment()
+    except Exception as e:
+        print(f"[-] SaaS enrichment note: {e}")
+
+    print("Migration finished successfully.")
 
 if __name__ == "__main__":
     migrate()

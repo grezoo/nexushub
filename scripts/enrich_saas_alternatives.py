@@ -1,7 +1,6 @@
 import json
 import sqlite3
 import os
-import urllib.request
 
 STRICT_SAAS_MAP = {
     "immich-app/immich": ("Google Photos / iCloud", "$10–30 / hó tárhelymegtakarítás"),
@@ -42,6 +41,15 @@ def run_enrichment():
 
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
+
+    # Ensure columns exist before doing any updates
+    cursor.execute("PRAGMA table_info(repositories)")
+    cols = {r[1] for r in cursor.fetchall()}
+    if "replaces_saas" not in cols:
+        cursor.execute("ALTER TABLE repositories ADD COLUMN replaces_saas TEXT")
+    if "saas_savings" not in cols:
+        cursor.execute("ALTER TABLE repositories ADD COLUMN saas_savings TEXT")
+    conn.commit()
 
     # Clear previous tags
     cursor.execute("UPDATE repositories SET replaces_saas = NULL, saas_savings = NULL")

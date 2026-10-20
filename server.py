@@ -32,6 +32,30 @@ SUBMISSIONS_QUEUE_PATH = os.path.join(DATA_DIR, "submissions_queue.json")
 IP_SUBMISSION_HISTORY = {}
 
 
+SCHEMA_VERIFIED = False
+
+
+def ensure_db_schema(conn):
+    """Auto-heals table schema if any columns are missing after external migrations."""
+    global SCHEMA_VERIFIED
+    if SCHEMA_VERIFIED:
+        return
+    try:
+        cursor = conn.cursor()
+        cursor.execute("PRAGMA table_info(repositories)")
+        cols = {r[1] for r in cursor.fetchall()}
+        if "replaces_saas" not in cols:
+            cursor.execute("ALTER TABLE repositories ADD COLUMN replaces_saas TEXT")
+            print("[+] Auto-healed: added replaces_saas column to repositories table.")
+        if "saas_savings" not in cols:
+            cursor.execute("ALTER TABLE repositories ADD COLUMN saas_savings TEXT")
+            print("[+] Auto-healed: added saas_savings column to repositories table.")
+        conn.commit()
+        SCHEMA_VERIFIED = True
+    except Exception as e:
+        print(f"[-] DB schema ensure error: {e}")
+
+
 def get_db_connection():
     """Returns an active SQLite database connection with row factory."""
     if not os.path.exists(DB_PATH):
@@ -40,6 +64,7 @@ def get_db_connection():
         migrate()
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
+    ensure_db_schema(conn)
     return conn
 
 
@@ -604,12 +629,17 @@ class CatalogueRequestHandler(http.server.SimpleHTTPRequestHandler):
 
         # API: Paginated, FTS-indexed items query from SQLite
         if path == "/api/items":
-            s_q = query_params.get("search", [""])[0] if isinstance(query_params.get("search"), list) else str(query_params.get("search", ""))
-            cat_q = query_params.get("category", ["all"])[0] if isinstance(query_params.get("category"), list) else str(query_params.get("category", "all"))
-            if s_q.strip() or (cat_q and cat_q != "all"):
-                log_page_view(client_ip, "/api/items", referrer, user_agent, search_query=s_q.strip(), category=cat_q)
+            try:
+                s_q = query_params.get("search", [""])[0] if isinstance(query_params.get("search"), list) else str(query_params.get("search", ""))
+                cat_q = query_params.get("category", ["all"])[0] if isinstance(query_params.get("category"), list) else str(query_params.get("category", "all"))
+                if s_q.strip() or (cat_q and cat_q != "all"):
+                    log_page_view(client_ip, "/api/items", referrer, user_agent, search_query=s_q.strip(), category=cat_q)
 
-            data = query_repositories(query_params)
+                data = query_repositories(query_params)
+            except Exception as e:
+                print(f"[-] /api/items handling error: {e}")
+                data = {"items": [], "total": 0, "page": 1, "limit": 40, "total_pages": 1, "error": str(e)}
+
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.send_header("Access-Control-Allow-Origin", "*")

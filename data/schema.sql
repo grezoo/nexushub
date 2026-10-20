@@ -20,6 +20,8 @@ CREATE TABLE IF NOT EXISTS repositories (
     creator TEXT,
     tags TEXT, -- JSON array of tags
     is_pinned INTEGER DEFAULT 0,
+    replaces_saas TEXT,
+    saas_savings TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
