@@ -1,5 +1,5 @@
 {
-  "total_runs": 32,
+  "total_runs": 33,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -400,8 +400,8 @@
       "count": 2
     },
     "hachiojipm/awesome-perl": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "kdabir/awesome-groovy": {
       "crawled": false,
@@ -1020,8 +1020,8 @@
       "count": 0
     },
     "SE-ML/awesome-seml": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 13
     },
     "georgezouq/awesome-ai-in-finance": {
       "crawled": false,
@@ -1276,8 +1276,8 @@
       "count": 0
     },
     "viatsko/awesome-vscode": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 5
     },
     "ellisonleao/magictools": {
       "crawled": true,
@@ -1362,8 +1362,8 @@
       "count": 0
     },
     "michelpereira/awesome-games-of-coding": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 4
     },
     "strift/awesome-esports": {
       "crawled": false,
@@ -1394,7 +1394,7 @@
       "count": 50
     },
     "sindresorhus/quick-look-plugins": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "jondot/awesome-devenv": {
@@ -1528,8 +1528,8 @@
       "count": 0
     },
     "dhamaniasad/awesome-postgres": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "quangv/awesome-couchdb": {
       "crawled": true,
@@ -2108,7 +2108,7 @@
       "count": 0
     },
     "awkward/awesome-netherlands-events": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "TheJambo/awesome-testing": {
@@ -2192,8 +2192,8 @@
       "count": 0
     },
     "ripienaar/free-for-dev": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 9
     },
     "melvin0008/awesome-projects-boilerplates": {
       "crawled": false,
@@ -2274,8 +2274,8 @@
       "count": 0
     },
     "Codepoints/awesome-codepoints": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 1
     },
     "MunGell/awesome-for-beginners": {
       "crawled": false,
@@ -2552,8 +2552,8 @@
       "count": 0
     },
     "iipc/awesome-web-archiving": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "schlessera/awesome-wp-cli": {
       "crawled": true,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-20 09:33:38"
+  "last_run": "2026-10-21 09:29:21"
 }
