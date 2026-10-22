@@ -1,5 +1,5 @@
 {
-  "total_runs": 33,
+  "total_runs": 34,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -184,8 +184,8 @@
       "count": 0
     },
     "naimo84/awesome-nodered": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "zenitysec/awesome-low-code": {
       "crawled": true,
@@ -808,8 +808,8 @@
       "count": 50
     },
     "nadunindunil/awesome-material-ui": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 27
     },
     "componently-com/awesome-building-blocks-for-web-apps": {
       "crawled": false,
@@ -886,8 +886,8 @@
       "count": 0
     },
     "pehapkari/awesome-symfony-education": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 1
     },
     "chiraggude/awesome-laravel": {
       "crawled": false,
@@ -1184,7 +1184,7 @@
       "count": 0
     },
     "JanVanRyswyck/awesome-talks": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "tayllan/awesome-algorithms": {
@@ -1636,8 +1636,8 @@
       "count": 0
     },
     "watson/awesome-computer-history": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 3
     },
     "HollyAdele/awesome-programming-for-kids": {
       "crawled": false,
@@ -2052,8 +2052,8 @@
       "count": 5
     },
     "caufieldjh/awesome-bioie": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 29
     },
     "eselkin/awesome-computational-neuroscience": {
       "crawled": true,
@@ -2120,8 +2120,8 @@
       "count": 50
     },
     "christian-bromann/awesome-selenium": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 44
     },
     "SrinivasanTarget/awesome-appium": {
       "crawled": false,
@@ -2322,8 +2322,8 @@
       "count": 2
     },
     "danielecook/Awesome-Bioinformatics": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "hsiaoyi0504/awesome-cheminformatics": {
       "crawled": false,
@@ -2500,8 +2500,8 @@
       "count": 0
     },
     "nschloe/awesome-scientific-computing": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 15
     },
     "ScaleLeap/awesome-amazon-seller": {
       "crawled": true,
@@ -2540,8 +2540,8 @@
       "count": 0
     },
     "cenoura/awesome-ads": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 3
     },
     "philsturgeon/awesome-earth": {
       "crawled": true,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-21 09:29:21"
+  "last_run": "2026-10-22 09:32:32"
 }
