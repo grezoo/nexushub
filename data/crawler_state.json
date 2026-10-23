@@ -1,5 +1,5 @@
 {
-  "total_runs": 34,
+  "total_runs": 35,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -656,8 +656,8 @@
       "count": 0
     },
     "notthetup/awesome-webaudio": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "pazguille/offline-first": {
       "crawled": true,
@@ -866,8 +866,8 @@
       "sub_cat": "Docker & Konténerek"
     },
     "iJackUA/awesome-vagrant": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 15
     },
     "uralbash/awesome-pyramid": {
       "crawled": false,
@@ -882,8 +882,8 @@
       "count": 0
     },
     "sitepoint-editors/awesome-symfony": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "pehapkari/awesome-symfony-education": {
       "crawled": true,
@@ -1240,8 +1240,8 @@
       "count": 0
     },
     "dariubs/GoBooks": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 9
     },
     "RomanTsegelskyi/rbooks": {
       "crawled": false,
@@ -1314,8 +1314,8 @@
       "count": 0
     },
     "ConstructCommunity/awesome-construct": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 6
     },
     "stetso/awesome-gideros": {
       "crawled": false,
@@ -1448,7 +1448,7 @@
       "count": 1
     },
     "stevemao/awesome-git-addons": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "compscilauren/awesome-git-hooks": {
@@ -1710,7 +1710,7 @@
       "count": 0
     },
     "daviddias/awesome-hacking-locations": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "paralax/awesome-honeypots": {
@@ -1960,7 +1960,7 @@
       "count": 0
     },
     "j0hnm4r5/awesome-creative-technology": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "caesar0301/awesome-pcaptools": {
@@ -1988,8 +1988,8 @@
       "count": 50
     },
     "vhpoet/awesome-ripple": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 23
     },
     "machinomy/awesome-non-financial-blockchain": {
       "crawled": true,
@@ -2420,8 +2420,8 @@
       "count": 0
     },
     "homematic-community/awesome-homematic": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "sfischer13/awesome-ledger": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-22 09:32:32"
+  "last_run": "2026-10-23 09:28:24"
 }
