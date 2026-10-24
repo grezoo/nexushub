@@ -1,5 +1,5 @@
 {
-  "total_runs": 35,
+  "total_runs": 36,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -26,8 +26,8 @@
       "count": 0
     },
     "jondot/awesome-react-native": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "Friz-zy/awesome-linux-containers": {
       "crawled": false,
@@ -94,7 +94,7 @@
       "count": 0
     },
     "ianstormtaylor/awesome-heroku": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "thibmaek/awesome-raspberry-pi": {
@@ -336,8 +336,8 @@
       "count": 0
     },
     "lauris/awesome-scala": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 3
     },
     "tindzk/awesome-scala-native": {
       "crawled": true,
@@ -364,8 +364,8 @@
       "count": 50
     },
     "drobakowski/awesome-erlang": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "svaksha/Julia.jl": {
       "crawled": false,
@@ -608,7 +608,7 @@
       "count": 0
     },
     "wasabeef/awesome-android-ui": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "cjwirth/awesome-ios-ui": {
@@ -1086,8 +1086,8 @@
       "count": 6
     },
     "margaretmz/awesome-tensorflow-lite": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 11
     },
     "terryum/awesome-deep-learning-papers": {
       "crawled": true,
@@ -1204,8 +1204,8 @@
       "count": 0
     },
     "marcobiedermann/search-engine-optimization": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 4
     },
     "lnishan/awesome-competitive-programming": {
       "crawled": true,
@@ -1330,8 +1330,8 @@
       "count": 0
     },
     "leomaurodesenv/game-datasets": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 46
     },
     "Dvergar/awesome-haxe-gamedev": {
       "crawled": false,
@@ -2152,8 +2152,8 @@
       "count": 12
     },
     "writing-resources/awesome-scientific-writing": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 16
     },
     "burningtree/awesome-json": {
       "crawled": true,
@@ -2496,7 +2496,7 @@
       "count": 50
     },
     "alexk111/awesome-bitcoin-payment-processors": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "nschloe/awesome-scientific-computing": {
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-23 09:28:24"
+  "last_run": "2026-10-24 09:00:14"
 }
