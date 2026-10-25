@@ -1,5 +1,5 @@
 {
-  "total_runs": 36,
+  "total_runs": 37,
   "discovered_lists": {
     "bcoe/awesome-cross-platform-nodejs": {
       "crawled": false,
@@ -22,8 +22,8 @@
       "count": 0
     },
     "busterc/awesome-cordova": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 24
     },
     "jondot/awesome-react-native": {
       "crawled": true,
@@ -204,8 +204,8 @@
       "count": 0
     },
     "MartinZikmund/awesome-uno-platform": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 16
     },
     "xavidop/awesome-firebase-genkit": {
       "crawled": false,
@@ -232,8 +232,8 @@
       "count": 0
     },
     "loverajoel/jstips": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 2
     },
     "Kikobeats/awesome-network-js": {
       "crawled": true,
@@ -256,19 +256,19 @@
       "count": 31
     },
     "dustinspecker/awesome-eslint": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "stoeffel/awesome-fp-js": {
       "crawled": false,
       "count": 0
     },
     "RyanZim/awesome-npm-scripts": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 33
     },
     "30-seconds/30-seconds-of-code": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "Richienb/awesome-ponyfills": {
@@ -488,8 +488,8 @@
       "count": 32
     },
     "desiderantes/awesome-vala": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "coq-community/awesome-coq": {
       "crawled": false,
@@ -1272,7 +1272,7 @@
       "count": 50
     },
     "emacs-tw/awesome-emacs": {
-      "crawled": false,
+      "crawled": true,
       "count": 0
     },
     "viatsko/awesome-vscode": {
@@ -2266,8 +2266,8 @@
       "count": 50
     },
     "mfornos/awesome-microservices": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 50
     },
     "jagracey/Awesome-Unicode": {
       "crawled": false,
@@ -2330,8 +2330,8 @@
       "count": 0
     },
     "Siddharth11/Colorful": {
-      "crawled": false,
-      "count": 0
+      "crawled": true,
+      "count": 14
     },
     "scholtzm/awesome-steam": {
       "crawled": false,
@@ -2740,5 +2740,5 @@
       "sub_cat": "Sysadmin Eszközök"
     }
   },
-  "last_run": "2026-10-24 09:00:14"
+  "last_run": "2026-10-25 09:17:12"
 }
